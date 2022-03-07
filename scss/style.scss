@@ -1104,6 +1104,10 @@ p.subtitle{
 		font-size: 18px;
 		line-height: normal;
 	}
+	.page-booking__rht .info__bottom span{
+		font-size: 18px;
+		line-height: normal;
+	}
 	.car__item .item__buy{
 		font-size: 18px;
 		padding: 11px 20px;
@@ -1129,6 +1133,15 @@ p.subtitle{
 }
 
 @media screen and (max-width: 700px) {
+	.page-inners h1{
+		font-size: 28px;
+		line-height: 38px;
+	}
+	.page-inners h2{
+		margin-bottom: 20px;
+		font-size: 18px;
+		line-height: normal;
+	}
 	.car__item:nth-child(3n+3){
 		border: none;
 	}
@@ -1285,6 +1298,18 @@ p.subtitle{
 	.breadcrumbs a{
 		white-space: nowrap;
 		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.page-inners h1{
+		font-size: 24px;
+		line-height: 33px;
+	}
+	.page-inners h2{
+		margin-bottom: 20px;
+		font-size: 18px;
+		line-height: normal;
 	}
 }
 
