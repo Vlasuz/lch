@@ -1,0 +1,91 @@
+extends includes/header.pug
+
+block content
+
+	main.page-inners.page-blog
+
+		.wrapper
+
+			h1 Travel with locals
+
+			.page-blog__top
+				h2 Latest POSTS
+				.select
+					.select__head
+						span REGION: ALL Countries
+						img(src="img/svg/arrBottomCircle.svg" alt="Ico")
+					.select__body
+						.select__ovf
+							.option
+								span asd
+							.option
+								span asd
+							.option
+								span asd
+							.option
+								span asd
+							.option
+								span asd
+							.option
+								span asd
+							.option
+								span asd
+							.option
+								span asd
+							.option
+								span asd
+							.option
+								span asd
+							.option
+								span asd
+							.option
+								span asd
+			.page-blog__inner
+				a(href="#").page-blog__item
+					.item__photo
+						img(src="img/blog/photo1.jpg" alt="photo")
+						.item__place GEORGIA
+					.item__info
+						.item__title Vardzia - A cave city in the rock, covered with legends and ancient history
+						.item__things THINGS TO DO
+						.item__text.
+							45 minutes from Saranda is an amazingly beautiful place - Butrint National Park. It is protected by UNESCO and is considered the most visited place in Albania. It is an archaeological museum-reserve, where once were the Greek and Roman cities.
+						.item__bottom
+							.item__owner
+								img(src="img/blog/owner1.png")
+								span Alla Bregova
+							date.item__date Jan. 15, 2022
+							button.item__button.btn-hover READ MORE
+				a(href="#").page-blog__item
+					.item__photo
+						img(src="img/blog/photo1.jpg" alt="photo")
+						.item__place GEORGIA
+					.item__info
+						.item__title Vardzia - A cave city in the rock, covered with legends and ancient history
+						.item__things THINGS TO DO
+						.item__text.
+							45 minutes from Saranda is an amazingly beautiful place - Butrint National Park. It is protected by UNESCO and is considered the most visited place in Albania. It is an archaeological museum-reserve, where once were the Greek and Roman cities.
+						.item__bottom
+							.item__owner
+								img(src="img/blog/owner1.png")
+								span Alla Bregova
+							date.item__date Jan. 15, 2022
+							button.item__button.btn-hover READ MORE
+			.page-blog__bottom
+				.pagination
+					a(href="#").pagination__prev
+						<svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.43053C10.0006 1.76418 9.88452 2.08754 9.67178 2.34445L3.27862 9.9986L9.44345 17.667C9.56199 17.8131 9.65051 17.9812 9.70393 18.1616C9.75734 18.342 9.7746 18.5312 9.75471 18.7183C9.73482 18.9054 9.67817 19.0867 9.58802 19.2519C9.49787 19.417 9.37599 19.5627 9.22939 19.6805C9.08342 19.7991 8.91547 19.8877 8.73517 19.9412C8.55488 19.9946 8.36581 20.0119 8.17883 19.992C7.99184 19.9721 7.81064 19.9154 7.64562 19.8252C7.4806 19.735 7.33502 19.613 7.21726 19.4663L0.324635 10.8982C0.114743 10.6427 -4.23029e-07 10.3222 -4.37487e-07 9.99146C-4.51945e-07 9.66069 0.114743 9.34019 0.324635 9.08467L7.45986 0.516599C7.57966 0.372001 7.72678 0.252473 7.89282 0.164861C8.05885 0.0772492 8.24052 0.023275 8.42743 0.00603067C8.61434 -0.0112137 8.80282 0.00861129 8.98206 0.0643669C9.1613 0.120123 9.32779 0.210716 9.47199 0.330957C9.63569 0.463838 9.76794 0.631361 9.85924 0.821481C9.95053 1.0116 9.9986 1.2196 10 1.43053Z" fill="#424242"/></svg>
+					span.pagination__num.pagination__num_current 1
+					a(href="#").pagination__num 2
+					a(href="#").pagination__num 3
+					a(href="#").pagination__num 4
+					a(href="#").pagination__num 5
+					span.pagination__num ...
+					a(href="#").pagination__num 18
+					a(href="#").pagination__next
+						<svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.04933e-06 18.5695C-0.000649296 18.2358 0.115477 17.9125 0.328222 17.6555L6.72138 10.0014L0.556551 2.33298C0.438012 2.18691 0.34949 2.01884 0.296073 1.83843C0.242657 1.65801 0.225398 1.46881 0.24529 1.2817C0.265181 1.09459 0.321831 0.913262 0.411983 0.748131C0.502134 0.583001 0.624011 0.437327 0.770607 0.319484C0.916576 0.200864 1.08453 0.112283 1.26483 0.0588301C1.44512 0.0053772 1.63419 -0.0118929 1.82117 0.00801242C2.00816 0.0279178 2.18936 0.0846059 2.35438 0.174819C2.5194 0.265032 2.66498 0.386991 2.78274 0.533686L9.67536 9.10176C9.88526 9.35727 10 9.67778 10 10.0085C10 10.3393 9.88526 10.6598 9.67536 10.9153L2.54014 19.4834C2.42034 19.628 2.27321 19.7475 2.10718 19.8351C1.94115 19.9228 1.75947 19.9767 1.57257 19.994C1.38566 20.0112 1.19718 19.9914 1.01794 19.9356C0.838698 19.8799 0.672209 19.7893 0.528009 19.669C0.364308 19.5362 0.232057 19.3686 0.140762 19.1785C0.0494672 18.9884 0.00139631 18.7804 2.04933e-06 18.5695Z" fill="#424242"/></svg>
+
+
+
+
+	include includes/footer.pug

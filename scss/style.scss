@@ -1040,6 +1040,11 @@ p.subtitle{
 			color: #424242;
 		}
 	}
+	textarea{
+		padding-top: 15px;
+		resize: none;
+	}
+	textarea,
 	input:not(input[type="submit"]){
 		background: #FFFFFF;
 		border: 1px solid #C0C0C0;
@@ -1049,9 +1054,66 @@ p.subtitle{
 		padding-left: 15px;
 		padding-right: 15px;
 		width: 100%;
+		outline: none;
 		font-size: 20px;
 		line-height: 23px;
 		color: #424242;
+	}
+}
+
+.pagination{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 80px 0;
+	a{
+		font-family: Roboto;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 21px;
+		color: #424242;
+	}
+	&__next{
+		margin-left: 24px;
+		path{
+			transition: all .3s ease;
+		}
+		&:hover{
+			path{
+				fill: #F91942
+			}
+		}
+	}
+	&__prev{
+		margin-right: 24px;
+		path{
+			transition: all .3s ease;
+		}
+		&:hover{
+			path{
+				fill: #F91942
+			}
+		}
+	}
+	&__num{
+		margin: 0 12px;
+		&_current{
+			background: #F91942;
+			border: 1px solid #F91942;
+			font-family: Roboto;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 21px;
+			color: #FFFFFF;
+			min-width: 50px;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0 4px;
+		}
 	}
 }
 
@@ -1061,6 +1123,8 @@ p.subtitle{
 @import "_country.scss";
 @import "_city.scss";
 @import "_popups.scss";
+@import "_contacts.scss";
+@import "_blog.scss";
 @import "_company.scss";
 @import "_single.scss";
 @import "_booking.scss";
@@ -1070,6 +1134,9 @@ p.subtitle{
 @media screen and (max-width: 1024px) {
 	.page-inners h1{
 		margin-bottom: 30px;
+	}
+	.pagination{
+		margin: 60px 0;
 	}
 	.car__item{
 		width: calc(100% / 2);
@@ -1107,6 +1174,14 @@ p.subtitle{
 	.page-booking__rht .info__bottom span{
 		font-size: 18px;
 		line-height: normal;
+	}
+	.pagination{
+		margin: 50px 0;
+	}
+	.pagination__num_current{
+		min-width: 40px;
+		width: 40px;
+		height: 40px;
 	}
 	.car__item .item__buy{
 		font-size: 18px;
@@ -1291,6 +1366,18 @@ p.subtitle{
 		&:nth-child(2n + 2){
 			border-right: none;
 		}
+	}
+	.pagination{
+		margin: 40px 0;
+	}
+	.pagination__num_current{
+		margin: 0 10px;
+	}
+	.pagination__prev{
+		margin-right: 20px;
+	}
+	.pagination__next{
+		margin-left: 20px;
 	}
 	.breadcrumbs {
 		overflow: auto;

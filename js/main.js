@@ -797,7 +797,6 @@ $(document).ready(function () {
 
 
 
-
 	// MEDIA
 
 	if( $(window).width() < 576 ){
@@ -810,7 +809,6 @@ $(document).ready(function () {
 
 
 })
-
 
 
 

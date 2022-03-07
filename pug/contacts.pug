@@ -1,0 +1,103 @@
+extends includes/header.pug
+
+block content
+
+	main.page-inners.page-contacts
+
+		.wrapper
+
+			h1 CONTACT information
+			h2 Customer Support
+			.page-contacts__sides
+				.page-contacts__lft
+					.lft__block
+						.lft__text
+							p For any urgent queries and complaints, please use our dedicated support line or send us a message using this form 👉
+							p Due to large amount of requests, reply time may take longer than usual
+						.lft__soc
+							ul.soc__list
+								li
+									img(src="img/svg/viber.svg" alt="Viber")
+									span Viber
+								li
+									img(src="img/svg/telegram.svg" alt="Viber")
+									span Telegram
+								li
+									img(src="img/svg/whatsapp.svg" alt="Viber")
+									span Whatsapp
+								li
+									img(src="img/svg/messanger.svg" alt="Viber")
+									span Facebook
+
+				.page-contacts__rht
+					form(action="#")
+						.inputs
+							input(type="text" placeholder="Your Name")
+							input(type="email" placeholder="Email Address")
+						input(type="text" placeholder="Subject")
+						textarea(placeholder="Message")
+						.form__bottom
+							img(src="img/recapcha.jpg" alt="Recapcha")
+							button(type="submit").btn-hover Submit Message
+
+			h2 Company Details
+			.page-contacts__sides
+				.page-contacts__place
+					.place__top
+						.place__photo
+							img(src="img/contacts/photo1.jpg" alt="Photo")
+						.place__text
+							p LocalCarHires OÜ
+							.sides
+								.lft MAIN OFFICE
+								.rht ESTONIA
+					ul.place__bottom
+						li
+							b Address: 
+							span Tuukri, 19-315, Tallinn, Estonia
+						li
+							b Phone: 
+							a(href="#") +372 819 54 767
+						li
+							b Web: 
+							a(href="#") localcarhires.com
+						li
+							b Email: 
+							a(href="#") support@localcarhires.com
+
+				.page-contacts__list
+					.list__ovf
+						ul.list__ul
+							li
+								a(href="#")
+									b Rent a car in Montenegro
+									span 53 Mediteranska, Budva
+							li
+								a(href="#")
+									b Rent a car in Montenegro
+									span 53 Mediteranska, Budva
+							li
+								a(href="#")
+									b Rent a car in Montenegro
+									span 53 Mediteranska, Budva
+							li
+								a(href="#")
+									b Rent a car in Montenegro
+									span 53 Mediteranska, Budva
+							li
+								a(href="#")
+									b Rent a car in Montenegro
+									span 53 Mediteranska, Budva
+							li
+								a(href="#")
+									b Rent a car in Montenegro
+									span 53 Mediteranska, Budva
+			.page-contacts__map
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d57962.088245078696!2d30.517609580704185!3d50.46925456959848!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d1ef27d92ae5%3A0x89b1e5afe5edc66b!2z0J_QsNGA0Log0JzRg9GA0L7QvNC10YY!5e0!3m2!1sru!2sua!4v1646661876650!5m2!1sru!2sua" width="200" height="465" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+
+
+
+
+	include includes/footer.pug

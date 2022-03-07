@@ -284,6 +284,8 @@ header{
 	&__bottom{
 		border-bottom: 1px solid #DCDCDC;
 		padding: 12px 0;
+		position: relative;
+		z-index: 10;
 		.wrapper{
 			display: flex;
 			align-items: center;
