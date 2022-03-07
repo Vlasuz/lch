@@ -1,0 +1,1635 @@
+extends includes/header.pug
+
+block content
+
+	main.page-index
+
+		section.page-index__banner
+			.wrapper.wrapper_big
+				.banner__inner
+					.wrapper
+						.banner__top
+							h1 Rent a car from locals
+							.banner__reviews
+								<svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.3314 9.04738L10 17L17.6686 9.04738C18.5211 8.16332 19 6.96429 19 5.71405C19 3.11055 16.9648 1 14.4543 1C13.2487 1 12.0925 1.49666 11.24 2.38071L10 3.66667L8.75997 2.38071C7.90749 1.49666 6.75128 1 5.54569 1C3.03517 1 1 3.11055 1 5.71405C1 6.96429 1.47892 8.16332 2.3314 9.04738Z" stroke="#F91942" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								span Reviews
+						.banner__center
+							.banner__sides
+								.banner__side
+									h3.banner__title Pickup
+									.banner__block
+										.banner__select.banner__search
+											img(src="img/index/search.svg" alt="search")
+											select.js-example-placeholder-multiple
+												option(disabled selected) Select city or airport
+												option asd 1
+												option asd 1 2
+										.banner__select.banner__calendar
+											img(src="img/index/calendar.svg" alt="calendar")
+											input(type="text" placeholder="4 Jan 2022").dateFrom
+										.banner__select.banner__time.select
+											.select__head
+												img(src="img/index/time.svg" alt="time")
+												.select__push
+													span 10:00
+											.select__body
+												.select__ovf
+													.option.select__pull
+														span 10:00
+													.option.select__pull
+														span 11:00
+													.option.select__pull
+														span 12:00
+													.option.select__pull
+														span 10:00
+													.option.select__pull
+														span 11:00
+													.option.select__pull
+														span 12:00
+													.option.select__pull
+														span 10:00
+													.option.select__pull
+														span 11:00
+													.option.select__pull
+														span 12:00
+													.option.select__pull
+														span 10:00
+													.option.select__pull
+														span 11:00
+													.option.select__pull
+														span 12:00
+								.banner__side
+									h3.banner__title
+										span Return
+										.banner__days
+											b 14
+											span Days
+									.banner__block
+										.banner__select.banner__search
+											img(src="img/index/search.svg" alt="search")
+											select.js-example-placeholder-multiple
+												option(disabled selected) Select city or airport
+												option asd 1
+												option asd 1 2
+										.banner__select.banner__calendar
+											img(src="img/index/calendar.svg" alt="calendar")
+											input(type="text" placeholder="4 Jan 2022").dateTo
+										.banner__select.banner__time.select
+											.select__head
+												img(src="img/index/time.svg" alt="time")
+												.select__push
+													span 10:00
+											.select__body
+												.select__ovf
+													.option.select__pull
+														span 10:00
+													.option.select__pull
+														span 11:00
+													.option.select__pull
+														span 12:00
+													.option.select__pull
+														span 10:00
+													.option.select__pull
+														span 11:00
+													.option.select__pull
+														span 12:00
+													.option.select__pull
+														span 10:00
+													.option.select__pull
+														span 11:00
+													.option.select__pull
+														span 12:00
+													.option.select__pull
+														span 10:00
+													.option.select__pull
+														span 11:00
+													.option.select__pull
+														span 12:00
+							button.banner__button.btn-hover Find cars
+
+		section.page-index__popular
+			.wrapper
+				h2 Popular REGIONS
+				.slider__top
+					p.subtitle
+						| So 
+						span  where
+						|  are you going next?
+					.slider__arrows
+						.slider__prev
+							<svg width="45" height="20" viewBox="0 0 45 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 12L15 12L15 8L45 8L45 12Z" fill="#3A3A3A"/><path d="M-4.37114e-07 10L15 1.33974L15 18.6603L-4.37114e-07 10Z" fill="#3A3A3A"/></svg>
+						.slider__next
+							<svg width="45" height="20" viewBox="0 0 45 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 8H30V12H0V8Z" fill="#3A3A3A"/><path d="M45 10L30 18.6603L30 1.33974L45 10Z" fill="#3A3A3A"/></svg>
+				.slider__inner
+					.slider__item
+						.item__photo
+							img(src="img/index/slide1.jpg" alt="Photo")
+						.item__bottom
+							span Albania
+							a(href="#").btn-hover Browse
+					.slider__item
+						.item__photo
+							img(src="img/index/slide2.jpg" alt="Photo")
+						.item__bottom
+							span Albania
+							a(href="#").btn-hover Browse
+					.slider__item
+						.item__photo
+							img(src="img/index/slide3.jpg" alt="Photo")
+						.item__bottom
+							span Albania
+							a(href="#").btn-hover Browse
+					.slider__item
+						.item__photo
+							img(src="img/index/slide4.jpg" alt="Photo")
+						.item__bottom
+							span Albania
+							a(href="#").btn-hover Browse
+
+		section.page-index__reviews
+			.wrapper
+				h2 Popular REGIONS
+				.slider__top
+					p.subtitle
+						| So 
+						span  where
+						|  are you going next?
+					.slider__arrows
+						.slider__prev
+							<svg width="45" height="20" viewBox="0 0 45 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 12L15 12L15 8L45 8L45 12Z" fill="#3A3A3A"/><path d="M-4.37114e-07 10L15 1.33974L15 18.6603L-4.37114e-07 10Z" fill="#3A3A3A"/></svg>
+						.slider__next
+							<svg width="45" height="20" viewBox="0 0 45 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 8H30V12H0V8Z" fill="#3A3A3A"/><path d="M45 10L30 18.6603L30 1.33974L45 10Z" fill="#3A3A3A"/></svg>
+				.slider__inner
+					.slider__item
+						.item__top
+							.item__photo
+								img(src="img/index/persone1.jpg" alt="persone")
+							.item__name Serhii Haidai
+							.item__country
+								img(src="img/svg/UA.svg" alt="UA")
+							.item__stars
+								.star
+									<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.12978L12.4906 6.1762L12.6069 6.41192L12.867 6.44972L18.4361 7.25895L14.4063 11.187L14.218 11.3705L14.2625 11.6296L15.2138 17.1762L10.2327 14.5574L10 14.4351L9.76733 14.5574L4.78621 17.1762L5.73752 11.6296L5.78196 11.3705L5.59372 11.187L1.56392 7.25895L7.13297 6.44972L7.39311 6.41192L7.50944 6.1762L10 1.12978Z" fill="#FFC600" stroke="white"/></svg>
+								.star
+									<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.12978L12.4906 6.1762L12.6069 6.41192L12.867 6.44972L18.4361 7.25895L14.4063 11.187L14.218 11.3705L14.2625 11.6296L15.2138 17.1762L10.2327 14.5574L10 14.4351L9.76733 14.5574L4.78621 17.1762L5.73752 11.6296L5.78196 11.3705L5.59372 11.187L1.56392 7.25895L7.13297 6.44972L7.39311 6.41192L7.50944 6.1762L10 1.12978Z" fill="#FFC600" stroke="white"/></svg>
+								.star
+									<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.12978L12.4906 6.1762L12.6069 6.41192L12.867 6.44972L18.4361 7.25895L14.4063 11.187L14.218 11.3705L14.2625 11.6296L15.2138 17.1762L10.2327 14.5574L10 14.4351L9.76733 14.5574L4.78621 17.1762L5.73752 11.6296L5.78196 11.3705L5.59372 11.187L1.56392 7.25895L7.13297 6.44972L7.39311 6.41192L7.50944 6.1762L10 1.12978Z" fill="#FFC600" stroke="white"/></svg>
+								.star
+									<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.12978L12.4906 6.1762L12.6069 6.41192L12.867 6.44972L18.4361 7.25895L14.4063 11.187L14.218 11.3705L14.2625 11.6296L15.2138 17.1762L10.2327 14.5574L10 14.4351L9.76733 14.5574L4.78621 17.1762L5.73752 11.6296L5.78196 11.3705L5.59372 11.187L1.56392 7.25895L7.13297 6.44972L7.39311 6.41192L7.50944 6.1762L10 1.12978Z" fill="#FFC600" stroke="white"/></svg>
+								.star
+									<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.12978L12.4906 6.1762L12.6069 6.41192L12.867 6.44972L18.4361 7.25895L14.4063 11.187L14.218 11.3705L14.2625 11.6296L15.2138 17.1762L10.2327 14.5574L10 14.4351L9.76733 14.5574L4.78621 17.1762L5.73752 11.6296L5.78196 11.3705L5.59372 11.187L1.56392 7.25895L7.13297 6.44972L7.39311 6.41192L7.50944 6.1762L10 1.12978Z" fill="#FFC600" stroke="white"/></svg>
+						.item__content
+							a(href="#").item__google
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.8 9.4V14.4H18.6C17.6 17.1 15 18.9 12 18.9C8.1 18.9 5 15.8 5 11.9C5 8 8.1 4.9 12 4.9C13.5 4.9 14.9 5.4 16.1 6.2L16.5 6.5L19.5 2.6L19.1 2.3C17 0.799999 14.6 0 12 0C5.4 0 0 5.4 0 12C0 18.6 5.4 24 12 24C18.6 24 24 18.6 24 12V9.5H11.8V9.4Z" fill="#F91942"/></svg>
+							h3.item__title
+								span Kia X-Line 
+								| in
+								span Georgia
+							p.item__text 1. The service is super! The application was accepted quickly and without any red tape. We met at the airport. Super. 2. A big plus that no collateral! 3. In general, everything is fine. But! 4. Specifically, this car is not very good...
+								a(href="#") read more
+							.item__gallery
+								a(href="img/index/photoCar1.jpg").gallery__item.lightzoom
+									img(src="img/index/photoCar1.jpg" alt="Photo")
+								a(href="img/index/photoCar2.jpg").gallery__item.lightzoom
+									img(src="img/index/photoCar2.jpg" alt="Photo")
+								a(href="img/index/photoCar3.jpg").gallery__item.lightzoom
+									img(src="img/index/photoCar3.jpg" alt="Photo")
+							.item__data December 2021
+					.slider__item
+						.item__top
+							.item__photo
+								img(src="img/index/persone1.jpg" alt="persone")
+							.item__name Serhii Haidai
+							.item__country
+								img(src="img/svg/UA.svg" alt="UA")
+							.item__stars
+								.star
+									<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.12978L12.4906 6.1762L12.6069 6.41192L12.867 6.44972L18.4361 7.25895L14.4063 11.187L14.218 11.3705L14.2625 11.6296L15.2138 17.1762L10.2327 14.5574L10 14.4351L9.76733 14.5574L4.78621 17.1762L5.73752 11.6296L5.78196 11.3705L5.59372 11.187L1.56392 7.25895L7.13297 6.44972L7.39311 6.41192L7.50944 6.1762L10 1.12978Z" fill="#FFC600" stroke="white"/></svg>
+								.star
+									<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.12978L12.4906 6.1762L12.6069 6.41192L12.867 6.44972L18.4361 7.25895L14.4063 11.187L14.218 11.3705L14.2625 11.6296L15.2138 17.1762L10.2327 14.5574L10 14.4351L9.76733 14.5574L4.78621 17.1762L5.73752 11.6296L5.78196 11.3705L5.59372 11.187L1.56392 7.25895L7.13297 6.44972L7.39311 6.41192L7.50944 6.1762L10 1.12978Z" fill="#FFC600" stroke="white"/></svg>
+								.star
+									<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.12978L12.4906 6.1762L12.6069 6.41192L12.867 6.44972L18.4361 7.25895L14.4063 11.187L14.218 11.3705L14.2625 11.6296L15.2138 17.1762L10.2327 14.5574L10 14.4351L9.76733 14.5574L4.78621 17.1762L5.73752 11.6296L5.78196 11.3705L5.59372 11.187L1.56392 7.25895L7.13297 6.44972L7.39311 6.41192L7.50944 6.1762L10 1.12978Z" fill="#FFC600" stroke="white"/></svg>
+								.star
+									<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.12978L12.4906 6.1762L12.6069 6.41192L12.867 6.44972L18.4361 7.25895L14.4063 11.187L14.218 11.3705L14.2625 11.6296L15.2138 17.1762L10.2327 14.5574L10 14.4351L9.76733 14.5574L4.78621 17.1762L5.73752 11.6296L5.78196 11.3705L5.59372 11.187L1.56392 7.25895L7.13297 6.44972L7.39311 6.41192L7.50944 6.1762L10 1.12978Z" fill="#FFC600" stroke="white"/></svg>
+								.star
+									<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.12978L12.4906 6.1762L12.6069 6.41192L12.867 6.44972L18.4361 7.25895L14.4063 11.187L14.218 11.3705L14.2625 11.6296L15.2138 17.1762L10.2327 14.5574L10 14.4351L9.76733 14.5574L4.78621 17.1762L5.73752 11.6296L5.78196 11.3705L5.59372 11.187L1.56392 7.25895L7.13297 6.44972L7.39311 6.41192L7.50944 6.1762L10 1.12978Z" fill="#C4C4C4" stroke="white"/></svg>
+						.item__content
+							h3.item__title
+								span Kia X-Line 
+								| in
+								span Georgia
+							p.item__text 1. The service is super! The application was accepted quickly and without any red tape. We met at the airport. Super
+							.item__gallery
+								a(href="img/index/photoCar1.jpg").gallery__item.lightzoom
+									img(src="img/index/photoCar1.jpg" alt="Photo")
+								a(href="img/index/photoCar2.jpg").gallery__item.lightzoom
+									img(src="img/index/photoCar2.jpg" alt="Photo")
+								a(href="img/index/photoCar3.jpg").gallery__item.lightzoom
+									img(src="img/index/photoCar3.jpg" alt="Photo")
+							.item__data December 2021
+					.slider__item
+						.item__top
+							.item__photo
+								img(src="img/index/persone1.jpg" alt="persone")
+							.item__name Serhii Haidai
+							.item__country
+								img(src="img/svg/UA.svg" alt="UA")
+							.item__stars
+								.star
+									<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.12978L12.4906 6.1762L12.6069 6.41192L12.867 6.44972L18.4361 7.25895L14.4063 11.187L14.218 11.3705L14.2625 11.6296L15.2138 17.1762L10.2327 14.5574L10 14.4351L9.76733 14.5574L4.78621 17.1762L5.73752 11.6296L5.78196 11.3705L5.59372 11.187L1.56392 7.25895L7.13297 6.44972L7.39311 6.41192L7.50944 6.1762L10 1.12978Z" fill="#FFC600" stroke="white"/></svg>
+								.star
+									<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.12978L12.4906 6.1762L12.6069 6.41192L12.867 6.44972L18.4361 7.25895L14.4063 11.187L14.218 11.3705L14.2625 11.6296L15.2138 17.1762L10.2327 14.5574L10 14.4351L9.76733 14.5574L4.78621 17.1762L5.73752 11.6296L5.78196 11.3705L5.59372 11.187L1.56392 7.25895L7.13297 6.44972L7.39311 6.41192L7.50944 6.1762L10 1.12978Z" fill="#FFC600" stroke="white"/></svg>
+								.star
+									<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.12978L12.4906 6.1762L12.6069 6.41192L12.867 6.44972L18.4361 7.25895L14.4063 11.187L14.218 11.3705L14.2625 11.6296L15.2138 17.1762L10.2327 14.5574L10 14.4351L9.76733 14.5574L4.78621 17.1762L5.73752 11.6296L5.78196 11.3705L5.59372 11.187L1.56392 7.25895L7.13297 6.44972L7.39311 6.41192L7.50944 6.1762L10 1.12978Z" fill="#FFC600" stroke="white"/></svg>
+								.star
+									<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.12978L12.4906 6.1762L12.6069 6.41192L12.867 6.44972L18.4361 7.25895L14.4063 11.187L14.218 11.3705L14.2625 11.6296L15.2138 17.1762L10.2327 14.5574L10 14.4351L9.76733 14.5574L4.78621 17.1762L5.73752 11.6296L5.78196 11.3705L5.59372 11.187L1.56392 7.25895L7.13297 6.44972L7.39311 6.41192L7.50944 6.1762L10 1.12978Z" fill="#FFC600" stroke="white"/></svg>
+								.star
+									<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.12978L12.4906 6.1762L12.6069 6.41192L12.867 6.44972L18.4361 7.25895L14.4063 11.187L14.218 11.3705L14.2625 11.6296L15.2138 17.1762L10.2327 14.5574L10 14.4351L9.76733 14.5574L4.78621 17.1762L5.73752 11.6296L5.78196 11.3705L5.59372 11.187L1.56392 7.25895L7.13297 6.44972L7.39311 6.41192L7.50944 6.1762L10 1.12978Z" fill="#FFC600" stroke="white"/></svg>
+						.item__content
+							h3.item__title
+								span Kia X-Line  
+								| in
+								span  Georgia
+							p.item__text 1. The service is super! The application was accepted quickly and without
+							.item__data December 2021
+					.slider__item
+						.item__top
+							.item__photo
+								img(src="img/index/persone1.jpg" alt="persone")
+							.item__name Serhii Haidai
+							.item__country
+								img(src="img/svg/UA.svg" alt="UA")
+							.item__stars
+								.star
+									<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.12978L12.4906 6.1762L12.6069 6.41192L12.867 6.44972L18.4361 7.25895L14.4063 11.187L14.218 11.3705L14.2625 11.6296L15.2138 17.1762L10.2327 14.5574L10 14.4351L9.76733 14.5574L4.78621 17.1762L5.73752 11.6296L5.78196 11.3705L5.59372 11.187L1.56392 7.25895L7.13297 6.44972L7.39311 6.41192L7.50944 6.1762L10 1.12978Z" fill="#FFC600" stroke="white"/></svg>
+								.star
+									<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.12978L12.4906 6.1762L12.6069 6.41192L12.867 6.44972L18.4361 7.25895L14.4063 11.187L14.218 11.3705L14.2625 11.6296L15.2138 17.1762L10.2327 14.5574L10 14.4351L9.76733 14.5574L4.78621 17.1762L5.73752 11.6296L5.78196 11.3705L5.59372 11.187L1.56392 7.25895L7.13297 6.44972L7.39311 6.41192L7.50944 6.1762L10 1.12978Z" fill="#FFC600" stroke="white"/></svg>
+								.star
+									<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.12978L12.4906 6.1762L12.6069 6.41192L12.867 6.44972L18.4361 7.25895L14.4063 11.187L14.218 11.3705L14.2625 11.6296L15.2138 17.1762L10.2327 14.5574L10 14.4351L9.76733 14.5574L4.78621 17.1762L5.73752 11.6296L5.78196 11.3705L5.59372 11.187L1.56392 7.25895L7.13297 6.44972L7.39311 6.41192L7.50944 6.1762L10 1.12978Z" fill="#FFC600" stroke="white"/></svg>
+								.star
+									<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.12978L12.4906 6.1762L12.6069 6.41192L12.867 6.44972L18.4361 7.25895L14.4063 11.187L14.218 11.3705L14.2625 11.6296L15.2138 17.1762L10.2327 14.5574L10 14.4351L9.76733 14.5574L4.78621 17.1762L5.73752 11.6296L5.78196 11.3705L5.59372 11.187L1.56392 7.25895L7.13297 6.44972L7.39311 6.41192L7.50944 6.1762L10 1.12978Z" fill="#FFC600" stroke="white"/></svg>
+								.star
+									<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.12978L12.4906 6.1762L12.6069 6.41192L12.867 6.44972L18.4361 7.25895L14.4063 11.187L14.218 11.3705L14.2625 11.6296L15.2138 17.1762L10.2327 14.5574L10 14.4351L9.76733 14.5574L4.78621 17.1762L5.73752 11.6296L5.78196 11.3705L5.59372 11.187L1.56392 7.25895L7.13297 6.44972L7.39311 6.41192L7.50944 6.1762L10 1.12978Z" fill="#FFC600" stroke="white"/></svg>
+						.item__content
+							h3.item__title
+								span Kia X-Line 
+								| in
+								span Georgia
+							p.item__text 1. The service is super! The application was accepted quickly and without any red tape. We met at the airport. Super. 2. A big plus that no collateral! 3. In general, everything is fine. But! 4. Specifically, this car is not very good...
+								a(href="#") read more
+							.item__gallery
+								a(href="img/index/photoCar1.jpg").gallery__item.lightzoom
+									img(src="img/index/photoCar1.jpg" alt="Photo")
+								a(href="img/index/photoCar2.jpg").gallery__item.lightzoom
+									img(src="img/index/photoCar2.jpg" alt="Photo")
+								a(href="img/index/photoCar3.jpg").gallery__item.lightzoom
+									img(src="img/index/photoCar3.jpg" alt="Photo")
+							.item__data December 2021
+
+		section.page-index__info
+			.wrapper
+				.info__sides
+					.info__red-text
+						span RENT
+						span ACAR
+						span ANYW
+						span HERE
+					.info__photo
+						img(src="img/index/infoPhoto.jpg" alt="Photo")
+					.info__text
+						ul
+							li
+								.li__title Find holiday car rentals
+								p.li__text.
+									We make it easy to compare car rentaldeals and terms so you can get holiday car rentals under fair conditions.
+							li
+								.li__title Confirm your booking
+								p.li__text.
+									Reserve your vehicle with a small deposit and be guaranteed it will be waiting for you right upon arrival.
+							li
+								.li__title Your opinion matters
+								p.li__text.
+									We work with small to mid size providers run by local people striving to satisfy each and every customer.
+
+		section.page-index__location
+			.wrapper
+				h2 Popular pick-up locations
+				.switch
+					.switch__item.switch__item_active EUROPE
+					.switch__item ASIA
+					.switch__item Africa
+					.switch__item North America
+					.switch__item South America
+					.switch__item Australia and Oceania
+				.switch__blocks
+					.switch__block
+						.akkordeon
+							.akkordeon__head
+								span Albania
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									ul
+										li Istanbul Sabiha Gokcen Airport (SAW)
+										li Alanya
+										li Gazipaşa - Alanya Airport (GZP)
+										li Antalya
+										li Antalya Airport (AYT)
+										li Belek
+										li Dalaman Airport (DLM)
+										li Bodrum
+									ul
+										li Antalya
+										li Antalya Airport (AYT)
+										li Belek
+										li Dalaman Airport (DLM)
+										li Dalaman Airport (DLM)
+										li Bodrum
+									a(href="#").akkordeon__button.btn-hover Rent a car in Turkey
+						.akkordeon
+							.akkordeon__head
+								span Albania
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									ul
+										li Istanbul Sabiha Gokcen Airport (SAW)
+										li Alanya
+										li Gazipaşa - Alanya Airport (GZP)
+										li Antalya
+										li Antalya Airport (AYT)
+										li Belek
+										li Dalaman Airport (DLM)
+										li Bodrum
+									a(href="#").akkordeon__button.btn-hover Rent a car in Turkey
+						.akkordeon
+							.akkordeon__head
+								span Albania
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									ul
+										li Istanbul Sabiha Gokcen Airport (SAW)
+										li Alanya
+										li Gazipaşa - Alanya Airport (GZP)
+										li Antalya
+										li Antalya Airport (AYT)
+										li Belek
+										li Dalaman Airport (DLM)
+										li Bodrum
+									a(href="#").akkordeon__button.btn-hover Rent a car in Turkey
+						.akkordeon
+							.akkordeon__head
+								span Albania
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									ul
+										li Istanbul Sabiha Gokcen Airport (SAW)
+										li Alanya
+										li Gazipaşa - Alanya Airport (GZP)
+										li Antalya
+										li Antalya Airport (AYT)
+										li Belek
+										li Dalaman Airport (DLM)
+										li Bodrum
+									a(href="#").akkordeon__button.btn-hover Rent a car in Turkey
+					.switch__block
+						.akkordeon
+							.akkordeon__head
+								span Albania
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									ul
+										li Istanbul Sabiha Gokcen Airport (SAW)
+										li Alanya
+										li Gazipaşa - Alanya Airport (GZP)
+										li Antalya
+										li Antalya Airport (AYT)
+										li Belek
+										li Dalaman Airport (DLM)
+										li Bodrum
+									a(href="#").akkordeon__button.btn-hover Rent a car in Turkey
+						.akkordeon
+							.akkordeon__head
+								span Albania
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									ul
+										li Istanbul Sabiha Gokcen Airport (SAW)
+										li Alanya
+										li Gazipaşa - Alanya Airport (GZP)
+										li Antalya
+										li Antalya Airport (AYT)
+										li Belek
+										li Dalaman Airport (DLM)
+										li Bodrum
+									a(href="#").akkordeon__button.btn-hover Rent a car in Turkey
+						.akkordeon
+							.akkordeon__head
+								span Albania
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									ul
+										li Istanbul Sabiha Gokcen Airport (SAW)
+										li Alanya
+										li Gazipaşa - Alanya Airport (GZP)
+										li Antalya
+										li Antalya Airport (AYT)
+										li Belek
+										li Dalaman Airport (DLM)
+										li Bodrum
+									a(href="#").akkordeon__button.btn-hover Rent a car in Turkey
+						.akkordeon
+							.akkordeon__head
+								span Albania
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									ul
+										li Istanbul Sabiha Gokcen Airport (SAW)
+										li Alanya
+										li Gazipaşa - Alanya Airport (GZP)
+										li Antalya
+										li Antalya Airport (AYT)
+										li Belek
+										li Dalaman Airport (DLM)
+										li Bodrum
+									a(href="#").akkordeon__button.btn-hover Rent a car in Turkey
+					.switch__block
+						.akkordeon
+							.akkordeon__head
+								span Albania
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									ul
+										li Istanbul Sabiha Gokcen Airport (SAW)
+										li Alanya
+										li Gazipaşa - Alanya Airport (GZP)
+										li Antalya
+										li Antalya Airport (AYT)
+										li Belek
+										li Dalaman Airport (DLM)
+										li Bodrum
+									a(href="#").akkordeon__button.btn-hover Rent a car in Turkey
+						.akkordeon
+							.akkordeon__head
+								span Albania
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									ul
+										li Istanbul Sabiha Gokcen Airport (SAW)
+										li Alanya
+										li Gazipaşa - Alanya Airport (GZP)
+										li Antalya
+										li Antalya Airport (AYT)
+										li Belek
+										li Dalaman Airport (DLM)
+										li Bodrum
+									a(href="#").akkordeon__button.btn-hover Rent a car in Turkey
+						.akkordeon
+							.akkordeon__head
+								span Albania
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									ul
+										li Istanbul Sabiha Gokcen Airport (SAW)
+										li Alanya
+										li Gazipaşa - Alanya Airport (GZP)
+										li Antalya
+										li Antalya Airport (AYT)
+										li Belek
+										li Dalaman Airport (DLM)
+										li Bodrum
+									a(href="#").akkordeon__button.btn-hover Rent a car in Turkey
+						.akkordeon
+							.akkordeon__head
+								span Albania
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									ul
+										li Istanbul Sabiha Gokcen Airport (SAW)
+										li Alanya
+										li Gazipaşa - Alanya Airport (GZP)
+										li Antalya
+										li Antalya Airport (AYT)
+										li Belek
+										li Dalaman Airport (DLM)
+										li Bodrum
+									a(href="#").akkordeon__button.btn-hover Rent a car in Turkey
+					.switch__block
+						.akkordeon
+							.akkordeon__head
+								span Albania
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									ul
+										li Istanbul Sabiha Gokcen Airport (SAW)
+										li Alanya
+										li Gazipaşa - Alanya Airport (GZP)
+										li Antalya
+										li Antalya Airport (AYT)
+										li Belek
+										li Dalaman Airport (DLM)
+										li Bodrum
+									a(href="#").akkordeon__button.btn-hover Rent a car in Turkey
+						.akkordeon
+							.akkordeon__head
+								span Albania
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									ul
+										li Istanbul Sabiha Gokcen Airport (SAW)
+										li Alanya
+										li Gazipaşa - Alanya Airport (GZP)
+										li Antalya
+										li Antalya Airport (AYT)
+										li Belek
+										li Dalaman Airport (DLM)
+										li Bodrum
+									a(href="#").akkordeon__button.btn-hover Rent a car in Turkey
+						.akkordeon
+							.akkordeon__head
+								span Albania
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									ul
+										li Istanbul Sabiha Gokcen Airport (SAW)
+										li Alanya
+										li Gazipaşa - Alanya Airport (GZP)
+										li Antalya
+										li Antalya Airport (AYT)
+										li Belek
+										li Dalaman Airport (DLM)
+										li Bodrum
+									a(href="#").akkordeon__button.btn-hover Rent a car in Turkey
+						.akkordeon
+							.akkordeon__head
+								span Albania
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									ul
+										li Istanbul Sabiha Gokcen Airport (SAW)
+										li Alanya
+										li Gazipaşa - Alanya Airport (GZP)
+										li Antalya
+										li Antalya Airport (AYT)
+										li Belek
+										li Dalaman Airport (DLM)
+										li Bodrum
+									a(href="#").akkordeon__button.btn-hover Rent a car in Turkey
+					.switch__block
+						.akkordeon
+							.akkordeon__head
+								span Albania
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									ul
+										li Istanbul Sabiha Gokcen Airport (SAW)
+										li Alanya
+										li Gazipaşa - Alanya Airport (GZP)
+										li Antalya
+										li Antalya Airport (AYT)
+										li Belek
+										li Dalaman Airport (DLM)
+										li Bodrum
+									a(href="#").akkordeon__button.btn-hover Rent a car in Turkey
+						.akkordeon
+							.akkordeon__head
+								span Albania
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									ul
+										li Istanbul Sabiha Gokcen Airport (SAW)
+										li Alanya
+										li Gazipaşa - Alanya Airport (GZP)
+										li Antalya
+										li Antalya Airport (AYT)
+										li Belek
+										li Dalaman Airport (DLM)
+										li Bodrum
+									a(href="#").akkordeon__button.btn-hover Rent a car in Turkey
+						.akkordeon
+							.akkordeon__head
+								span Albania
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									ul
+										li Istanbul Sabiha Gokcen Airport (SAW)
+										li Alanya
+										li Gazipaşa - Alanya Airport (GZP)
+										li Antalya
+										li Antalya Airport (AYT)
+										li Belek
+										li Dalaman Airport (DLM)
+										li Bodrum
+									a(href="#").akkordeon__button.btn-hover Rent a car in Turkey
+						.akkordeon
+							.akkordeon__head
+								span Albania
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									ul
+										li Istanbul Sabiha Gokcen Airport (SAW)
+										li Alanya
+										li Gazipaşa - Alanya Airport (GZP)
+										li Antalya
+										li Antalya Airport (AYT)
+										li Belek
+										li Dalaman Airport (DLM)
+										li Bodrum
+									a(href="#").akkordeon__button.btn-hover Rent a car in Turkey
+					.switch__block
+						.akkordeon
+							.akkordeon__head
+								span Albania
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									ul
+										li Istanbul Sabiha Gokcen Airport (SAW)
+										li Alanya
+										li Gazipaşa - Alanya Airport (GZP)
+										li Antalya
+										li Antalya Airport (AYT)
+										li Belek
+										li Dalaman Airport (DLM)
+										li Bodrum
+									a(href="#").akkordeon__button.btn-hover Rent a car in Turkey
+						.akkordeon
+							.akkordeon__head
+								span Albania
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									ul
+										li Istanbul Sabiha Gokcen Airport (SAW)
+										li Alanya
+										li Gazipaşa - Alanya Airport (GZP)
+										li Antalya
+										li Antalya Airport (AYT)
+										li Belek
+										li Dalaman Airport (DLM)
+										li Bodrum
+									a(href="#").akkordeon__button.btn-hover Rent a car in Turkey
+						.akkordeon
+							.akkordeon__head
+								span Albania
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									ul
+										li Istanbul Sabiha Gokcen Airport (SAW)
+										li Alanya
+										li Gazipaşa - Alanya Airport (GZP)
+										li Antalya
+										li Antalya Airport (AYT)
+										li Belek
+										li Dalaman Airport (DLM)
+										li Bodrum
+									a(href="#").akkordeon__button.btn-hover Rent a car in Turkey
+						.akkordeon
+							.akkordeon__head
+								span Albania
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									ul
+										li Istanbul Sabiha Gokcen Airport (SAW)
+										li Alanya
+										li Gazipaşa - Alanya Airport (GZP)
+										li Antalya
+										li Antalya Airport (AYT)
+										li Belek
+										li Dalaman Airport (DLM)
+										li Bodrum
+									a(href="#").akkordeon__button.btn-hover Rent a car in Turkey
+
+		section.page-index__questions
+			.wrapper
+				h2 Frequent Questions
+				.switch
+					.switch__item.switch__item_active Booking
+					.switch__item Vehicle
+					.switch__item Insurance
+					.switch__item Deposit
+					.switch__item Damage
+					.switch__item Modify
+					.switch__item Pickup
+					.switch__item Return
+					.switch__item Return
+				.switch__blocks
+					.switch__block
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+					.switch__block
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+					.switch__block
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+					.switch__block
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+					.switch__block
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+					.switch__block
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+					.switch__block
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+					.switch__block
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+					.switch__block
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+						.akkordeon
+							.akkordeon__head
+								span Is car rental and car sharing the same thing?
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 13L0 13L-1.74846e-07 11L24 11L24 13Z" fill="#3A3A3A"/><path d="M13 0L13 24L11 24L11 -8.74227e-08L13 0Z" fill="#3A3A3A"/></svg>
+							.akkordeon__body
+								.akkordeon__inner
+									p No, car sharing is a short-term rental, most often for locals in big cities. Hire is a long-term service of a day or more, most often for tourists and business travelers. Thanks to a trip on a rental car, it becomes possible to explore every corner of the selected region, to see its attractions in a short period of time, because only you are the owner of a car in a given period of time. Car sharing needs to be sought, to catch a free car through the radar, the car may not have a child seat, and the car itself may simply not be there. In general, renting a car is better.
+									.inner__bottom
+										span Find this useful?
+										.like
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 9.06682V21H17.1347C18.286 21 19.2773 20.197 19.5031 19.0814L20.9523 11.9215C21.2512 10.4447 20.108 9.06682 18.5839 9.06682H13.0765L16.006 4.72477C16.9325 3.35153 16.2025 1.48582 14.5821 1.08553L14.5247 1.07134C13.6371 0.852088 12.7004 1.14715 12.1051 1.83351L5.83061 9.06682Z" fill=""/><path d="M5.83061 9.06682H1V21H5.83061M5.83061 9.06682V21M5.83061 9.06682L12.1051 1.83351C12.7004 1.14715 13.6371 0.852088 14.5247 1.07134L14.5821 1.08553C16.2025 1.48582 16.9325 3.35153 16.006 4.72477L13.0765 9.06682H18.5839C20.108 9.06682 21.2512 10.4447 20.9523 11.9215L19.5031 19.0814C19.2773 20.197 18.286 21 17.1347 21H5.83061" stroke="#059902" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span Yes
+										.dislike
+											<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.83061 12.9332V1H17.1347C18.286 1 19.2773 1.80301 19.5031 2.91858L20.9523 10.0785C21.2512 11.5553 20.108 12.9332 18.5839 12.9332H13.0765L16.006 17.2752C16.9325 18.6485 16.2025 20.5142 14.5821 20.9145L14.5247 20.9287C13.6371 21.1479 12.7004 20.8529 12.1051 20.1665L5.83061 12.9332Z" fill="#FF002F"/><path d="M5.83061 12.9332H1V1H5.83061M5.83061 12.9332V1M5.83061 12.9332L12.1051 20.1665C12.7004 20.8529 13.6371 21.1479 14.5247 20.9287L14.5821 20.9145C16.2025 20.5142 16.9325 18.6485 16.006 17.2752L13.0765 12.9332H18.5839C20.108 12.9332 21.2512 11.5553 20.9523 10.0785L19.5031 2.91858C19.2773 1.80301 18.286 1 17.1347 1H5.83061" stroke="#DF0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											span No
+			.wrapper
+				h2 Got questions?
+				form(action="#")
+					.form__left
+						p Feel free to ask and we'll reply within 2 hours.
+						p
+							| Or 
+							span use messengers
+							|  instead to get live answers
+						ul.form__socials
+							li.soc-viber
+								a(href="#")
+									img(src="img/svg/viber.svg" alt="Viber")
+							li.soc-whatsapp
+								a(href="#")
+									img(src="img/svg/whatsapp.svg" alt="whatsapp")
+							li.soc-telegram
+								a(href="#")
+									img(src="img/svg/telegram.svg" alt="telegram")
+							li.soc-messanger
+								a(href="#")
+									img(src="img/svg/messanger.svg" alt="messanger")
+							li.soc-skype
+								a(href="#")
+									img(src="img/svg/skype.svg" alt="skype")
+					.form__right
+						input(placeholder="Your Name" required type="text")
+						input(placeholder="Email Address" required type="email")
+						textarea(placeholder="Enter your text")
+						.bottom
+							.recapcha
+								img(src="img/recapcha.jpg" alt="Recapcha")
+							input(type="submit" value="Send message").btn-hover
+
+		//- section.page-index__subscribe(class="parallax-block" data-parallax="scroll" data-image-src="img/subscribe.jpeg")
+		section.page-index__subscribe
+			.wrapper
+				form(action="#").subscribe__sides
+					.subscribes__text
+						h3 Sign up to our newsletter
+						p Join 140,000 others by signing up for car hire deals, travel tips and competitions.
+					.subscribe__box
+						input(type="email" required placeholder="Email address")
+						input(type="submit" value="Subscribe").btn-hover
+					.subscribes__text_thx
+						h3 THANK YOU
+						p Thank you for signing up to our newsletter, a confirmation email has been sent to you.
+
+
+
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

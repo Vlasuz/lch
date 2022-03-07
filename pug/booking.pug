@@ -1,0 +1,115 @@
+extends includes/header.pug
+
+block content
+
+	main.page-inners.page-booking
+
+		.wrapper
+
+			h1 Booking
+			.page-booking__sides
+				form(action="#").page-booking__lft
+					h2 Main driver details
+					.page-booking__form
+						.form__block
+							label
+								span First name (in latin letters)
+								input(type="text")
+							label
+								span Last name (in latin letters)
+								input(type="text")
+						.form__block
+							label
+								span Email (to receive the voucher)
+								input(type="text")
+						.form__block
+							label
+								span Phone (with enternational + code)
+								input(type="text")
+							.label
+								span Any messengers on this phone number?
+								.label__checkboxes
+									input(type="checkbox")#formCh1
+									label(for="formCh1").label-checkbox Viber
+									input(type="checkbox")#formCh2
+									label(for="formCh2").label-checkbox Telegram
+									input(type="checkbox")#formCh3
+									label(for="formCh3").label-checkbox Whatsapp
+						.form__block.form__block_long
+							label
+								span Additional requirements (optional)
+								input(type="text")
+					.page-booking__term
+						h2
+							img(src="img/booking/iIco.svg" alt="Ico")
+							span Terms and conditions
+						ul
+							li Driving licence and passport / id on pickup.
+							li Prepayment refundable until: 20.12.2021 10:00 UTC
+							li Driver's age: 23+
+							li Driving experience: 2+ years
+							li Fuel policy: Same/Same
+							li Late return: 1 hours free
+							li Crossing borders: upon prior approval. Allowed only: Armenia , Azerbaijan , Turkey
+							li Insurance invalid: alcohol, unmade roads, unauthorised driver, intentional or negligent damages
+							li Flat tires: client responsible
+							li Restricted regions: Abkhazia, Tskhinvali, Tusheti, Ushguli
+							li Unlimited mileage for this trip.
+							li Security deposit is not required
+							li In the unlikely event we might have to supply the same or a higher class model.
+					.page-booking__bottom
+						.checkbox
+							input(type="checkbox")#botCh1
+							label(for="botCh1").label-checkbox I have read, understood and accepted Terms of Service and Privacy Policy and Rental Conditions above.
+						.bottom__buttons
+							button.back Go back
+							button(type="submit").submit.btn-hover Confirm and complete
+
+				.page-booking__rht
+					img(src="img/booking/car1.jpg" alt="Photo").rht__photo
+					.rht__info
+						.info__top
+							h2 Subaru Forester
+						.info__center
+							h2 Pickup
+							.center__block
+								.center__item
+									img(src="img/index/calendar.svg" alt="calendar")
+									span 07/01/2022
+								.center__item
+									img(src="img/index/time.svg" alt="calendar")
+									span 10:00
+								.center__item.center__item_long
+									img(src="img/index/search.svg" alt="calendar")
+									span Tbilisi, Company office (Kote Apkhazi)
+							h2 Return
+							.center__block
+								.center__item
+									img(src="img/index/calendar.svg" alt="calendar")
+									span 07/01/2022
+								.center__item
+									img(src="img/index/time.svg" alt="calendar")
+									span 10:00
+								.center__item.center__item_long
+									img(src="img/index/search.svg" alt="calendar")
+									span Tbilisi, Company office (Kote Apkhazi)
+						.info__bottom
+							.bottom__item
+								span TOTAL
+								.blockInfoTextModal
+									img(src="img/single/qRed.svg" alt="Ico")
+									.blockInfoTextModal__text Your voucher will have the total price in Georgian Lari (GEL).
+								span.blockInfoTextModal ₾700
+									.blockInfoTextModal__text Around 210 USD as of today
+							.bottom__item
+								span Pay now
+								span ₾0
+							.bottom__item
+								span Pay on pickup
+								span ₾700
+
+
+
+
+
+	include includes/footer.pug
