@@ -756,6 +756,8 @@ $(document).ready(function () {
 		$('.list__content_lots').each(function () {
 			listMoreCount = $(this).data('show-items')
 
+			console.log(listMoreCount)
+
 				
 			$(this).find('.item-more-block').each(function () {
 				if( $(this).index() < listMoreCount ){

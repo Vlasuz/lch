@@ -1012,6 +1012,7 @@ p.subtitle{
 		border: 1px solid #F91942;
 	}
 
+	.h1,
 	h1{
 		font-weight: 900;
 		font-size: 40px;
@@ -1126,12 +1127,14 @@ p.subtitle{
 @import "_contacts.scss";
 @import "_blog.scss";
 @import "_company.scss";
+@import "_post.scss";
 @import "_single.scss";
 @import "_booking.scss";
 @import "_footer.scss";
 
 
 @media screen and (max-width: 1024px) {
+	.page-inners .h1,
 	.page-inners h1{
 		margin-bottom: 30px;
 	}
@@ -1162,6 +1165,7 @@ p.subtitle{
 }
 
 @media screen and (max-width: 992px) {
+	.page-inners .h1,
 	.page-inners h1{
 		font-size: 32px;
 		line-height: 44px;
@@ -1208,6 +1212,7 @@ p.subtitle{
 }
 
 @media screen and (max-width: 700px) {
+	.page-inners .h1,
 	.page-inners h1{
 		font-size: 28px;
 		line-height: 38px;
@@ -1389,6 +1394,7 @@ p.subtitle{
 }
 
 @media screen and (max-width: 400px) {
+	.page-inners .h1,
 	.page-inners h1{
 		font-size: 24px;
 		line-height: 33px;

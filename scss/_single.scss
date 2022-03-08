@@ -1,7 +1,7 @@
 .select2-container--default .select2-selection--single .select2-selection__rendered{
 	display: flex;
 	align-items: center;
-	padding: 12px 15px;
+	// padding: 12px 15px;
 }
 
 .selection{
@@ -529,6 +529,9 @@
 			grid-row-gap: 20px;
 			width: 100%;
 			margin-left: 35px;
+			.select2{
+				padding: 12px 15px;
+			}
 			input{
 				font-family: Roboto;
 				font-weight: normal;
