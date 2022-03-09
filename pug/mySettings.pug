@@ -1,0 +1,74 @@
+extends includes/header.pug
+
+block content
+
+	main.page-profile.page-mySettings
+
+		.wrapper
+
+			.page-profile__top
+				h1 My settings
+				.page-profile__email
+					a(href="#") akimvadim@gmail.com
+					button(data-popup="change-email") change
+
+			ul.page-profile__switcher
+				li
+					a(href="#") bookings
+				li
+					a(href="#") messages
+				li.li_active
+					a(href="#") settings
+
+			.page-mySettings__sides
+				.page-mySettings__photo
+					.photo__top
+						b Your photo
+						button.clear
+							span CLEAR
+							img(src="img/mySettings/close.svg" alt="Close")
+					.photo__inner
+						img(src="img/mySettings/photo1.jpg" alt="Photo")
+				.page-mySettings__info
+					.info__block
+						label
+							span first name
+							input(type="name")
+						label
+							span first name
+							input(type="name")
+						label
+							span phone
+							input(type="num")
+						button.block-submit.btn-hover Save profile
+					.info__block
+						label
+							span Messenger
+							.select
+								.select__head
+									span - - - - - - - - - - - - - - - -
+
+								.select__body
+						label
+							span Messenger id
+							span.input
+								input(type="name")
+								button.delete
+									img(src="img/mySettings/close.svg" alt="Close")
+						button.block-submit.btn-hover Add messenger
+					.info__block
+						label
+							span Old password
+							input(type="password")
+						label
+							span New password
+							input(type="password")
+						label
+							span New password confirmation
+							input(type="password")
+						button.block-submit.btn-hover Change password
+
+
+
+
+	include includes/footer.pug

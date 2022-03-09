@@ -1524,6 +1524,162 @@ p.subtitle span {
   color: #f91942;
   border-bottom: 1px solid #f91942
 }
+.page-profile .select__head,
+.page-profile input {
+  background: #fff;
+  border: 1px solid silver;
+  border-radius: 3px;
+  height: 50px;
+  width: 100%;
+  display: block;
+  padding: 0 15px;
+  font-family: Roboto;
+  font-size: 20px;
+  line-height: 23px;
+  color: #424242
+}
+.page-profile .select__head span,
+.page-profile input span {
+  margin: 0
+}
+.page-profile .select_active .select__head:after {
+  -webkit-transform: scaleY(-1);
+  -ms-transform: scaleY(-1);
+  transform: scaleY(-1)
+}
+.page-profile .input {
+  position: relative
+}
+.page-profile .input .delete {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 15px;
+  display: block;
+  background: 0 0;
+  border: none;
+  cursor: pointer
+}
+.page-profile .input .delete img {
+  display: block
+}
+.page-profile .select__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+.page-profile .select__head:after {
+  content: '';
+  background: url(../img/mySettings/arrBottom.svg) no-repeat;
+  background-size: contain;
+  width: 10px;
+  height: 6px;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.page-profile h1 {
+  font-weight: 900;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #3a3a3a;
+  margin-bottom: 20px
+}
+.page-profile__switcher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 -20px;
+  position: relative;
+  margin-top: 60px;
+  margin-bottom: 50px
+}
+.page-profile__switcher:after {
+  content: '';
+  background: #fff;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  width: 20px
+}
+.page-profile__switcher:before {
+  content: '';
+  background: #fff;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  width: 20px
+}
+.page-profile__switcher a {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #3a3a3a;
+  padding-bottom: 16px;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  border-bottom: 2px solid transparent
+}
+.page-profile__switcher a:hover {
+  color: #f91942
+}
+.page-profile__switcher li {
+  border-bottom: 1px solid #d8d8d8;
+  padding: 0 20px
+}
+.page-profile__switcher li.li_active a {
+  border-bottom: 2px solid #f91942;
+  color: #f91942
+}
+.page-profile__switcher li:last-child {
+  width: 100%
+}
+.page-profile__email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
+}
+.page-profile__email a {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 27px;
+  color: #a0a0a0;
+  margin-right: 20px
+}
+.page-profile__email button {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #424242;
+  background: 0 0;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  text-decoration: underline
+}
+.page-profile__email button:hover {
+  color: #f91942
+}
 header {
   margin-bottom: 50px
 }
@@ -8603,6 +8759,173 @@ header {
     margin: 10px 0
   }
 }
+.page-mySettings {
+  margin-bottom: 100px
+}
+.page-mySettings__sides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
+}
+.page-mySettings__photo {
+  max-width: 360px;
+  width: 100%;
+  margin-right: 35px
+}
+.page-mySettings__photo .photo__inner {
+  background: #fafafa;
+  border: 2px dashed #cdcdcd;
+  padding: 20px;
+  max-width: 360px;
+  width: 100%;
+  height: 360px
+}
+.page-mySettings__photo .photo__inner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 5px
+}
+.page-mySettings__photo .photo__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 16px
+}
+.page-mySettings__photo .photo__top b {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #8a8a8a
+}
+.page-mySettings__photo .photo__top .clear {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #f91942;
+  border: none;
+  cursor: pointer;
+  background: 0 0
+}
+.page-mySettings__photo .photo__top .clear span {
+  margin-right: 8px
+}
+.page-mySettings__info {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  grid-column-gap: 35px;
+  grid-row-gap: 40px;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2,1fr)
+}
+.page-mySettings__info .block-submit {
+  height: 50px;
+  background: #f91942;
+  border-radius: 45px;
+  max-width: 260px;
+  width: 100%;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #fff;
+  display: block;
+  margin-top: 30px;
+  margin-left: auto
+}
+.page-mySettings__info label {
+  display: block;
+  margin-bottom: 24px
+}
+.page-mySettings__info label span {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 16px;
+  display: block;
+  text-transform: uppercase;
+  color: #8a8a8a
+}
+@media screen and (max-width:1024px) {
+  .page-mySettings__photo .photo__inner {
+    max-width: 250px;
+    height: 250px;
+    padding: 14px
+  }
+  .page-mySettings__photo {
+    max-width: 250px
+  }
+  .page-mySettings__photo .photo__top .clear img {
+    width: 18px
+  }
+  .page-mySettings__photo .photo__top .clear span,
+  .page-mySettings__photo .photo__top b {
+    font-size: 18px;
+    line-height: normal
+  }
+  .page-mySettings__photo .photo__top {
+    margin-bottom: 13px
+  }
+  .page-mySettings__info label {
+    margin-bottom: 20px
+  }
+  .page-mySettings__info label span {
+    font-size: 18px;
+    line-height: normal;
+    margin-bottom: 14px
+  }
+  .page-mySettings__info .block-submit {
+    margin-top: 20px
+  }
+}
+@media screen and (max-width:992px) {
+  .page-mySettings__info {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr
+  }
+}
+@media screen and (max-width:700px) {
+  .page-mySettings__sides {
+    display: block
+  }
+  .page-mySettings__photo .photo__inner {
+    max-width: 320px;
+    height: 320px
+  }
+  .page-mySettings__photo {
+    max-width: 320px;
+    margin-bottom: 40px
+  }
+  .page-mySettings__info .block-submit {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 360px;
+    margin-top: 30px
+  }
+}
+@media screen and (max-width:400px) {
+  .page-mySettings__photo,
+  .page-mySettings__photo .photo__inner {
+    max-width: 100%;
+    height: auto
+  }
+}
 .select2-container--default .select2-selection--single .select2-selection__rendered {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11275,6 +11598,23 @@ footer {
   }
 }
 @media screen and (max-width:1024px) {
+  .page-profile__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+  }
+  .page-profile h1 {
+    margin-bottom: 0
+  }
+  .page-profile__switcher {
+    margin-top: 40px
+  }
   .page-inners .h1,
   .page-inners h1 {
     margin-bottom: 30px
@@ -11317,6 +11657,28 @@ footer {
   }
 }
 @media screen and (max-width:992px) {
+  .page-profile h1 {
+    font-size: 32px;
+    line-height: 44px
+  }
+  .page-profile__email a {
+    font-size: 18px
+  }
+  .page-profile__email button {
+    font-size: 16px;
+    line-height: 19px
+  }
+  .page-profile__switcher li {
+    padding: 0 15px
+  }
+  .page-profile__switcher {
+    margin-left: -15px;
+    margin-right: -15px
+  }
+  .page-profile__switcher:after,
+  .page-profile__switcher:before {
+    width: 15px
+  }
   .page-texts__title span {
     font-size: 20px;
     line-height: 27px
@@ -11370,6 +11732,21 @@ footer {
   }
 }
 @media screen and (max-width:700px) {
+  .page-profile__switcher a {
+    font-size: 18px;
+    line-height: 24px
+  }
+  .page-profile h1 {
+    font-size: 28px;
+    line-height: normal;
+    margin-bottom: 14px
+  }
+  .page-profile__top {
+    display: block
+  }
+  .page-profile__switcher {
+    margin-bottom: 30px
+  }
   .page-texts__inner {
     padding: 0 15px;
     padding-bottom: 20px
@@ -11593,6 +11970,25 @@ footer {
   }
 }
 @media screen and (max-width:400px) {
+  .page-profile__switcher li {
+    padding: 0 6px
+  }
+  .page-profile__switcher {
+    margin-left: -6px;
+    margin-right: -6px
+  }
+  .page-profile__switcher:after,
+  .page-profile__switcher:before {
+    width: 6px
+  }
+  .page-profile h1 {
+    font-size: 24px
+  }
+  .page-profile__email {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+  }
   .page-inners .h1,
   .page-inners h1 {
     font-size: 24px;
