@@ -1,0 +1,155 @@
+.page-helpFaq{
+
+	.page-texts__title{
+		span{
+			color: #F91942;
+		}
+	}
+
+	.akkordeon{
+		border-radius: 5px;
+		overflow: hidden;
+		.blockInfoTextModal{
+			border-bottom: 1px dashed #424242;
+			&__text{
+				right: -37px;
+				&:after{
+					left: 55%;
+				}
+			}
+		}
+		&:not(:last-child){
+			margin-bottom: 20px;
+		}
+		&__body{
+			padding: 14px 24px;
+			background: #fff;
+			.photos{
+				margin: 30px -10px;
+				display: flex;
+				width: 100%;
+				img{
+					display: block;
+					margin: 0 10px;
+					max-width: 360px;
+					width: calc(50% - 20px);
+				}
+			}
+			p{
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 20px;
+				line-height: 150%;
+				color: #424242;
+				margin: 10px 0;
+			}
+			a{
+				color: #F91942;
+				text-decoration: underline;
+				transition: all .3s ease;
+				&:hover{
+					color: #DB1F35;
+				}
+			}
+		}
+		&__head{
+			background: #FFFFFF;
+			min-height: 76px;
+			padding: 13px 24px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			transition: all .3s ease;
+			&:hover{
+				background: rgba(#F91942, .1);
+			}
+			span{
+				font-family: Nunito Sans;
+				font-weight: 900;
+				font-size: 18px;
+				line-height: 25px;
+				text-transform: uppercase;
+				transition: all .3s ease;
+				color: #3A3A3A;
+				margin-right: 20px;
+			}
+			svg{
+				min-width: 24px;
+				width: 24px;
+			}
+			path{
+				transition: all .3s ease;
+			}
+		}
+		&_active{
+			.akkordeon__head{
+				background: #F91942;
+				span{
+					color: #fff;
+				}
+				path{
+					fill: #fff;
+					&:last-child{
+						opacity: 0;
+					}
+				}
+			}	
+		}
+	}
+}
+
+
+// MEDIA
+
+@media screen and (max-width: 1024px) {
+	.page-helpFaq .akkordeon__body p{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.page-helpFaq .akkordeon .blockInfoTextModal__text{
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.page-helpFaq .page-texts__inner{
+		margin-bottom: 0px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.page-helpFaq .page-texts__inner{
+		margin-left: -20px;
+		margin-right: -20px;
+		border-radius: 0;
+	}
+	.page-helpFaq .akkordeon__head span{
+		font-size: 16px;
+		line-height: 22px;
+	}
+	.page-helpFaq .akkordeon__body .photos{
+		margin: 20px -6px;
+	}
+	.page-helpFaq .akkordeon__body .photos img{
+		margin: 0 6px;
+		width: calc(50% - 12px);
+	}
+	.page-helpFaq .akkordeon__body{
+		padding: 14px 20px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.page-helpFaq .akkordeon__body{
+		padding: 15px;
+	}
+	.page-helpFaq .akkordeon__body .photos{
+		display: block;
+		margin: 20px 0;
+		img{
+			width: 100%;
+			margin: 10px 0;
+		}
+	}
+}
