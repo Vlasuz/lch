@@ -1406,6 +1406,124 @@ p.subtitle span {
   justify-content: center;
   margin: 0 4px
 }
+.page-texts__inner {
+  padding: 0 24px;
+  padding-bottom: 50px;
+  background: #fafafa;
+  border-radius: 10px;
+  margin-top: 34px;
+  margin-bottom: 40px
+}
+.page-texts__block {
+  padding-top: 50px
+}
+.page-texts__title {
+  margin-bottom: 30px
+}
+.page-texts__title span {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #3a3a3a;
+  padding-left: 20px;
+  min-height: 36px;
+  border-left: 2px solid #f91942
+}
+.page-texts__text a {
+  color: #f91942;
+  text-decoration: underline;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.page-texts__text a:hover {
+  color: #db1f35
+}
+.page-texts__text ul {
+  padding: 10px 0
+}
+.page-texts__text ul li {
+  font-family: Roboto;
+  font-size: 20px;
+  line-height: 150%;
+  color: #424242;
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
+}
+.page-texts__text ul li:before {
+  content: '';
+  min-width: 4px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 10px;
+  background: #3a3a3a;
+  margin-top: 12px
+}
+.page-texts__text p {
+  font-family: Roboto;
+  font-size: 20px;
+  line-height: 150%;
+  color: #424242;
+  margin: 10px 0
+}
+.page-texts__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  position: relative
+}
+.page-texts__tabs:after {
+  content: '';
+  background: #fff;
+  position: absolute;
+  height: 100%;
+  width: 15px;
+  left: 0
+}
+.page-texts__tabs:before {
+  content: '';
+  background: #fff;
+  position: absolute;
+  height: 100%;
+  width: 15px;
+  right: 0
+}
+.page-texts__tabs li {
+  padding: 0 15px;
+  border-bottom: 1px solid #979797;
+  padding-bottom: 13px;
+  padding-top: 20px
+}
+.page-texts__tabs a {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #3a3a3a;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  padding-bottom: 13px;
+  margin-bottom: -13px
+}
+.page-texts__tabs a:hover {
+  color: #f91942;
+  border-bottom: 1px solid #f91942
+}
 header {
   margin-bottom: 50px
 }
@@ -11029,8 +11147,27 @@ footer {
   .car__item:nth-child(2n+2) .rht__text:after {
     left: 90%
   }
+  .page-texts__text p,
+  .page-texts__text ul li {
+    font-size: 16px;
+    line-height: 150%
+  }
+  .page-texts__block {
+    padding-top: 30px
+  }
+  .page-texts__inner {
+    padding: 0 20px;
+    padding-bottom: 30px
+  }
 }
 @media screen and (max-width:992px) {
+  .page-texts__title span {
+    font-size: 20px;
+    line-height: 27px
+  }
+  .page-texts__title {
+    margin-bottom: 20px
+  }
   .page-inners .h1,
   .page-inners h1 {
     font-size: 32px;
@@ -11077,6 +11214,14 @@ footer {
   }
 }
 @media screen and (max-width:700px) {
+  .page-texts__inner {
+    padding: 0 15px;
+    padding-bottom: 20px
+  }
+  .page-texts__title span {
+    font-size: 18px;
+    line-height: 25px
+  }
   .page-inners .h1,
   .page-inners h1 {
     font-size: 28px;
@@ -11301,6 +11446,12 @@ footer {
     margin-bottom: 20px;
     font-size: 18px;
     line-height: normal
+  }
+  .page-texts__block {
+    padding-top: 20px
+  }
+  .page-texts__inner {
+    margin-top: 30px
   }
 }
 a.btn-hover,
