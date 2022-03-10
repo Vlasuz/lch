@@ -44,6 +44,18 @@ $(document).ready(function () {
 
 
 
+	// MYMESSAGES
+
+	$('.users__item').click(function () {
+		$('.chat__block').hide()
+		$('.chat__block').eq($(this).index()).show()
+
+		$('.users__item').removeClass('users__item_active')
+		$(this).addClass('users__item_active')
+	})
+
+	// MYMESSAGES
+
 
 
 
@@ -389,6 +401,13 @@ $(document).ready(function () {
 		$(this).parent().find('.akkordeon__body').slideToggle(200)
 		$(this).parent().toggleClass('akkordeon_active')
 	})
+	$(document).click(function (e) {
+	    var container = $('.akkordeon');
+	    if (container.has(e.target).length === 0){
+	        container.find('.akkordeon__body').slideUp(200)
+	    	container.removeClass('akkordeon_active')
+	    }
+	});
 
 	// AKKORDEON
 
@@ -830,7 +849,29 @@ $(document).ready(function () {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 	// MEDIA
+
+	if( $(window).width() < 992 ){
+		$('.users__item').click(function () {
+			$('.chat__block').hide()
+			$('.chat__block').eq($(this).index()).show()
+			$('.page-myMessages__users').hide()
+
+			$('.users__item').removeClass('users__item_active')
+			$(this).addClass('users__item_active')
+		})
+	}
 
 	if( $(window).width() < 576 ){
 		$('.page-country__find .find__rht').slick({

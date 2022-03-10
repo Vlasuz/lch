@@ -1,0 +1,181 @@
+extends includes/header-login.pug
+
+block content
+
+	main.page-profile.page-myBookings
+
+		.wrapper
+
+			.page-profile__top
+				h1 My settings
+				.page-profile__email
+					a(href="#") akimvadim@gmail.com
+					button(data-popup="change-email") change
+
+			ul.page-profile__switcher
+				li.li_active
+					a(href="myBookings.html") bookings
+				li
+					a(href="myMessages.html") messages
+				li
+					a(href="mySettings.html") settings
+
+			.page-myBookings__notes
+				.notes__item.notes__item_blue
+					.item__close
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.5303 7.53033C13.8232 7.23744 13.8232 6.76256 13.5303 6.46967C13.2374 6.17678 12.7625 6.17678 12.4696 6.46967L13.5303 7.53033ZM6.46961 12.4697C6.17672 12.7626 6.17672 13.2374 6.46961 13.5303C6.76251 13.8232 7.23738 13.8232 7.53027 13.5303L6.46961 12.4697ZM7.5304 6.46967C7.2375 6.17678 6.76263 6.17678 6.46973 6.46967C6.17684 6.76256 6.17684 7.23744 6.46973 7.53033L7.5304 6.46967ZM12.4697 13.5303C12.7626 13.8232 13.2375 13.8232 13.5304 13.5303C13.8233 13.2374 13.8233 12.7626 13.5304 12.4697L12.4697 13.5303ZM12.4696 6.46967L6.46961 12.4697L7.53027 13.5303L13.5303 7.53033L12.4696 6.46967ZM6.46973 7.53033L12.4697 13.5303L13.5304 12.4697L7.5304 6.46967L6.46973 7.53033ZM18.25 10C18.25 14.5563 14.5563 18.25 10 18.25V19.75C15.3848 19.75 19.75 15.3848 19.75 10H18.25ZM10 18.25C5.44365 18.25 1.75 14.5563 1.75 10H0.25C0.25 15.3848 4.61522 19.75 10 19.75V18.25ZM1.75 10C1.75 5.44365 5.44365 1.75 10 1.75V0.25C4.61522 0.25 0.25 4.61522 0.25 10H1.75ZM10 1.75C14.5563 1.75 18.25 5.44365 18.25 10H19.75C19.75 4.61522 15.3848 0.25 10 0.25V1.75Z" fill="#0082BE"/></svg>
+					p PENDING status means we still have to confirm the availability of the vehicle with the car rental supplier. Once confirmed, we will send a booking confirmation. In cases where the requested vehicle is not available, we will contact you to advise on other options. 92% of al our reservations are confirmed, but yot can still cancel your reservation free of cost at this stage.
+				.notes__item.notes__item_green
+					.item__close
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.5303 7.53033C13.8232 7.23744 13.8232 6.76256 13.5303 6.46967C13.2374 6.17678 12.7625 6.17678 12.4696 6.46967L13.5303 7.53033ZM6.46961 12.4697C6.17672 12.7626 6.17672 13.2374 6.46961 13.5303C6.76251 13.8232 7.23738 13.8232 7.53027 13.5303L6.46961 12.4697ZM7.5304 6.46967C7.2375 6.17678 6.76263 6.17678 6.46973 6.46967C6.17684 6.76256 6.17684 7.23744 6.46973 7.53033L7.5304 6.46967ZM12.4697 13.5303C12.7626 13.8232 13.2375 13.8232 13.5304 13.5303C13.8233 13.2374 13.8233 12.7626 13.5304 12.4697L12.4697 13.5303ZM12.4696 6.46967L6.46961 12.4697L7.53027 13.5303L13.5303 7.53033L12.4696 6.46967ZM6.46973 7.53033L12.4697 13.5303L13.5304 12.4697L7.5304 6.46967L6.46973 7.53033ZM18.25 10C18.25 14.5563 14.5563 18.25 10 18.25V19.75C15.3848 19.75 19.75 15.3848 19.75 10H18.25ZM10 18.25C5.44365 18.25 1.75 14.5563 1.75 10H0.25C0.25 15.3848 4.61522 19.75 10 19.75V18.25ZM1.75 10C1.75 5.44365 5.44365 1.75 10 1.75V0.25C4.61522 0.25 0.25 4.61522 0.25 10H1.75ZM10 1.75C14.5563 1.75 18.25 5.44365 18.25 10H19.75C19.75 4.61522 15.3848 0.25 10 0.25V1.75Z" fill="#7CA554"/></svg>
+					p PENDING status means we still have to confirm the availability of the vehicle with the car rental supplier. Once confirmed, we will send a booking confirmation. In cases where the requested vehicle is not available, we will contact you to advise on other options. 92% of al our reservations are confirmed, but yot can still cancel your reservation free of cost at this stage.
+				.notes__item.notes__item_brown
+					.item__close
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.5303 7.53033C13.8232 7.23744 13.8232 6.76256 13.5303 6.46967C13.2374 6.17678 12.7625 6.17678 12.4696 6.46967L13.5303 7.53033ZM6.46961 12.4697C6.17672 12.7626 6.17672 13.2374 6.46961 13.5303C6.76251 13.8232 7.23738 13.8232 7.53027 13.5303L6.46961 12.4697ZM7.5304 6.46967C7.2375 6.17678 6.76263 6.17678 6.46973 6.46967C6.17684 6.76256 6.17684 7.23744 6.46973 7.53033L7.5304 6.46967ZM12.4697 13.5303C12.7626 13.8232 13.2375 13.8232 13.5304 13.5303C13.8233 13.2374 13.8233 12.7626 13.5304 12.4697L12.4697 13.5303ZM12.4696 6.46967L6.46961 12.4697L7.53027 13.5303L13.5303 7.53033L12.4696 6.46967ZM6.46973 7.53033L12.4697 13.5303L13.5304 12.4697L7.5304 6.46967L6.46973 7.53033ZM18.25 10C18.25 14.5563 14.5563 18.25 10 18.25V19.75C15.3848 19.75 19.75 15.3848 19.75 10H18.25ZM10 18.25C5.44365 18.25 1.75 14.5563 1.75 10H0.25C0.25 15.3848 4.61522 19.75 10 19.75V18.25ZM1.75 10C1.75 5.44365 5.44365 1.75 10 1.75V0.25C4.61522 0.25 0.25 4.61522 0.25 10H1.75ZM10 1.75C14.5563 1.75 18.25 5.44365 18.25 10H19.75C19.75 4.61522 15.3848 0.25 10 0.25V1.75Z" fill="#A55454"/></svg>
+					p PENDING status means we still have to confirm the availability of the vehicle with the car rental supplier. Once confirmed, we will send a booking confirmation. In cases where the requested vehicle is not available, we will contact you to advise on other options. 92% of al our reservations are confirmed, but yot can still cancel your reservation free of cost at this stage.
+
+			.page-myBookings__orders
+				.orders__item
+					.item__top
+						.item__photo
+							img(src="img/myBooking/photo1.jpg" alt="Photo")
+						.item__info
+							b.item__lot #4846
+							b.item__title SUBARU FORESTER
+							.item__owner Vadim
+						.item__rht
+							.item__status.item__status_approved Approved
+							.item__price $560.0
+							.item__deposit $600.00 deposit
+					.item__under
+						.item__info_mob
+							b.item__lot #4846
+							.item__owner Vadim
+							.item__status.item__status_declined Declined
+							b.item__title SUBARU FORESTER
+						.item__rht_mob
+							.item__price $560.0
+							.item__deposit $600.00 deposit
+							.item__owner Vadim
+					.item__center
+						.item__pickup
+							p pickup:
+							.item__date
+								img(src="img/index/calendar.svg" alt="Ico")
+								span Jan, 28, 2022
+							.item__time
+								img(src="img/index/time.svg" alt="Ico")
+								span 1 p.m.
+							.item__location
+								img(src="img/index/search.svg" alt="Ico")
+								span Karlovy Vary:
+								span Hotel Imperial
+						.item__return
+							p return:
+							.item__date
+								img(src="img/index/calendar.svg" alt="Ico")
+								span Jan, 28, 2022
+							.item__time
+								img(src="img/index/time.svg" alt="Ico")
+								span 1 p.m.
+							.item__location
+								img(src="img/index/search.svg" alt="Ico")
+								span Karlovy Vary:
+							.item__house
+								img(src="img/svg/miniHouse.svg" alt="Ico")
+								span Karlovy Vary:
+								span Hotel Imperial
+					.item__bottom
+						button
+							img(src="img/svg/message.svg" alt="Ico")
+							span Message
+						button
+							img(src="img/svg/voucher.svg" alt="Ico")
+							span Voucher
+						button
+							img(src="img/svg/starVec.svg" alt="Ico")
+							span Rate your rental
+						button.button_cancel
+							img(src="img/svg/cancelIco.svg" alt="Ico")
+							span Cancel
+				.orders__item
+					.item__top
+						.item__photo
+							img(src="img/myBooking/photo1.jpg" alt="Photo")
+						.item__info
+							b.item__lot #4846
+							b.item__title SUBARU FORESTER
+							.item__owner Vadim
+						.item__rht
+							.item__status.item__status_declined Declined
+							.item__price $560.0
+							.item__deposit $600.00 deposit
+					.item__under
+						.item__info_mob
+							b.item__lot #4846
+							.item__owner Vadim
+							.item__status.item__status_declined Declined
+							b.item__title SUBARU FORESTER
+						.item__rht_mob
+							.item__price $560.0
+							.item__deposit $600.00 deposit
+							.item__owner Vadim
+					.item__center
+						.item__pickup
+							p pickup:
+							.item__date
+								img(src="img/index/calendar.svg" alt="Ico")
+								span Jan, 28, 2022
+							.item__time
+								img(src="img/index/time.svg" alt="Ico")
+								span 1 p.m.
+							.item__location
+								img(src="img/index/search.svg" alt="Ico")
+								span Karlovy Vary:
+								span Hotel Imperial
+						.item__return
+							p return:
+							.item__date
+								img(src="img/index/calendar.svg" alt="Ico")
+								span Jan, 28, 2022
+							.item__time
+								img(src="img/index/time.svg" alt="Ico")
+								span 1 p.m.
+							.item__location
+								img(src="img/index/search.svg" alt="Ico")
+								span Karlovy Vary:
+							.item__house
+								img(src="img/svg/miniHouse.svg" alt="Ico")
+								span Karlovy Vary:
+								span Hotel Imperial
+					.item__bottom
+						button
+							img(src="img/svg/message.svg" alt="Ico")
+							span Message
+						button
+							img(src="img/svg/voucher.svg" alt="Ico")
+							span Voucher
+						button
+							img(src="img/svg/starVec.svg" alt="Ico")
+							span Rate your rental
+						button.button_cancel
+							img(src="img/svg/cancelIco.svg" alt="Ico")
+							span Cancel
+
+
+
+	.popup.popup__change-email
+		.popup__bgd
+		.popup__content
+			.popup__top
+				.popup__title Change your email
+				.popup__close
+					<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.5302 9.53033C17.8231 9.23744 17.8231 8.76256 17.5302 8.46967C17.2374 8.17678 16.7625 8.17678 16.4696 8.46967L17.5302 9.53033ZM8.46959 16.4697C8.1767 16.7626 8.1767 17.2374 8.46959 17.5303C8.76249 17.8232 9.23736 17.8232 9.53025 17.5303L8.46959 16.4697ZM9.53042 8.46967C9.23752 8.17678 8.76265 8.17678 8.46976 8.46967C8.17686 8.76256 8.17686 9.23744 8.46976 9.53033L9.53042 8.46967ZM16.4697 17.5303C16.7626 17.8232 17.2375 17.8232 17.5304 17.5303C17.8233 17.2374 17.8233 16.7626 17.5304 16.4697L16.4697 17.5303ZM16.4696 8.46967L8.46959 16.4697L9.53025 17.5303L17.5302 9.53033L16.4696 8.46967ZM8.46976 9.53033L16.4697 17.5303L17.5304 16.4697L9.53042 8.46967L8.46976 9.53033ZM24.25 13C24.25 19.2132 19.2132 24.25 13 24.25V25.75C20.0416 25.75 25.75 20.0416 25.75 13H24.25ZM13 24.25C6.7868 24.25 1.75 19.2132 1.75 13H0.25C0.25 20.0416 5.95837 25.75 13 25.75V24.25ZM1.75 13C1.75 6.7868 6.7868 1.75 13 1.75V0.25C5.95837 0.25 0.25 5.95837 0.25 13H1.75ZM13 1.75C19.2132 1.75 24.25 6.7868 24.25 13H25.75C25.75 5.95837 20.0416 0.25 13 0.25V1.75Z" fill="#F91942"/></svg>
+			.popup__inner
+				p To change your email kindly <a href="#">contact our support</a>.
+				button.popup__close Cancel
+
+
+
+
+	include includes/footer.pug

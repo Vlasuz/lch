@@ -1789,6 +1789,77 @@ header {
   margin-top: 20px;
   margin-bottom: 30px
 }
+.header__scrolldown .scrolldown__login.scrolldown__login {
+  display: block;
+  height: auto;
+  padding: 15px 20px
+}
+.header__scrolldown .scrolldown__login.scrolldown__login .select__body a {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 0
+}
+.header__scrolldown .scrolldown__login.scrolldown__login .select__body a:hover {
+  background: 0 0
+}
+.header__scrolldown .scrolldown__login.scrolldown__login .select__body a:hover span {
+  color: #f91942
+}
+.header__scrolldown .scrolldown__login.scrolldown__login .select__body span {
+  margin-left: 15px;
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: none;
+  color: #3a3a3a;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.header__scrolldown .scrolldown__login.scrolldown__login .select__body img {
+  min-width: 18px;
+  width: 18px
+}
+.header__scrolldown .scrolldown__login.scrolldown__login .select__body .logout {
+  padding-top: 16px;
+  margin-top: 10px;
+  border-top: 1px solid #d8d8d8;
+  border-radius: 0
+}
+.header__scrolldown .scrolldown__login.scrolldown__login .select__body .logout span {
+  color: #aaa;
+  text-transform: uppercase
+}
+.header__scrolldown .scrolldown__login.scrolldown__login .select__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start
+}
+.header__scrolldown .scrolldown__login.scrolldown__login .select__head span {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #3a3a3a;
+  margin-right: auto
+}
+.header__scrolldown .scrolldown__login.scrolldown__login .select__head img {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  margin-right: 12px
+}
 .header__scrolldown .scrolldown__top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2038,6 +2109,87 @@ header {
   border-left: 1px solid #dcdcdc;
   margin-left: 10px;
   padding-left: 10px
+}
+.header__login_user .akkordeon__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.header__login_user .akkordeon__head img {
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.header__login_user .akkordeon__body {
+  padding: 20px;
+  background: #fafafa;
+  -webkit-box-shadow: 1px -1px 13px rgba(0,0,0,.1);
+  box-shadow: 1px -1px 13px rgba(0,0,0,.1);
+  position: absolute;
+  width: 200px;
+  margin-top: 10px
+}
+.header__login_user .akkordeon__body a {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 6px 0
+}
+.header__login_user .akkordeon__body a:hover {
+  background: 0 0
+}
+.header__login_user .akkordeon__body a:hover span {
+  color: #f91942
+}
+.header__login_user .akkordeon__body span {
+  margin-left: 15px;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #3a3a3a;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.header__login_user .akkordeon__body img {
+  min-width: 18px;
+  width: 18px
+}
+.header__login_user .akkordeon__body .logout {
+  padding-top: 16px;
+  margin-top: 20px;
+  border-top: 1px solid #d8d8d8;
+  border-radius: 0
+}
+.header__login_user .akkordeon__body .logout span {
+  color: #aaa
+}
+.header__login_user .akkordeon_active .akkordeon__head .head__arr img {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg)
+}
+.header__login_user .head__photo {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  margin-right: 8px
+}
+.header__login_user .head__photo img {
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover
 }
 .header__login a {
   font-weight: 700;
@@ -5865,6 +6017,50 @@ header {
   justify-content: space-between;
   margin-bottom: 30px
 }
+.popup__change-email .popup__content {
+  max-width: 940px
+}
+.popup__change-email .popup__inner {
+  max-height: 100%
+}
+.popup__change-email .popup__top {
+  border-bottom: 1px solid #f91942;
+  padding-bottom: 30px;
+  margin-bottom: 40px
+}
+.popup__change-email .popup__title {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 33px;
+  text-transform: uppercase;
+  color: #3a3a3a
+}
+.popup__change-email p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #424242
+}
+.popup__change-email p a {
+  color: #f91942;
+  text-decoration: underline
+}
+.popup__change-email button {
+  background: #fafafa;
+  border: 1px solid #c4c4c4;
+  border-radius: 70px;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #a0a0a0;
+  max-width: 144px;
+  height: 50px;
+  width: 100%;
+  margin-top: 80px
+}
 @media screen and (max-height:768px) {
   .popup__inner {
     max-height: 80vh
@@ -8757,6 +8953,825 @@ header {
   .page-helpFaq .akkordeon__body .photos img {
     width: 100%;
     margin: 10px 0
+  }
+}
+.page-myBookings {
+  margin-bottom: 100px
+}
+.page-myBookings__notes .notes__item {
+  padding: 30px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding-right: 50px;
+  position: relative
+}
+.page-myBookings__notes .notes__item p {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%
+}
+.page-myBookings__notes .notes__item .item__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer
+}
+.page-myBookings__notes .notes__item_blue {
+  background: #e9f8ff
+}
+.page-myBookings__notes .notes__item_blue p {
+  color: #0082be
+}
+.page-myBookings__notes .notes__item_green {
+  background: #ebf6e0
+}
+.page-myBookings__notes .notes__item_green p {
+  color: #7ca554
+}
+.page-myBookings__notes .notes__item_brown {
+  background: #f6e0e0
+}
+.page-myBookings__notes .notes__item_brown p {
+  color: #a55454
+}
+.page-myBookings__notes .notes__item:last-child {
+  margin-bottom: 0
+}
+.page-myBookings__orders .item__info_mob {
+  display: none
+}
+.page-myBookings__orders .item__info_mob .item__status {
+  display: none
+}
+.page-myBookings__orders .item__rht_mob {
+  display: none
+}
+.page-myBookings__orders .orders__item {
+  background: #fff;
+  border: 1px solid silver;
+  margin-top: 30px;
+  border-radius: 10px;
+  padding: 30px
+}
+.page-myBookings__orders .item__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid #d8d8d8;
+  padding-bottom: 20px;
+  margin-bottom: 30px
+}
+.page-myBookings__orders .item__top b {
+  display: block
+}
+.page-myBookings__orders .item__photo {
+  margin-right: 30px
+}
+.page-myBookings__orders .item__lot {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 33px;
+  text-transform: uppercase;
+  color: #3a3a3a;
+  margin-top: 10px;
+  margin-bottom: 11px
+}
+.page-myBookings__orders .item__title {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 33px;
+  text-transform: uppercase;
+  color: #3a3a3a
+}
+.page-myBookings__orders .item__owner {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #8a8a8a;
+  margin-top: 8px
+}
+.page-myBookings__orders .item__rht {
+  margin-left: auto;
+  text-align: right
+}
+.page-myBookings__orders .item__status {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+  border-radius: 39px;
+  max-width: 107px;
+  width: 100%;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-bottom: 19px
+}
+.page-myBookings__orders .item__status_approved {
+  background: #5ec540
+}
+.page-myBookings__orders .item__status_declined {
+  background: #f22424
+}
+.page-myBookings__orders .item__price {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #3a3a3a
+}
+.page-myBookings__orders .item__deposit {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #8a8a8a;
+  margin-top: 8px
+}
+.page-myBookings__orders .item__pickup,
+.page-myBookings__orders .item__return {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 20px
+}
+.page-myBookings__orders .item__pickup p,
+.page-myBookings__orders .item__return p {
+  width: 100px;
+  min-width: 100px;
+  max-width: 100px;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #3a3a3a
+}
+.page-myBookings__orders .item__date,
+.page-myBookings__orders .item__house,
+.page-myBookings__orders .item__location,
+.page-myBookings__orders .item__time {
+  background: #fafafa;
+  border-radius: 3px 3px 1px 1px;
+  height: 50px;
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: none;
+  border-bottom: 1px solid #f91942;
+  margin-right: 16px
+}
+.page-myBookings__orders .item__date span,
+.page-myBookings__orders .item__house span,
+.page-myBookings__orders .item__location span,
+.page-myBookings__orders .item__time span {
+  margin-left: 15px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #3a3a3a
+}
+.page-myBookings__orders .item__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px
+}
+.page-myBookings__orders .item__bottom button {
+  background: #ececec;
+  border: 1px solid #b7b7b7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 50px;
+  padding: 0 25px;
+  border-radius: 45px;
+  margin-right: 30px;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.page-myBookings__orders .item__bottom button:hover {
+  background: #d6d3d3
+}
+.page-myBookings__orders .item__bottom span {
+  margin-left: 8px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #3a3a3a
+}
+.page-myBookings__orders .item__bottom .button_cancel {
+  margin-left: auto;
+  margin-right: 0
+}
+@media screen and (max-width:1024px) {
+  .page-myBookings__notes .notes__item {
+    padding: 20px;
+    padding-right: 50px
+  }
+  .page-myBookings__notes .notes__item p {
+    font-size: 14px
+  }
+  .page-myBookings__orders .item__lot,
+  .page-myBookings__orders .item__title {
+    font-size: 20px;
+    line-height: 27px
+  }
+  .page-myBookings__orders .item__deposit,
+  .page-myBookings__orders .item__owner {
+    font-size: 18px;
+    line-height: 21px
+  }
+  .page-myBookings__orders .item__status {
+    font-size: 16px;
+    line-height: 19px
+  }
+  .page-myBookings__orders .item__price {
+    font-size: 20px;
+    line-height: 23px
+  }
+  .page-myBookings__orders .item__lot {
+    margin-top: 0
+  }
+  .page-myBookings__orders .item__photo {
+    max-width: 180px;
+    margin-right: 20px
+  }
+  .page-myBookings__orders .item__photo img {
+    width: 100%
+  }
+  .page-myBookings__orders .orders__item {
+    padding: 20px
+  }
+  .page-myBookings__orders .item__pickup,
+  .page-myBookings__orders .item__return {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 0
+  }
+  .page-myBookings__orders .item__date,
+  .page-myBookings__orders .item__house,
+  .page-myBookings__orders .item__location,
+  .page-myBookings__orders .item__time {
+    margin-bottom: 15px
+  }
+  .page-myBookings__orders .item__pickup p,
+  .page-myBookings__orders .item__return p {
+    font-size: 18px;
+    line-height: 21px;
+    width: 95px;
+    max-width: 95px;
+    min-width: 95px;
+    margin-bottom: 15px
+  }
+  .page-myBookings__orders .item__date span,
+  .page-myBookings__orders .item__house span,
+  .page-myBookings__orders .item__location span,
+  .page-myBookings__orders .item__time span {
+    font-size: 16px;
+    line-height: 18px
+  }
+  .page-myBookings__orders .item__bottom button {
+    height: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 16px
+  }
+  .page-myBookings__orders .item__bottom span {
+    font-size: 18px;
+    line-height: 21px
+  }
+  .page-myBookings__orders .item__bottom {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 0
+  }
+  .page-myBookings__orders .item__bottom button {
+    margin-top: 20px
+  }
+  .page-myBookings {
+    margin-bottom: 80px
+  }
+}
+@media screen and (max-width:700px) {
+  .page-myBookings__orders .item__pickup p,
+  .page-myBookings__orders .item__return p {
+    max-width: 100%;
+    width: 100%
+  }
+  .page-myBookings__orders .item__date,
+  .page-myBookings__orders .item__house,
+  .page-myBookings__orders .item__location,
+  .page-myBookings__orders .item__time {
+    width: 100%;
+    margin-right: 0
+  }
+  .page-myBookings__orders .item__time {
+    margin-left: 20px
+  }
+  .page-myBookings__orders .item__date,
+  .page-myBookings__orders .item__time {
+    width: calc(50% - 10px)
+  }
+  .page-myBookings__orders .item__return {
+    margin-top: 15px
+  }
+  .page-myBookings .item__info {
+    display: none
+  }
+  .page-myBookings__orders .item__top {
+    margin-bottom: 20px
+  }
+  .page-myBookings__orders .item__info_mob {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+    grid-template-columns: repeat(2,auto);
+    grid-gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d8d8d8;
+    margin-bottom: 30px
+  }
+  .page-myBookings__orders .item__owner {
+    text-align: right;
+    margin-top: 0
+  }
+  .page-myBookings__orders .item__lot {
+    margin-bottom: 0
+  }
+  .page-myBookings {
+    margin-bottom: 60px
+  }
+}
+@media screen and (max-width:400px) {
+  .page-myBookings__orders .item__rht {
+    display: none
+  }
+  .page-myBookings__orders .item__photo {
+    margin: 0 auto
+  }
+  .page-myBookings__notes .notes__item {
+    padding: 15px 20px;
+    padding-right: 50px;
+    margin-left: -20px;
+    margin-right: -20px;
+    border-radius: 0
+  }
+  .page-myBookings__notes .notes__item:not(:last-child) {
+    margin-bottom: 15px
+  }
+  .page-myBookings__notes .notes__item .item__close {
+    top: 15px
+  }
+  .page-myBookings__notes .notes__item .item__close img {
+    display: block
+  }
+  .page-myBookings__orders .orders__item {
+    padding: 0;
+    border: none;
+    border-bottom: 10px solid #e5e5e5;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    border-radius: 0;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    margin-top: 0
+  }
+  .page-myBookings__orders .orders__item:first-child {
+    margin-top: 30px
+  }
+  .page-myBookings__orders .item__info_mob .item__owner {
+    display: none
+  }
+  .page-myBookings__orders .item__info_mob .item__status {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0
+  }
+  .page-myBookings__orders .item__rht_mob {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+    grid-template-columns: repeat(2,auto);
+    grid-gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d8d8d8;
+    margin-bottom: 30px
+  }
+  .page-myBookings__orders .item__deposit {
+    margin-top: 0;
+    -ms-grid-column: 1;
+    grid-column: 1
+  }
+  .page-myBookings__orders .item__info_mob {
+    margin-bottom: 20px
+  }
+  .page-myBookings {
+    margin-bottom: 50px
+  }
+}
+.page-myMessages {
+  margin-bottom: 100px
+}
+.page-myMessages__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid silver;
+  border-radius: 5px;
+  overflow: hidden;
+  min-height: 580px;
+  max-height: 580px
+}
+.page-myMessages__users {
+  max-width: 360px;
+  width: 100%;
+  border-right: 1px solid silver;
+  overflow: auto;
+  max-height: 580px
+}
+.page-myMessages__users .users__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px
+}
+.page-myMessages__users .users__item:nth-child(2n+1) {
+  background: #fafafa
+}
+.page-myMessages__users .users__item:hover {
+  background: rgba(249,25,66,.1);
+  cursor: pointer
+}
+.page-myMessages__users .users__item_active {
+  background: #f91942!important
+}
+.page-myMessages__users .users__item_active .item__name,
+.page-myMessages__users .users__item_active .item__text p {
+  color: #fff
+}
+.page-myMessages__users .item__photo {
+  max-width: 50px;
+  height: 50px;
+  margin-right: 20px
+}
+.page-myMessages__users .item__photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 50%
+}
+.page-myMessages__users .item__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.page-myMessages__users .item__top img {
+  display: block
+}
+.page-myMessages__users .item__text {
+  margin-top: 8px
+}
+.page-myMessages__users .item__text p {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #3a3a3a
+}
+.page-myMessages__users .item__name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  margin-right: 12px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #3a3a3a
+}
+.page-myMessages__chat {
+  height: 100%;
+  min-height: 580px;
+  max-height: 580px
+}
+.page-myMessages__chat .chat__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  min-height: 580px;
+  max-height: 580px
+}
+.page-myMessages__chat .chat__block:not(:first-child) {
+  display: none
+}
+.page-myMessages__chat .chat__top {
+  background: #fafafa;
+  padding: 14px 20px
+}
+.page-myMessages__chat .char__user {
+  display: none
+}
+.page-myMessages__chat .chat__delete {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end
+}
+.page-myMessages__chat .chat__delete img {
+  display: block
+}
+.page-myMessages__chat .chat__delete span {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  margin-left: 12px;
+  color: #8a8a8a
+}
+.page-myMessages__chat .chat__center {
+  max-height: 440px
+}
+.page-myMessages__chat .chat__square {
+  max-height: 440px;
+  height: 100%;
+  overflow: auto
+}
+.page-myMessages__chat .chat__item {
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px
+}
+.page-myMessages__chat .chat__item_you {
+  background: #fafafa
+}
+.page-myMessages__chat .chat__item_opp {
+  background: rgba(249,25,66,.1)
+}
+.page-myMessages__chat .chat__item .item__text {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #3a3a3a
+}
+.page-myMessages__chat .chat__item .item__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 20px
+}
+.page-myMessages__chat .chat__item .item__photo {
+  max-width: 40px;
+  height: 40px;
+  margin-right: 12px
+}
+.page-myMessages__chat .chat__item .item__photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 50%
+}
+.page-myMessages__chat .chat__item .item__name {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #3a3a3a
+}
+.page-myMessages__chat .chat__item .item__time {
+  margin-left: auto;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: right;
+  color: #3a3a3a
+}
+.page-myMessages__chat .chat__bottom {
+  background: #fafafa;
+  margin-top: auto;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.page-myMessages__chat .chat__bottom textarea {
+  background: #fff;
+  border: 1px solid silver;
+  height: 50px;
+  outline: 0;
+  border-radius: 5px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #3a3a3a;
+  resize: none;
+  width: 100%;
+  max-width: 690px;
+  padding: 10px 20px
+}
+.page-myMessages__chat .chat__bottom button {
+  height: 50px;
+  background: #fff;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  max-width: 68px
+}
+@media screen and (max-width:1024px) {
+  .page-myMessages__users .item__name {
+    font-size: 16px;
+    line-height: 19px
+  }
+  .page-myMessages__users .item__text p {
+    font-size: 16px;
+    line-height: 24px
+  }
+  .page-myMessages__users .users__item {
+    padding: 15px
+  }
+  .page-myMessages__chat .chat__delete span,
+  .page-myMessages__chat .chat__item .item__name {
+    font-size: 16px;
+    line-height: 18px
+  }
+  .page-myMessages__chat .chat__item .item__time {
+    font-size: 14px;
+    line-height: 16px
+  }
+  .page-myMessages__chat .chat__item .item__top {
+    margin-bottom: 15px
+  }
+  .page-myMessages__chat .chat__item .item__text {
+    font-size: 16px;
+    line-height: 150%
+  }
+  .page-myMessages__chat .chat__bottom textarea {
+    font-size: 18px;
+    line-height: 21px
+  }
+  .page-myMessages {
+    margin-bottom: 60px
+  }
+}
+@media screen and (max-width:992px) {
+  .page-myMessages__chat .chat__block {
+    display: none
+  }
+  .page-myMessages__users {
+    max-width: 100%;
+    border-right: none
+  }
+  .page-myMessages__chat .chat__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+  }
+  .page-myMessages__chat .char__user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+  }
+  .page-myMessages__chat .char__user img {
+    width: 30px;
+    height: 30px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 50%
+  }
+  .page-myMessages__chat .char__user span {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3a3a3a;
+    margin-left: 12px
+  }
+  .page-myMessages__chat .chat__bottom textarea {
+    font-size: 18px;
+    line-height: 21px;
+    white-space: nowrap;
+    padding: 14px
+  }
+}
+@media screen and (max-width:700px) {
+  .page-myMessages__chat .chat__item .item__text {
+    font-size: 14px;
+    line-height: 16px
+  }
+  .page-myMessages__chat .chat__item {
+    margin: 15px
+  }
+  .page-myMessages__block {
+    max-height: 500px;
+    min-height: 0;
+    height: 100%
+  }
+  .page-myMessages__chat .chat__square,
+  .page-myMessages__users {
+    max-height: 350px
+  }
+}
+@media screen and (max-width:400px) {
+  .page-myMessages__block {
+    margin-left: -20px;
+    margin-right: -20px;
+    border-radius: 0;
+    border-left: none;
+    border-right: none
+  }
+  .page-myMessages__chat .chat__item {
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0
+  }
+  .page-myMessages__chat .chat__delete span {
+    display: none
+  }
+  .page-myMessages__chat .chat__bottom,
+  .page-myMessages__chat .chat__top {
+    border-bottom: 1px solid #d8d8d8
+  }
+  .page-myMessages {
+    margin-bottom: 50px
   }
 }
 .page-mySettings {
