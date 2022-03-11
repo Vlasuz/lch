@@ -1387,11 +1387,12 @@ p.subtitle{
 @import "_post.scss";
 @import "_affiliate.scss";
 @import "_helpFaq.scss";
-@import "_forCompanies.scss";
+@import "_affInstruments.scss";
 @import "_affBooking.scss";
 @import "_myBooking.scss";
 @import "_myMessages.scss";
 @import "_mySettings.scss";
+@import "_forCompanies.scss";
 @import "_terms.scss";
 @import "_single.scss";
 @import "_booking.scss";
@@ -1709,6 +1710,7 @@ p.subtitle{
 }
 
 @media screen and (max-width: 576px) {
+	.page-affInstruments .page-profile__switcher,
 	.page-affBooking .page-profile__switcher{
 		flex-wrap: wrap;
 		margin-top: 20px;

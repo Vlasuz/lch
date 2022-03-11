@@ -39,22 +39,37 @@ lightbox.option({
 // 	isOverlayClickClosing: true
 // });
 
-var sorter = new TINY.table.sorter("sorter");
-	 sorter.head = "head"; //header class name
-	 sorter.asc = "asc"; //ascending header class name
-	 sorter.desc = "desc"; //descending header class name
-	 sorter.even = "evenrow"; //even row class name
-	 sorter.odd = "oddrow"; //odd row class name
-	 sorter.evensel = "evenselected"; //selected column even class
-	 sorter.oddsel = "oddselected"; //selected column odd class
-	 // sorter.paginate = true (false); //toggle for pagination logic
-	 // sorter.pagesize = 15 (20); //toggle for pagination logic
-	 // sorter.currentid = "currentpage"; //current page id
-	 // sorter.limitid = "pagelimit"; //page limit id
-	 sorter.init("page-affBooking__table",1);
+if( $('#page-affBooking__table').hasClass('sortable') ){
+	var sorter = new TINY.table.sorter("sorter");
+		 sorter.head = "head"; //header class name
+		 sorter.asc = "asc"; //ascending header class name
+		 sorter.desc = "desc"; //descending header class name
+		 sorter.even = "evenrow"; //even row class name
+		 sorter.odd = "oddrow"; //odd row class name
+		 sorter.evensel = "evenselected"; //selected column even class
+		 sorter.oddsel = "oddselected"; //selected column odd class
+		 // sorter.paginate = true (false); //toggle for pagination logic
+		 // sorter.pagesize = 15 (20); //toggle for pagination logic
+		 // sorter.currentid = "currentpage"; //current page id
+		 // sorter.limitid = "pagelimit"; //page limit id
+		 sorter.init("page-affBooking__table",1);
+}
+
+
+
+// COPY INPUT
+
+if( document.querySelector('.page-affInstruments__input button') ){
+	document.querySelector('.page-affInstruments__input button').onclick = function () {
+	    var textBox = document.getElementById("inputCopy");
+	    textBox.select();
+	    document.execCommand("copy");	
+	}
+}
+
+// COPY INPUT
 
 $(document).ready(function () {
-
 
 
 
