@@ -1,0 +1,346 @@
+.page-forCompanies{
+
+	margin-bottom: 80px;
+
+	h1{
+		font-weight: 900;
+		font-size: 40px;
+		line-height: 55px;
+		text-transform: uppercase;
+		color: #3A3A3A;
+		margin-bottom: 50px;
+	}
+
+	&__sides{
+		display: flex;
+		padding-bottom: 50px;
+		margin-bottom: 50px;
+		border-bottom: 2px solid #F91942;
+		.rht{
+			width: 100%;
+			max-width: 575px;
+			img{
+				width: 100%;
+			}
+		}
+		.lft{
+			background: #FAFAFA;
+			border-radius: 10px;
+			padding: 24px;
+			margin-right: 30px;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			button{
+				background: #F91942;
+				border: 1px solid #F91942;
+				height: 50px;
+				padding: 0 30px;
+				font-weight: 900;
+				font-size: 20px;
+				line-height: 27px;
+				margin-top: auto;
+				text-transform: uppercase;
+				color: #FFFFFF;
+				border-radius: 40px;
+			}
+			p{
+				font-family: 'Roboto';
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 150%;
+				color: #3A3A3A;
+			}
+		}
+	}
+
+	h2{
+		margin-top: 80px;
+		margin-bottom: 40px;
+	}
+
+	&__loc{
+		background: #FAFAFA;
+		border-radius: 5px;
+		padding: 30px 24px;
+		p{
+			font-family: 'Roboto';
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 150%;
+			color: #424242;
+			margin-bottom: 10px;
+		}
+		.page-affiliate__numbers{
+			margin-top: 30px;
+			padding-top: 30px;
+			border-top: 2px solid #F91942;
+			ul{
+				display: flex;
+				justify-content: space-around;
+			}
+		}
+	}
+
+	&__become{
+		display: flex;
+		align-items: center;
+		a{
+			text-decoration: underline;
+		}
+		button{
+			background: #F91942;
+			border: 1px solid #F91942;
+			max-width: 360px;
+			width: 100%;
+			height: 50px;
+			border-radius: 40px;
+			font-weight: 900;
+			font-size: 20px;
+			line-height: 27px;
+			text-transform: uppercase;
+			color: #FFFFFF;
+		}
+		p{
+			font-family: 'Roboto';
+			margin-left: 30px;
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 150%;
+			color: #424242;
+		}
+	}
+
+	&__adv{
+		display: grid;
+		grid-row-gap: 30px;
+		grid-column-gap: 40px;
+		grid-template-columns: repeat(2, 1fr);
+		h3{
+			font-weight: 900;
+			font-size: 24px;
+			line-height: 33px;
+			text-transform: uppercase;
+			color: #3A3A3A;
+			margin-bottom: 20px;
+		}
+		p{
+			font-family: 'Roboto';
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 150%;
+			color: #424242;
+		}
+		.avg__item{
+			background: #FAFAFA;
+			border-radius: 5px;
+			padding: 30px 24px;
+		}
+	}
+
+	&__block{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 35px;
+		.block__item{
+			background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FAFAFA 49.72%);
+			border-radius: 10px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding-top: 25px;
+			padding-bottom: 30px;
+			p{
+				font-family: 'Roboto';
+				margin-top: 26px;
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 150%;
+				text-align: center;
+				color: #424242;
+			}
+		}
+	}
+}
+
+
+// MEDIA
+
+@media screen and (max-width: 1024px) {
+	.page-forCompanies__loc p,
+	.page-forCompanies__adv p,
+	.page-forCompanies__block .block__item p,
+	.page-forCompanies__sides .lft p{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.page-forCompanies__block .block__item p{
+		margin-top: 20px;
+	}
+	.page-forCompanies__block .block__item{
+		padding-top: 20px;
+		padding-bottom: 30px;
+	}
+	.page-forCompanies__sides .lft{
+		padding: 20px 20px 30px;
+		margin-right: 30px;
+	}
+
+	.page-forCompanies__block .item__ico{
+		max-width: 80px;
+		img{
+			width: 100%;
+			display: block;
+		}
+	}
+	.page-forCompanies h2{
+		margin-top: 60px;
+	}
+	.page-forCompanies__adv{
+		grid-column-gap: 35px;
+	}
+	.page-forCompanies__adv .avg__item{
+		padding: 30px 20px;
+	}
+	.page-forCompanies__adv h3{
+		font-size: 20px;
+		line-height: 27px;
+	}
+	.page-forCompanies__block{
+		grid-gap: 27px;
+	}
+	.page-forCompanies__loc .page-affiliate__numbers ul{
+		display: grid;
+		grid-template-columns: repeat (4, auto);
+	}
+	.page-forCompanies{
+		margin-bottom: 60px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.page-forCompanies h1{
+		margin-bottom: 30px;
+		font-size: 32px;
+		line-height: 44px;
+	}
+	.page-forCompanies__sides .lft button{
+		margin-top: 30px;
+	}
+	.page-forCompanies__sides .rht img{
+		height: 100%;
+		object-fit: cover;
+		border-radius: 10px;
+	}
+	.page-forCompanies__block{
+		grid-gap: 19px;
+	}
+	.page-forCompanies h2{
+		margin-top: 50px;
+	}
+	.page-forCompanies__adv{
+		grid-template-columns: 1fr;
+		grid-gap: 20px;
+	}
+	.page-forCompanies__become p{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.page-forCompanies h2{
+		font-size: 32px;
+		line-height: 44px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.page-forCompanies{
+		margin-bottom: 50px;
+	}
+	.page-forCompanies h1{
+		font-size: 28px;
+		line-height: 38px;
+		margin-bottom: 20px;
+	}
+	.page-forCompanies__sides{
+		display: block;
+	}
+	.page-forCompanies__sides .rht{
+		height: 200px;
+	}
+	.page-forCompanies__block{
+		grid-template-columns: 1fr;
+		grid-gap: 20px;
+	}
+	.page-forCompanies__sides .lft{
+		margin-bottom: 20px;
+	}
+	.page-forCompanies__block .block__item p{
+		max-width: 172px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.page-forCompanies h2{
+		font-size: 28px;
+		line-height: 38px;
+		margin-bottom: 30px;
+	}
+	.page-forCompanies__become{
+		display: block;
+	}
+	.page-forCompanies__become p{
+		margin-left: 0;
+		margin-top: 30px;
+		text-align: center;
+	}
+	.page-forCompanies__become button{
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.page-forCompanies h1{
+		font-size: 24px;
+		line-height: 33px;
+	}
+	.page-forCompanies__sides .lft{
+		margin-left: -20px;
+		margin-right: -20px;
+		width: auto;
+		border-radius: 0;
+	}
+	.page-forCompanies__sides .lft button{
+		max-width: 100%;
+		width: 100%;
+	}
+	.page-forCompanies__sides{
+		padding-bottom: 30px;
+		margin-bottom: 30px;
+	}
+	.page-forCompanies__loc,
+	.page-forCompanies__adv,
+	.page-forCompanies__block{
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

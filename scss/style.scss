@@ -1387,6 +1387,8 @@ p.subtitle{
 @import "_post.scss";
 @import "_affiliate.scss";
 @import "_helpFaq.scss";
+@import "_forCompanies.scss";
+@import "_affBooking.scss";
 @import "_myBooking.scss";
 @import "_myMessages.scss";
 @import "_mySettings.scss";
@@ -1707,6 +1709,13 @@ p.subtitle{
 }
 
 @media screen and (max-width: 576px) {
+	.page-affBooking .page-profile__switcher{
+		flex-wrap: wrap;
+		margin-top: 20px;
+	}
+	.page-profile__switcher li{
+		margin-top: 20px;
+	}
 	.skeleton-card{
 		width: calc(100% / 1);
 		border-right: none;

@@ -39,7 +39,36 @@ lightbox.option({
 // 	isOverlayClickClosing: true
 // });
 
+var sorter = new TINY.table.sorter("sorter");
+	 sorter.head = "head"; //header class name
+	 sorter.asc = "asc"; //ascending header class name
+	 sorter.desc = "desc"; //descending header class name
+	 sorter.even = "evenrow"; //even row class name
+	 sorter.odd = "oddrow"; //odd row class name
+	 sorter.evensel = "evenselected"; //selected column even class
+	 sorter.oddsel = "oddselected"; //selected column odd class
+	 // sorter.paginate = true (false); //toggle for pagination logic
+	 // sorter.pagesize = 15 (20); //toggle for pagination logic
+	 // sorter.currentid = "currentpage"; //current page id
+	 // sorter.limitid = "pagelimit"; //page limit id
+	 sorter.init("page-affBooking__table",1);
+
 $(document).ready(function () {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -640,9 +669,11 @@ $(document).ready(function () {
     })
 
     $('.option').click(function () {
-    	let textPush = $(this).html()
+    	let htmlPush = $(this).html()
+    	let textPush = $(this).text()
 
-    	$(this).parent().parent().parent().find('.select__push').html(textPush)
+    	$(this).closest('.select').find('.select__push').html(htmlPush)
+    	$(this).closest('.select').find('input').val(textPush)
 
     	$(this).parent().find('.option').removeClass('option_check')
     	$(this).addClass('option_check')
