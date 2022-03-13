@@ -23,6 +23,29 @@
 				object-fit: cover;
 				border-radius: 5px;
 			}
+			&_none{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				height: 100%;
+				background: #EAEAEA;
+				border-radius: 5px;
+				padding: 20px;
+				p{
+					font-family: 'Roboto';
+					font-weight: 400;
+					font-size: 20px;
+					line-height: 23px;
+					color: #3A3A3A;
+				}
+				img{
+					width: 70px;
+					display: block;
+					height: auto;
+					margin-bottom: 10px;
+				}
+			}
 		}
 		.photo__top{
 			display: flex;

@@ -243,6 +243,7 @@ p.subtitle{
 	padding: 30px 20px;
 	position: relative;
 	transition: all .3s ease;
+	margin-top: -1px;
 	&:hover{
 		box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 	}

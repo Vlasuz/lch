@@ -194,6 +194,31 @@ $(document).ready(function () {
 
 
 
+
+
+	// MONEY CLOSE
+
+	$('.money__close').click(function () {
+		$(this).closest('.money__block').slideUp()
+	})
+
+	// MONEY CLOSE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	// CLOSE NOTES
 
 	$('.notes__item .item__close').click(function () {
@@ -429,31 +454,35 @@ $(document).ready(function () {
 
 	$('.page-index__questions .like').click(function () {
 
-		if( $(this).find('svg').hasClass('svg_fill') ){
-			$(this).parent().find('.dislike svg').removeClass('svg_fill')
+		$(this).parent().text('thank you on click')
 
-			$(this).parent().find('span').removeClass('span_opacity')
-			$(this).find('svg').removeClass('svg_fill')
-		}else{
-			$(this).parent().find('.dislike svg').removeClass('svg_fill')
+		// if( $(this).find('svg').hasClass('svg_fill') ){
+		// 	$(this).parent().find('.dislike svg').removeClass('svg_fill')
 
-			$(this).parent().find('span').addClass('span_opacity')
-			$(this).find('svg').addClass('svg_fill')
-		}
+		// 	$(this).parent().find('span').removeClass('span_opacity')
+		// 	$(this).find('svg').removeClass('svg_fill')
+		// }else{
+		// 	$(this).parent().find('.dislike svg').removeClass('svg_fill')
+
+		// 	$(this).parent().find('span').addClass('span_opacity')
+		// 	$(this).find('svg').addClass('svg_fill')
+		// }
 	})
 	$('.page-index__questions .dislike').click(function () {
 
-		if( $(this).find('svg').hasClass('svg_fill') ){
-			$(this).parent().find('.like svg').removeClass('svg_fill')
+		$(this).parent().text('thank you on click')
 
-			$(this).parent().find('span').removeClass('span_opacity')
-			$(this).find('svg').removeClass('svg_fill')
-		}else{
-			$(this).parent().find('.like svg').removeClass('svg_fill')
+		// if( $(this).find('svg').hasClass('svg_fill') ){
+		// 	$(this).parent().find('.like svg').removeClass('svg_fill')
 
-			$(this).parent().find('span').addClass('span_opacity')
-			$(this).find('svg').addClass('svg_fill')
-		}
+		// 	$(this).parent().find('span').removeClass('span_opacity')
+		// 	$(this).find('svg').removeClass('svg_fill')
+		// }else{
+		// 	$(this).parent().find('.like svg').removeClass('svg_fill')
+
+		// 	$(this).parent().find('span').addClass('span_opacity')
+		// 	$(this).find('svg').addClass('svg_fill')
+		// }
 	})
 
 	// LIKE
@@ -576,7 +605,7 @@ $(document).ready(function () {
 	$(document).click(function (e) {
 	    var container = $('.akkordeon');
 	    if (container.has(e.target).length === 0){
-	        container.find('.akkordeon__body').slideUp(200)
+        container.find('.akkordeon__body').slideUp(200)
 	    	container.removeClass('akkordeon_active')
 	    }
 	});

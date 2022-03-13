@@ -12,6 +12,27 @@
 }
 .page-single{
 
+	.list__more {
+		&:before,
+		&:after{
+			display: none;
+		}
+	}
+	.list__more button{
+		border: 1px solid #F91942;
+		border-radius: 40px;
+		background: transparent;
+		color: #F91942;
+		&:hover{
+			color: #fff;
+		}
+		.lines,
+		&:before,
+		&:after{
+			display: none;
+		}
+	}
+
 	&-none{
 		.page-single__photos .photo__item .page-single__title{
 			display: none;
@@ -93,7 +114,9 @@
 			position: absolute;
 			right: 0;
 			top: 337px;
+			height: 100%;
 		}
+		.page-index__reviews,
 		.lft__lft{
 			margin-right: 400px;
 		}
@@ -159,7 +182,10 @@
 			position: absolute;
 			right: 0;
 			top: 337px;
+			height: 100%;
+			padding-bottom: 430px;
 		}
+		.page-index__reviews,
 		.lft__lft{
 			margin-right: 400px;
 		}
@@ -530,7 +556,14 @@
 			width: 100%;
 			margin-left: 35px;
 			.select2{
-				padding: 12px 15px;
+				padding: 12px 0;
+				padding-left: 15px;
+				background: transparent;
+				&:after{
+					right: 15px;
+					position: relative;
+					z-index: -1;
+				}
 			}
 			input{
 				font-family: Roboto;
@@ -547,6 +580,17 @@
 			grid-gap: 20px;
 			max-width: 280px;
 			width: 100%;
+			.select2{
+				padding-left: 15px;
+				padding: 12px 0;
+				padding-left: 15px;
+				background: transparent;
+				&:after{
+					right: 15px;
+					position: relative;
+					z-index: -1;
+				}
+			}
 		}
 		input{
 			grid-column-start: 1;
@@ -726,6 +770,11 @@
 		width: 100%;
 		max-width: 370px;
 		margin-left: 30px;
+		padding-bottom: 95px;
+	}
+	.rht__sticky{
+		position: sticky;
+		top: 10px;
 	}
 
 	&__bill{
@@ -1283,6 +1332,13 @@
 }
 
 @media screen and (max-width: 992px) {
+
+	.page-single .page-index__reviews{
+		margin-right: 0;
+	}
+	.page-single-more .page-single__rht, .page-single-two .page-single__rht{
+		padding-bottom: 0;
+	}
 
 	.page-single .item__tags a{
 		font-size: 14px;

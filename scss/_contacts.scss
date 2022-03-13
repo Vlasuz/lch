@@ -55,9 +55,39 @@
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
 			grid-gap: 20px;
-			li{
+			img{
+				transition: all .3s ease;
+			}
+			.soc-viber{
+				&:hover img{
+					box-shadow: 0px 2px 8px rgba(111, 48, 154, 0.8);
+				}
+			}
+			.soc-whatsapp{
+				&:hover img{
+					box-shadow: 0px 2px 8px #48C95F;
+				}
+			}
+			.soc-telegram{
+				&:hover img{
+					box-shadow: 0px 2px 8px #2F89CE;
+				}
+			}
+			.soc-messanger{
+				&:hover img{
+					box-shadow: 0px 2px 8px #007FFF;
+				}
+			}
+			.soc-skype{
+				&:hover img{
+					box-shadow: 0px 2px 8px #00A9E7;
+				}
+			}
+			a{
 				display: flex;
 				align-items: center;
+			}
+			li{
 			}
 			img{
 				width: 40px;
