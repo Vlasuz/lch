@@ -1,0 +1,72 @@
+.page-affStatistics{
+
+	margin-bottom: 80px;
+
+	&__chart{
+		overflow: auto;
+		padding-bottom: 30px;
+		&::-webkit-scrollbar {
+		    background: #F3F3F3;
+			border-radius: 8px;
+			height: 15px;
+		}
+		&::-webkit-scrollbar-thumb {
+		    background: #F91942;
+			border-radius: 8px;
+		}
+		canvas{
+			min-height: 350px;
+			max-height: 350px;
+			min-width: 800px;
+		}
+	}
+
+	&__selects{
+		display: flex;
+		align-items: center;
+		margin-bottom: 30px;
+		.select__body{
+			padding: 20px 24px;
+			padding-right: 5px;
+			margin-top: 5px;
+			width: auto;
+			width: 100%;
+		}
+		.option{
+			// margin-bottom: 12px;
+			cursor: pointer;
+			padding: 6px 24px;
+			margin-left: -24px;
+			margin-right: -5px;
+			&:hover{
+				background: rgba(191, 191, 191, 0.2);
+			}
+			span{
+				font-family: Roboto;
+				font-size: 20px;
+				line-height: 23px;
+				color: #424242;
+				transition: all .3s ease;
+			}
+			&_check{
+				span{
+					color: #F91942;
+				}
+			}
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+		.select{
+			max-width: 590px;
+			width: 100%;
+			z-index: 4;
+			transition: z-index 0 .3s ease;
+			&_active{
+				z-index: 5;
+				transition: z-index 0s 0 ease;
+			}
+		}
+	}
+
+}

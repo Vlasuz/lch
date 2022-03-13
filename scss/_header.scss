@@ -223,6 +223,8 @@ header{
 		background: #FAFAFA;
 		padding-top: 8px;
 		padding-bottom: 12px;
+		position: relative;
+		z-index: 11;
 		.wrapper{
 			display: flex;
 			align-items: center;
@@ -627,6 +629,12 @@ header{
 
 
 // MEDIA
+
+@media screen and (max-width: 1500px){
+	.header__login_user .akkordeon__body{
+		margin-left: -130px;
+	}
+}
 
 @media screen and (max-width: 1024px){
 	.header__nav a{

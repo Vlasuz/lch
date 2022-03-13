@@ -32,6 +32,107 @@ lightbox.option({
 
 
 
+
+
+
+
+
+
+
+// CHART JS
+
+if( document.querySelector('#myChart') ){
+	const ctx = document.getElementById('myChart');
+	const myChart = new Chart(ctx, {
+	    type: 'bar',
+	    data: {
+	        labels: ['Red', 'Blue', 'Yellow', 'Green'],
+	        datasets: [{
+	            label: '# of Votes',
+	            data: [2, 7, 3, 5],
+	            backgroundColor: [
+	                'rgba(255, 99, 132, 0.2)',
+	                'rgba(54, 162, 235, 0.2)',
+	                'rgba(255, 206, 86, 0.2)',
+	                'rgba(75, 192, 192, 0.2)',
+	            ],
+	            borderColor: [
+	                'rgba(255, 99, 132, 1)',
+	                'rgba(54, 162, 235, 1)',
+	                'rgba(255, 206, 86, 1)',
+	                'rgba(75, 192, 192, 1)',
+	            ],
+	            borderWidth: 1
+	        }]
+	    },
+	    options: {
+	        scales: {
+	            y: {
+	                beginAtZero: true
+	            }
+	        }
+	    }
+	});
+}
+
+if( document.querySelector('#speedChart') ){
+	const ctx1 = document.getElementById('speedChart');
+	const myChart1 = new Chart(ctx1, {
+	    type: 'line',
+	    data: {
+	        labels: ['Red', 'Blue', 'Yellow', 'Green'],
+	        datasets: [{
+	            label: '# of Votes',
+	            data: [2, 7, 3, 5],
+	            backgroundColor: [
+	                'rgba(255, 99, 132, 0.2)',
+	                'rgba(54, 162, 235, 0.2)',
+	                'rgba(255, 206, 86, 0.2)',
+	                'rgba(75, 192, 192, 0.2)',
+	            ],
+	            borderColor: [
+	                'rgba(255, 99, 132, 1)',
+	                'rgba(54, 162, 235, 1)',
+	                'rgba(255, 206, 86, 1)',
+	                'rgba(75, 192, 192, 1)',
+	            ],
+	            borderWidth: 1
+	        }]
+	    },
+	    options: {
+	        scales: {
+	            y: {
+	                beginAtZero: true
+	            }
+	        }
+	    }
+	});
+}
+
+// CHART JS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // jQuery('.lightzoom').lightzoom({
 // 	speed: 400,
 // 	viewTitle: true,
@@ -52,7 +153,22 @@ if( $('#page-affBooking__table').hasClass('sortable') ){
 		 // sorter.pagesize = 15 (20); //toggle for pagination logic
 		 // sorter.currentid = "currentpage"; //current page id
 		 // sorter.limitid = "pagelimit"; //page limit id
-		 sorter.init("page-affBooking__table",1);
+		 sorter.init("page-affBooking__table");
+}
+if( $('#page-affPayments__table').hasClass('sortable') ){
+	var sorter = new TINY.table.sorter("sorter");
+		 sorter.head = "head"; //header class name
+		 sorter.asc = "asc"; //ascending header class name
+		 sorter.desc = "desc"; //descending header class name
+		 sorter.even = "evenrow"; //even row class name
+		 sorter.odd = "oddrow"; //odd row class name
+		 sorter.evensel = "evenselected"; //selected column even class
+		 sorter.oddsel = "oddselected"; //selected column odd class
+		 // sorter.paginate = true (false); //toggle for pagination logic
+		 // sorter.pagesize = 15 (20); //toggle for pagination logic
+		 // sorter.currentid = "currentpage"; //current page id
+		 // sorter.limitid = "pagelimit"; //page limit id
+		 sorter.init("page-affPayments__table");
 }
 
 
@@ -73,6 +189,18 @@ $(document).ready(function () {
 
 
 
+
+
+
+
+
+	// CLOSE NOTES
+
+	$('.notes__item .item__close').click(function () {
+		$(this).closest('.notes__item').slideUp()
+	})
+
+	// CLOSE NOTES
 
 
 

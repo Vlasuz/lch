@@ -37,7 +37,44 @@
             <img src="img/svg/close-menu.svg" alt="close">
           </div>
         </div>
-        <div class="scrolldown__bottom"><a class="scrolldown__login" href="#" data-popup="login">sign in</a>
+        <div class="scrolldown__bottom">
+          <div class="scrolldown__login scrolldown__login scrolldown__menu_children select">
+            <div class="select__head">
+              <img src="img/mySettings/photo1.jpg" alt="Photo"><span>Jack Jackinson</span>
+            </div>
+            <div class="select__body">
+              <ul>
+                <li>
+                  <a href="#">
+                    <img src="img/svg/icoForHeader1.svg" alt="Ico"><span>Bookings</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="img/svg/icoForHeader2.svg" alt="Ico"><span>Messages</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="img/svg/icoForHeader3.svg" alt="Ico"><span>Settings</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="img/svg/icoForHeader4.svg" alt="Ico"><span>Affiliate</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="img/svg/icoForHeader5.svg" alt="Ico"><span>DESK</span>
+                  </a>
+                </li>
+              </ul>
+              <a class="logout" href="#">
+                <img src="img/svg/exit.svg" alt="Ico"><span>Log out</span>
+              </a>
+            </div>
+          </div>
           <div class="scrolldown__menu scrolldown__menu_children select">
             <div class="select__head"><span>Regions</span>
             </div>
@@ -222,7 +259,49 @@
             </div>
           </div>
         </div>
-        <div class="header__login"><a href="#" data-popup="login">Sign In</a>
+        <div class="header__login header__login_user">
+          <div class="akkordeon">
+            <div class="akkordeon__head">
+              <div class="head__photo">
+                <img src="img/mySettings/photo1.jpg" alt="Photo">
+              </div>
+              <div class="head__arr">
+                <img src="img/svg/arrBottomCircle.svg" alt="Photo">
+              </div>
+            </div>
+            <div class="akkordeon__body">
+              <ul>
+                <li>
+                  <a href="#">
+                    <img src="img/svg/icoForHeader1.svg" alt="Ico"><span>bookings</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="img/svg/icoForHeader2.svg" alt="Ico"><span>Messages</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="img/svg/icoForHeader3.svg" alt="Ico"><span>settings</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="img/svg/icoForHeader4.svg" alt="Ico"><span>AFFILIATE</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="img/svg/icoForHeader5.svg" alt="Ico"><span>DESK</span>
+                  </a>
+                </li>
+              </ul>
+              <a class="logout" href="#">
+                <img src="img/svg/exit.svg" alt="Ico"><span>Log out</span>
+              </a>
+            </div>
+          </div>
         </div>
         <div class="header__burger">
           <div class="line"></div>
@@ -232,150 +311,119 @@
       </div>
     </div>
   </header>
-  <main class="page-inners page-privacy page-texts">
+  <main class="page-profile page-affPayments">
     <div class="wrapper">
-      <h1>Privacy Policy</h1>
-      <ul class="page-texts__tabs">
-        <li><a href="#block-payments">Payments</a>
+      <div class="page-profile__top">
+        <h1>Affiliate earnings</h1>
+        <div class="page-profile__email"><a href="#">akimvadim@gmail.com</a>
+          <button data-popup="change-email">change</button>
+        </div>
+      </div>
+      <ul class="page-profile__switcher">
+        <li><a href="affBooking.html">bookings</a>
         </li>
-        <li><a href="#block-bookingProcess">Booking Process</a>
+        <li><a href="affStatistics.html">Statistics</a>
         </li>
-        <li><a href="#block-cancelRefunds">Cancel / Refunds</a>
+        <li class="li_active"><a href="affPayments.html">Payments</a>
         </li>
-        <li><a href="#block-noShow">No-Show</a>
-        </li>
-        <li><a href="#block-modify">Modify</a>
-        </li>
-        <li><a href="#">Payments</a>
-        </li>
-        <li><a href="#">Booking Process</a>
-        </li>
-        <li><a href="#">Cancel / Refunds</a>
-        </li>
-        <li><a href="#">No-Show</a>
-        </li>
-        <li><a href="#">Modify</a>
-        </li>
-        <li><a href="#">Payments</a>
-        </li>
-        <li><a href="#">Booking Process</a>
-        </li>
-        <li><a href="#">Cancel / Refunds</a>
+        <li><a href="affInstruments.html">Instruments</a>
         </li>
       </ul>
-      <div class="page-texts__inner">
-        <div class="page-texts__block">
-          <div class="page-texts__title"><span>What and why we collect about you</span>
-          </div>
-          <div class="page-texts__text">
-            <p>By using LocalCarHires website, you entrust us with the information that can be used to identify you as a person and grant us the right to process it. If you don’t agree to provisions of this Policy, we will be unable to provide you services.
-              If you have any questions or comments about your privacy, you should contact us.</p>
-          </div>
+      <div class="page-affPayments__sides">
+        <div class="page-affPayments__lft">
+          <h2>TOTAL paid: <span>2520.46€</span></h2>
+          <canvas id="myChart"></canvas>
         </div>
-        <div class="page-texts__block" id="block-payments">
-          <div class="page-texts__title"><span>Why we collect information about you</span>
-          </div>
-          <div class="page-texts__text">
+        <div class="page-affPayments__rht">
+          <h2>Ready to be paid: <span>96.02€</span></h2>
+          <div class="rht__block">
             <ul>
-              <li>To process your rental booking correctly, including passing some information on to car rental providers.</li>
-              <li>To gather statistics regarding customer behavior in order to improve our services.</li>
-              <li>To recognise website visitors.</li>
+              <li><b>#4126   </b><span>Jan. 13, 2022, 9:58 p.m. :   </span><span class="red">10.80€</span>
+              </li>
+              <li><b>#4126   </b><span>Jan. 13, 2022, 9:58 p.m. :   </span><span class="red">10.80€</span>
+              </li>
+              <li><b>#4126   </b><span>Jan. 13, 2022, 9:58 p.m. :   </span><span class="red">10.80€</span>
+              </li>
+              <li><b>#4126   </b><span>Jan. 13, 2022, 9:58 p.m. :   </span><span class="red">10.80€</span>
+              </li>
+              <li><b>#4126   </b><span>Jan. 13, 2022, 9:58 p.m. :   </span><span class="red">10.80€</span>
+              </li>
+              <li><b>#4126   </b><span>Jan. 13, 2022, 9:58 p.m. :   </span><span class="red">10.80€</span>
+              </li>
             </ul>
-            <p>We take all appropriate technical measures and good industry practice to protect your personal information across our physical premises/servers.</p>
+            <button class="btn-hover">Pay now</button>
           </div>
         </div>
-        <div class="page-texts__block" id="block-bookingProcess">
-          <div class="page-texts__title"><span>Type of data we collect</span>
-          </div>
-          <div class="page-texts__text">
-            <ul>
-              <li>Name</li>
-              <li>Photograph</li>
-              <li>Telephone Number</li>
-              <li>Social networks and messengers</li>
-              <li>Email Address</li>
-              <li>Your IP address, browser type and operating system</li>
-            </ul>
-          </div>
-        </div>
-        <div class="page-texts__block" id="block-cancelRefunds">
-          <div class="page-texts__title"><span>Sources of your Personal Data</span>
-          </div>
-          <div class="page-texts__text">
-            <p>We collect all of your Personal Data directly from you, for example, when you complete the data required for booking or register on our website.</p>
-          </div>
-        </div>
-        <div class="page-texts__block" id="block-noShow">
-          <div class="page-texts__title"><span>Disclosure of your Personal Data</span>
-          </div>
-          <div class="page-texts__text">
-            <p>Access to your Personal Data is limited to those employees and rental providers who need access to it in order to provide you with service and communicate with you (this may include marketing communications).</p>
-          </div>
-        </div>
-        <div class="page-texts__block" id="block-modify">
-          <div class="page-texts__title"><span>How secure is your Personal Data</span>
-          </div>
-          <div class="page-texts__text">
-            <p>We use all appropriate organizational and technical means to ensure the confidentiality of your Personal Data. We only use encrypted connections. You will always be asked to enter your CVV code for every booking.</p>
-          </div>
-        </div>
-        <div class="page-texts__block" id="block-deliveryConditions">
-          <div class="page-texts__title"><span>Your rights under the data protection laws</span>
-          </div>
-          <div class="page-texts__text">
-            <p>You may have some of the following rights in respect of your personal information. If you wish to exercise any of these rights, please contact your Data Controller (contacts below).</p>
-            <ul>
-              <li>Obtain information on whether we process your Personal Data (including type and purposes of use).</li>
-              <li>Request changes (if your data has changed, or is inaccurate).</li>
-              <li>Restrict processing of your Personal Data (we will not be able to provide you with services).</li>
-              <li>Port Personal Data (all data will be provided to you in a mutually agreed format).</li>
-              <li>Delete Personal Data (we will not be able to provide you with services).</li>
-              <li>Lodge a complaint (if we process your Personal Data in violation of laws and regulations).</li>
-            </ul>
-          </div>
-        </div>
-        <div class="page-texts__block" id="block-disclaimer">
-          <div class="page-texts__title"><span>Data Controller</span>
-          </div>
-          <div class="page-texts__text">
-            <p>In relation to this website, your data controller will be LocalCarHires OÜ (Estonian registration number 14464370) which collected your Personal Data. If you have any complaints or queries relating to the processing of your Personal Information
-              or to exercise any rights in respect of your Personal Information, you should contact us by email: <a href="#">support@localcarhires.com</a> or by post: Harju maakond, Tallinn, Kesklinna linnaosa, Tuukri tn 19-315, 10152.</p>
-          </div>
-        </div>
-        <div class="page-texts__block" id="block-dataProtection">
-          <div class="page-texts__title"><span>Why we use cookies?</span>
-          </div>
-          <div class="page-texts__text">
-            <p>Cookies are items of information that your browser saves in a file on your device. Cookies allow to customize the website and its contents to your needs.</p>
-            <p>The cookies we use on our website do not store data that could directly identify you as a person.</p>
-            <p>We use cookies in order to:</p>
-            <ul>
-              <li>Track user activity on our website</li>
-              <li>Monitor and manage website traffic</li>
-              <li>Collect demographic information about our user base</li>
-              <li>Protect our customers and prevent fraudulent activities</li>
-              <li>Advertise campaigns and promotions, and determine their success.</li>
-              <li>Improve design and our selection of offers.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="page-texts__block" id="block-complaints">
-          <div class="page-texts__title"><span>Controlling and deleting cookies</span>
-          </div>
-          <div class="page-texts__text">
-            <p>If you want to restrict or block cookies on our website, you can do so by changing your internet browser settings. If you block or delete cookies, our website may not operate as intended.</p>
-          </div>
-        </div>
-        <div class="page-texts__block">
-          <div class="page-texts__title"><span>Consent to use cookies</span>
-          </div>
-          <div class="page-texts__text">
-            <p>We need your consent to use cookies. Our website has a popup that informs you about the use of cookies. If you continue to use the website, this is considered as your consent to use cookies.</p>
-          </div>
+      </div>
+      <h2>Payout requests:</h2>
+      <div class="page-affPayments__table">
+        <div class="table__ovf">
+          <table class="sortable" cellpadding="0" cellspacing="0" border="0" id="page-affPayments__table">
+            <thead>
+              <tr>
+                <td class="nosort">
+                  <h3>#</h3>
+                </td>
+                <td class="nosort">
+                  <h3>Amount, €</h3>
+                </td>
+                <td class="nosort">
+                  <h3>Creation date</h3>
+                </td>
+                <td class="nosort">
+                  <h3>Status</h3>
+                </td>
+                <td class="nosort">
+                  <h3>Bookings</h3>
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2</td>
+                <td>473.09</td>
+                <td>Aug. 17, 2021, 11:48 a.m.</td>
+                <td>Processed</td>
+                <td>3015, 3022, 3029, 3063, 3236, 3277, 3279, 2345, 1234, 5432, 5678, 3022, 3029, 3063, 3236, 3277, 3279, 2345, 1234, 9432</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>473.09</td>
+                <td>Aug. 17, 2021, 11:48 a.m.</td>
+                <td>Processed</td>
+                <td>3015, 3022, 3029, 3063, 3236, 3277, 3279, 2345, 1234, 5432, 5678, 3022, 3029, 3063, 3236, 3277, 3279, 2345, 1234, 9432</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>473.09</td>
+                <td>Aug. 17, 2021, 11:48 a.m.</td>
+                <td>Processed</td>
+                <td>3015, 3022, 3029, 3063, 3236, 3277, 3279, 2345, 1234, 5432, 5678, 3022, 3029, 3063, 3236, 3277, 3279, 2345, 1234, 9432</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
   </main>
+  <div class="popup popup__change-email">
+    <div class="popup__bgd"></div>
+    <div class="popup__content">
+      <div class="popup__top">
+        <div class="popup__title">Change your email</div>
+        <div class="popup__close">
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.5302 9.53033C17.8231 9.23744 17.8231 8.76256 17.5302 8.46967C17.2374 8.17678 16.7625 8.17678 16.4696 8.46967L17.5302 9.53033ZM8.46959 16.4697C8.1767 16.7626 8.1767 17.2374 8.46959 17.5303C8.76249 17.8232 9.23736 17.8232 9.53025 17.5303L8.46959 16.4697ZM9.53042 8.46967C9.23752 8.17678 8.76265 8.17678 8.46976 8.46967C8.17686 8.76256 8.17686 9.23744 8.46976 9.53033L9.53042 8.46967ZM16.4697 17.5303C16.7626 17.8232 17.2375 17.8232 17.5304 17.5303C17.8233 17.2374 17.8233 16.7626 17.5304 16.4697L16.4697 17.5303ZM16.4696 8.46967L8.46959 16.4697L9.53025 17.5303L17.5302 9.53033L16.4696 8.46967ZM8.46976 9.53033L16.4697 17.5303L17.5304 16.4697L9.53042 8.46967L8.46976 9.53033ZM24.25 13C24.25 19.2132 19.2132 24.25 13 24.25V25.75C20.0416 25.75 25.75 20.0416 25.75 13H24.25ZM13 24.25C6.7868 24.25 1.75 19.2132 1.75 13H0.25C0.25 20.0416 5.95837 25.75 13 25.75V24.25ZM1.75 13C1.75 6.7868 6.7868 1.75 13 1.75V0.25C5.95837 0.25 0.25 5.95837 0.25 13H1.75ZM13 1.75C19.2132 1.75 24.25 6.7868 24.25 13H25.75C25.75 5.95837 20.0416 0.25 13 0.25V1.75Z"
+            fill="#F91942" />
+          </svg>
+        </div>
+      </div>
+      <div class="popup__inner">
+        <p>To change your email kindly <a href="#">contact our support</a>.</p>
+        <button class="popup__close">Cancel</button>
+      </div>
+    </div>
+  </div>
   <div class="popup popup__login">
     <div class="popup__bgd"></div>
     <div class="popup__content">

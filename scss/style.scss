@@ -1388,6 +1388,9 @@ p.subtitle{
 @import "_affiliate.scss";
 @import "_helpFaq.scss";
 @import "_affInstruments.scss";
+@import "_affPayments.scss";
+@import "_affStatistics.scss";
+@import "_affPayments.scss";
 @import "_affBooking.scss";
 @import "_myBooking.scss";
 @import "_myMessages.scss";
@@ -1710,6 +1713,8 @@ p.subtitle{
 }
 
 @media screen and (max-width: 576px) {
+	.page-affPayments .page-profile__switcher,
+	.page-affStatistics .page-profile__switcher,
 	.page-affInstruments .page-profile__switcher,
 	.page-affBooking .page-profile__switcher{
 		flex-wrap: wrap;

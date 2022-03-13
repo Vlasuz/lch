@@ -2,7 +2,7 @@ extends includes/header-login.pug
 
 block content
 
-	main.page-profile.page-affInstruments
+	main.page-profile.page-affStatistics
 
 		.wrapper
 
@@ -15,22 +15,31 @@ block content
 			ul.page-profile__switcher
 				li
 					a(href="affBooking.html") bookings
-				li
+				li.li_active
 					a(href="affStatistics.html") Statistics
 				li
 					a(href="affPayments.html") Payments
-				li.li_active
+				li
 					a(href="affInstruments.html") Instruments
 
-			h2 REF links:
-			.page-affInstruments__input
-				input(type="text" value="akimvadim (10% comission)")#inputCopy
-				button
-					img(src="img/svg/copy.svg" alt="Copy")
-			h2 Kindly use
-			b ?ref=akimvadim&marker=any_text_here
-			p for any of your affiliate links
-			p “Marker” parametr helps understand which link or button converts better. It`s up to you whetherr to use &marker= or not.
+
+			.page-affStatistics__selects
+				.select
+					input(type="hidden" value="txt")
+					.select__head
+						span.select__push /en/Montenegro
+					.select__body
+						.option
+							span asd1
+						.option
+							span asd2
+						.option
+							span asd3
+						.option
+							span asd4
+
+			.page-affStatistics__chart
+				canvas(id="speedChart" height="400")
 			
 	.popup.popup__change-email
 		.popup__bgd

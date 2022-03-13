@@ -1931,7 +1931,9 @@ header {
 .header__top {
   background: #fafafa;
   padding-top: 8px;
-  padding-bottom: 12px
+  padding-bottom: 12px;
+  position: relative;
+  z-index: 11
 }
 .header__top .wrapper {
   display: -webkit-box;
@@ -2359,6 +2361,11 @@ header {
 }
 .header__lang img {
   margin-right: 12px
+}
+@media screen and (max-width:1500px) {
+  .header__login_user .akkordeon__body {
+    margin-left: -130px
+  }
 }
 @media screen and (max-width:1024px) {
   .header__nav a {
@@ -9268,6 +9275,701 @@ header {
     margin-bottom: 50px
   }
 }
+.page-affPayments h2 {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #3a3a3a;
+  margin-bottom: 30px
+}
+.page-affPayments h2 span {
+  color: #f91942
+}
+.page-affPayments canvas {
+  width: 100%;
+  max-width: 50vw;
+  height: 350px
+}
+.page-affPayments__sides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px
+}
+.page-affPayments__lft {
+  width: 100%
+}
+.page-affPayments__rht {
+  width: 100%;
+  max-width: 487px;
+  margin-left: 50px
+}
+.page-affPayments__rht .rht__block {
+  background: #fafafa;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 30px 24px
+}
+.page-affPayments__rht ul {
+  margin: -16px 0
+}
+.page-affPayments__rht li {
+  font-family: Roboto;
+  font-size: 20px;
+  line-height: 23px;
+  color: #424242;
+  margin: 16px 0
+}
+.page-affPayments__rht li span.red {
+  color: #f91942
+}
+.page-affPayments__rht button {
+  background: #f91942;
+  border-radius: 45px;
+  height: 50px;
+  max-width: 260px;
+  width: 100%;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 30px
+}
+.page-affPayments table,
+.page-affPayments table tbody,
+.page-affPayments table tfoot,
+.page-affPayments table tfoot tr tf,
+.page-affPayments table thead,
+.page-affPayments table tr,
+.page-affPayments table tr th,
+.page-affPayments tr td {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-image: none
+}
+.page-affPayments__table {
+  position: relative;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden
+}
+.page-affPayments__table .table__ovf {
+  border-radius: 5px 5px 0 0;
+  padding-bottom: 20px;
+  overflow: hidden
+}
+.page-affPayments__table .table__ovf::-webkit-scrollbar {
+  background: #f3f3f3;
+  border-radius: 8px;
+  height: 15px
+}
+.page-affPayments__table .table__ovf::-webkit-scrollbar-thumb {
+  background: #f91942;
+  border-radius: 8px
+}
+.page-affPayments__table .table__info {
+  position: absolute;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #fff;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #fff;
+  max-width: 164px;
+  width: 100%;
+  background: #f91942;
+  right: 0;
+  padding-top: 7px
+}
+.page-affPayments__table .table__info span {
+  z-index: 2;
+  position: relative
+}
+.page-affPayments__table .table__info:after {
+  content: '';
+  background: #f91942;
+  height: 100%;
+  position: absolute;
+  width: 3000px;
+  left: -1500px;
+  z-index: 1;
+  top: 0
+}
+.page-affPayments .sortable {
+  width: 100%
+}
+.page-affPayments .sortable thead td {
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px
+}
+.page-affPayments tbody td {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3a3a3a;
+  padding-left: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px
+}
+.page-affPayments tbody td:last-child {
+  padding-right: 2px
+}
+.page-affPayments tbody tr:nth-child(2n+2) td {
+  background: #fafafa
+}
+.page-affPayments tbody tr:hover {
+  background: #fff;
+  border: 1px solid #f91942;
+  border-radius: 5px;
+  cursor: pointer
+}
+.page-affPayments tbody tr:hover td {
+  background: #fff!important
+}
+.page-affPayments thead {
+  background: #f91942;
+  border-radius: 5px 5px 0 0;
+  white-space: nowrap
+}
+.page-affPayments thead td {
+  padding-left: 24px
+}
+.page-affPayments thead td:nth-child(1) {
+  padding-right: 43px
+}
+.page-affPayments thead td:nth-child(2) {
+  padding-right: 60px
+}
+.page-affPayments thead td:nth-child(3) {
+  padding-right: 161px
+}
+.page-affPayments thead td:nth-child(4) {
+  padding-right: 103px
+}
+.page-affPayments .sortable .asc,
+.page-affPayments .sortable .desc {
+  background: #a01631
+}
+.page-affPayments .sortable .asc h3,
+.page-affPayments .sortable .desc h3,
+.page-affPayments .sortable .head h3,
+.page-affPayments .sortable .nosort h3 {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  background: 0 0
+}
+.page-affPayments .sortable .asc h3:after,
+.page-affPayments .sortable .desc h3:after,
+.page-affPayments .sortable .head h3:after,
+.page-affPayments .sortable .nosort h3:after {
+  content: '';
+  width: 10px;
+  height: 5px;
+  display: block;
+  width: 50px;
+  height: 16px;
+  border-radius: 5px;
+  background: #d01f40 url(../img/svg/arrTableSort.svg) no-repeat;
+  background-position: center;
+  margin-top: 12px
+}
+.page-affPayments .sortable .nosort h3:after {
+  display: none
+}
+.page-affPayments .sortable td {
+  height: 50px
+}
+.page-affPayments .sortable .oddrow td {
+  background: #fafafa
+}
+.page-affPayments .sortable .oddrow td.oddselected {
+  background: #ecf2f6
+}
+@media screen and (max-width:1024px) {
+  .page-affPayments h2 {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 25px
+  }
+  .page-affPayments__rht .rht__block {
+    padding: 20px
+  }
+  .page-affPayments__rht li {
+    font-size: 16px;
+    line-height: 19px
+  }
+  .page-affPayments__rht canvas {
+    width: 100%;
+    max-width: 100%
+  }
+  .page-affPayments__rht {
+    max-width: 340px
+  }
+  .page-affPayments__sides {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+  }
+  .page-affPayments thead td:nth-child(1) {
+    padding-right: 10px
+  }
+  .page-affPayments thead td:nth-child(2) {
+    padding-right: 0
+  }
+  .page-affPayments thead td:nth-child(3) {
+    padding-right: 100px
+  }
+  .page-affPayments thead td:nth-child(4) {
+    padding-right: 30px
+  }
+}
+@media screen and (max-width:992px) {
+  .page-affPayments__sides {
+    display: block
+  }
+  .page-affPayments__rht {
+    margin-left: 0;
+    margin-top: 30px
+  }
+  .page-affPayments canvas {
+    max-width: 100%;
+    width: 100%
+  }
+  .page-affPayments__rht button {
+    max-width: 100%
+  }
+  .page-affPayments .table__ovf {
+    overflow: auto
+  }
+  .page-affPayments .sortable {
+    min-width: 1000px
+  }
+}
+@media screen and (max-width:700px) {
+  .page-affPayments__rht {
+    max-width: 100%
+  }
+  .page-affPayments__rht li {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+  }
+  .page-affPayments__rht li b {
+    margin-right: 40px
+  }
+  .page-affPayments__rht li span.red {
+    margin-left: auto;
+    display: block
+  }
+}
+@media screen and (max-width:440px) {
+  .page-affPayments__rht li b {
+    margin-right: 20px
+  }
+  .page-affPayments__rht .rht__block {
+    margin-left: -20px;
+    margin-right: -20px
+  }
+}
+.page-affStatistics {
+  margin-bottom: 80px
+}
+.page-affStatistics__chart {
+  overflow: auto;
+  padding-bottom: 30px
+}
+.page-affStatistics__chart::-webkit-scrollbar {
+  background: #f3f3f3;
+  border-radius: 8px;
+  height: 15px
+}
+.page-affStatistics__chart::-webkit-scrollbar-thumb {
+  background: #f91942;
+  border-radius: 8px
+}
+.page-affStatistics__chart canvas {
+  min-height: 350px;
+  max-height: 350px;
+  min-width: 800px
+}
+.page-affStatistics__selects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 30px
+}
+.page-affStatistics__selects .select__body {
+  padding: 20px 24px;
+  padding-right: 5px;
+  margin-top: 5px;
+  width: auto;
+  width: 100%
+}
+.page-affStatistics__selects .option {
+  cursor: pointer;
+  padding: 6px 24px;
+  margin-left: -24px;
+  margin-right: -5px
+}
+.page-affStatistics__selects .option:hover {
+  background: rgba(191,191,191,.2)
+}
+.page-affStatistics__selects .option span {
+  font-family: Roboto;
+  font-size: 20px;
+  line-height: 23px;
+  color: #424242;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.page-affStatistics__selects .option_check span {
+  color: #f91942
+}
+.page-affStatistics__selects .option:last-child {
+  margin-bottom: 0
+}
+.page-affStatistics__selects .select {
+  max-width: 590px;
+  width: 100%;
+  z-index: 4;
+  -webkit-transition: z-index 0 .3s ease;
+  -o-transition: z-index 0 .3s ease;
+  transition: z-index 0 .3s ease
+}
+.page-affStatistics__selects .select_active {
+  z-index: 5;
+  -webkit-transition: z-index 0s 0 ease;
+  -o-transition: z-index 0s 0 ease;
+  transition: z-index 0s 0 ease
+}
+.page-affPayments h2 {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #3a3a3a;
+  margin-bottom: 30px
+}
+.page-affPayments h2 span {
+  color: #f91942
+}
+.page-affPayments canvas {
+  width: 100%;
+  max-width: 50vw;
+  height: 350px
+}
+.page-affPayments__sides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px
+}
+.page-affPayments__lft {
+  width: 100%
+}
+.page-affPayments__rht {
+  width: 100%;
+  max-width: 487px;
+  margin-left: 50px
+}
+.page-affPayments__rht .rht__block {
+  background: #fafafa;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 30px 24px
+}
+.page-affPayments__rht ul {
+  margin: -16px 0
+}
+.page-affPayments__rht li {
+  font-family: Roboto;
+  font-size: 20px;
+  line-height: 23px;
+  color: #424242;
+  margin: 16px 0
+}
+.page-affPayments__rht li span.red {
+  color: #f91942
+}
+.page-affPayments__rht button {
+  background: #f91942;
+  border-radius: 45px;
+  height: 50px;
+  max-width: 260px;
+  width: 100%;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 30px
+}
+.page-affPayments table,
+.page-affPayments table tbody,
+.page-affPayments table tfoot,
+.page-affPayments table tfoot tr tf,
+.page-affPayments table thead,
+.page-affPayments table tr,
+.page-affPayments table tr th,
+.page-affPayments tr td {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-image: none
+}
+.page-affPayments__table {
+  position: relative;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden
+}
+.page-affPayments__table .table__ovf {
+  border-radius: 5px 5px 0 0;
+  padding-bottom: 20px;
+  overflow: hidden
+}
+.page-affPayments__table .table__ovf::-webkit-scrollbar {
+  background: #f3f3f3;
+  border-radius: 8px;
+  height: 15px
+}
+.page-affPayments__table .table__ovf::-webkit-scrollbar-thumb {
+  background: #f91942;
+  border-radius: 8px
+}
+.page-affPayments__table .table__info {
+  position: absolute;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #fff;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #fff;
+  max-width: 164px;
+  width: 100%;
+  background: #f91942;
+  right: 0;
+  padding-top: 7px
+}
+.page-affPayments__table .table__info span {
+  z-index: 2;
+  position: relative
+}
+.page-affPayments__table .table__info:after {
+  content: '';
+  background: #f91942;
+  height: 100%;
+  position: absolute;
+  width: 3000px;
+  left: -1500px;
+  z-index: 1;
+  top: 0
+}
+.page-affPayments .sortable {
+  width: 100%
+}
+.page-affPayments .sortable thead td {
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px
+}
+.page-affPayments tbody td {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3a3a3a;
+  padding-left: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px
+}
+.page-affPayments tbody td:last-child {
+  padding-right: 2px
+}
+.page-affPayments tbody tr:nth-child(2n+2) td {
+  background: #fafafa
+}
+.page-affPayments tbody tr:hover {
+  background: #fff;
+  border: 1px solid #f91942;
+  border-radius: 5px;
+  cursor: pointer
+}
+.page-affPayments tbody tr:hover td {
+  background: #fff!important
+}
+.page-affPayments thead {
+  background: #f91942;
+  border-radius: 5px 5px 0 0;
+  white-space: nowrap
+}
+.page-affPayments thead td {
+  padding-left: 24px
+}
+.page-affPayments thead td:nth-child(1) {
+  padding-right: 43px
+}
+.page-affPayments thead td:nth-child(2) {
+  padding-right: 60px
+}
+.page-affPayments thead td:nth-child(3) {
+  padding-right: 161px
+}
+.page-affPayments thead td:nth-child(4) {
+  padding-right: 103px
+}
+.page-affPayments .sortable .asc,
+.page-affPayments .sortable .desc {
+  background: #a01631
+}
+.page-affPayments .sortable .asc h3,
+.page-affPayments .sortable .desc h3,
+.page-affPayments .sortable .head h3,
+.page-affPayments .sortable .nosort h3 {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  background: 0 0
+}
+.page-affPayments .sortable .asc h3:after,
+.page-affPayments .sortable .desc h3:after,
+.page-affPayments .sortable .head h3:after,
+.page-affPayments .sortable .nosort h3:after {
+  content: '';
+  width: 10px;
+  height: 5px;
+  display: block;
+  width: 50px;
+  height: 16px;
+  border-radius: 5px;
+  background: #d01f40 url(../img/svg/arrTableSort.svg) no-repeat;
+  background-position: center;
+  margin-top: 12px
+}
+.page-affPayments .sortable .nosort h3:after {
+  display: none
+}
+.page-affPayments .sortable td {
+  height: 50px
+}
+.page-affPayments .sortable .oddrow td {
+  background: #fafafa
+}
+.page-affPayments .sortable .oddrow td.oddselected {
+  background: #ecf2f6
+}
+@media screen and (max-width:1024px) {
+  .page-affPayments h2 {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 25px
+  }
+  .page-affPayments__rht .rht__block {
+    padding: 20px
+  }
+  .page-affPayments__rht li {
+    font-size: 16px;
+    line-height: 19px
+  }
+  .page-affPayments__rht canvas {
+    width: 100%;
+    max-width: 100%
+  }
+  .page-affPayments__rht {
+    max-width: 340px
+  }
+  .page-affPayments__sides {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+  }
+  .page-affPayments thead td:nth-child(1) {
+    padding-right: 10px
+  }
+  .page-affPayments thead td:nth-child(2) {
+    padding-right: 0
+  }
+  .page-affPayments thead td:nth-child(3) {
+    padding-right: 100px
+  }
+  .page-affPayments thead td:nth-child(4) {
+    padding-right: 30px
+  }
+}
+@media screen and (max-width:992px) {
+  .page-affPayments__sides {
+    display: block
+  }
+  .page-affPayments__rht {
+    margin-left: 0;
+    margin-top: 30px
+  }
+  .page-affPayments canvas {
+    max-width: 100%;
+    width: 100%
+  }
+  .page-affPayments__rht button {
+    max-width: 100%
+  }
+  .page-affPayments .table__ovf {
+    overflow: auto
+  }
+  .page-affPayments .sortable {
+    min-width: 1000px
+  }
+}
+@media screen and (max-width:700px) {
+  .page-affPayments__rht {
+    max-width: 100%
+  }
+  .page-affPayments__rht li {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+  }
+  .page-affPayments__rht li b {
+    margin-right: 40px
+  }
+  .page-affPayments__rht li span.red {
+    margin-left: auto;
+    display: block
+  }
+}
+@media screen and (max-width:440px) {
+  .page-affPayments__rht li b {
+    margin-right: 20px
+  }
+  .page-affPayments__rht .rht__block {
+    margin-left: -20px;
+    margin-right: -20px
+  }
+}
 .page-affBooking {
   margin-bottom: 80px
 }
@@ -13924,7 +14626,9 @@ footer {
 }
 @media screen and (max-width:576px) {
   .page-affBooking .page-profile__switcher,
-  .page-affInstruments .page-profile__switcher {
+  .page-affInstruments .page-profile__switcher,
+  .page-affPayments .page-profile__switcher,
+  .page-affStatistics .page-profile__switcher {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-top: 20px
