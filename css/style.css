@@ -4585,15 +4585,6 @@ header {
   background: #fafafa;
   padding: 80px 0
 }
-.page-country__where .where__block {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-  grid-template-columns: repeat(3,1fr);
-  grid-column-gap: 35px;
-  grid-row-gap: 40px;
-  margin-top: 50px
-}
 .page-country__where .where__item {
   position: relative;
   height: 250px;
@@ -4666,6 +4657,37 @@ header {
   font-size: 20px;
   line-height: 23px;
   color: #fff
+}
+.page-country__where .where__block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3,1fr);
+  grid-column-gap: 35px;
+  grid-row-gap: 40px;
+  margin-top: 50px
+}
+.page-country__where .where__block_2 {
+  margin-bottom: 60px
+}
+.page-country__where .where__block_2 .where__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.page-country__where .where__block_2 .item__text {
+  bottom: auto;
+  left: auto;
+  max-width: 250px;
+  border-radius: 5px;
+  text-align: center;
+  padding-left: 0
 }
 .page-country .page-index__info {
   background: #fff
@@ -5076,6 +5098,12 @@ header {
     background: url(../img/country/banner-mob.jpg) no-repeat;
     background-size: cover
   }
+  .page-country__where .where__block {
+    margin-top: 40px
+  }
+  .page-country__where .where__block_2 {
+    margin-bottom: 50px
+  }
   .slider__arrows {
     display: none
   }
@@ -5211,6 +5239,19 @@ header {
     grid-template-columns: 1fr;
     grid-gap: 20px
   }
+  .page-country__where .where__block {
+    margin-top: 30px
+  }
+  .page-country__where .where__block_2 {
+    margin-bottom: 50px
+  }
+  p.subtitle {
+    font-size: 18px;
+    line-height: 24px
+  }
+  .page-country__where .where__block_2 .where__item {
+    height: 160px
+  }
   .list__content_lots:after {
     z-index: 39;
     background: -webkit-gradient(linear,left top,left bottom,color-stop(-11.06%,rgba(255,255,255,0)),color-stop(92.27%,#fff));
@@ -5231,7 +5272,6 @@ header {
   }
   .page-country__find .find__rht {
     display: block;
-    max-width: 320px;
     height: 350px;
     margin-left: -10px;
     margin-right: -10px

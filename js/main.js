@@ -1170,7 +1170,8 @@ $(document).ready(function () {
 
 	if( $(window).width() < 576 ){
 		$('.page-country__find .find__rht').slick({
-			centerMode: true,
+			// centerMode: true,
+			slidesToShow: 1
 		})
 	}
 
