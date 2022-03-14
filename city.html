@@ -371,20 +371,20 @@
                 <button class="filter__button" data-popup="filters">
                   <img src="img/svg/filtersGrey.svg" alt="Filter"><span>Filters</span><span class="count">3</span>
                 </button>
-                <ul class="filters__list">
-                  <li><span>Transmission: ANY</span>
-                  </li>
-                  <li><span>Seats 7+</span>
+                <div class="filters__list">
+                  <label><span>Transmission: ANY</span>
+                  </label>
+                  <label><span>Seats 7+</span>
                     <button>
                       <img src="img/svg/filterDelete.svg" alt="Delete">
                     </button>
-                  </li>
-                  <li><span>Free CDW</span>
+                  </label>
+                  <label><span>Free CDW</span>
                     <button>
                       <img src="img/svg/filterDelete.svg" alt="Delete">
                     </button>
-                  </li>
-                </ul>
+                  </label>
+                </div>
               </div>
             </div>
           </div>
@@ -420,6 +420,9 @@
                 <div class="skeleton skeleton-text"></div>
               </div>
             </div>
+            <div class="card__bottom_mob">
+              <div class="skeleton skeleton-text"></div>
+            </div>
           </div>
         </template>
         <div class="list__top">
@@ -437,8 +440,201 @@
           </div>
           <div class="list__count">209 cars based on your filters</div>
         </div>
-        <ul class="list__content list__content_lots">
-          <li class="car__item">
+        <ul class="list__content list__content_lots" data-show-items="12">
+          <li class="car__item item-more-block">
+            <div class="item__top">
+              <div class="top__lft">
+                <div class="item__title">Subaru Forester</div>
+                <div class="item__info">Automatic | 2015 | 2.5 Petrol | 170 HP</div>
+              </div>
+              <div class="top__rht">
+                <div class="rht__text">Cancel up to 24 hours before the start time for a full refund.</div>
+                <img src="img/item/itemTop.svg" alt="Ico">
+              </div>
+            </div>
+            <div class="item__block-photos">
+              <div class="item__slider">
+                <div class="item__photo">
+                  <img src="img/item/itemPhoto1.jpg" alt="Photo">
+                </div>
+                <div class="item__photo">
+                  <img src="img/item/itemPhoto2.jpg" alt="Photo">
+                </div>
+                <div class="item__photo">
+                  <img src="img/item/itemPhoto3.jpg" alt="Photo">
+                </div>
+              </div>
+              <div class="item__info_mob">
+                <div class="mob__owner item__owner">
+                  <div class="item__persone">
+                    <div class="persone__photo">
+                      <div class="photo__check">
+                        <img src="img/item/photoCheck.svg" alt="Check">
+                      </div>
+                      <img src="img/item/personePhoto1.jpg" alt="Photo">
+                    </div>
+                    <div class="persone__name"><span>Tamuna</span>
+                    </div>
+                  </div>
+                  <div class="item__rating">
+                    <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
+                    <div class="item__reviews">(132)</div>
+                  </div>
+                </div>
+                <div class="mob__prices">
+                  <div class="prices__item"><span>2 days x € 25</span><span>€ 50</span>
+                  </div>
+                  <div class="prices__item"><span>Delivery</span><span>€ 20</span>
+                  </div>
+                  <div class="prices__item"><span>Service</span><span>€ 10</span>
+                  </div>
+                  <div class="prices__all"><b>Total</b><b>€ 80n</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item__bottom">
+              <ul class="item__tags">
+                <li>
+                  <div class="li__text">Full damage Waiver</div><a href="#">ОСАГО</a>,
+                </li>
+                <li><a href="#">Супер КАСКО</a>
+                </li>
+              </ul>
+              <div class="item__deposit"><span>Deposit  </span><b>₽132 032</b>
+              </div>
+            </div>
+            <div class="item__owner">
+              <div class="item__persone">
+                <div class="persone__photo">
+                  <div class="photo__check">
+                    <img src="img/item/photoCheck.svg" alt="Check">
+                  </div>
+                  <img src="img/item/personePhoto1.jpg" alt="Photo">
+                </div>
+                <div class="persone__name"><span>Tamuna</span>
+                </div>
+              </div>
+              <div class="item__rating">
+                <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
+                <div class="item__reviews">(132)</div>
+              </div>
+            </div>
+            <div class="item__last">
+              <ul class="item__prices">
+                <li><span>Day</span><b>₽3 076</b>
+                </li>
+                <li><span>Delivery</span><b>₽3 076</b>
+                </li>
+                <li><span>Service</span><b>₽3 076</b>
+                </li>
+              </ul>
+              <button class="item__buy btn-hover">Rent for ₽21 530</button>
+            </div>
+            <div class="item__inf_mob">
+              <ul>
+                <li class="li_red">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 5V10L13 13M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z" stroke="#F91942" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg><span>Free cancel 24 hours</span>
+                </li>
+                <li class="li_green">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 5V10L13 13M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z" stroke="#F91942" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg><span>Free cancel</span>
+                </li>
+                <li class="li_blue">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 5V10L13 13M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z" stroke="#F91942" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg><span>Free cancel 24 hours</span>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="car__item item-more-block">
+            <div class="item__top">
+              <div class="top__lft">
+                <div class="item__title">Subaru Forester</div>
+                <div class="item__info">Automatic | 2015 | 2.5 Petrol | 170 HP</div>
+              </div>
+              <div class="top__rht">
+                <div class="rht__text">Cancel up to 24 hours before the start time for a full refund.</div>
+                <img src="img/item/itemTop.svg" alt="Ico">
+              </div>
+            </div>
+            <div class="item__block-photos">
+              <div class="item__slider">
+                <div class="item__photo">
+                  <img src="img/item/itemPhoto1.jpg" alt="Photo">
+                </div>
+              </div>
+              <div class="item__info_mob">
+                <div class="mob__owner item__owner">
+                  <div class="item__persone">
+                    <div class="persone__photo">
+                      <div class="photo__check">
+                        <img src="img/item/photoCheck.svg" alt="Check">
+                      </div>
+                      <img src="img/item/personePhoto1.jpg" alt="Photo">
+                    </div>
+                    <div class="persone__name"><span>Tamuna</span>
+                    </div>
+                  </div>
+                  <div class="item__rating">
+                    <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
+                    <div class="item__reviews">(132)</div>
+                  </div>
+                </div>
+                <div class="mob__prices">
+                  <div class="prices__item"><span>2 days x € 25</span><span>€ 50</span>
+                  </div>
+                  <div class="prices__item"><span>Delivery</span><span>€ 20</span>
+                  </div>
+                  <div class="prices__item"><span>Service</span><span>€ 10</span>
+                  </div>
+                  <div class="prices__all"><b>Total</b><b>€ 80n</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item__bottom">
+              <ul class="item__tags">
+                <li>
+                  <div class="li__text">Full damage Waiver</div><a href="#">ОСАГО</a>,
+                </li>
+                <li><a href="#">Супер КАСКО</a>
+                </li>
+              </ul>
+              <div class="item__deposit"><span>Deposit  </span><b>₽132 032</b>
+              </div>
+            </div>
+            <div class="item__owner">
+              <div class="item__persone">
+                <div class="persone__photo">
+                  <div class="photo__check">
+                    <img src="img/item/photoCheck.svg" alt="Check">
+                  </div>
+                  <img src="img/item/personePhoto1.jpg" alt="Photo">
+                </div>
+                <div class="persone__name"><span>Tamuna</span>
+                </div>
+              </div>
+              <div class="item__rating">
+                <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
+                <div class="item__reviews">(132)</div>
+              </div>
+            </div>
+            <div class="item__last">
+              <ul class="item__prices">
+                <li><span>Day</span><b>₽3 076</b>
+                </li>
+                <li><span>Delivery</span><b>₽3 076</b>
+                </li>
+              </ul>
+              <button class="item__buy btn-hover">Rent for ₽21 530</button>
+            </div>
+          </li>
+          <li class="car__item item-more-block">
             <div class="item__top">
               <div class="top__lft">
                 <div class="item__title">Subaru Forester</div>
@@ -529,7 +725,7 @@
               <button class="item__buy btn-hover">Rent for ₽21 530</button>
             </div>
           </li>
-          <li class="car__item">
+          <li class="car__item item-more-block">
             <div class="item__top">
               <div class="top__lft">
                 <div class="item__title">Subaru Forester</div>
@@ -612,181 +808,7 @@
               <button class="item__buy btn-hover">Rent for ₽21 530</button>
             </div>
           </li>
-          <li class="car__item">
-            <div class="item__top">
-              <div class="top__lft">
-                <div class="item__title">Subaru Forester</div>
-                <div class="item__info">Automatic | 2015 | 2.5 Petrol | 170 HP</div>
-              </div>
-              <div class="top__rht">
-                <div class="rht__text">Cancel up to 24 hours before the start time for a full refund.</div>
-                <img src="img/item/itemTop.svg" alt="Ico">
-              </div>
-            </div>
-            <div class="item__block-photos">
-              <div class="item__slider">
-                <div class="item__photo">
-                  <img src="img/item/itemPhoto1.jpg" alt="Photo">
-                </div>
-                <div class="item__photo">
-                  <img src="img/item/itemPhoto2.jpg" alt="Photo">
-                </div>
-                <div class="item__photo">
-                  <img src="img/item/itemPhoto3.jpg" alt="Photo">
-                </div>
-              </div>
-              <div class="item__info_mob">
-                <div class="mob__owner item__owner">
-                  <div class="item__persone">
-                    <div class="persone__photo">
-                      <div class="photo__check">
-                        <img src="img/item/photoCheck.svg" alt="Check">
-                      </div>
-                      <img src="img/item/personePhoto1.jpg" alt="Photo">
-                    </div>
-                    <div class="persone__name"><span>Tamuna</span>
-                    </div>
-                  </div>
-                  <div class="item__rating">
-                    <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
-                    <div class="item__reviews">(132)</div>
-                  </div>
-                </div>
-                <div class="mob__prices">
-                  <div class="prices__item"><span>2 days x € 25</span><span>€ 50</span>
-                  </div>
-                  <div class="prices__item"><span>Delivery</span><span>€ 20</span>
-                  </div>
-                  <div class="prices__item"><span>Service</span><span>€ 10</span>
-                  </div>
-                  <div class="prices__all"><b>Total</b><b>€ 80n</b>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item__bottom">
-              <ul class="item__tags">
-                <li>
-                  <div class="li__text">Full damage Waiver</div><a href="#">ОСАГО</a>,
-                </li>
-                <li><a href="#">Супер КАСКО</a>
-                </li>
-              </ul>
-              <div class="item__deposit"><span>Deposit  </span><b>₽132 032</b>
-              </div>
-            </div>
-            <div class="item__owner">
-              <div class="item__persone">
-                <div class="persone__photo">
-                  <div class="photo__check">
-                    <img src="img/item/photoCheck.svg" alt="Check">
-                  </div>
-                  <img src="img/item/personePhoto1.jpg" alt="Photo">
-                </div>
-                <div class="persone__name"><span>Tamuna</span>
-                </div>
-              </div>
-              <div class="item__rating">
-                <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
-                <div class="item__reviews">(132)</div>
-              </div>
-            </div>
-            <div class="item__last">
-              <ul class="item__prices">
-                <li><span>Day</span><b>₽3 076</b>
-                </li>
-                <li><span>Delivery</span><b>₽3 076</b>
-                </li>
-                <li><span>Service</span><b>₽3 076</b>
-                </li>
-              </ul>
-              <button class="item__buy btn-hover">Rent for ₽21 530</button>
-            </div>
-          </li>
-          <li class="car__item">
-            <div class="item__top">
-              <div class="top__lft">
-                <div class="item__title">Subaru Forester</div>
-                <div class="item__info">Automatic | 2015 | 2.5 Petrol | 170 HP</div>
-              </div>
-              <div class="top__rht">
-                <div class="rht__text">Cancel up to 24 hours before the start time for a full refund.</div>
-                <img src="img/item/itemTop.svg" alt="Ico">
-              </div>
-            </div>
-            <div class="item__block-photos">
-              <div class="item__slider">
-                <div class="item__photo">
-                  <img src="img/item/itemPhoto1.jpg" alt="Photo">
-                </div>
-              </div>
-              <div class="item__info_mob">
-                <div class="mob__owner item__owner">
-                  <div class="item__persone">
-                    <div class="persone__photo">
-                      <div class="photo__check">
-                        <img src="img/item/photoCheck.svg" alt="Check">
-                      </div>
-                      <img src="img/item/personePhoto1.jpg" alt="Photo">
-                    </div>
-                    <div class="persone__name"><span>Tamuna</span>
-                    </div>
-                  </div>
-                  <div class="item__rating">
-                    <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
-                    <div class="item__reviews">(132)</div>
-                  </div>
-                </div>
-                <div class="mob__prices">
-                  <div class="prices__item"><span>2 days x € 25</span><span>€ 50</span>
-                  </div>
-                  <div class="prices__item"><span>Delivery</span><span>€ 20</span>
-                  </div>
-                  <div class="prices__item"><span>Service</span><span>€ 10</span>
-                  </div>
-                  <div class="prices__all"><b>Total</b><b>€ 80n</b>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item__bottom">
-              <ul class="item__tags">
-                <li>
-                  <div class="li__text">Full damage Waiver</div><a href="#">ОСАГО</a>,
-                </li>
-                <li><a href="#">Супер КАСКО</a>
-                </li>
-              </ul>
-              <div class="item__deposit"><span>Deposit  </span><b>₽132 032</b>
-              </div>
-            </div>
-            <div class="item__owner">
-              <div class="item__persone">
-                <div class="persone__photo">
-                  <div class="photo__check">
-                    <img src="img/item/photoCheck.svg" alt="Check">
-                  </div>
-                  <img src="img/item/personePhoto1.jpg" alt="Photo">
-                </div>
-                <div class="persone__name"><span>Tamuna</span>
-                </div>
-              </div>
-              <div class="item__rating">
-                <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
-                <div class="item__reviews">(132)</div>
-              </div>
-            </div>
-            <div class="item__last">
-              <ul class="item__prices">
-                <li><span>Day</span><b>₽3 076</b>
-                </li>
-                <li><span>Delivery</span><b>₽3 076</b>
-                </li>
-              </ul>
-              <button class="item__buy btn-hover">Rent for ₽21 530</button>
-            </div>
-          </li>
-          <li class="car__item">
+          <li class="car__item item-more-block">
             <div class="item__top">
               <div class="top__lft">
                 <div class="item__title">Subaru Forester</div>
@@ -877,7 +899,7 @@
               <button class="item__buy btn-hover">Rent for ₽21 530</button>
             </div>
           </li>
-          <li class="car__item">
+          <li class="car__item item-more-block">
             <div class="item__top">
               <div class="top__lft">
                 <div class="item__title">Subaru Forester</div>
@@ -960,181 +982,7 @@
               <button class="item__buy btn-hover">Rent for ₽21 530</button>
             </div>
           </li>
-          <li class="car__item">
-            <div class="item__top">
-              <div class="top__lft">
-                <div class="item__title">Subaru Forester</div>
-                <div class="item__info">Automatic | 2015 | 2.5 Petrol | 170 HP</div>
-              </div>
-              <div class="top__rht">
-                <div class="rht__text">Cancel up to 24 hours before the start time for a full refund.</div>
-                <img src="img/item/itemTop.svg" alt="Ico">
-              </div>
-            </div>
-            <div class="item__block-photos">
-              <div class="item__slider">
-                <div class="item__photo">
-                  <img src="img/item/itemPhoto1.jpg" alt="Photo">
-                </div>
-                <div class="item__photo">
-                  <img src="img/item/itemPhoto2.jpg" alt="Photo">
-                </div>
-                <div class="item__photo">
-                  <img src="img/item/itemPhoto3.jpg" alt="Photo">
-                </div>
-              </div>
-              <div class="item__info_mob">
-                <div class="mob__owner item__owner">
-                  <div class="item__persone">
-                    <div class="persone__photo">
-                      <div class="photo__check">
-                        <img src="img/item/photoCheck.svg" alt="Check">
-                      </div>
-                      <img src="img/item/personePhoto1.jpg" alt="Photo">
-                    </div>
-                    <div class="persone__name"><span>Tamuna</span>
-                    </div>
-                  </div>
-                  <div class="item__rating">
-                    <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
-                    <div class="item__reviews">(132)</div>
-                  </div>
-                </div>
-                <div class="mob__prices">
-                  <div class="prices__item"><span>2 days x € 25</span><span>€ 50</span>
-                  </div>
-                  <div class="prices__item"><span>Delivery</span><span>€ 20</span>
-                  </div>
-                  <div class="prices__item"><span>Service</span><span>€ 10</span>
-                  </div>
-                  <div class="prices__all"><b>Total</b><b>€ 80n</b>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item__bottom">
-              <ul class="item__tags">
-                <li>
-                  <div class="li__text">Full damage Waiver</div><a href="#">ОСАГО</a>,
-                </li>
-                <li><a href="#">Супер КАСКО</a>
-                </li>
-              </ul>
-              <div class="item__deposit"><span>Deposit  </span><b>₽132 032</b>
-              </div>
-            </div>
-            <div class="item__owner">
-              <div class="item__persone">
-                <div class="persone__photo">
-                  <div class="photo__check">
-                    <img src="img/item/photoCheck.svg" alt="Check">
-                  </div>
-                  <img src="img/item/personePhoto1.jpg" alt="Photo">
-                </div>
-                <div class="persone__name"><span>Tamuna</span>
-                </div>
-              </div>
-              <div class="item__rating">
-                <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
-                <div class="item__reviews">(132)</div>
-              </div>
-            </div>
-            <div class="item__last">
-              <ul class="item__prices">
-                <li><span>Day</span><b>₽3 076</b>
-                </li>
-                <li><span>Delivery</span><b>₽3 076</b>
-                </li>
-                <li><span>Service</span><b>₽3 076</b>
-                </li>
-              </ul>
-              <button class="item__buy btn-hover">Rent for ₽21 530</button>
-            </div>
-          </li>
-          <li class="car__item">
-            <div class="item__top">
-              <div class="top__lft">
-                <div class="item__title">Subaru Forester</div>
-                <div class="item__info">Automatic | 2015 | 2.5 Petrol | 170 HP</div>
-              </div>
-              <div class="top__rht">
-                <div class="rht__text">Cancel up to 24 hours before the start time for a full refund.</div>
-                <img src="img/item/itemTop.svg" alt="Ico">
-              </div>
-            </div>
-            <div class="item__block-photos">
-              <div class="item__slider">
-                <div class="item__photo">
-                  <img src="img/item/itemPhoto1.jpg" alt="Photo">
-                </div>
-              </div>
-              <div class="item__info_mob">
-                <div class="mob__owner item__owner">
-                  <div class="item__persone">
-                    <div class="persone__photo">
-                      <div class="photo__check">
-                        <img src="img/item/photoCheck.svg" alt="Check">
-                      </div>
-                      <img src="img/item/personePhoto1.jpg" alt="Photo">
-                    </div>
-                    <div class="persone__name"><span>Tamuna</span>
-                    </div>
-                  </div>
-                  <div class="item__rating">
-                    <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
-                    <div class="item__reviews">(132)</div>
-                  </div>
-                </div>
-                <div class="mob__prices">
-                  <div class="prices__item"><span>2 days x € 25</span><span>€ 50</span>
-                  </div>
-                  <div class="prices__item"><span>Delivery</span><span>€ 20</span>
-                  </div>
-                  <div class="prices__item"><span>Service</span><span>€ 10</span>
-                  </div>
-                  <div class="prices__all"><b>Total</b><b>€ 80n</b>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item__bottom">
-              <ul class="item__tags">
-                <li>
-                  <div class="li__text">Full damage Waiver</div><a href="#">ОСАГО</a>,
-                </li>
-                <li><a href="#">Супер КАСКО</a>
-                </li>
-              </ul>
-              <div class="item__deposit"><span>Deposit  </span><b>₽132 032</b>
-              </div>
-            </div>
-            <div class="item__owner">
-              <div class="item__persone">
-                <div class="persone__photo">
-                  <div class="photo__check">
-                    <img src="img/item/photoCheck.svg" alt="Check">
-                  </div>
-                  <img src="img/item/personePhoto1.jpg" alt="Photo">
-                </div>
-                <div class="persone__name"><span>Tamuna</span>
-                </div>
-              </div>
-              <div class="item__rating">
-                <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
-                <div class="item__reviews">(132)</div>
-              </div>
-            </div>
-            <div class="item__last">
-              <ul class="item__prices">
-                <li><span>Day</span><b>₽3 076</b>
-                </li>
-                <li><span>Delivery</span><b>₽3 076</b>
-                </li>
-              </ul>
-              <button class="item__buy btn-hover">Rent for ₽21 530</button>
-            </div>
-          </li>
-          <li class="car__item">
+          <li class="car__item item-more-block">
             <div class="item__top">
               <div class="top__lft">
                 <div class="item__title">Subaru Forester</div>
@@ -1225,7 +1073,7 @@
               <button class="item__buy btn-hover">Rent for ₽21 530</button>
             </div>
           </li>
-          <li class="car__item">
+          <li class="car__item item-more-block">
             <div class="item__top">
               <div class="top__lft">
                 <div class="item__title">Subaru Forester</div>
@@ -1308,181 +1156,7 @@
               <button class="item__buy btn-hover">Rent for ₽21 530</button>
             </div>
           </li>
-          <li class="car__item">
-            <div class="item__top">
-              <div class="top__lft">
-                <div class="item__title">Subaru Forester</div>
-                <div class="item__info">Automatic | 2015 | 2.5 Petrol | 170 HP</div>
-              </div>
-              <div class="top__rht">
-                <div class="rht__text">Cancel up to 24 hours before the start time for a full refund.</div>
-                <img src="img/item/itemTop.svg" alt="Ico">
-              </div>
-            </div>
-            <div class="item__block-photos">
-              <div class="item__slider">
-                <div class="item__photo">
-                  <img src="img/item/itemPhoto1.jpg" alt="Photo">
-                </div>
-                <div class="item__photo">
-                  <img src="img/item/itemPhoto2.jpg" alt="Photo">
-                </div>
-                <div class="item__photo">
-                  <img src="img/item/itemPhoto3.jpg" alt="Photo">
-                </div>
-              </div>
-              <div class="item__info_mob">
-                <div class="mob__owner item__owner">
-                  <div class="item__persone">
-                    <div class="persone__photo">
-                      <div class="photo__check">
-                        <img src="img/item/photoCheck.svg" alt="Check">
-                      </div>
-                      <img src="img/item/personePhoto1.jpg" alt="Photo">
-                    </div>
-                    <div class="persone__name"><span>Tamuna</span>
-                    </div>
-                  </div>
-                  <div class="item__rating">
-                    <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
-                    <div class="item__reviews">(132)</div>
-                  </div>
-                </div>
-                <div class="mob__prices">
-                  <div class="prices__item"><span>2 days x € 25</span><span>€ 50</span>
-                  </div>
-                  <div class="prices__item"><span>Delivery</span><span>€ 20</span>
-                  </div>
-                  <div class="prices__item"><span>Service</span><span>€ 10</span>
-                  </div>
-                  <div class="prices__all"><b>Total</b><b>€ 80n</b>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item__bottom">
-              <ul class="item__tags">
-                <li>
-                  <div class="li__text">Full damage Waiver</div><a href="#">ОСАГО</a>,
-                </li>
-                <li><a href="#">Супер КАСКО</a>
-                </li>
-              </ul>
-              <div class="item__deposit"><span>Deposit  </span><b>₽132 032</b>
-              </div>
-            </div>
-            <div class="item__owner">
-              <div class="item__persone">
-                <div class="persone__photo">
-                  <div class="photo__check">
-                    <img src="img/item/photoCheck.svg" alt="Check">
-                  </div>
-                  <img src="img/item/personePhoto1.jpg" alt="Photo">
-                </div>
-                <div class="persone__name"><span>Tamuna</span>
-                </div>
-              </div>
-              <div class="item__rating">
-                <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
-                <div class="item__reviews">(132)</div>
-              </div>
-            </div>
-            <div class="item__last">
-              <ul class="item__prices">
-                <li><span>Day</span><b>₽3 076</b>
-                </li>
-                <li><span>Delivery</span><b>₽3 076</b>
-                </li>
-                <li><span>Service</span><b>₽3 076</b>
-                </li>
-              </ul>
-              <button class="item__buy btn-hover">Rent for ₽21 530</button>
-            </div>
-          </li>
-          <li class="car__item">
-            <div class="item__top">
-              <div class="top__lft">
-                <div class="item__title">Subaru Forester</div>
-                <div class="item__info">Automatic | 2015 | 2.5 Petrol | 170 HP</div>
-              </div>
-              <div class="top__rht">
-                <div class="rht__text">Cancel up to 24 hours before the start time for a full refund.</div>
-                <img src="img/item/itemTop.svg" alt="Ico">
-              </div>
-            </div>
-            <div class="item__block-photos">
-              <div class="item__slider">
-                <div class="item__photo">
-                  <img src="img/item/itemPhoto1.jpg" alt="Photo">
-                </div>
-              </div>
-              <div class="item__info_mob">
-                <div class="mob__owner item__owner">
-                  <div class="item__persone">
-                    <div class="persone__photo">
-                      <div class="photo__check">
-                        <img src="img/item/photoCheck.svg" alt="Check">
-                      </div>
-                      <img src="img/item/personePhoto1.jpg" alt="Photo">
-                    </div>
-                    <div class="persone__name"><span>Tamuna</span>
-                    </div>
-                  </div>
-                  <div class="item__rating">
-                    <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
-                    <div class="item__reviews">(132)</div>
-                  </div>
-                </div>
-                <div class="mob__prices">
-                  <div class="prices__item"><span>2 days x € 25</span><span>€ 50</span>
-                  </div>
-                  <div class="prices__item"><span>Delivery</span><span>€ 20</span>
-                  </div>
-                  <div class="prices__item"><span>Service</span><span>€ 10</span>
-                  </div>
-                  <div class="prices__all"><b>Total</b><b>€ 80n</b>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item__bottom">
-              <ul class="item__tags">
-                <li>
-                  <div class="li__text">Full damage Waiver</div><a href="#">ОСАГО</a>,
-                </li>
-                <li><a href="#">Супер КАСКО</a>
-                </li>
-              </ul>
-              <div class="item__deposit"><span>Deposit  </span><b>₽132 032</b>
-              </div>
-            </div>
-            <div class="item__owner">
-              <div class="item__persone">
-                <div class="persone__photo">
-                  <div class="photo__check">
-                    <img src="img/item/photoCheck.svg" alt="Check">
-                  </div>
-                  <img src="img/item/personePhoto1.jpg" alt="Photo">
-                </div>
-                <div class="persone__name"><span>Tamuna</span>
-                </div>
-              </div>
-              <div class="item__rating">
-                <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
-                <div class="item__reviews">(132)</div>
-              </div>
-            </div>
-            <div class="item__last">
-              <ul class="item__prices">
-                <li><span>Day</span><b>₽3 076</b>
-                </li>
-                <li><span>Delivery</span><b>₽3 076</b>
-                </li>
-              </ul>
-              <button class="item__buy btn-hover">Rent for ₽21 530</button>
-            </div>
-          </li>
-          <li class="car__item">
+          <li class="car__item item-more-block">
             <div class="item__top">
               <div class="top__lft">
                 <div class="item__title">Subaru Forester</div>
@@ -1573,7 +1247,7 @@
               <button class="item__buy btn-hover">Rent for ₽21 530</button>
             </div>
           </li>
-          <li class="car__item">
+          <li class="car__item item-more-block">
             <div class="item__top">
               <div class="top__lft">
                 <div class="item__title">Subaru Forester</div>
@@ -1656,181 +1330,7 @@
               <button class="item__buy btn-hover">Rent for ₽21 530</button>
             </div>
           </li>
-          <li class="car__item">
-            <div class="item__top">
-              <div class="top__lft">
-                <div class="item__title">Subaru Forester</div>
-                <div class="item__info">Automatic | 2015 | 2.5 Petrol | 170 HP</div>
-              </div>
-              <div class="top__rht">
-                <div class="rht__text">Cancel up to 24 hours before the start time for a full refund.</div>
-                <img src="img/item/itemTop.svg" alt="Ico">
-              </div>
-            </div>
-            <div class="item__block-photos">
-              <div class="item__slider">
-                <div class="item__photo">
-                  <img src="img/item/itemPhoto1.jpg" alt="Photo">
-                </div>
-                <div class="item__photo">
-                  <img src="img/item/itemPhoto2.jpg" alt="Photo">
-                </div>
-                <div class="item__photo">
-                  <img src="img/item/itemPhoto3.jpg" alt="Photo">
-                </div>
-              </div>
-              <div class="item__info_mob">
-                <div class="mob__owner item__owner">
-                  <div class="item__persone">
-                    <div class="persone__photo">
-                      <div class="photo__check">
-                        <img src="img/item/photoCheck.svg" alt="Check">
-                      </div>
-                      <img src="img/item/personePhoto1.jpg" alt="Photo">
-                    </div>
-                    <div class="persone__name"><span>Tamuna</span>
-                    </div>
-                  </div>
-                  <div class="item__rating">
-                    <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
-                    <div class="item__reviews">(132)</div>
-                  </div>
-                </div>
-                <div class="mob__prices">
-                  <div class="prices__item"><span>2 days x € 25</span><span>€ 50</span>
-                  </div>
-                  <div class="prices__item"><span>Delivery</span><span>€ 20</span>
-                  </div>
-                  <div class="prices__item"><span>Service</span><span>€ 10</span>
-                  </div>
-                  <div class="prices__all"><b>Total</b><b>€ 80n</b>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item__bottom">
-              <ul class="item__tags">
-                <li>
-                  <div class="li__text">Full damage Waiver</div><a href="#">ОСАГО</a>,
-                </li>
-                <li><a href="#">Супер КАСКО</a>
-                </li>
-              </ul>
-              <div class="item__deposit"><span>Deposit  </span><b>₽132 032</b>
-              </div>
-            </div>
-            <div class="item__owner">
-              <div class="item__persone">
-                <div class="persone__photo">
-                  <div class="photo__check">
-                    <img src="img/item/photoCheck.svg" alt="Check">
-                  </div>
-                  <img src="img/item/personePhoto1.jpg" alt="Photo">
-                </div>
-                <div class="persone__name"><span>Tamuna</span>
-                </div>
-              </div>
-              <div class="item__rating">
-                <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
-                <div class="item__reviews">(132)</div>
-              </div>
-            </div>
-            <div class="item__last">
-              <ul class="item__prices">
-                <li><span>Day</span><b>₽3 076</b>
-                </li>
-                <li><span>Delivery</span><b>₽3 076</b>
-                </li>
-                <li><span>Service</span><b>₽3 076</b>
-                </li>
-              </ul>
-              <button class="item__buy btn-hover">Rent for ₽21 530</button>
-            </div>
-          </li>
-          <li class="car__item">
-            <div class="item__top">
-              <div class="top__lft">
-                <div class="item__title">Subaru Forester</div>
-                <div class="item__info">Automatic | 2015 | 2.5 Petrol | 170 HP</div>
-              </div>
-              <div class="top__rht">
-                <div class="rht__text">Cancel up to 24 hours before the start time for a full refund.</div>
-                <img src="img/item/itemTop.svg" alt="Ico">
-              </div>
-            </div>
-            <div class="item__block-photos">
-              <div class="item__slider">
-                <div class="item__photo">
-                  <img src="img/item/itemPhoto1.jpg" alt="Photo">
-                </div>
-              </div>
-              <div class="item__info_mob">
-                <div class="mob__owner item__owner">
-                  <div class="item__persone">
-                    <div class="persone__photo">
-                      <div class="photo__check">
-                        <img src="img/item/photoCheck.svg" alt="Check">
-                      </div>
-                      <img src="img/item/personePhoto1.jpg" alt="Photo">
-                    </div>
-                    <div class="persone__name"><span>Tamuna</span>
-                    </div>
-                  </div>
-                  <div class="item__rating">
-                    <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
-                    <div class="item__reviews">(132)</div>
-                  </div>
-                </div>
-                <div class="mob__prices">
-                  <div class="prices__item"><span>2 days x € 25</span><span>€ 50</span>
-                  </div>
-                  <div class="prices__item"><span>Delivery</span><span>€ 20</span>
-                  </div>
-                  <div class="prices__item"><span>Service</span><span>€ 10</span>
-                  </div>
-                  <div class="prices__all"><b>Total</b><b>€ 80n</b>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item__bottom">
-              <ul class="item__tags">
-                <li>
-                  <div class="li__text">Full damage Waiver</div><a href="#">ОСАГО</a>,
-                </li>
-                <li><a href="#">Супер КАСКО</a>
-                </li>
-              </ul>
-              <div class="item__deposit"><span>Deposit  </span><b>₽132 032</b>
-              </div>
-            </div>
-            <div class="item__owner">
-              <div class="item__persone">
-                <div class="persone__photo">
-                  <div class="photo__check">
-                    <img src="img/item/photoCheck.svg" alt="Check">
-                  </div>
-                  <img src="img/item/personePhoto1.jpg" alt="Photo">
-                </div>
-                <div class="persone__name"><span>Tamuna</span>
-                </div>
-              </div>
-              <div class="item__rating">
-                <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
-                <div class="item__reviews">(132)</div>
-              </div>
-            </div>
-            <div class="item__last">
-              <ul class="item__prices">
-                <li><span>Day</span><b>₽3 076</b>
-                </li>
-                <li><span>Delivery</span><b>₽3 076</b>
-                </li>
-              </ul>
-              <button class="item__buy btn-hover">Rent for ₽21 530</button>
-            </div>
-          </li>
-          <li class="car__item">
+          <li class="car__item item-more-block">
             <div class="item__top">
               <div class="top__lft">
                 <div class="item__title">Subaru Forester</div>
@@ -1921,7 +1421,7 @@
               <button class="item__buy btn-hover">Rent for ₽21 530</button>
             </div>
           </li>
-          <li class="car__item">
+          <li class="car__item item-more-block">
             <div class="item__top">
               <div class="top__lft">
                 <div class="item__title">Subaru Forester</div>
@@ -2004,181 +1504,7 @@
               <button class="item__buy btn-hover">Rent for ₽21 530</button>
             </div>
           </li>
-          <li class="car__item">
-            <div class="item__top">
-              <div class="top__lft">
-                <div class="item__title">Subaru Forester</div>
-                <div class="item__info">Automatic | 2015 | 2.5 Petrol | 170 HP</div>
-              </div>
-              <div class="top__rht">
-                <div class="rht__text">Cancel up to 24 hours before the start time for a full refund.</div>
-                <img src="img/item/itemTop.svg" alt="Ico">
-              </div>
-            </div>
-            <div class="item__block-photos">
-              <div class="item__slider">
-                <div class="item__photo">
-                  <img src="img/item/itemPhoto1.jpg" alt="Photo">
-                </div>
-                <div class="item__photo">
-                  <img src="img/item/itemPhoto2.jpg" alt="Photo">
-                </div>
-                <div class="item__photo">
-                  <img src="img/item/itemPhoto3.jpg" alt="Photo">
-                </div>
-              </div>
-              <div class="item__info_mob">
-                <div class="mob__owner item__owner">
-                  <div class="item__persone">
-                    <div class="persone__photo">
-                      <div class="photo__check">
-                        <img src="img/item/photoCheck.svg" alt="Check">
-                      </div>
-                      <img src="img/item/personePhoto1.jpg" alt="Photo">
-                    </div>
-                    <div class="persone__name"><span>Tamuna</span>
-                    </div>
-                  </div>
-                  <div class="item__rating">
-                    <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
-                    <div class="item__reviews">(132)</div>
-                  </div>
-                </div>
-                <div class="mob__prices">
-                  <div class="prices__item"><span>2 days x € 25</span><span>€ 50</span>
-                  </div>
-                  <div class="prices__item"><span>Delivery</span><span>€ 20</span>
-                  </div>
-                  <div class="prices__item"><span>Service</span><span>€ 10</span>
-                  </div>
-                  <div class="prices__all"><b>Total</b><b>€ 80n</b>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item__bottom">
-              <ul class="item__tags">
-                <li>
-                  <div class="li__text">Full damage Waiver</div><a href="#">ОСАГО</a>,
-                </li>
-                <li><a href="#">Супер КАСКО</a>
-                </li>
-              </ul>
-              <div class="item__deposit"><span>Deposit  </span><b>₽132 032</b>
-              </div>
-            </div>
-            <div class="item__owner">
-              <div class="item__persone">
-                <div class="persone__photo">
-                  <div class="photo__check">
-                    <img src="img/item/photoCheck.svg" alt="Check">
-                  </div>
-                  <img src="img/item/personePhoto1.jpg" alt="Photo">
-                </div>
-                <div class="persone__name"><span>Tamuna</span>
-                </div>
-              </div>
-              <div class="item__rating">
-                <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
-                <div class="item__reviews">(132)</div>
-              </div>
-            </div>
-            <div class="item__last">
-              <ul class="item__prices">
-                <li><span>Day</span><b>₽3 076</b>
-                </li>
-                <li><span>Delivery</span><b>₽3 076</b>
-                </li>
-                <li><span>Service</span><b>₽3 076</b>
-                </li>
-              </ul>
-              <button class="item__buy btn-hover">Rent for ₽21 530</button>
-            </div>
-          </li>
-          <li class="car__item">
-            <div class="item__top">
-              <div class="top__lft">
-                <div class="item__title">Subaru Forester</div>
-                <div class="item__info">Automatic | 2015 | 2.5 Petrol | 170 HP</div>
-              </div>
-              <div class="top__rht">
-                <div class="rht__text">Cancel up to 24 hours before the start time for a full refund.</div>
-                <img src="img/item/itemTop.svg" alt="Ico">
-              </div>
-            </div>
-            <div class="item__block-photos">
-              <div class="item__slider">
-                <div class="item__photo">
-                  <img src="img/item/itemPhoto1.jpg" alt="Photo">
-                </div>
-              </div>
-              <div class="item__info_mob">
-                <div class="mob__owner item__owner">
-                  <div class="item__persone">
-                    <div class="persone__photo">
-                      <div class="photo__check">
-                        <img src="img/item/photoCheck.svg" alt="Check">
-                      </div>
-                      <img src="img/item/personePhoto1.jpg" alt="Photo">
-                    </div>
-                    <div class="persone__name"><span>Tamuna</span>
-                    </div>
-                  </div>
-                  <div class="item__rating">
-                    <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
-                    <div class="item__reviews">(132)</div>
-                  </div>
-                </div>
-                <div class="mob__prices">
-                  <div class="prices__item"><span>2 days x € 25</span><span>€ 50</span>
-                  </div>
-                  <div class="prices__item"><span>Delivery</span><span>€ 20</span>
-                  </div>
-                  <div class="prices__item"><span>Service</span><span>€ 10</span>
-                  </div>
-                  <div class="prices__all"><b>Total</b><b>€ 80n</b>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item__bottom">
-              <ul class="item__tags">
-                <li>
-                  <div class="li__text">Full damage Waiver</div><a href="#">ОСАГО</a>,
-                </li>
-                <li><a href="#">Супер КАСКО</a>
-                </li>
-              </ul>
-              <div class="item__deposit"><span>Deposit  </span><b>₽132 032</b>
-              </div>
-            </div>
-            <div class="item__owner">
-              <div class="item__persone">
-                <div class="persone__photo">
-                  <div class="photo__check">
-                    <img src="img/item/photoCheck.svg" alt="Check">
-                  </div>
-                  <img src="img/item/personePhoto1.jpg" alt="Photo">
-                </div>
-                <div class="persone__name"><span>Tamuna</span>
-                </div>
-              </div>
-              <div class="item__rating">
-                <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
-                <div class="item__reviews">(132)</div>
-              </div>
-            </div>
-            <div class="item__last">
-              <ul class="item__prices">
-                <li><span>Day</span><b>₽3 076</b>
-                </li>
-                <li><span>Delivery</span><b>₽3 076</b>
-                </li>
-              </ul>
-              <button class="item__buy btn-hover">Rent for ₽21 530</button>
-            </div>
-          </li>
-          <li class="car__item">
+          <li class="car__item item-more-block">
             <div class="item__top">
               <div class="top__lft">
                 <div class="item__title">Subaru Forester</div>
@@ -2269,7 +1595,7 @@
               <button class="item__buy btn-hover">Rent for ₽21 530</button>
             </div>
           </li>
-          <li class="car__item">
+          <li class="car__item item-more-block">
             <div class="item__top">
               <div class="top__lft">
                 <div class="item__title">Subaru Forester</div>
@@ -2352,181 +1678,7 @@
               <button class="item__buy btn-hover">Rent for ₽21 530</button>
             </div>
           </li>
-          <li class="car__item">
-            <div class="item__top">
-              <div class="top__lft">
-                <div class="item__title">Subaru Forester</div>
-                <div class="item__info">Automatic | 2015 | 2.5 Petrol | 170 HP</div>
-              </div>
-              <div class="top__rht">
-                <div class="rht__text">Cancel up to 24 hours before the start time for a full refund.</div>
-                <img src="img/item/itemTop.svg" alt="Ico">
-              </div>
-            </div>
-            <div class="item__block-photos">
-              <div class="item__slider">
-                <div class="item__photo">
-                  <img src="img/item/itemPhoto1.jpg" alt="Photo">
-                </div>
-                <div class="item__photo">
-                  <img src="img/item/itemPhoto2.jpg" alt="Photo">
-                </div>
-                <div class="item__photo">
-                  <img src="img/item/itemPhoto3.jpg" alt="Photo">
-                </div>
-              </div>
-              <div class="item__info_mob">
-                <div class="mob__owner item__owner">
-                  <div class="item__persone">
-                    <div class="persone__photo">
-                      <div class="photo__check">
-                        <img src="img/item/photoCheck.svg" alt="Check">
-                      </div>
-                      <img src="img/item/personePhoto1.jpg" alt="Photo">
-                    </div>
-                    <div class="persone__name"><span>Tamuna</span>
-                    </div>
-                  </div>
-                  <div class="item__rating">
-                    <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
-                    <div class="item__reviews">(132)</div>
-                  </div>
-                </div>
-                <div class="mob__prices">
-                  <div class="prices__item"><span>2 days x € 25</span><span>€ 50</span>
-                  </div>
-                  <div class="prices__item"><span>Delivery</span><span>€ 20</span>
-                  </div>
-                  <div class="prices__item"><span>Service</span><span>€ 10</span>
-                  </div>
-                  <div class="prices__all"><b>Total</b><b>€ 80n</b>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item__bottom">
-              <ul class="item__tags">
-                <li>
-                  <div class="li__text">Full damage Waiver</div><a href="#">ОСАГО</a>,
-                </li>
-                <li><a href="#">Супер КАСКО</a>
-                </li>
-              </ul>
-              <div class="item__deposit"><span>Deposit  </span><b>₽132 032</b>
-              </div>
-            </div>
-            <div class="item__owner">
-              <div class="item__persone">
-                <div class="persone__photo">
-                  <div class="photo__check">
-                    <img src="img/item/photoCheck.svg" alt="Check">
-                  </div>
-                  <img src="img/item/personePhoto1.jpg" alt="Photo">
-                </div>
-                <div class="persone__name"><span>Tamuna</span>
-                </div>
-              </div>
-              <div class="item__rating">
-                <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
-                <div class="item__reviews">(132)</div>
-              </div>
-            </div>
-            <div class="item__last">
-              <ul class="item__prices">
-                <li><span>Day</span><b>₽3 076</b>
-                </li>
-                <li><span>Delivery</span><b>₽3 076</b>
-                </li>
-                <li><span>Service</span><b>₽3 076</b>
-                </li>
-              </ul>
-              <button class="item__buy btn-hover">Rent for ₽21 530</button>
-            </div>
-          </li>
-          <li class="car__item">
-            <div class="item__top">
-              <div class="top__lft">
-                <div class="item__title">Subaru Forester</div>
-                <div class="item__info">Automatic | 2015 | 2.5 Petrol | 170 HP</div>
-              </div>
-              <div class="top__rht">
-                <div class="rht__text">Cancel up to 24 hours before the start time for a full refund.</div>
-                <img src="img/item/itemTop.svg" alt="Ico">
-              </div>
-            </div>
-            <div class="item__block-photos">
-              <div class="item__slider">
-                <div class="item__photo">
-                  <img src="img/item/itemPhoto1.jpg" alt="Photo">
-                </div>
-              </div>
-              <div class="item__info_mob">
-                <div class="mob__owner item__owner">
-                  <div class="item__persone">
-                    <div class="persone__photo">
-                      <div class="photo__check">
-                        <img src="img/item/photoCheck.svg" alt="Check">
-                      </div>
-                      <img src="img/item/personePhoto1.jpg" alt="Photo">
-                    </div>
-                    <div class="persone__name"><span>Tamuna</span>
-                    </div>
-                  </div>
-                  <div class="item__rating">
-                    <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
-                    <div class="item__reviews">(132)</div>
-                  </div>
-                </div>
-                <div class="mob__prices">
-                  <div class="prices__item"><span>2 days x € 25</span><span>€ 50</span>
-                  </div>
-                  <div class="prices__item"><span>Delivery</span><span>€ 20</span>
-                  </div>
-                  <div class="prices__item"><span>Service</span><span>€ 10</span>
-                  </div>
-                  <div class="prices__all"><b>Total</b><b>€ 80n</b>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item__bottom">
-              <ul class="item__tags">
-                <li>
-                  <div class="li__text">Full damage Waiver</div><a href="#">ОСАГО</a>,
-                </li>
-                <li><a href="#">Супер КАСКО</a>
-                </li>
-              </ul>
-              <div class="item__deposit"><span>Deposit  </span><b>₽132 032</b>
-              </div>
-            </div>
-            <div class="item__owner">
-              <div class="item__persone">
-                <div class="persone__photo">
-                  <div class="photo__check">
-                    <img src="img/item/photoCheck.svg" alt="Check">
-                  </div>
-                  <img src="img/item/personePhoto1.jpg" alt="Photo">
-                </div>
-                <div class="persone__name"><span>Tamuna</span>
-                </div>
-              </div>
-              <div class="item__rating">
-                <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
-                <div class="item__reviews">(132)</div>
-              </div>
-            </div>
-            <div class="item__last">
-              <ul class="item__prices">
-                <li><span>Day</span><b>₽3 076</b>
-                </li>
-                <li><span>Delivery</span><b>₽3 076</b>
-                </li>
-              </ul>
-              <button class="item__buy btn-hover">Rent for ₽21 530</button>
-            </div>
-          </li>
-          <li class="car__item">
+          <li class="car__item item-more-block">
             <div class="item__top">
               <div class="top__lft">
                 <div class="item__title">Subaru Forester</div>
@@ -2617,7 +1769,7 @@
               <button class="item__buy btn-hover">Rent for ₽21 530</button>
             </div>
           </li>
-          <li class="car__item">
+          <li class="car__item item-more-block">
             <div class="item__top">
               <div class="top__lft">
                 <div class="item__title">Subaru Forester</div>
@@ -2700,181 +1852,7 @@
               <button class="item__buy btn-hover">Rent for ₽21 530</button>
             </div>
           </li>
-          <li class="car__item">
-            <div class="item__top">
-              <div class="top__lft">
-                <div class="item__title">Subaru Forester</div>
-                <div class="item__info">Automatic | 2015 | 2.5 Petrol | 170 HP</div>
-              </div>
-              <div class="top__rht">
-                <div class="rht__text">Cancel up to 24 hours before the start time for a full refund.</div>
-                <img src="img/item/itemTop.svg" alt="Ico">
-              </div>
-            </div>
-            <div class="item__block-photos">
-              <div class="item__slider">
-                <div class="item__photo">
-                  <img src="img/item/itemPhoto1.jpg" alt="Photo">
-                </div>
-                <div class="item__photo">
-                  <img src="img/item/itemPhoto2.jpg" alt="Photo">
-                </div>
-                <div class="item__photo">
-                  <img src="img/item/itemPhoto3.jpg" alt="Photo">
-                </div>
-              </div>
-              <div class="item__info_mob">
-                <div class="mob__owner item__owner">
-                  <div class="item__persone">
-                    <div class="persone__photo">
-                      <div class="photo__check">
-                        <img src="img/item/photoCheck.svg" alt="Check">
-                      </div>
-                      <img src="img/item/personePhoto1.jpg" alt="Photo">
-                    </div>
-                    <div class="persone__name"><span>Tamuna</span>
-                    </div>
-                  </div>
-                  <div class="item__rating">
-                    <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
-                    <div class="item__reviews">(132)</div>
-                  </div>
-                </div>
-                <div class="mob__prices">
-                  <div class="prices__item"><span>2 days x € 25</span><span>€ 50</span>
-                  </div>
-                  <div class="prices__item"><span>Delivery</span><span>€ 20</span>
-                  </div>
-                  <div class="prices__item"><span>Service</span><span>€ 10</span>
-                  </div>
-                  <div class="prices__all"><b>Total</b><b>€ 80n</b>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item__bottom">
-              <ul class="item__tags">
-                <li>
-                  <div class="li__text">Full damage Waiver</div><a href="#">ОСАГО</a>,
-                </li>
-                <li><a href="#">Супер КАСКО</a>
-                </li>
-              </ul>
-              <div class="item__deposit"><span>Deposit  </span><b>₽132 032</b>
-              </div>
-            </div>
-            <div class="item__owner">
-              <div class="item__persone">
-                <div class="persone__photo">
-                  <div class="photo__check">
-                    <img src="img/item/photoCheck.svg" alt="Check">
-                  </div>
-                  <img src="img/item/personePhoto1.jpg" alt="Photo">
-                </div>
-                <div class="persone__name"><span>Tamuna</span>
-                </div>
-              </div>
-              <div class="item__rating">
-                <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
-                <div class="item__reviews">(132)</div>
-              </div>
-            </div>
-            <div class="item__last">
-              <ul class="item__prices">
-                <li><span>Day</span><b>₽3 076</b>
-                </li>
-                <li><span>Delivery</span><b>₽3 076</b>
-                </li>
-                <li><span>Service</span><b>₽3 076</b>
-                </li>
-              </ul>
-              <button class="item__buy btn-hover">Rent for ₽21 530</button>
-            </div>
-          </li>
-          <li class="car__item">
-            <div class="item__top">
-              <div class="top__lft">
-                <div class="item__title">Subaru Forester</div>
-                <div class="item__info">Automatic | 2015 | 2.5 Petrol | 170 HP</div>
-              </div>
-              <div class="top__rht">
-                <div class="rht__text">Cancel up to 24 hours before the start time for a full refund.</div>
-                <img src="img/item/itemTop.svg" alt="Ico">
-              </div>
-            </div>
-            <div class="item__block-photos">
-              <div class="item__slider">
-                <div class="item__photo">
-                  <img src="img/item/itemPhoto1.jpg" alt="Photo">
-                </div>
-              </div>
-              <div class="item__info_mob">
-                <div class="mob__owner item__owner">
-                  <div class="item__persone">
-                    <div class="persone__photo">
-                      <div class="photo__check">
-                        <img src="img/item/photoCheck.svg" alt="Check">
-                      </div>
-                      <img src="img/item/personePhoto1.jpg" alt="Photo">
-                    </div>
-                    <div class="persone__name"><span>Tamuna</span>
-                    </div>
-                  </div>
-                  <div class="item__rating">
-                    <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
-                    <div class="item__reviews">(132)</div>
-                  </div>
-                </div>
-                <div class="mob__prices">
-                  <div class="prices__item"><span>2 days x € 25</span><span>€ 50</span>
-                  </div>
-                  <div class="prices__item"><span>Delivery</span><span>€ 20</span>
-                  </div>
-                  <div class="prices__item"><span>Service</span><span>€ 10</span>
-                  </div>
-                  <div class="prices__all"><b>Total</b><b>€ 80n</b>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item__bottom">
-              <ul class="item__tags">
-                <li>
-                  <div class="li__text">Full damage Waiver</div><a href="#">ОСАГО</a>,
-                </li>
-                <li><a href="#">Супер КАСКО</a>
-                </li>
-              </ul>
-              <div class="item__deposit"><span>Deposit  </span><b>₽132 032</b>
-              </div>
-            </div>
-            <div class="item__owner">
-              <div class="item__persone">
-                <div class="persone__photo">
-                  <div class="photo__check">
-                    <img src="img/item/photoCheck.svg" alt="Check">
-                  </div>
-                  <img src="img/item/personePhoto1.jpg" alt="Photo">
-                </div>
-                <div class="persone__name"><span>Tamuna</span>
-                </div>
-              </div>
-              <div class="item__rating">
-                <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
-                <div class="item__reviews">(132)</div>
-              </div>
-            </div>
-            <div class="item__last">
-              <ul class="item__prices">
-                <li><span>Day</span><b>₽3 076</b>
-                </li>
-                <li><span>Delivery</span><b>₽3 076</b>
-                </li>
-              </ul>
-              <button class="item__buy btn-hover">Rent for ₽21 530</button>
-            </div>
-          </li>
-          <li class="car__item">
+          <li class="car__item item-more-block">
             <div class="item__top">
               <div class="top__lft">
                 <div class="item__title">Subaru Forester</div>
@@ -2965,7 +1943,1051 @@
               <button class="item__buy btn-hover">Rent for ₽21 530</button>
             </div>
           </li>
-          <li class="car__item">
+          <li class="car__item item-more-block">
+            <div class="item__top">
+              <div class="top__lft">
+                <div class="item__title">Subaru Forester</div>
+                <div class="item__info">Automatic | 2015 | 2.5 Petrol | 170 HP</div>
+              </div>
+              <div class="top__rht">
+                <div class="rht__text">Cancel up to 24 hours before the start time for a full refund.</div>
+                <img src="img/item/itemTop.svg" alt="Ico">
+              </div>
+            </div>
+            <div class="item__block-photos">
+              <div class="item__slider">
+                <div class="item__photo">
+                  <img src="img/item/itemPhoto1.jpg" alt="Photo">
+                </div>
+              </div>
+              <div class="item__info_mob">
+                <div class="mob__owner item__owner">
+                  <div class="item__persone">
+                    <div class="persone__photo">
+                      <div class="photo__check">
+                        <img src="img/item/photoCheck.svg" alt="Check">
+                      </div>
+                      <img src="img/item/personePhoto1.jpg" alt="Photo">
+                    </div>
+                    <div class="persone__name"><span>Tamuna</span>
+                    </div>
+                  </div>
+                  <div class="item__rating">
+                    <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
+                    <div class="item__reviews">(132)</div>
+                  </div>
+                </div>
+                <div class="mob__prices">
+                  <div class="prices__item"><span>2 days x € 25</span><span>€ 50</span>
+                  </div>
+                  <div class="prices__item"><span>Delivery</span><span>€ 20</span>
+                  </div>
+                  <div class="prices__item"><span>Service</span><span>€ 10</span>
+                  </div>
+                  <div class="prices__all"><b>Total</b><b>€ 80n</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item__bottom">
+              <ul class="item__tags">
+                <li>
+                  <div class="li__text">Full damage Waiver</div><a href="#">ОСАГО</a>,
+                </li>
+                <li><a href="#">Супер КАСКО</a>
+                </li>
+              </ul>
+              <div class="item__deposit"><span>Deposit  </span><b>₽132 032</b>
+              </div>
+            </div>
+            <div class="item__owner">
+              <div class="item__persone">
+                <div class="persone__photo">
+                  <div class="photo__check">
+                    <img src="img/item/photoCheck.svg" alt="Check">
+                  </div>
+                  <img src="img/item/personePhoto1.jpg" alt="Photo">
+                </div>
+                <div class="persone__name"><span>Tamuna</span>
+                </div>
+              </div>
+              <div class="item__rating">
+                <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
+                <div class="item__reviews">(132)</div>
+              </div>
+            </div>
+            <div class="item__last">
+              <ul class="item__prices">
+                <li><span>Day</span><b>₽3 076</b>
+                </li>
+                <li><span>Delivery</span><b>₽3 076</b>
+                </li>
+              </ul>
+              <button class="item__buy btn-hover">Rent for ₽21 530</button>
+            </div>
+          </li>
+          <li class="car__item item-more-block">
+            <div class="item__top">
+              <div class="top__lft">
+                <div class="item__title">Subaru Forester</div>
+                <div class="item__info">Automatic | 2015 | 2.5 Petrol | 170 HP</div>
+              </div>
+              <div class="top__rht">
+                <div class="rht__text">Cancel up to 24 hours before the start time for a full refund.</div>
+                <img src="img/item/itemTop.svg" alt="Ico">
+              </div>
+            </div>
+            <div class="item__block-photos">
+              <div class="item__slider">
+                <div class="item__photo">
+                  <img src="img/item/itemPhoto1.jpg" alt="Photo">
+                </div>
+                <div class="item__photo">
+                  <img src="img/item/itemPhoto2.jpg" alt="Photo">
+                </div>
+                <div class="item__photo">
+                  <img src="img/item/itemPhoto3.jpg" alt="Photo">
+                </div>
+              </div>
+              <div class="item__info_mob">
+                <div class="mob__owner item__owner">
+                  <div class="item__persone">
+                    <div class="persone__photo">
+                      <div class="photo__check">
+                        <img src="img/item/photoCheck.svg" alt="Check">
+                      </div>
+                      <img src="img/item/personePhoto1.jpg" alt="Photo">
+                    </div>
+                    <div class="persone__name"><span>Tamuna</span>
+                    </div>
+                  </div>
+                  <div class="item__rating">
+                    <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
+                    <div class="item__reviews">(132)</div>
+                  </div>
+                </div>
+                <div class="mob__prices">
+                  <div class="prices__item"><span>2 days x € 25</span><span>€ 50</span>
+                  </div>
+                  <div class="prices__item"><span>Delivery</span><span>€ 20</span>
+                  </div>
+                  <div class="prices__item"><span>Service</span><span>€ 10</span>
+                  </div>
+                  <div class="prices__all"><b>Total</b><b>€ 80n</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item__bottom">
+              <ul class="item__tags">
+                <li>
+                  <div class="li__text">Full damage Waiver</div><a href="#">ОСАГО</a>,
+                </li>
+                <li><a href="#">Супер КАСКО</a>
+                </li>
+              </ul>
+              <div class="item__deposit"><span>Deposit  </span><b>₽132 032</b>
+              </div>
+            </div>
+            <div class="item__owner">
+              <div class="item__persone">
+                <div class="persone__photo">
+                  <div class="photo__check">
+                    <img src="img/item/photoCheck.svg" alt="Check">
+                  </div>
+                  <img src="img/item/personePhoto1.jpg" alt="Photo">
+                </div>
+                <div class="persone__name"><span>Tamuna</span>
+                </div>
+              </div>
+              <div class="item__rating">
+                <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
+                <div class="item__reviews">(132)</div>
+              </div>
+            </div>
+            <div class="item__last">
+              <ul class="item__prices">
+                <li><span>Day</span><b>₽3 076</b>
+                </li>
+                <li><span>Delivery</span><b>₽3 076</b>
+                </li>
+                <li><span>Service</span><b>₽3 076</b>
+                </li>
+              </ul>
+              <button class="item__buy btn-hover">Rent for ₽21 530</button>
+            </div>
+          </li>
+          <li class="car__item item-more-block">
+            <div class="item__top">
+              <div class="top__lft">
+                <div class="item__title">Subaru Forester</div>
+                <div class="item__info">Automatic | 2015 | 2.5 Petrol | 170 HP</div>
+              </div>
+              <div class="top__rht">
+                <div class="rht__text">Cancel up to 24 hours before the start time for a full refund.</div>
+                <img src="img/item/itemTop.svg" alt="Ico">
+              </div>
+            </div>
+            <div class="item__block-photos">
+              <div class="item__slider">
+                <div class="item__photo">
+                  <img src="img/item/itemPhoto1.jpg" alt="Photo">
+                </div>
+              </div>
+              <div class="item__info_mob">
+                <div class="mob__owner item__owner">
+                  <div class="item__persone">
+                    <div class="persone__photo">
+                      <div class="photo__check">
+                        <img src="img/item/photoCheck.svg" alt="Check">
+                      </div>
+                      <img src="img/item/personePhoto1.jpg" alt="Photo">
+                    </div>
+                    <div class="persone__name"><span>Tamuna</span>
+                    </div>
+                  </div>
+                  <div class="item__rating">
+                    <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
+                    <div class="item__reviews">(132)</div>
+                  </div>
+                </div>
+                <div class="mob__prices">
+                  <div class="prices__item"><span>2 days x € 25</span><span>€ 50</span>
+                  </div>
+                  <div class="prices__item"><span>Delivery</span><span>€ 20</span>
+                  </div>
+                  <div class="prices__item"><span>Service</span><span>€ 10</span>
+                  </div>
+                  <div class="prices__all"><b>Total</b><b>€ 80n</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item__bottom">
+              <ul class="item__tags">
+                <li>
+                  <div class="li__text">Full damage Waiver</div><a href="#">ОСАГО</a>,
+                </li>
+                <li><a href="#">Супер КАСКО</a>
+                </li>
+              </ul>
+              <div class="item__deposit"><span>Deposit  </span><b>₽132 032</b>
+              </div>
+            </div>
+            <div class="item__owner">
+              <div class="item__persone">
+                <div class="persone__photo">
+                  <div class="photo__check">
+                    <img src="img/item/photoCheck.svg" alt="Check">
+                  </div>
+                  <img src="img/item/personePhoto1.jpg" alt="Photo">
+                </div>
+                <div class="persone__name"><span>Tamuna</span>
+                </div>
+              </div>
+              <div class="item__rating">
+                <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
+                <div class="item__reviews">(132)</div>
+              </div>
+            </div>
+            <div class="item__last">
+              <ul class="item__prices">
+                <li><span>Day</span><b>₽3 076</b>
+                </li>
+                <li><span>Delivery</span><b>₽3 076</b>
+                </li>
+              </ul>
+              <button class="item__buy btn-hover">Rent for ₽21 530</button>
+            </div>
+          </li>
+          <li class="car__item item-more-block">
+            <div class="item__top">
+              <div class="top__lft">
+                <div class="item__title">Subaru Forester</div>
+                <div class="item__info">Automatic | 2015 | 2.5 Petrol | 170 HP</div>
+              </div>
+              <div class="top__rht">
+                <div class="rht__text">Cancel up to 24 hours before the start time for a full refund.</div>
+                <img src="img/item/itemTop.svg" alt="Ico">
+              </div>
+            </div>
+            <div class="item__block-photos">
+              <div class="item__slider">
+                <div class="item__photo">
+                  <img src="img/item/itemPhoto1.jpg" alt="Photo">
+                </div>
+                <div class="item__photo">
+                  <img src="img/item/itemPhoto2.jpg" alt="Photo">
+                </div>
+                <div class="item__photo">
+                  <img src="img/item/itemPhoto3.jpg" alt="Photo">
+                </div>
+              </div>
+              <div class="item__info_mob">
+                <div class="mob__owner item__owner">
+                  <div class="item__persone">
+                    <div class="persone__photo">
+                      <div class="photo__check">
+                        <img src="img/item/photoCheck.svg" alt="Check">
+                      </div>
+                      <img src="img/item/personePhoto1.jpg" alt="Photo">
+                    </div>
+                    <div class="persone__name"><span>Tamuna</span>
+                    </div>
+                  </div>
+                  <div class="item__rating">
+                    <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
+                    <div class="item__reviews">(132)</div>
+                  </div>
+                </div>
+                <div class="mob__prices">
+                  <div class="prices__item"><span>2 days x € 25</span><span>€ 50</span>
+                  </div>
+                  <div class="prices__item"><span>Delivery</span><span>€ 20</span>
+                  </div>
+                  <div class="prices__item"><span>Service</span><span>€ 10</span>
+                  </div>
+                  <div class="prices__all"><b>Total</b><b>€ 80n</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item__bottom">
+              <ul class="item__tags">
+                <li>
+                  <div class="li__text">Full damage Waiver</div><a href="#">ОСАГО</a>,
+                </li>
+                <li><a href="#">Супер КАСКО</a>
+                </li>
+              </ul>
+              <div class="item__deposit"><span>Deposit  </span><b>₽132 032</b>
+              </div>
+            </div>
+            <div class="item__owner">
+              <div class="item__persone">
+                <div class="persone__photo">
+                  <div class="photo__check">
+                    <img src="img/item/photoCheck.svg" alt="Check">
+                  </div>
+                  <img src="img/item/personePhoto1.jpg" alt="Photo">
+                </div>
+                <div class="persone__name"><span>Tamuna</span>
+                </div>
+              </div>
+              <div class="item__rating">
+                <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
+                <div class="item__reviews">(132)</div>
+              </div>
+            </div>
+            <div class="item__last">
+              <ul class="item__prices">
+                <li><span>Day</span><b>₽3 076</b>
+                </li>
+                <li><span>Delivery</span><b>₽3 076</b>
+                </li>
+                <li><span>Service</span><b>₽3 076</b>
+                </li>
+              </ul>
+              <button class="item__buy btn-hover">Rent for ₽21 530</button>
+            </div>
+          </li>
+          <li class="car__item item-more-block">
+            <div class="item__top">
+              <div class="top__lft">
+                <div class="item__title">Subaru Forester</div>
+                <div class="item__info">Automatic | 2015 | 2.5 Petrol | 170 HP</div>
+              </div>
+              <div class="top__rht">
+                <div class="rht__text">Cancel up to 24 hours before the start time for a full refund.</div>
+                <img src="img/item/itemTop.svg" alt="Ico">
+              </div>
+            </div>
+            <div class="item__block-photos">
+              <div class="item__slider">
+                <div class="item__photo">
+                  <img src="img/item/itemPhoto1.jpg" alt="Photo">
+                </div>
+              </div>
+              <div class="item__info_mob">
+                <div class="mob__owner item__owner">
+                  <div class="item__persone">
+                    <div class="persone__photo">
+                      <div class="photo__check">
+                        <img src="img/item/photoCheck.svg" alt="Check">
+                      </div>
+                      <img src="img/item/personePhoto1.jpg" alt="Photo">
+                    </div>
+                    <div class="persone__name"><span>Tamuna</span>
+                    </div>
+                  </div>
+                  <div class="item__rating">
+                    <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
+                    <div class="item__reviews">(132)</div>
+                  </div>
+                </div>
+                <div class="mob__prices">
+                  <div class="prices__item"><span>2 days x € 25</span><span>€ 50</span>
+                  </div>
+                  <div class="prices__item"><span>Delivery</span><span>€ 20</span>
+                  </div>
+                  <div class="prices__item"><span>Service</span><span>€ 10</span>
+                  </div>
+                  <div class="prices__all"><b>Total</b><b>€ 80n</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item__bottom">
+              <ul class="item__tags">
+                <li>
+                  <div class="li__text">Full damage Waiver</div><a href="#">ОСАГО</a>,
+                </li>
+                <li><a href="#">Супер КАСКО</a>
+                </li>
+              </ul>
+              <div class="item__deposit"><span>Deposit  </span><b>₽132 032</b>
+              </div>
+            </div>
+            <div class="item__owner">
+              <div class="item__persone">
+                <div class="persone__photo">
+                  <div class="photo__check">
+                    <img src="img/item/photoCheck.svg" alt="Check">
+                  </div>
+                  <img src="img/item/personePhoto1.jpg" alt="Photo">
+                </div>
+                <div class="persone__name"><span>Tamuna</span>
+                </div>
+              </div>
+              <div class="item__rating">
+                <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
+                <div class="item__reviews">(132)</div>
+              </div>
+            </div>
+            <div class="item__last">
+              <ul class="item__prices">
+                <li><span>Day</span><b>₽3 076</b>
+                </li>
+                <li><span>Delivery</span><b>₽3 076</b>
+                </li>
+              </ul>
+              <button class="item__buy btn-hover">Rent for ₽21 530</button>
+            </div>
+          </li>
+          <li class="car__item item-more-block">
+            <div class="item__top">
+              <div class="top__lft">
+                <div class="item__title">Subaru Forester</div>
+                <div class="item__info">Automatic | 2015 | 2.5 Petrol | 170 HP</div>
+              </div>
+              <div class="top__rht">
+                <div class="rht__text">Cancel up to 24 hours before the start time for a full refund.</div>
+                <img src="img/item/itemTop.svg" alt="Ico">
+              </div>
+            </div>
+            <div class="item__block-photos">
+              <div class="item__slider">
+                <div class="item__photo">
+                  <img src="img/item/itemPhoto1.jpg" alt="Photo">
+                </div>
+                <div class="item__photo">
+                  <img src="img/item/itemPhoto2.jpg" alt="Photo">
+                </div>
+                <div class="item__photo">
+                  <img src="img/item/itemPhoto3.jpg" alt="Photo">
+                </div>
+              </div>
+              <div class="item__info_mob">
+                <div class="mob__owner item__owner">
+                  <div class="item__persone">
+                    <div class="persone__photo">
+                      <div class="photo__check">
+                        <img src="img/item/photoCheck.svg" alt="Check">
+                      </div>
+                      <img src="img/item/personePhoto1.jpg" alt="Photo">
+                    </div>
+                    <div class="persone__name"><span>Tamuna</span>
+                    </div>
+                  </div>
+                  <div class="item__rating">
+                    <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
+                    <div class="item__reviews">(132)</div>
+                  </div>
+                </div>
+                <div class="mob__prices">
+                  <div class="prices__item"><span>2 days x € 25</span><span>€ 50</span>
+                  </div>
+                  <div class="prices__item"><span>Delivery</span><span>€ 20</span>
+                  </div>
+                  <div class="prices__item"><span>Service</span><span>€ 10</span>
+                  </div>
+                  <div class="prices__all"><b>Total</b><b>€ 80n</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item__bottom">
+              <ul class="item__tags">
+                <li>
+                  <div class="li__text">Full damage Waiver</div><a href="#">ОСАГО</a>,
+                </li>
+                <li><a href="#">Супер КАСКО</a>
+                </li>
+              </ul>
+              <div class="item__deposit"><span>Deposit  </span><b>₽132 032</b>
+              </div>
+            </div>
+            <div class="item__owner">
+              <div class="item__persone">
+                <div class="persone__photo">
+                  <div class="photo__check">
+                    <img src="img/item/photoCheck.svg" alt="Check">
+                  </div>
+                  <img src="img/item/personePhoto1.jpg" alt="Photo">
+                </div>
+                <div class="persone__name"><span>Tamuna</span>
+                </div>
+              </div>
+              <div class="item__rating">
+                <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
+                <div class="item__reviews">(132)</div>
+              </div>
+            </div>
+            <div class="item__last">
+              <ul class="item__prices">
+                <li><span>Day</span><b>₽3 076</b>
+                </li>
+                <li><span>Delivery</span><b>₽3 076</b>
+                </li>
+                <li><span>Service</span><b>₽3 076</b>
+                </li>
+              </ul>
+              <button class="item__buy btn-hover">Rent for ₽21 530</button>
+            </div>
+          </li>
+          <li class="car__item item-more-block">
+            <div class="item__top">
+              <div class="top__lft">
+                <div class="item__title">Subaru Forester</div>
+                <div class="item__info">Automatic | 2015 | 2.5 Petrol | 170 HP</div>
+              </div>
+              <div class="top__rht">
+                <div class="rht__text">Cancel up to 24 hours before the start time for a full refund.</div>
+                <img src="img/item/itemTop.svg" alt="Ico">
+              </div>
+            </div>
+            <div class="item__block-photos">
+              <div class="item__slider">
+                <div class="item__photo">
+                  <img src="img/item/itemPhoto1.jpg" alt="Photo">
+                </div>
+              </div>
+              <div class="item__info_mob">
+                <div class="mob__owner item__owner">
+                  <div class="item__persone">
+                    <div class="persone__photo">
+                      <div class="photo__check">
+                        <img src="img/item/photoCheck.svg" alt="Check">
+                      </div>
+                      <img src="img/item/personePhoto1.jpg" alt="Photo">
+                    </div>
+                    <div class="persone__name"><span>Tamuna</span>
+                    </div>
+                  </div>
+                  <div class="item__rating">
+                    <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
+                    <div class="item__reviews">(132)</div>
+                  </div>
+                </div>
+                <div class="mob__prices">
+                  <div class="prices__item"><span>2 days x € 25</span><span>€ 50</span>
+                  </div>
+                  <div class="prices__item"><span>Delivery</span><span>€ 20</span>
+                  </div>
+                  <div class="prices__item"><span>Service</span><span>€ 10</span>
+                  </div>
+                  <div class="prices__all"><b>Total</b><b>€ 80n</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item__bottom">
+              <ul class="item__tags">
+                <li>
+                  <div class="li__text">Full damage Waiver</div><a href="#">ОСАГО</a>,
+                </li>
+                <li><a href="#">Супер КАСКО</a>
+                </li>
+              </ul>
+              <div class="item__deposit"><span>Deposit  </span><b>₽132 032</b>
+              </div>
+            </div>
+            <div class="item__owner">
+              <div class="item__persone">
+                <div class="persone__photo">
+                  <div class="photo__check">
+                    <img src="img/item/photoCheck.svg" alt="Check">
+                  </div>
+                  <img src="img/item/personePhoto1.jpg" alt="Photo">
+                </div>
+                <div class="persone__name"><span>Tamuna</span>
+                </div>
+              </div>
+              <div class="item__rating">
+                <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
+                <div class="item__reviews">(132)</div>
+              </div>
+            </div>
+            <div class="item__last">
+              <ul class="item__prices">
+                <li><span>Day</span><b>₽3 076</b>
+                </li>
+                <li><span>Delivery</span><b>₽3 076</b>
+                </li>
+              </ul>
+              <button class="item__buy btn-hover">Rent for ₽21 530</button>
+            </div>
+          </li>
+          <li class="car__item item-more-block">
+            <div class="item__top">
+              <div class="top__lft">
+                <div class="item__title">Subaru Forester</div>
+                <div class="item__info">Automatic | 2015 | 2.5 Petrol | 170 HP</div>
+              </div>
+              <div class="top__rht">
+                <div class="rht__text">Cancel up to 24 hours before the start time for a full refund.</div>
+                <img src="img/item/itemTop.svg" alt="Ico">
+              </div>
+            </div>
+            <div class="item__block-photos">
+              <div class="item__slider">
+                <div class="item__photo">
+                  <img src="img/item/itemPhoto1.jpg" alt="Photo">
+                </div>
+                <div class="item__photo">
+                  <img src="img/item/itemPhoto2.jpg" alt="Photo">
+                </div>
+                <div class="item__photo">
+                  <img src="img/item/itemPhoto3.jpg" alt="Photo">
+                </div>
+              </div>
+              <div class="item__info_mob">
+                <div class="mob__owner item__owner">
+                  <div class="item__persone">
+                    <div class="persone__photo">
+                      <div class="photo__check">
+                        <img src="img/item/photoCheck.svg" alt="Check">
+                      </div>
+                      <img src="img/item/personePhoto1.jpg" alt="Photo">
+                    </div>
+                    <div class="persone__name"><span>Tamuna</span>
+                    </div>
+                  </div>
+                  <div class="item__rating">
+                    <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
+                    <div class="item__reviews">(132)</div>
+                  </div>
+                </div>
+                <div class="mob__prices">
+                  <div class="prices__item"><span>2 days x € 25</span><span>€ 50</span>
+                  </div>
+                  <div class="prices__item"><span>Delivery</span><span>€ 20</span>
+                  </div>
+                  <div class="prices__item"><span>Service</span><span>€ 10</span>
+                  </div>
+                  <div class="prices__all"><b>Total</b><b>€ 80n</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item__bottom">
+              <ul class="item__tags">
+                <li>
+                  <div class="li__text">Full damage Waiver</div><a href="#">ОСАГО</a>,
+                </li>
+                <li><a href="#">Супер КАСКО</a>
+                </li>
+              </ul>
+              <div class="item__deposit"><span>Deposit  </span><b>₽132 032</b>
+              </div>
+            </div>
+            <div class="item__owner">
+              <div class="item__persone">
+                <div class="persone__photo">
+                  <div class="photo__check">
+                    <img src="img/item/photoCheck.svg" alt="Check">
+                  </div>
+                  <img src="img/item/personePhoto1.jpg" alt="Photo">
+                </div>
+                <div class="persone__name"><span>Tamuna</span>
+                </div>
+              </div>
+              <div class="item__rating">
+                <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
+                <div class="item__reviews">(132)</div>
+              </div>
+            </div>
+            <div class="item__last">
+              <ul class="item__prices">
+                <li><span>Day</span><b>₽3 076</b>
+                </li>
+                <li><span>Delivery</span><b>₽3 076</b>
+                </li>
+                <li><span>Service</span><b>₽3 076</b>
+                </li>
+              </ul>
+              <button class="item__buy btn-hover">Rent for ₽21 530</button>
+            </div>
+          </li>
+          <li class="car__item item-more-block">
+            <div class="item__top">
+              <div class="top__lft">
+                <div class="item__title">Subaru Forester</div>
+                <div class="item__info">Automatic | 2015 | 2.5 Petrol | 170 HP</div>
+              </div>
+              <div class="top__rht">
+                <div class="rht__text">Cancel up to 24 hours before the start time for a full refund.</div>
+                <img src="img/item/itemTop.svg" alt="Ico">
+              </div>
+            </div>
+            <div class="item__block-photos">
+              <div class="item__slider">
+                <div class="item__photo">
+                  <img src="img/item/itemPhoto1.jpg" alt="Photo">
+                </div>
+              </div>
+              <div class="item__info_mob">
+                <div class="mob__owner item__owner">
+                  <div class="item__persone">
+                    <div class="persone__photo">
+                      <div class="photo__check">
+                        <img src="img/item/photoCheck.svg" alt="Check">
+                      </div>
+                      <img src="img/item/personePhoto1.jpg" alt="Photo">
+                    </div>
+                    <div class="persone__name"><span>Tamuna</span>
+                    </div>
+                  </div>
+                  <div class="item__rating">
+                    <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
+                    <div class="item__reviews">(132)</div>
+                  </div>
+                </div>
+                <div class="mob__prices">
+                  <div class="prices__item"><span>2 days x € 25</span><span>€ 50</span>
+                  </div>
+                  <div class="prices__item"><span>Delivery</span><span>€ 20</span>
+                  </div>
+                  <div class="prices__item"><span>Service</span><span>€ 10</span>
+                  </div>
+                  <div class="prices__all"><b>Total</b><b>€ 80n</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item__bottom">
+              <ul class="item__tags">
+                <li>
+                  <div class="li__text">Full damage Waiver</div><a href="#">ОСАГО</a>,
+                </li>
+                <li><a href="#">Супер КАСКО</a>
+                </li>
+              </ul>
+              <div class="item__deposit"><span>Deposit  </span><b>₽132 032</b>
+              </div>
+            </div>
+            <div class="item__owner">
+              <div class="item__persone">
+                <div class="persone__photo">
+                  <div class="photo__check">
+                    <img src="img/item/photoCheck.svg" alt="Check">
+                  </div>
+                  <img src="img/item/personePhoto1.jpg" alt="Photo">
+                </div>
+                <div class="persone__name"><span>Tamuna</span>
+                </div>
+              </div>
+              <div class="item__rating">
+                <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
+                <div class="item__reviews">(132)</div>
+              </div>
+            </div>
+            <div class="item__last">
+              <ul class="item__prices">
+                <li><span>Day</span><b>₽3 076</b>
+                </li>
+                <li><span>Delivery</span><b>₽3 076</b>
+                </li>
+              </ul>
+              <button class="item__buy btn-hover">Rent for ₽21 530</button>
+            </div>
+          </li>
+          <li class="car__item item-more-block">
+            <div class="item__top">
+              <div class="top__lft">
+                <div class="item__title">Subaru Forester</div>
+                <div class="item__info">Automatic | 2015 | 2.5 Petrol | 170 HP</div>
+              </div>
+              <div class="top__rht">
+                <div class="rht__text">Cancel up to 24 hours before the start time for a full refund.</div>
+                <img src="img/item/itemTop.svg" alt="Ico">
+              </div>
+            </div>
+            <div class="item__block-photos">
+              <div class="item__slider">
+                <div class="item__photo">
+                  <img src="img/item/itemPhoto1.jpg" alt="Photo">
+                </div>
+                <div class="item__photo">
+                  <img src="img/item/itemPhoto2.jpg" alt="Photo">
+                </div>
+                <div class="item__photo">
+                  <img src="img/item/itemPhoto3.jpg" alt="Photo">
+                </div>
+              </div>
+              <div class="item__info_mob">
+                <div class="mob__owner item__owner">
+                  <div class="item__persone">
+                    <div class="persone__photo">
+                      <div class="photo__check">
+                        <img src="img/item/photoCheck.svg" alt="Check">
+                      </div>
+                      <img src="img/item/personePhoto1.jpg" alt="Photo">
+                    </div>
+                    <div class="persone__name"><span>Tamuna</span>
+                    </div>
+                  </div>
+                  <div class="item__rating">
+                    <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
+                    <div class="item__reviews">(132)</div>
+                  </div>
+                </div>
+                <div class="mob__prices">
+                  <div class="prices__item"><span>2 days x € 25</span><span>€ 50</span>
+                  </div>
+                  <div class="prices__item"><span>Delivery</span><span>€ 20</span>
+                  </div>
+                  <div class="prices__item"><span>Service</span><span>€ 10</span>
+                  </div>
+                  <div class="prices__all"><b>Total</b><b>€ 80n</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item__bottom">
+              <ul class="item__tags">
+                <li>
+                  <div class="li__text">Full damage Waiver</div><a href="#">ОСАГО</a>,
+                </li>
+                <li><a href="#">Супер КАСКО</a>
+                </li>
+              </ul>
+              <div class="item__deposit"><span>Deposit  </span><b>₽132 032</b>
+              </div>
+            </div>
+            <div class="item__owner">
+              <div class="item__persone">
+                <div class="persone__photo">
+                  <div class="photo__check">
+                    <img src="img/item/photoCheck.svg" alt="Check">
+                  </div>
+                  <img src="img/item/personePhoto1.jpg" alt="Photo">
+                </div>
+                <div class="persone__name"><span>Tamuna</span>
+                </div>
+              </div>
+              <div class="item__rating">
+                <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
+                <div class="item__reviews">(132)</div>
+              </div>
+            </div>
+            <div class="item__last">
+              <ul class="item__prices">
+                <li><span>Day</span><b>₽3 076</b>
+                </li>
+                <li><span>Delivery</span><b>₽3 076</b>
+                </li>
+                <li><span>Service</span><b>₽3 076</b>
+                </li>
+              </ul>
+              <button class="item__buy btn-hover">Rent for ₽21 530</button>
+            </div>
+          </li>
+          <li class="car__item item-more-block">
+            <div class="item__top">
+              <div class="top__lft">
+                <div class="item__title">Subaru Forester</div>
+                <div class="item__info">Automatic | 2015 | 2.5 Petrol | 170 HP</div>
+              </div>
+              <div class="top__rht">
+                <div class="rht__text">Cancel up to 24 hours before the start time for a full refund.</div>
+                <img src="img/item/itemTop.svg" alt="Ico">
+              </div>
+            </div>
+            <div class="item__block-photos">
+              <div class="item__slider">
+                <div class="item__photo">
+                  <img src="img/item/itemPhoto1.jpg" alt="Photo">
+                </div>
+              </div>
+              <div class="item__info_mob">
+                <div class="mob__owner item__owner">
+                  <div class="item__persone">
+                    <div class="persone__photo">
+                      <div class="photo__check">
+                        <img src="img/item/photoCheck.svg" alt="Check">
+                      </div>
+                      <img src="img/item/personePhoto1.jpg" alt="Photo">
+                    </div>
+                    <div class="persone__name"><span>Tamuna</span>
+                    </div>
+                  </div>
+                  <div class="item__rating">
+                    <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
+                    <div class="item__reviews">(132)</div>
+                  </div>
+                </div>
+                <div class="mob__prices">
+                  <div class="prices__item"><span>2 days x € 25</span><span>€ 50</span>
+                  </div>
+                  <div class="prices__item"><span>Delivery</span><span>€ 20</span>
+                  </div>
+                  <div class="prices__item"><span>Service</span><span>€ 10</span>
+                  </div>
+                  <div class="prices__all"><b>Total</b><b>€ 80n</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item__bottom">
+              <ul class="item__tags">
+                <li>
+                  <div class="li__text">Full damage Waiver</div><a href="#">ОСАГО</a>,
+                </li>
+                <li><a href="#">Супер КАСКО</a>
+                </li>
+              </ul>
+              <div class="item__deposit"><span>Deposit  </span><b>₽132 032</b>
+              </div>
+            </div>
+            <div class="item__owner">
+              <div class="item__persone">
+                <div class="persone__photo">
+                  <div class="photo__check">
+                    <img src="img/item/photoCheck.svg" alt="Check">
+                  </div>
+                  <img src="img/item/personePhoto1.jpg" alt="Photo">
+                </div>
+                <div class="persone__name"><span>Tamuna</span>
+                </div>
+              </div>
+              <div class="item__rating">
+                <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
+                <div class="item__reviews">(132)</div>
+              </div>
+            </div>
+            <div class="item__last">
+              <ul class="item__prices">
+                <li><span>Day</span><b>₽3 076</b>
+                </li>
+                <li><span>Delivery</span><b>₽3 076</b>
+                </li>
+              </ul>
+              <button class="item__buy btn-hover">Rent for ₽21 530</button>
+            </div>
+          </li>
+          <li class="car__item item-more-block">
+            <div class="item__top">
+              <div class="top__lft">
+                <div class="item__title">Subaru Forester</div>
+                <div class="item__info">Automatic | 2015 | 2.5 Petrol | 170 HP</div>
+              </div>
+              <div class="top__rht">
+                <div class="rht__text">Cancel up to 24 hours before the start time for a full refund.</div>
+                <img src="img/item/itemTop.svg" alt="Ico">
+              </div>
+            </div>
+            <div class="item__block-photos">
+              <div class="item__slider">
+                <div class="item__photo">
+                  <img src="img/item/itemPhoto1.jpg" alt="Photo">
+                </div>
+                <div class="item__photo">
+                  <img src="img/item/itemPhoto2.jpg" alt="Photo">
+                </div>
+                <div class="item__photo">
+                  <img src="img/item/itemPhoto3.jpg" alt="Photo">
+                </div>
+              </div>
+              <div class="item__info_mob">
+                <div class="mob__owner item__owner">
+                  <div class="item__persone">
+                    <div class="persone__photo">
+                      <div class="photo__check">
+                        <img src="img/item/photoCheck.svg" alt="Check">
+                      </div>
+                      <img src="img/item/personePhoto1.jpg" alt="Photo">
+                    </div>
+                    <div class="persone__name"><span>Tamuna</span>
+                    </div>
+                  </div>
+                  <div class="item__rating">
+                    <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
+                    <div class="item__reviews">(132)</div>
+                  </div>
+                </div>
+                <div class="mob__prices">
+                  <div class="prices__item"><span>2 days x € 25</span><span>€ 50</span>
+                  </div>
+                  <div class="prices__item"><span>Delivery</span><span>€ 20</span>
+                  </div>
+                  <div class="prices__item"><span>Service</span><span>€ 10</span>
+                  </div>
+                  <div class="prices__all"><b>Total</b><b>€ 80n</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item__bottom">
+              <ul class="item__tags">
+                <li>
+                  <div class="li__text">Full damage Waiver</div><a href="#">ОСАГО</a>,
+                </li>
+                <li><a href="#">Супер КАСКО</a>
+                </li>
+              </ul>
+              <div class="item__deposit"><span>Deposit  </span><b>₽132 032</b>
+              </div>
+            </div>
+            <div class="item__owner">
+              <div class="item__persone">
+                <div class="persone__photo">
+                  <div class="photo__check">
+                    <img src="img/item/photoCheck.svg" alt="Check">
+                  </div>
+                  <img src="img/item/personePhoto1.jpg" alt="Photo">
+                </div>
+                <div class="persone__name"><span>Tamuna</span>
+                </div>
+              </div>
+              <div class="item__rating">
+                <img src="img/item/itemStar.svg" alt="Star"><b>4.8</b>
+                <div class="item__reviews">(132)</div>
+              </div>
+            </div>
+            <div class="item__last">
+              <ul class="item__prices">
+                <li><span>Day</span><b>₽3 076</b>
+                </li>
+                <li><span>Delivery</span><b>₽3 076</b>
+                </li>
+                <li><span>Service</span><b>₽3 076</b>
+                </li>
+              </ul>
+              <button class="item__buy btn-hover">Rent for ₽21 530</button>
+            </div>
+          </li>
+          <li class="car__item item-more-block">
             <div class="item__top">
               <div class="top__lft">
                 <div class="item__title">Subaru Forester</div>
@@ -3052,6 +3074,9 @@
         <div class="list__more">
           <div class="lines"></div>
           <button class="btn-hover">Show more</button>
+        </div>
+        <div class="list__more_end">
+          <p>Displaying 208 out of 208 cars</p><a href="#">Back to top</a>
         </div>
       </div>
     </section>
@@ -5988,6 +6013,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <!-- jQuery UI JS -->
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script src="js/jq_ui_touch.js"></script>
   <script src="libs/lightbox/dist/js/lightbox.js"></script>
   <!-- select2 JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js"></script>

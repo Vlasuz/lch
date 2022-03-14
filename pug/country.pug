@@ -114,14 +114,14 @@ block content
 									img(src="img/svg/filters.svg" alt="Filter")
 									span Filters
 									span.count 3
-								ul.filters__list
-									li
+								.filters__list
+									label
 										span Transmission: ANY
-									li
+									label
 										span Seats 7+
 										button
 											img(src="img/svg/filterDelete.svg" alt="Delete")
-									li
+									label
 										span Free CDW
 										button
 											img(src="img/svg/filterDelete.svg" alt="Delete")
@@ -140,8 +140,8 @@ block content
 							.option
 								span CHEAP first
 					.list__count 209 cars based on your filters
-				ul.list__content.list__content_lots
-					li.car__item
+				ul.list__content.list__content_lots(data-show-items="12")
+					li.car__item.item-more-block
 						.item__top
 							.top__lft
 								.item__title Subaru Forester
@@ -218,7 +218,7 @@ block content
 									span Service
 									b ₽3 076
 							button.item__buy.btn-hover Rent for ₽21 530
-					li.car__item
+					li.car__item.item-more-block
 						.item__top
 							.top__lft
 								.item__title Subaru Forester
@@ -288,154 +288,7 @@ block content
 									span Delivery
 									b ₽3 076
 							button.item__buy.btn-hover Rent for ₽21 530
-					li.car__item
-						.item__top
-							.top__lft
-								.item__title Subaru Forester
-								.item__info Automatic | 2015 | 2.5 Petrol | 170 HP
-							.top__rht
-								.rht__text Cancel up to 24 hours before the start time for a full refund.
-								img(src="img/item/itemTop.svg" alt="Ico")
-						.item__block-photos
-							.item__slider
-								.item__photo
-									img(src="img/item/itemPhoto1.jpg" alt="Photo")
-								.item__photo
-									img(src="img/item/itemPhoto2.jpg" alt="Photo")
-								.item__photo
-									img(src="img/item/itemPhoto3.jpg" alt="Photo")
-							.item__info_mob
-								.mob__owner.item__owner
-									.item__persone
-										.persone__photo
-											.photo__check
-												img(src="img/item/photoCheck.svg" alt="Check")
-											img(src="img/item/personePhoto1.jpg" alt="Photo")
-										.persone__name
-											span Tamuna
-									.item__rating
-										img(src="img/item/itemStar.svg" alt="Star")
-										b 4.8
-										.item__reviews (132)
-								.mob__prices
-									.prices__item
-										span 2 days x € 25
-										span € 50
-									.prices__item
-										span Delivery
-										span € 20
-									.prices__item
-										span Service
-										span € 10
-									.prices__all
-										b Total
-										b € 80n
-						.item__bottom
-							ul.item__tags
-								li
-									.li__text Full damage Waiver
-									a(href="#") ОСАГО
-									|,
-								li
-									a(href="#") Супер КАСКО
-							.item__deposit
-								span Deposit  
-								b ₽132 032
-						.item__owner
-							.item__persone
-								.persone__photo
-									.photo__check
-										img(src="img/item/photoCheck.svg" alt="Check")
-									img(src="img/item/personePhoto1.jpg" alt="Photo")
-								.persone__name
-									span Tamuna
-							.item__rating
-								img(src="img/item/itemStar.svg" alt="Star")
-								b 4.8
-								.item__reviews (132)
-						.item__last
-							ul.item__prices
-								li
-									span Day
-									b ₽3 076
-								li
-									span Delivery
-									b ₽3 076
-								li
-									span Service
-									b ₽3 076
-							button.item__buy.btn-hover Rent for ₽21 530
-					li.car__item
-						.item__top
-							.top__lft
-								.item__title Subaru Forester
-								.item__info Automatic | 2015 | 2.5 Petrol | 170 HP
-							.top__rht
-								.rht__text Cancel up to 24 hours before the start time for a full refund.
-								img(src="img/item/itemTop.svg" alt="Ico")
-						.item__block-photos
-							.item__slider
-								.item__photo
-									img(src="img/item/itemPhoto1.jpg" alt="Photo")
-							.item__info_mob
-								.mob__owner.item__owner
-									.item__persone
-										.persone__photo
-											.photo__check
-												img(src="img/item/photoCheck.svg" alt="Check")
-											img(src="img/item/personePhoto1.jpg" alt="Photo")
-										.persone__name
-											span Tamuna
-									.item__rating
-										img(src="img/item/itemStar.svg" alt="Star")
-										b 4.8
-										.item__reviews (132)
-								.mob__prices
-									.prices__item
-										span 2 days x € 25
-										span € 50
-									.prices__item
-										span Delivery
-										span € 20
-									.prices__item
-										span Service
-										span € 10
-									.prices__all
-										b Total
-										b € 80n
-						.item__bottom
-							ul.item__tags
-								li
-									.li__text Full damage Waiver
-									a(href="#") ОСАГО
-									|,
-								li
-									a(href="#") Супер КАСКО
-							.item__deposit
-								span Deposit  
-								b ₽132 032
-						.item__owner
-							.item__persone
-								.persone__photo
-									.photo__check
-										img(src="img/item/photoCheck.svg" alt="Check")
-									img(src="img/item/personePhoto1.jpg" alt="Photo")
-								.persone__name
-									span Tamuna
-							.item__rating
-								img(src="img/item/itemStar.svg" alt="Star")
-								b 4.8
-								.item__reviews (132)
-						.item__last
-							ul.item__prices
-								li
-									span Day
-									b ₽3 076
-								li
-									span Delivery
-									b ₽3 076
-							button.item__buy.btn-hover Rent for ₽21 530
-					li.car__item
+					li.car__item.item-more-block
 						.item__top
 							.top__lft
 								.item__title Subaru Forester
@@ -512,7 +365,7 @@ block content
 									span Service
 									b ₽3 076
 							button.item__buy.btn-hover Rent for ₽21 530
-					li.car__item
+					li.car__item.item-more-block
 						.item__top
 							.top__lft
 								.item__title Subaru Forester
@@ -582,154 +435,7 @@ block content
 									span Delivery
 									b ₽3 076
 							button.item__buy.btn-hover Rent for ₽21 530
-					li.car__item
-						.item__top
-							.top__lft
-								.item__title Subaru Forester
-								.item__info Automatic | 2015 | 2.5 Petrol | 170 HP
-							.top__rht
-								.rht__text Cancel up to 24 hours before the start time for a full refund.
-								img(src="img/item/itemTop.svg" alt="Ico")
-						.item__block-photos
-							.item__slider
-								.item__photo
-									img(src="img/item/itemPhoto1.jpg" alt="Photo")
-								.item__photo
-									img(src="img/item/itemPhoto2.jpg" alt="Photo")
-								.item__photo
-									img(src="img/item/itemPhoto3.jpg" alt="Photo")
-							.item__info_mob
-								.mob__owner.item__owner
-									.item__persone
-										.persone__photo
-											.photo__check
-												img(src="img/item/photoCheck.svg" alt="Check")
-											img(src="img/item/personePhoto1.jpg" alt="Photo")
-										.persone__name
-											span Tamuna
-									.item__rating
-										img(src="img/item/itemStar.svg" alt="Star")
-										b 4.8
-										.item__reviews (132)
-								.mob__prices
-									.prices__item
-										span 2 days x € 25
-										span € 50
-									.prices__item
-										span Delivery
-										span € 20
-									.prices__item
-										span Service
-										span € 10
-									.prices__all
-										b Total
-										b € 80n
-						.item__bottom
-							ul.item__tags
-								li
-									.li__text Full damage Waiver
-									a(href="#") ОСАГО
-									|,
-								li
-									a(href="#") Супер КАСКО
-							.item__deposit
-								span Deposit  
-								b ₽132 032
-						.item__owner
-							.item__persone
-								.persone__photo
-									.photo__check
-										img(src="img/item/photoCheck.svg" alt="Check")
-									img(src="img/item/personePhoto1.jpg" alt="Photo")
-								.persone__name
-									span Tamuna
-							.item__rating
-								img(src="img/item/itemStar.svg" alt="Star")
-								b 4.8
-								.item__reviews (132)
-						.item__last
-							ul.item__prices
-								li
-									span Day
-									b ₽3 076
-								li
-									span Delivery
-									b ₽3 076
-								li
-									span Service
-									b ₽3 076
-							button.item__buy.btn-hover Rent for ₽21 530
-					li.car__item
-						.item__top
-							.top__lft
-								.item__title Subaru Forester
-								.item__info Automatic | 2015 | 2.5 Petrol | 170 HP
-							.top__rht
-								.rht__text Cancel up to 24 hours before the start time for a full refund.
-								img(src="img/item/itemTop.svg" alt="Ico")
-						.item__block-photos
-							.item__slider
-								.item__photo
-									img(src="img/item/itemPhoto1.jpg" alt="Photo")
-							.item__info_mob
-								.mob__owner.item__owner
-									.item__persone
-										.persone__photo
-											.photo__check
-												img(src="img/item/photoCheck.svg" alt="Check")
-											img(src="img/item/personePhoto1.jpg" alt="Photo")
-										.persone__name
-											span Tamuna
-									.item__rating
-										img(src="img/item/itemStar.svg" alt="Star")
-										b 4.8
-										.item__reviews (132)
-								.mob__prices
-									.prices__item
-										span 2 days x € 25
-										span € 50
-									.prices__item
-										span Delivery
-										span € 20
-									.prices__item
-										span Service
-										span € 10
-									.prices__all
-										b Total
-										b € 80n
-						.item__bottom
-							ul.item__tags
-								li
-									.li__text Full damage Waiver
-									a(href="#") ОСАГО
-									|,
-								li
-									a(href="#") Супер КАСКО
-							.item__deposit
-								span Deposit  
-								b ₽132 032
-						.item__owner
-							.item__persone
-								.persone__photo
-									.photo__check
-										img(src="img/item/photoCheck.svg" alt="Check")
-									img(src="img/item/personePhoto1.jpg" alt="Photo")
-								.persone__name
-									span Tamuna
-							.item__rating
-								img(src="img/item/itemStar.svg" alt="Star")
-								b 4.8
-								.item__reviews (132)
-						.item__last
-							ul.item__prices
-								li
-									span Day
-									b ₽3 076
-								li
-									span Delivery
-									b ₽3 076
-							button.item__buy.btn-hover Rent for ₽21 530
-					li.car__item
+					li.car__item.item-more-block
 						.item__top
 							.top__lft
 								.item__title Subaru Forester
@@ -806,7 +512,7 @@ block content
 									span Service
 									b ₽3 076
 							button.item__buy.btn-hover Rent for ₽21 530
-					li.car__item
+					li.car__item.item-more-block
 						.item__top
 							.top__lft
 								.item__title Subaru Forester
@@ -876,154 +582,7 @@ block content
 									span Delivery
 									b ₽3 076
 							button.item__buy.btn-hover Rent for ₽21 530
-					li.car__item
-						.item__top
-							.top__lft
-								.item__title Subaru Forester
-								.item__info Automatic | 2015 | 2.5 Petrol | 170 HP
-							.top__rht
-								.rht__text Cancel up to 24 hours before the start time for a full refund.
-								img(src="img/item/itemTop.svg" alt="Ico")
-						.item__block-photos
-							.item__slider
-								.item__photo
-									img(src="img/item/itemPhoto1.jpg" alt="Photo")
-								.item__photo
-									img(src="img/item/itemPhoto2.jpg" alt="Photo")
-								.item__photo
-									img(src="img/item/itemPhoto3.jpg" alt="Photo")
-							.item__info_mob
-								.mob__owner.item__owner
-									.item__persone
-										.persone__photo
-											.photo__check
-												img(src="img/item/photoCheck.svg" alt="Check")
-											img(src="img/item/personePhoto1.jpg" alt="Photo")
-										.persone__name
-											span Tamuna
-									.item__rating
-										img(src="img/item/itemStar.svg" alt="Star")
-										b 4.8
-										.item__reviews (132)
-								.mob__prices
-									.prices__item
-										span 2 days x € 25
-										span € 50
-									.prices__item
-										span Delivery
-										span € 20
-									.prices__item
-										span Service
-										span € 10
-									.prices__all
-										b Total
-										b € 80n
-						.item__bottom
-							ul.item__tags
-								li
-									.li__text Full damage Waiver
-									a(href="#") ОСАГО
-									|,
-								li
-									a(href="#") Супер КАСКО
-							.item__deposit
-								span Deposit  
-								b ₽132 032
-						.item__owner
-							.item__persone
-								.persone__photo
-									.photo__check
-										img(src="img/item/photoCheck.svg" alt="Check")
-									img(src="img/item/personePhoto1.jpg" alt="Photo")
-								.persone__name
-									span Tamuna
-							.item__rating
-								img(src="img/item/itemStar.svg" alt="Star")
-								b 4.8
-								.item__reviews (132)
-						.item__last
-							ul.item__prices
-								li
-									span Day
-									b ₽3 076
-								li
-									span Delivery
-									b ₽3 076
-								li
-									span Service
-									b ₽3 076
-							button.item__buy.btn-hover Rent for ₽21 530
-					li.car__item
-						.item__top
-							.top__lft
-								.item__title Subaru Forester
-								.item__info Automatic | 2015 | 2.5 Petrol | 170 HP
-							.top__rht
-								.rht__text Cancel up to 24 hours before the start time for a full refund.
-								img(src="img/item/itemTop.svg" alt="Ico")
-						.item__block-photos
-							.item__slider
-								.item__photo
-									img(src="img/item/itemPhoto1.jpg" alt="Photo")
-							.item__info_mob
-								.mob__owner.item__owner
-									.item__persone
-										.persone__photo
-											.photo__check
-												img(src="img/item/photoCheck.svg" alt="Check")
-											img(src="img/item/personePhoto1.jpg" alt="Photo")
-										.persone__name
-											span Tamuna
-									.item__rating
-										img(src="img/item/itemStar.svg" alt="Star")
-										b 4.8
-										.item__reviews (132)
-								.mob__prices
-									.prices__item
-										span 2 days x € 25
-										span € 50
-									.prices__item
-										span Delivery
-										span € 20
-									.prices__item
-										span Service
-										span € 10
-									.prices__all
-										b Total
-										b € 80n
-						.item__bottom
-							ul.item__tags
-								li
-									.li__text Full damage Waiver
-									a(href="#") ОСАГО
-									|,
-								li
-									a(href="#") Супер КАСКО
-							.item__deposit
-								span Deposit  
-								b ₽132 032
-						.item__owner
-							.item__persone
-								.persone__photo
-									.photo__check
-										img(src="img/item/photoCheck.svg" alt="Check")
-									img(src="img/item/personePhoto1.jpg" alt="Photo")
-								.persone__name
-									span Tamuna
-							.item__rating
-								img(src="img/item/itemStar.svg" alt="Star")
-								b 4.8
-								.item__reviews (132)
-						.item__last
-							ul.item__prices
-								li
-									span Day
-									b ₽3 076
-								li
-									span Delivery
-									b ₽3 076
-							button.item__buy.btn-hover Rent for ₽21 530
-					li.car__item
+					li.car__item.item-more-block
 						.item__top
 							.top__lft
 								.item__title Subaru Forester
@@ -1100,7 +659,7 @@ block content
 									span Service
 									b ₽3 076
 							button.item__buy.btn-hover Rent for ₽21 530
-					li.car__item
+					li.car__item.item-more-block
 						.item__top
 							.top__lft
 								.item__title Subaru Forester
@@ -1170,154 +729,7 @@ block content
 									span Delivery
 									b ₽3 076
 							button.item__buy.btn-hover Rent for ₽21 530
-					li.car__item
-						.item__top
-							.top__lft
-								.item__title Subaru Forester
-								.item__info Automatic | 2015 | 2.5 Petrol | 170 HP
-							.top__rht
-								.rht__text Cancel up to 24 hours before the start time for a full refund.
-								img(src="img/item/itemTop.svg" alt="Ico")
-						.item__block-photos
-							.item__slider
-								.item__photo
-									img(src="img/item/itemPhoto1.jpg" alt="Photo")
-								.item__photo
-									img(src="img/item/itemPhoto2.jpg" alt="Photo")
-								.item__photo
-									img(src="img/item/itemPhoto3.jpg" alt="Photo")
-							.item__info_mob
-								.mob__owner.item__owner
-									.item__persone
-										.persone__photo
-											.photo__check
-												img(src="img/item/photoCheck.svg" alt="Check")
-											img(src="img/item/personePhoto1.jpg" alt="Photo")
-										.persone__name
-											span Tamuna
-									.item__rating
-										img(src="img/item/itemStar.svg" alt="Star")
-										b 4.8
-										.item__reviews (132)
-								.mob__prices
-									.prices__item
-										span 2 days x € 25
-										span € 50
-									.prices__item
-										span Delivery
-										span € 20
-									.prices__item
-										span Service
-										span € 10
-									.prices__all
-										b Total
-										b € 80n
-						.item__bottom
-							ul.item__tags
-								li
-									.li__text Full damage Waiver
-									a(href="#") ОСАГО
-									|,
-								li
-									a(href="#") Супер КАСКО
-							.item__deposit
-								span Deposit  
-								b ₽132 032
-						.item__owner
-							.item__persone
-								.persone__photo
-									.photo__check
-										img(src="img/item/photoCheck.svg" alt="Check")
-									img(src="img/item/personePhoto1.jpg" alt="Photo")
-								.persone__name
-									span Tamuna
-							.item__rating
-								img(src="img/item/itemStar.svg" alt="Star")
-								b 4.8
-								.item__reviews (132)
-						.item__last
-							ul.item__prices
-								li
-									span Day
-									b ₽3 076
-								li
-									span Delivery
-									b ₽3 076
-								li
-									span Service
-									b ₽3 076
-							button.item__buy.btn-hover Rent for ₽21 530
-					li.car__item
-						.item__top
-							.top__lft
-								.item__title Subaru Forester
-								.item__info Automatic | 2015 | 2.5 Petrol | 170 HP
-							.top__rht
-								.rht__text Cancel up to 24 hours before the start time for a full refund.
-								img(src="img/item/itemTop.svg" alt="Ico")
-						.item__block-photos
-							.item__slider
-								.item__photo
-									img(src="img/item/itemPhoto1.jpg" alt="Photo")
-							.item__info_mob
-								.mob__owner.item__owner
-									.item__persone
-										.persone__photo
-											.photo__check
-												img(src="img/item/photoCheck.svg" alt="Check")
-											img(src="img/item/personePhoto1.jpg" alt="Photo")
-										.persone__name
-											span Tamuna
-									.item__rating
-										img(src="img/item/itemStar.svg" alt="Star")
-										b 4.8
-										.item__reviews (132)
-								.mob__prices
-									.prices__item
-										span 2 days x € 25
-										span € 50
-									.prices__item
-										span Delivery
-										span € 20
-									.prices__item
-										span Service
-										span € 10
-									.prices__all
-										b Total
-										b € 80n
-						.item__bottom
-							ul.item__tags
-								li
-									.li__text Full damage Waiver
-									a(href="#") ОСАГО
-									|,
-								li
-									a(href="#") Супер КАСКО
-							.item__deposit
-								span Deposit  
-								b ₽132 032
-						.item__owner
-							.item__persone
-								.persone__photo
-									.photo__check
-										img(src="img/item/photoCheck.svg" alt="Check")
-									img(src="img/item/personePhoto1.jpg" alt="Photo")
-								.persone__name
-									span Tamuna
-							.item__rating
-								img(src="img/item/itemStar.svg" alt="Star")
-								b 4.8
-								.item__reviews (132)
-						.item__last
-							ul.item__prices
-								li
-									span Day
-									b ₽3 076
-								li
-									span Delivery
-									b ₽3 076
-							button.item__buy.btn-hover Rent for ₽21 530
-					li.car__item
+					li.car__item.item-more-block
 						.item__top
 							.top__lft
 								.item__title Subaru Forester
@@ -1394,7 +806,7 @@ block content
 									span Service
 									b ₽3 076
 							button.item__buy.btn-hover Rent for ₽21 530
-					li.car__item
+					li.car__item.item-more-block
 						.item__top
 							.top__lft
 								.item__title Subaru Forester
@@ -1464,154 +876,7 @@ block content
 									span Delivery
 									b ₽3 076
 							button.item__buy.btn-hover Rent for ₽21 530
-					li.car__item
-						.item__top
-							.top__lft
-								.item__title Subaru Forester
-								.item__info Automatic | 2015 | 2.5 Petrol | 170 HP
-							.top__rht
-								.rht__text Cancel up to 24 hours before the start time for a full refund.
-								img(src="img/item/itemTop.svg" alt="Ico")
-						.item__block-photos
-							.item__slider
-								.item__photo
-									img(src="img/item/itemPhoto1.jpg" alt="Photo")
-								.item__photo
-									img(src="img/item/itemPhoto2.jpg" alt="Photo")
-								.item__photo
-									img(src="img/item/itemPhoto3.jpg" alt="Photo")
-							.item__info_mob
-								.mob__owner.item__owner
-									.item__persone
-										.persone__photo
-											.photo__check
-												img(src="img/item/photoCheck.svg" alt="Check")
-											img(src="img/item/personePhoto1.jpg" alt="Photo")
-										.persone__name
-											span Tamuna
-									.item__rating
-										img(src="img/item/itemStar.svg" alt="Star")
-										b 4.8
-										.item__reviews (132)
-								.mob__prices
-									.prices__item
-										span 2 days x € 25
-										span € 50
-									.prices__item
-										span Delivery
-										span € 20
-									.prices__item
-										span Service
-										span € 10
-									.prices__all
-										b Total
-										b € 80n
-						.item__bottom
-							ul.item__tags
-								li
-									.li__text Full damage Waiver
-									a(href="#") ОСАГО
-									|,
-								li
-									a(href="#") Супер КАСКО
-							.item__deposit
-								span Deposit  
-								b ₽132 032
-						.item__owner
-							.item__persone
-								.persone__photo
-									.photo__check
-										img(src="img/item/photoCheck.svg" alt="Check")
-									img(src="img/item/personePhoto1.jpg" alt="Photo")
-								.persone__name
-									span Tamuna
-							.item__rating
-								img(src="img/item/itemStar.svg" alt="Star")
-								b 4.8
-								.item__reviews (132)
-						.item__last
-							ul.item__prices
-								li
-									span Day
-									b ₽3 076
-								li
-									span Delivery
-									b ₽3 076
-								li
-									span Service
-									b ₽3 076
-							button.item__buy.btn-hover Rent for ₽21 530
-					li.car__item
-						.item__top
-							.top__lft
-								.item__title Subaru Forester
-								.item__info Automatic | 2015 | 2.5 Petrol | 170 HP
-							.top__rht
-								.rht__text Cancel up to 24 hours before the start time for a full refund.
-								img(src="img/item/itemTop.svg" alt="Ico")
-						.item__block-photos
-							.item__slider
-								.item__photo
-									img(src="img/item/itemPhoto1.jpg" alt="Photo")
-							.item__info_mob
-								.mob__owner.item__owner
-									.item__persone
-										.persone__photo
-											.photo__check
-												img(src="img/item/photoCheck.svg" alt="Check")
-											img(src="img/item/personePhoto1.jpg" alt="Photo")
-										.persone__name
-											span Tamuna
-									.item__rating
-										img(src="img/item/itemStar.svg" alt="Star")
-										b 4.8
-										.item__reviews (132)
-								.mob__prices
-									.prices__item
-										span 2 days x € 25
-										span € 50
-									.prices__item
-										span Delivery
-										span € 20
-									.prices__item
-										span Service
-										span € 10
-									.prices__all
-										b Total
-										b € 80n
-						.item__bottom
-							ul.item__tags
-								li
-									.li__text Full damage Waiver
-									a(href="#") ОСАГО
-									|,
-								li
-									a(href="#") Супер КАСКО
-							.item__deposit
-								span Deposit  
-								b ₽132 032
-						.item__owner
-							.item__persone
-								.persone__photo
-									.photo__check
-										img(src="img/item/photoCheck.svg" alt="Check")
-									img(src="img/item/personePhoto1.jpg" alt="Photo")
-								.persone__name
-									span Tamuna
-							.item__rating
-								img(src="img/item/itemStar.svg" alt="Star")
-								b 4.8
-								.item__reviews (132)
-						.item__last
-							ul.item__prices
-								li
-									span Day
-									b ₽3 076
-								li
-									span Delivery
-									b ₽3 076
-							button.item__buy.btn-hover Rent for ₽21 530
-					li.car__item
+					li.car__item.item-more-block
 						.item__top
 							.top__lft
 								.item__title Subaru Forester
@@ -1688,7 +953,7 @@ block content
 									span Service
 									b ₽3 076
 							button.item__buy.btn-hover Rent for ₽21 530
-					li.car__item
+					li.car__item.item-more-block
 						.item__top
 							.top__lft
 								.item__title Subaru Forester
@@ -1758,154 +1023,7 @@ block content
 									span Delivery
 									b ₽3 076
 							button.item__buy.btn-hover Rent for ₽21 530
-					li.car__item
-						.item__top
-							.top__lft
-								.item__title Subaru Forester
-								.item__info Automatic | 2015 | 2.5 Petrol | 170 HP
-							.top__rht
-								.rht__text Cancel up to 24 hours before the start time for a full refund.
-								img(src="img/item/itemTop.svg" alt="Ico")
-						.item__block-photos
-							.item__slider
-								.item__photo
-									img(src="img/item/itemPhoto1.jpg" alt="Photo")
-								.item__photo
-									img(src="img/item/itemPhoto2.jpg" alt="Photo")
-								.item__photo
-									img(src="img/item/itemPhoto3.jpg" alt="Photo")
-							.item__info_mob
-								.mob__owner.item__owner
-									.item__persone
-										.persone__photo
-											.photo__check
-												img(src="img/item/photoCheck.svg" alt="Check")
-											img(src="img/item/personePhoto1.jpg" alt="Photo")
-										.persone__name
-											span Tamuna
-									.item__rating
-										img(src="img/item/itemStar.svg" alt="Star")
-										b 4.8
-										.item__reviews (132)
-								.mob__prices
-									.prices__item
-										span 2 days x € 25
-										span € 50
-									.prices__item
-										span Delivery
-										span € 20
-									.prices__item
-										span Service
-										span € 10
-									.prices__all
-										b Total
-										b € 80n
-						.item__bottom
-							ul.item__tags
-								li
-									.li__text Full damage Waiver
-									a(href="#") ОСАГО
-									|,
-								li
-									a(href="#") Супер КАСКО
-							.item__deposit
-								span Deposit  
-								b ₽132 032
-						.item__owner
-							.item__persone
-								.persone__photo
-									.photo__check
-										img(src="img/item/photoCheck.svg" alt="Check")
-									img(src="img/item/personePhoto1.jpg" alt="Photo")
-								.persone__name
-									span Tamuna
-							.item__rating
-								img(src="img/item/itemStar.svg" alt="Star")
-								b 4.8
-								.item__reviews (132)
-						.item__last
-							ul.item__prices
-								li
-									span Day
-									b ₽3 076
-								li
-									span Delivery
-									b ₽3 076
-								li
-									span Service
-									b ₽3 076
-							button.item__buy.btn-hover Rent for ₽21 530
-					li.car__item
-						.item__top
-							.top__lft
-								.item__title Subaru Forester
-								.item__info Automatic | 2015 | 2.5 Petrol | 170 HP
-							.top__rht
-								.rht__text Cancel up to 24 hours before the start time for a full refund.
-								img(src="img/item/itemTop.svg" alt="Ico")
-						.item__block-photos
-							.item__slider
-								.item__photo
-									img(src="img/item/itemPhoto1.jpg" alt="Photo")
-							.item__info_mob
-								.mob__owner.item__owner
-									.item__persone
-										.persone__photo
-											.photo__check
-												img(src="img/item/photoCheck.svg" alt="Check")
-											img(src="img/item/personePhoto1.jpg" alt="Photo")
-										.persone__name
-											span Tamuna
-									.item__rating
-										img(src="img/item/itemStar.svg" alt="Star")
-										b 4.8
-										.item__reviews (132)
-								.mob__prices
-									.prices__item
-										span 2 days x € 25
-										span € 50
-									.prices__item
-										span Delivery
-										span € 20
-									.prices__item
-										span Service
-										span € 10
-									.prices__all
-										b Total
-										b € 80n
-						.item__bottom
-							ul.item__tags
-								li
-									.li__text Full damage Waiver
-									a(href="#") ОСАГО
-									|,
-								li
-									a(href="#") Супер КАСКО
-							.item__deposit
-								span Deposit  
-								b ₽132 032
-						.item__owner
-							.item__persone
-								.persone__photo
-									.photo__check
-										img(src="img/item/photoCheck.svg" alt="Check")
-									img(src="img/item/personePhoto1.jpg" alt="Photo")
-								.persone__name
-									span Tamuna
-							.item__rating
-								img(src="img/item/itemStar.svg" alt="Star")
-								b 4.8
-								.item__reviews (132)
-						.item__last
-							ul.item__prices
-								li
-									span Day
-									b ₽3 076
-								li
-									span Delivery
-									b ₽3 076
-							button.item__buy.btn-hover Rent for ₽21 530
-					li.car__item
+					li.car__item.item-more-block
 						.item__top
 							.top__lft
 								.item__title Subaru Forester
@@ -1982,7 +1100,7 @@ block content
 									span Service
 									b ₽3 076
 							button.item__buy.btn-hover Rent for ₽21 530
-					li.car__item
+					li.car__item.item-more-block
 						.item__top
 							.top__lft
 								.item__title Subaru Forester
@@ -2052,154 +1170,7 @@ block content
 									span Delivery
 									b ₽3 076
 							button.item__buy.btn-hover Rent for ₽21 530
-					li.car__item
-						.item__top
-							.top__lft
-								.item__title Subaru Forester
-								.item__info Automatic | 2015 | 2.5 Petrol | 170 HP
-							.top__rht
-								.rht__text Cancel up to 24 hours before the start time for a full refund.
-								img(src="img/item/itemTop.svg" alt="Ico")
-						.item__block-photos
-							.item__slider
-								.item__photo
-									img(src="img/item/itemPhoto1.jpg" alt="Photo")
-								.item__photo
-									img(src="img/item/itemPhoto2.jpg" alt="Photo")
-								.item__photo
-									img(src="img/item/itemPhoto3.jpg" alt="Photo")
-							.item__info_mob
-								.mob__owner.item__owner
-									.item__persone
-										.persone__photo
-											.photo__check
-												img(src="img/item/photoCheck.svg" alt="Check")
-											img(src="img/item/personePhoto1.jpg" alt="Photo")
-										.persone__name
-											span Tamuna
-									.item__rating
-										img(src="img/item/itemStar.svg" alt="Star")
-										b 4.8
-										.item__reviews (132)
-								.mob__prices
-									.prices__item
-										span 2 days x € 25
-										span € 50
-									.prices__item
-										span Delivery
-										span € 20
-									.prices__item
-										span Service
-										span € 10
-									.prices__all
-										b Total
-										b € 80n
-						.item__bottom
-							ul.item__tags
-								li
-									.li__text Full damage Waiver
-									a(href="#") ОСАГО
-									|,
-								li
-									a(href="#") Супер КАСКО
-							.item__deposit
-								span Deposit  
-								b ₽132 032
-						.item__owner
-							.item__persone
-								.persone__photo
-									.photo__check
-										img(src="img/item/photoCheck.svg" alt="Check")
-									img(src="img/item/personePhoto1.jpg" alt="Photo")
-								.persone__name
-									span Tamuna
-							.item__rating
-								img(src="img/item/itemStar.svg" alt="Star")
-								b 4.8
-								.item__reviews (132)
-						.item__last
-							ul.item__prices
-								li
-									span Day
-									b ₽3 076
-								li
-									span Delivery
-									b ₽3 076
-								li
-									span Service
-									b ₽3 076
-							button.item__buy.btn-hover Rent for ₽21 530
-					li.car__item
-						.item__top
-							.top__lft
-								.item__title Subaru Forester
-								.item__info Automatic | 2015 | 2.5 Petrol | 170 HP
-							.top__rht
-								.rht__text Cancel up to 24 hours before the start time for a full refund.
-								img(src="img/item/itemTop.svg" alt="Ico")
-						.item__block-photos
-							.item__slider
-								.item__photo
-									img(src="img/item/itemPhoto1.jpg" alt="Photo")
-							.item__info_mob
-								.mob__owner.item__owner
-									.item__persone
-										.persone__photo
-											.photo__check
-												img(src="img/item/photoCheck.svg" alt="Check")
-											img(src="img/item/personePhoto1.jpg" alt="Photo")
-										.persone__name
-											span Tamuna
-									.item__rating
-										img(src="img/item/itemStar.svg" alt="Star")
-										b 4.8
-										.item__reviews (132)
-								.mob__prices
-									.prices__item
-										span 2 days x € 25
-										span € 50
-									.prices__item
-										span Delivery
-										span € 20
-									.prices__item
-										span Service
-										span € 10
-									.prices__all
-										b Total
-										b € 80n
-						.item__bottom
-							ul.item__tags
-								li
-									.li__text Full damage Waiver
-									a(href="#") ОСАГО
-									|,
-								li
-									a(href="#") Супер КАСКО
-							.item__deposit
-								span Deposit  
-								b ₽132 032
-						.item__owner
-							.item__persone
-								.persone__photo
-									.photo__check
-										img(src="img/item/photoCheck.svg" alt="Check")
-									img(src="img/item/personePhoto1.jpg" alt="Photo")
-								.persone__name
-									span Tamuna
-							.item__rating
-								img(src="img/item/itemStar.svg" alt="Star")
-								b 4.8
-								.item__reviews (132)
-						.item__last
-							ul.item__prices
-								li
-									span Day
-									b ₽3 076
-								li
-									span Delivery
-									b ₽3 076
-							button.item__buy.btn-hover Rent for ₽21 530
-					li.car__item
+					li.car__item.item-more-block
 						.item__top
 							.top__lft
 								.item__title Subaru Forester
@@ -2276,7 +1247,1036 @@ block content
 									span Service
 									b ₽3 076
 							button.item__buy.btn-hover Rent for ₽21 530
-					li.car__item
+					li.car__item.item-more-block
+						.item__top
+							.top__lft
+								.item__title Subaru Forester
+								.item__info Automatic | 2015 | 2.5 Petrol | 170 HP
+							.top__rht
+								.rht__text Cancel up to 24 hours before the start time for a full refund.
+								img(src="img/item/itemTop.svg" alt="Ico")
+						.item__block-photos
+							.item__slider
+								.item__photo
+									img(src="img/item/itemPhoto1.jpg" alt="Photo")
+							.item__info_mob
+								.mob__owner.item__owner
+									.item__persone
+										.persone__photo
+											.photo__check
+												img(src="img/item/photoCheck.svg" alt="Check")
+											img(src="img/item/personePhoto1.jpg" alt="Photo")
+										.persone__name
+											span Tamuna
+									.item__rating
+										img(src="img/item/itemStar.svg" alt="Star")
+										b 4.8
+										.item__reviews (132)
+								.mob__prices
+									.prices__item
+										span 2 days x € 25
+										span € 50
+									.prices__item
+										span Delivery
+										span € 20
+									.prices__item
+										span Service
+										span € 10
+									.prices__all
+										b Total
+										b € 80n
+						.item__bottom
+							ul.item__tags
+								li
+									.li__text Full damage Waiver
+									a(href="#") ОСАГО
+									|,
+								li
+									a(href="#") Супер КАСКО
+							.item__deposit
+								span Deposit  
+								b ₽132 032
+						.item__owner
+							.item__persone
+								.persone__photo
+									.photo__check
+										img(src="img/item/photoCheck.svg" alt="Check")
+									img(src="img/item/personePhoto1.jpg" alt="Photo")
+								.persone__name
+									span Tamuna
+							.item__rating
+								img(src="img/item/itemStar.svg" alt="Star")
+								b 4.8
+								.item__reviews (132)
+						.item__last
+							ul.item__prices
+								li
+									span Day
+									b ₽3 076
+								li
+									span Delivery
+									b ₽3 076
+							button.item__buy.btn-hover Rent for ₽21 530
+					li.car__item.item-more-block
+						.item__top
+							.top__lft
+								.item__title Subaru Forester
+								.item__info Automatic | 2015 | 2.5 Petrol | 170 HP
+							.top__rht
+								.rht__text Cancel up to 24 hours before the start time for a full refund.
+								img(src="img/item/itemTop.svg" alt="Ico")
+						.item__block-photos
+							.item__slider
+								.item__photo
+									img(src="img/item/itemPhoto1.jpg" alt="Photo")
+								.item__photo
+									img(src="img/item/itemPhoto2.jpg" alt="Photo")
+								.item__photo
+									img(src="img/item/itemPhoto3.jpg" alt="Photo")
+							.item__info_mob
+								.mob__owner.item__owner
+									.item__persone
+										.persone__photo
+											.photo__check
+												img(src="img/item/photoCheck.svg" alt="Check")
+											img(src="img/item/personePhoto1.jpg" alt="Photo")
+										.persone__name
+											span Tamuna
+									.item__rating
+										img(src="img/item/itemStar.svg" alt="Star")
+										b 4.8
+										.item__reviews (132)
+								.mob__prices
+									.prices__item
+										span 2 days x € 25
+										span € 50
+									.prices__item
+										span Delivery
+										span € 20
+									.prices__item
+										span Service
+										span € 10
+									.prices__all
+										b Total
+										b € 80n
+						.item__bottom
+							ul.item__tags
+								li
+									.li__text Full damage Waiver
+									a(href="#") ОСАГО
+									|,
+								li
+									a(href="#") Супер КАСКО
+							.item__deposit
+								span Deposit  
+								b ₽132 032
+						.item__owner
+							.item__persone
+								.persone__photo
+									.photo__check
+										img(src="img/item/photoCheck.svg" alt="Check")
+									img(src="img/item/personePhoto1.jpg" alt="Photo")
+								.persone__name
+									span Tamuna
+							.item__rating
+								img(src="img/item/itemStar.svg" alt="Star")
+								b 4.8
+								.item__reviews (132)
+						.item__last
+							ul.item__prices
+								li
+									span Day
+									b ₽3 076
+								li
+									span Delivery
+									b ₽3 076
+								li
+									span Service
+									b ₽3 076
+							button.item__buy.btn-hover Rent for ₽21 530
+					li.car__item.item-more-block
+						.item__top
+							.top__lft
+								.item__title Subaru Forester
+								.item__info Automatic | 2015 | 2.5 Petrol | 170 HP
+							.top__rht
+								.rht__text Cancel up to 24 hours before the start time for a full refund.
+								img(src="img/item/itemTop.svg" alt="Ico")
+						.item__block-photos
+							.item__slider
+								.item__photo
+									img(src="img/item/itemPhoto1.jpg" alt="Photo")
+							.item__info_mob
+								.mob__owner.item__owner
+									.item__persone
+										.persone__photo
+											.photo__check
+												img(src="img/item/photoCheck.svg" alt="Check")
+											img(src="img/item/personePhoto1.jpg" alt="Photo")
+										.persone__name
+											span Tamuna
+									.item__rating
+										img(src="img/item/itemStar.svg" alt="Star")
+										b 4.8
+										.item__reviews (132)
+								.mob__prices
+									.prices__item
+										span 2 days x € 25
+										span € 50
+									.prices__item
+										span Delivery
+										span € 20
+									.prices__item
+										span Service
+										span € 10
+									.prices__all
+										b Total
+										b € 80n
+						.item__bottom
+							ul.item__tags
+								li
+									.li__text Full damage Waiver
+									a(href="#") ОСАГО
+									|,
+								li
+									a(href="#") Супер КАСКО
+							.item__deposit
+								span Deposit  
+								b ₽132 032
+						.item__owner
+							.item__persone
+								.persone__photo
+									.photo__check
+										img(src="img/item/photoCheck.svg" alt="Check")
+									img(src="img/item/personePhoto1.jpg" alt="Photo")
+								.persone__name
+									span Tamuna
+							.item__rating
+								img(src="img/item/itemStar.svg" alt="Star")
+								b 4.8
+								.item__reviews (132)
+						.item__last
+							ul.item__prices
+								li
+									span Day
+									b ₽3 076
+								li
+									span Delivery
+									b ₽3 076
+							button.item__buy.btn-hover Rent for ₽21 530
+					li.car__item.item-more-block
+						.item__top
+							.top__lft
+								.item__title Subaru Forester
+								.item__info Automatic | 2015 | 2.5 Petrol | 170 HP
+							.top__rht
+								.rht__text Cancel up to 24 hours before the start time for a full refund.
+								img(src="img/item/itemTop.svg" alt="Ico")
+						.item__block-photos
+							.item__slider
+								.item__photo
+									img(src="img/item/itemPhoto1.jpg" alt="Photo")
+								.item__photo
+									img(src="img/item/itemPhoto2.jpg" alt="Photo")
+								.item__photo
+									img(src="img/item/itemPhoto3.jpg" alt="Photo")
+							.item__info_mob
+								.mob__owner.item__owner
+									.item__persone
+										.persone__photo
+											.photo__check
+												img(src="img/item/photoCheck.svg" alt="Check")
+											img(src="img/item/personePhoto1.jpg" alt="Photo")
+										.persone__name
+											span Tamuna
+									.item__rating
+										img(src="img/item/itemStar.svg" alt="Star")
+										b 4.8
+										.item__reviews (132)
+								.mob__prices
+									.prices__item
+										span 2 days x € 25
+										span € 50
+									.prices__item
+										span Delivery
+										span € 20
+									.prices__item
+										span Service
+										span € 10
+									.prices__all
+										b Total
+										b € 80n
+						.item__bottom
+							ul.item__tags
+								li
+									.li__text Full damage Waiver
+									a(href="#") ОСАГО
+									|,
+								li
+									a(href="#") Супер КАСКО
+							.item__deposit
+								span Deposit  
+								b ₽132 032
+						.item__owner
+							.item__persone
+								.persone__photo
+									.photo__check
+										img(src="img/item/photoCheck.svg" alt="Check")
+									img(src="img/item/personePhoto1.jpg" alt="Photo")
+								.persone__name
+									span Tamuna
+							.item__rating
+								img(src="img/item/itemStar.svg" alt="Star")
+								b 4.8
+								.item__reviews (132)
+						.item__last
+							ul.item__prices
+								li
+									span Day
+									b ₽3 076
+								li
+									span Delivery
+									b ₽3 076
+								li
+									span Service
+									b ₽3 076
+							button.item__buy.btn-hover Rent for ₽21 530
+					li.car__item.item-more-block
+						.item__top
+							.top__lft
+								.item__title Subaru Forester
+								.item__info Automatic | 2015 | 2.5 Petrol | 170 HP
+							.top__rht
+								.rht__text Cancel up to 24 hours before the start time for a full refund.
+								img(src="img/item/itemTop.svg" alt="Ico")
+						.item__block-photos
+							.item__slider
+								.item__photo
+									img(src="img/item/itemPhoto1.jpg" alt="Photo")
+							.item__info_mob
+								.mob__owner.item__owner
+									.item__persone
+										.persone__photo
+											.photo__check
+												img(src="img/item/photoCheck.svg" alt="Check")
+											img(src="img/item/personePhoto1.jpg" alt="Photo")
+										.persone__name
+											span Tamuna
+									.item__rating
+										img(src="img/item/itemStar.svg" alt="Star")
+										b 4.8
+										.item__reviews (132)
+								.mob__prices
+									.prices__item
+										span 2 days x € 25
+										span € 50
+									.prices__item
+										span Delivery
+										span € 20
+									.prices__item
+										span Service
+										span € 10
+									.prices__all
+										b Total
+										b € 80n
+						.item__bottom
+							ul.item__tags
+								li
+									.li__text Full damage Waiver
+									a(href="#") ОСАГО
+									|,
+								li
+									a(href="#") Супер КАСКО
+							.item__deposit
+								span Deposit  
+								b ₽132 032
+						.item__owner
+							.item__persone
+								.persone__photo
+									.photo__check
+										img(src="img/item/photoCheck.svg" alt="Check")
+									img(src="img/item/personePhoto1.jpg" alt="Photo")
+								.persone__name
+									span Tamuna
+							.item__rating
+								img(src="img/item/itemStar.svg" alt="Star")
+								b 4.8
+								.item__reviews (132)
+						.item__last
+							ul.item__prices
+								li
+									span Day
+									b ₽3 076
+								li
+									span Delivery
+									b ₽3 076
+							button.item__buy.btn-hover Rent for ₽21 530
+					li.car__item.item-more-block
+						.item__top
+							.top__lft
+								.item__title Subaru Forester
+								.item__info Automatic | 2015 | 2.5 Petrol | 170 HP
+							.top__rht
+								.rht__text Cancel up to 24 hours before the start time for a full refund.
+								img(src="img/item/itemTop.svg" alt="Ico")
+						.item__block-photos
+							.item__slider
+								.item__photo
+									img(src="img/item/itemPhoto1.jpg" alt="Photo")
+								.item__photo
+									img(src="img/item/itemPhoto2.jpg" alt="Photo")
+								.item__photo
+									img(src="img/item/itemPhoto3.jpg" alt="Photo")
+							.item__info_mob
+								.mob__owner.item__owner
+									.item__persone
+										.persone__photo
+											.photo__check
+												img(src="img/item/photoCheck.svg" alt="Check")
+											img(src="img/item/personePhoto1.jpg" alt="Photo")
+										.persone__name
+											span Tamuna
+									.item__rating
+										img(src="img/item/itemStar.svg" alt="Star")
+										b 4.8
+										.item__reviews (132)
+								.mob__prices
+									.prices__item
+										span 2 days x € 25
+										span € 50
+									.prices__item
+										span Delivery
+										span € 20
+									.prices__item
+										span Service
+										span € 10
+									.prices__all
+										b Total
+										b € 80n
+						.item__bottom
+							ul.item__tags
+								li
+									.li__text Full damage Waiver
+									a(href="#") ОСАГО
+									|,
+								li
+									a(href="#") Супер КАСКО
+							.item__deposit
+								span Deposit  
+								b ₽132 032
+						.item__owner
+							.item__persone
+								.persone__photo
+									.photo__check
+										img(src="img/item/photoCheck.svg" alt="Check")
+									img(src="img/item/personePhoto1.jpg" alt="Photo")
+								.persone__name
+									span Tamuna
+							.item__rating
+								img(src="img/item/itemStar.svg" alt="Star")
+								b 4.8
+								.item__reviews (132)
+						.item__last
+							ul.item__prices
+								li
+									span Day
+									b ₽3 076
+								li
+									span Delivery
+									b ₽3 076
+								li
+									span Service
+									b ₽3 076
+							button.item__buy.btn-hover Rent for ₽21 530
+					li.car__item.item-more-block
+						.item__top
+							.top__lft
+								.item__title Subaru Forester
+								.item__info Automatic | 2015 | 2.5 Petrol | 170 HP
+							.top__rht
+								.rht__text Cancel up to 24 hours before the start time for a full refund.
+								img(src="img/item/itemTop.svg" alt="Ico")
+						.item__block-photos
+							.item__slider
+								.item__photo
+									img(src="img/item/itemPhoto1.jpg" alt="Photo")
+							.item__info_mob
+								.mob__owner.item__owner
+									.item__persone
+										.persone__photo
+											.photo__check
+												img(src="img/item/photoCheck.svg" alt="Check")
+											img(src="img/item/personePhoto1.jpg" alt="Photo")
+										.persone__name
+											span Tamuna
+									.item__rating
+										img(src="img/item/itemStar.svg" alt="Star")
+										b 4.8
+										.item__reviews (132)
+								.mob__prices
+									.prices__item
+										span 2 days x € 25
+										span € 50
+									.prices__item
+										span Delivery
+										span € 20
+									.prices__item
+										span Service
+										span € 10
+									.prices__all
+										b Total
+										b € 80n
+						.item__bottom
+							ul.item__tags
+								li
+									.li__text Full damage Waiver
+									a(href="#") ОСАГО
+									|,
+								li
+									a(href="#") Супер КАСКО
+							.item__deposit
+								span Deposit  
+								b ₽132 032
+						.item__owner
+							.item__persone
+								.persone__photo
+									.photo__check
+										img(src="img/item/photoCheck.svg" alt="Check")
+									img(src="img/item/personePhoto1.jpg" alt="Photo")
+								.persone__name
+									span Tamuna
+							.item__rating
+								img(src="img/item/itemStar.svg" alt="Star")
+								b 4.8
+								.item__reviews (132)
+						.item__last
+							ul.item__prices
+								li
+									span Day
+									b ₽3 076
+								li
+									span Delivery
+									b ₽3 076
+							button.item__buy.btn-hover Rent for ₽21 530
+					li.car__item.item-more-block
+						.item__top
+							.top__lft
+								.item__title Subaru Forester
+								.item__info Automatic | 2015 | 2.5 Petrol | 170 HP
+							.top__rht
+								.rht__text Cancel up to 24 hours before the start time for a full refund.
+								img(src="img/item/itemTop.svg" alt="Ico")
+						.item__block-photos
+							.item__slider
+								.item__photo
+									img(src="img/item/itemPhoto1.jpg" alt="Photo")
+								.item__photo
+									img(src="img/item/itemPhoto2.jpg" alt="Photo")
+								.item__photo
+									img(src="img/item/itemPhoto3.jpg" alt="Photo")
+							.item__info_mob
+								.mob__owner.item__owner
+									.item__persone
+										.persone__photo
+											.photo__check
+												img(src="img/item/photoCheck.svg" alt="Check")
+											img(src="img/item/personePhoto1.jpg" alt="Photo")
+										.persone__name
+											span Tamuna
+									.item__rating
+										img(src="img/item/itemStar.svg" alt="Star")
+										b 4.8
+										.item__reviews (132)
+								.mob__prices
+									.prices__item
+										span 2 days x € 25
+										span € 50
+									.prices__item
+										span Delivery
+										span € 20
+									.prices__item
+										span Service
+										span € 10
+									.prices__all
+										b Total
+										b € 80n
+						.item__bottom
+							ul.item__tags
+								li
+									.li__text Full damage Waiver
+									a(href="#") ОСАГО
+									|,
+								li
+									a(href="#") Супер КАСКО
+							.item__deposit
+								span Deposit  
+								b ₽132 032
+						.item__owner
+							.item__persone
+								.persone__photo
+									.photo__check
+										img(src="img/item/photoCheck.svg" alt="Check")
+									img(src="img/item/personePhoto1.jpg" alt="Photo")
+								.persone__name
+									span Tamuna
+							.item__rating
+								img(src="img/item/itemStar.svg" alt="Star")
+								b 4.8
+								.item__reviews (132)
+						.item__last
+							ul.item__prices
+								li
+									span Day
+									b ₽3 076
+								li
+									span Delivery
+									b ₽3 076
+								li
+									span Service
+									b ₽3 076
+							button.item__buy.btn-hover Rent for ₽21 530
+					li.car__item.item-more-block
+						.item__top
+							.top__lft
+								.item__title Subaru Forester
+								.item__info Automatic | 2015 | 2.5 Petrol | 170 HP
+							.top__rht
+								.rht__text Cancel up to 24 hours before the start time for a full refund.
+								img(src="img/item/itemTop.svg" alt="Ico")
+						.item__block-photos
+							.item__slider
+								.item__photo
+									img(src="img/item/itemPhoto1.jpg" alt="Photo")
+							.item__info_mob
+								.mob__owner.item__owner
+									.item__persone
+										.persone__photo
+											.photo__check
+												img(src="img/item/photoCheck.svg" alt="Check")
+											img(src="img/item/personePhoto1.jpg" alt="Photo")
+										.persone__name
+											span Tamuna
+									.item__rating
+										img(src="img/item/itemStar.svg" alt="Star")
+										b 4.8
+										.item__reviews (132)
+								.mob__prices
+									.prices__item
+										span 2 days x € 25
+										span € 50
+									.prices__item
+										span Delivery
+										span € 20
+									.prices__item
+										span Service
+										span € 10
+									.prices__all
+										b Total
+										b € 80n
+						.item__bottom
+							ul.item__tags
+								li
+									.li__text Full damage Waiver
+									a(href="#") ОСАГО
+									|,
+								li
+									a(href="#") Супер КАСКО
+							.item__deposit
+								span Deposit  
+								b ₽132 032
+						.item__owner
+							.item__persone
+								.persone__photo
+									.photo__check
+										img(src="img/item/photoCheck.svg" alt="Check")
+									img(src="img/item/personePhoto1.jpg" alt="Photo")
+								.persone__name
+									span Tamuna
+							.item__rating
+								img(src="img/item/itemStar.svg" alt="Star")
+								b 4.8
+								.item__reviews (132)
+						.item__last
+							ul.item__prices
+								li
+									span Day
+									b ₽3 076
+								li
+									span Delivery
+									b ₽3 076
+							button.item__buy.btn-hover Rent for ₽21 530
+					li.car__item.item-more-block
+						.item__top
+							.top__lft
+								.item__title Subaru Forester
+								.item__info Automatic | 2015 | 2.5 Petrol | 170 HP
+							.top__rht
+								.rht__text Cancel up to 24 hours before the start time for a full refund.
+								img(src="img/item/itemTop.svg" alt="Ico")
+						.item__block-photos
+							.item__slider
+								.item__photo
+									img(src="img/item/itemPhoto1.jpg" alt="Photo")
+								.item__photo
+									img(src="img/item/itemPhoto2.jpg" alt="Photo")
+								.item__photo
+									img(src="img/item/itemPhoto3.jpg" alt="Photo")
+							.item__info_mob
+								.mob__owner.item__owner
+									.item__persone
+										.persone__photo
+											.photo__check
+												img(src="img/item/photoCheck.svg" alt="Check")
+											img(src="img/item/personePhoto1.jpg" alt="Photo")
+										.persone__name
+											span Tamuna
+									.item__rating
+										img(src="img/item/itemStar.svg" alt="Star")
+										b 4.8
+										.item__reviews (132)
+								.mob__prices
+									.prices__item
+										span 2 days x € 25
+										span € 50
+									.prices__item
+										span Delivery
+										span € 20
+									.prices__item
+										span Service
+										span € 10
+									.prices__all
+										b Total
+										b € 80n
+						.item__bottom
+							ul.item__tags
+								li
+									.li__text Full damage Waiver
+									a(href="#") ОСАГО
+									|,
+								li
+									a(href="#") Супер КАСКО
+							.item__deposit
+								span Deposit  
+								b ₽132 032
+						.item__owner
+							.item__persone
+								.persone__photo
+									.photo__check
+										img(src="img/item/photoCheck.svg" alt="Check")
+									img(src="img/item/personePhoto1.jpg" alt="Photo")
+								.persone__name
+									span Tamuna
+							.item__rating
+								img(src="img/item/itemStar.svg" alt="Star")
+								b 4.8
+								.item__reviews (132)
+						.item__last
+							ul.item__prices
+								li
+									span Day
+									b ₽3 076
+								li
+									span Delivery
+									b ₽3 076
+								li
+									span Service
+									b ₽3 076
+							button.item__buy.btn-hover Rent for ₽21 530
+					li.car__item.item-more-block
+						.item__top
+							.top__lft
+								.item__title Subaru Forester
+								.item__info Automatic | 2015 | 2.5 Petrol | 170 HP
+							.top__rht
+								.rht__text Cancel up to 24 hours before the start time for a full refund.
+								img(src="img/item/itemTop.svg" alt="Ico")
+						.item__block-photos
+							.item__slider
+								.item__photo
+									img(src="img/item/itemPhoto1.jpg" alt="Photo")
+							.item__info_mob
+								.mob__owner.item__owner
+									.item__persone
+										.persone__photo
+											.photo__check
+												img(src="img/item/photoCheck.svg" alt="Check")
+											img(src="img/item/personePhoto1.jpg" alt="Photo")
+										.persone__name
+											span Tamuna
+									.item__rating
+										img(src="img/item/itemStar.svg" alt="Star")
+										b 4.8
+										.item__reviews (132)
+								.mob__prices
+									.prices__item
+										span 2 days x € 25
+										span € 50
+									.prices__item
+										span Delivery
+										span € 20
+									.prices__item
+										span Service
+										span € 10
+									.prices__all
+										b Total
+										b € 80n
+						.item__bottom
+							ul.item__tags
+								li
+									.li__text Full damage Waiver
+									a(href="#") ОСАГО
+									|,
+								li
+									a(href="#") Супер КАСКО
+							.item__deposit
+								span Deposit  
+								b ₽132 032
+						.item__owner
+							.item__persone
+								.persone__photo
+									.photo__check
+										img(src="img/item/photoCheck.svg" alt="Check")
+									img(src="img/item/personePhoto1.jpg" alt="Photo")
+								.persone__name
+									span Tamuna
+							.item__rating
+								img(src="img/item/itemStar.svg" alt="Star")
+								b 4.8
+								.item__reviews (132)
+						.item__last
+							ul.item__prices
+								li
+									span Day
+									b ₽3 076
+								li
+									span Delivery
+									b ₽3 076
+							button.item__buy.btn-hover Rent for ₽21 530
+					li.car__item.item-more-block
+						.item__top
+							.top__lft
+								.item__title Subaru Forester
+								.item__info Automatic | 2015 | 2.5 Petrol | 170 HP
+							.top__rht
+								.rht__text Cancel up to 24 hours before the start time for a full refund.
+								img(src="img/item/itemTop.svg" alt="Ico")
+						.item__block-photos
+							.item__slider
+								.item__photo
+									img(src="img/item/itemPhoto1.jpg" alt="Photo")
+								.item__photo
+									img(src="img/item/itemPhoto2.jpg" alt="Photo")
+								.item__photo
+									img(src="img/item/itemPhoto3.jpg" alt="Photo")
+							.item__info_mob
+								.mob__owner.item__owner
+									.item__persone
+										.persone__photo
+											.photo__check
+												img(src="img/item/photoCheck.svg" alt="Check")
+											img(src="img/item/personePhoto1.jpg" alt="Photo")
+										.persone__name
+											span Tamuna
+									.item__rating
+										img(src="img/item/itemStar.svg" alt="Star")
+										b 4.8
+										.item__reviews (132)
+								.mob__prices
+									.prices__item
+										span 2 days x € 25
+										span € 50
+									.prices__item
+										span Delivery
+										span € 20
+									.prices__item
+										span Service
+										span € 10
+									.prices__all
+										b Total
+										b € 80n
+						.item__bottom
+							ul.item__tags
+								li
+									.li__text Full damage Waiver
+									a(href="#") ОСАГО
+									|,
+								li
+									a(href="#") Супер КАСКО
+							.item__deposit
+								span Deposit  
+								b ₽132 032
+						.item__owner
+							.item__persone
+								.persone__photo
+									.photo__check
+										img(src="img/item/photoCheck.svg" alt="Check")
+									img(src="img/item/personePhoto1.jpg" alt="Photo")
+								.persone__name
+									span Tamuna
+							.item__rating
+								img(src="img/item/itemStar.svg" alt="Star")
+								b 4.8
+								.item__reviews (132)
+						.item__last
+							ul.item__prices
+								li
+									span Day
+									b ₽3 076
+								li
+									span Delivery
+									b ₽3 076
+								li
+									span Service
+									b ₽3 076
+							button.item__buy.btn-hover Rent for ₽21 530
+					li.car__item.item-more-block
+						.item__top
+							.top__lft
+								.item__title Subaru Forester
+								.item__info Automatic | 2015 | 2.5 Petrol | 170 HP
+							.top__rht
+								.rht__text Cancel up to 24 hours before the start time for a full refund.
+								img(src="img/item/itemTop.svg" alt="Ico")
+						.item__block-photos
+							.item__slider
+								.item__photo
+									img(src="img/item/itemPhoto1.jpg" alt="Photo")
+							.item__info_mob
+								.mob__owner.item__owner
+									.item__persone
+										.persone__photo
+											.photo__check
+												img(src="img/item/photoCheck.svg" alt="Check")
+											img(src="img/item/personePhoto1.jpg" alt="Photo")
+										.persone__name
+											span Tamuna
+									.item__rating
+										img(src="img/item/itemStar.svg" alt="Star")
+										b 4.8
+										.item__reviews (132)
+								.mob__prices
+									.prices__item
+										span 2 days x € 25
+										span € 50
+									.prices__item
+										span Delivery
+										span € 20
+									.prices__item
+										span Service
+										span € 10
+									.prices__all
+										b Total
+										b € 80n
+						.item__bottom
+							ul.item__tags
+								li
+									.li__text Full damage Waiver
+									a(href="#") ОСАГО
+									|,
+								li
+									a(href="#") Супер КАСКО
+							.item__deposit
+								span Deposit  
+								b ₽132 032
+						.item__owner
+							.item__persone
+								.persone__photo
+									.photo__check
+										img(src="img/item/photoCheck.svg" alt="Check")
+									img(src="img/item/personePhoto1.jpg" alt="Photo")
+								.persone__name
+									span Tamuna
+							.item__rating
+								img(src="img/item/itemStar.svg" alt="Star")
+								b 4.8
+								.item__reviews (132)
+						.item__last
+							ul.item__prices
+								li
+									span Day
+									b ₽3 076
+								li
+									span Delivery
+									b ₽3 076
+							button.item__buy.btn-hover Rent for ₽21 530
+					li.car__item.item-more-block
+						.item__top
+							.top__lft
+								.item__title Subaru Forester
+								.item__info Automatic | 2015 | 2.5 Petrol | 170 HP
+							.top__rht
+								.rht__text Cancel up to 24 hours before the start time for a full refund.
+								img(src="img/item/itemTop.svg" alt="Ico")
+						.item__block-photos
+							.item__slider
+								.item__photo
+									img(src="img/item/itemPhoto1.jpg" alt="Photo")
+								.item__photo
+									img(src="img/item/itemPhoto2.jpg" alt="Photo")
+								.item__photo
+									img(src="img/item/itemPhoto3.jpg" alt="Photo")
+							.item__info_mob
+								.mob__owner.item__owner
+									.item__persone
+										.persone__photo
+											.photo__check
+												img(src="img/item/photoCheck.svg" alt="Check")
+											img(src="img/item/personePhoto1.jpg" alt="Photo")
+										.persone__name
+											span Tamuna
+									.item__rating
+										img(src="img/item/itemStar.svg" alt="Star")
+										b 4.8
+										.item__reviews (132)
+								.mob__prices
+									.prices__item
+										span 2 days x € 25
+										span € 50
+									.prices__item
+										span Delivery
+										span € 20
+									.prices__item
+										span Service
+										span € 10
+									.prices__all
+										b Total
+										b € 80n
+						.item__bottom
+							ul.item__tags
+								li
+									.li__text Full damage Waiver
+									a(href="#") ОСАГО
+									|,
+								li
+									a(href="#") Супер КАСКО
+							.item__deposit
+								span Deposit  
+								b ₽132 032
+						.item__owner
+							.item__persone
+								.persone__photo
+									.photo__check
+										img(src="img/item/photoCheck.svg" alt="Check")
+									img(src="img/item/personePhoto1.jpg" alt="Photo")
+								.persone__name
+									span Tamuna
+							.item__rating
+								img(src="img/item/itemStar.svg" alt="Star")
+								b 4.8
+								.item__reviews (132)
+						.item__last
+							ul.item__prices
+								li
+									span Day
+									b ₽3 076
+								li
+									span Delivery
+									b ₽3 076
+								li
+									span Service
+									b ₽3 076
+							button.item__buy.btn-hover Rent for ₽21 530
+					li.car__item.item-more-block
 						.item__top
 							.top__lft
 								.item__title Subaru Forester
@@ -2349,6 +2349,9 @@ block content
 				.list__more
 					.lines
 					button.btn-hover Show more
+				.list__more_end
+					p Displaying 208 out of 208 cars
+					a(href="#") Back to top
 
 		section.page-country__where
 			.wrapper
@@ -2554,7 +2557,8 @@ block content
 					.find__rht
 						.find__item
 							.item__text
-								h3 Tamaz
+								h3
+									a(href="#") Tamaz
 								.bottom
 									span Tbilisi
 									.stars
@@ -2573,7 +2577,8 @@ block content
 								img(src="img/country/find1.jpg" alt="Photo")
 						.find__item
 							.item__text
-								h3 Tamaz
+								h3
+									a(href="#") Tamaz
 								.bottom
 									span Tbilisi
 									.stars
@@ -2592,7 +2597,8 @@ block content
 								img(src="img/country/find2.png" alt="Photo")
 						.find__item
 							.item__text
-								h3 Tamaz
+								h3
+									a(href="#") Tamaz
 								.bottom
 									span Tbilisi
 									.stars
@@ -2611,7 +2617,8 @@ block content
 								img(src="img/country/find3.png" alt="Photo")
 						.find__item
 							.item__text
-								h3 Tamaz
+								h3
+									a(href="#") Tamaz
 								.bottom
 									span Tbilisi
 									.stars
@@ -3850,6 +3857,7 @@ block content
 		.popup__bgd
 		.popup__content
 			.popup__top
+				a(href="#").popup__clear Clear all
 				.popup__title FIlters
 				.popup__close
 					<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.5302 9.53033C17.8231 9.23744 17.8231 8.76256 17.5302 8.46967C17.2374 8.17678 16.7625 8.17678 16.4696 8.46967L17.5302 9.53033ZM8.46959 16.4697C8.1767 16.7626 8.1767 17.2374 8.46959 17.5303C8.76249 17.8232 9.23736 17.8232 9.53025 17.5303L8.46959 16.4697ZM9.53042 8.46967C9.23752 8.17678 8.76265 8.17678 8.46976 8.46967C8.17686 8.76256 8.17686 9.23744 8.46976 9.53033L9.53042 8.46967ZM16.4697 17.5303C16.7626 17.8232 17.2375 17.8232 17.5304 17.5303C17.8233 17.2374 17.8233 16.7626 17.5304 16.4697L16.4697 17.5303ZM16.4696 8.46967L8.46959 16.4697L9.53025 17.5303L17.5302 9.53033L16.4696 8.46967ZM8.46976 9.53033L16.4697 17.5303L17.5304 16.4697L9.53042 8.46967L8.46976 9.53033ZM24.25 13C24.25 19.2132 19.2132 24.25 13 24.25V25.75C20.0416 25.75 25.75 20.0416 25.75 13H24.25ZM13 24.25C6.7868 24.25 1.75 19.2132 1.75 13H0.25C0.25 20.0416 5.95837 25.75 13 25.75V24.25ZM1.75 13C1.75 6.7868 6.7868 1.75 13 1.75V0.25C5.95837 0.25 0.25 5.95837 0.25 13H1.75ZM13 1.75C19.2132 1.75 24.25 6.7868 24.25 13H25.75C25.75 5.95837 20.0416 0.25 13 0.25V1.75Z" fill="#F91942"/></svg>
@@ -3859,9 +3867,11 @@ block content
 					.range__prices
 						.price-min
 							span €15
+							//- input(type="text" value="1")
 							sup Day
 						.price-max
 							span €75
+							//- input(type="text" value="1")
 							sup Day
 					#slider-range
 				.filter__item

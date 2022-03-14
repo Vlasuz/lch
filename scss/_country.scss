@@ -5,10 +5,12 @@
 	}
 
 	.page-index__banner{
-		margin-bottom: 30px;
+		margin-bottom: 57px;
 	}
 	.banner__inner{
 		background: url('../img/country/banner.jpg') no-repeat;
+		padding-bottom: 0;
+		min-height: 450px;
 	}
 
 	&__where{
@@ -180,13 +182,17 @@
 				margin-right: 71px;
 			}
 			h3{
-				font-family: Roboto;
 				margin-bottom: 14px;
-				font-weight: 500;
-				font-size: 24px;
-				line-height: 28px;
-				text-decoration-line: underline;
-				color: #FFFFFF;
+				a{
+					font-family: Roboto;
+					font-weight: 500;
+					font-size: 24px;
+					line-height: 28px;
+					color: #FFFFFF;
+					&:hover{
+						text-decoration-line: underline;
+					}
+				}
 			}
 			.stars{
 				display: flex;
@@ -495,9 +501,6 @@
 	.page-country__locals .slider__inner{
 		margin-left: -148px;
 	}
-	.banner__filters{
-		flex-wrap: wrap;
-	}
 	.page-country__find h2.d-none,
 	h2{
 		font-size: 32px;
@@ -507,21 +510,6 @@
 }
 
 @media screen and (max-width: 700px){
-	.banner__filters .filter__button{
-		width: 100%;
-		justify-content: center;
-		margin: 0 10px;
-	}
-	.list__more:after,
-	.list__more:before{
-		display: none;
-	}
-	.list__more button{
-		max-width: 100%;
-		&:after{
-			display: none;
-		}
-	}
 	.page-country__locals h2{
 		font-size: 28px;
 		line-height: 38px;

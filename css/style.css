@@ -228,6 +228,31 @@ p.subtitle {
 p.subtitle span {
   color: #f91942
 }
+.list__more_end {
+  text-align: center;
+  margin-top: 40px;
+  display: none
+}
+.list__more_end p {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #4a4a4a;
+  margin-bottom: 20px
+}
+.list__more_end a {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  color: #f91942
+}
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  background: #fafafa
+}
 .slick-next,
 .slick-prev {
   right: 0;
@@ -424,6 +449,65 @@ p.subtitle span {
 }
 .car__item:nth-child(3n+3) .rht__text:after {
   left: 75%
+}
+.car__item .item__inf_mob {
+  padding-top: 15px;
+  margin-top: 15px;
+  border-top: 1px solid #e5e5e5;
+  display: none
+}
+.car__item .item__inf_mob ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: -6px
+}
+.car__item .item__inf_mob li {
+  border-radius: 5px;
+  padding: 4px 13px;
+  margin: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.car__item .item__inf_mob li svg {
+  min-width: 20px
+}
+.car__item .item__inf_mob li.li_red {
+  background: rgba(249,25,66,.1);
+  color: #f91942
+}
+.car__item .item__inf_mob li.li_red path {
+  stroke: #f91942
+}
+.car__item .item__inf_mob li.li_green {
+  background: #ebf6e0;
+  color: #7ca554
+}
+.car__item .item__inf_mob li.li_green path {
+  stroke: #7ca554
+}
+.car__item .item__inf_mob li.li_blue {
+  background: #e9f8ff;
+  color: #0082be
+}
+.car__item .item__inf_mob li.li_blue path {
+  stroke: #0082be
+}
+.car__item .item__inf_mob span {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  margin-left: 9px
 }
 .car__item .item__photo {
   position: relative;
@@ -802,7 +886,8 @@ p.subtitle span {
   transition: all .3s ease
 }
 .car__item .item__buy:hover {
-  color: #fff
+  color: #fff;
+  background: #f91942
 }
 .lb-data .lb-details {
   opacity: 0
@@ -815,7 +900,13 @@ p.subtitle span {
   position: absolute;
   top: 0;
   right: 70px;
-  z-index: 11
+  z-index: 11;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.lb-data .lb-close:hover {
+  background: #f91942 url(../img/single/btnClosePhoto.svg) no-repeat
 }
 .lb-nav a.lb-next {
   right: 70px;
@@ -828,7 +919,13 @@ p.subtitle span {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   border-radius: 50%;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
   opacity: 1
+}
+.lb-nav a.lb-next:hover {
+  background: #f91942 url(../img/single/btnNextPhoto.svg) no-repeat
 }
 .lb-nav a.lb-prev {
   left: 70px;
@@ -841,7 +938,13 @@ p.subtitle span {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   border-radius: 50%;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
   opacity: 1
+}
+.lb-nav a.lb-prev:hover {
+  background: #f91942 url(../img/single/btnPrevPhoto.svg) no-repeat
 }
 .lb-outerContainer {
   position: static
@@ -973,7 +1076,7 @@ p.subtitle span {
   -ms-flex-align: center;
   align-items: center
 }
-.banner__filters li {
+.banner__filters label {
   margin-right: 12px;
   background: #fff;
   border: 1px solid #e6e6e6;
@@ -984,22 +1087,34 @@ p.subtitle span {
   -ms-flex-align: center;
   align-items: center;
   padding: 8px 12px;
-  border-radius: 5px
+  border-radius: 5px;
+  border: 1px solid #f91942
 }
-.banner__filters li span {
+.banner__filters label span {
   font-family: Roboto;
   font-size: 16px;
   line-height: 19px;
   color: #3a3a3a
 }
-.banner__filters li button {
+.banner__filters label button {
   margin-left: 12px;
   background: 0 0;
   border: none;
-  cursor: pointer
+  display: block;
+  width: 14px;
+  text-align: center
 }
-.banner__filters li img {
-  display: block
+.banner__filters label img {
+  display: block;
+  cursor: pointer;
+  width: 8px;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  margin: 0 auto
+}
+.banner__filters label img:hover {
+  width: 14px
 }
 .list__more {
   display: -webkit-box;
@@ -1214,17 +1329,19 @@ p.subtitle span {
 .blockInfoTextModal:hover .blockInfoTextModal__text {
   z-index: 10;
   opacity: 1;
+  visibility: visible;
   -webkit-transition: opacity .3s ease;
   -o-transition: opacity .3s ease;
   transition: opacity .3s ease
 }
 .blockInfoTextModal__text {
   position: absolute;
-  -webkit-transition: z-index 0s .3s ease,opacity .3s ease;
-  -o-transition: z-index 0s .3s ease,opacity .3s ease;
-  transition: z-index 0s .3s ease,opacity .3s ease;
+  -webkit-transition: visibility 0s .3s ease,z-index 0s .3s ease,opacity .3s ease;
+  -o-transition: visibility 0s .3s ease,z-index 0s .3s ease,opacity .3s ease;
+  transition: visibility 0s .3s ease,z-index 0s .3s ease,opacity .3s ease;
   opacity: 0;
   z-index: -1;
+  visibility: hidden;
   font-weight: 400;
   bottom: calc(100% + 10px);
   right: -78px;
@@ -1712,6 +1829,7 @@ header {
   content: '';
   background: url(../img/svg/arrDownRedMob.svg) no-repeat;
   background-size: contain;
+  min-width: 20px;
   width: 20px;
   height: 20px;
   -webkit-transition: all .3s ease;
@@ -2823,20 +2941,6 @@ header {
   line-height: 33px;
   color: #fff
 }
-.page-index__popular .wrapper {
-  position: relative
-}
-.page-index__popular .wrapper:after {
-  content: '';
-  background: #fafafa;
-  left: calc(-100% + 50px);
-  top: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  display: block
-}
 .page-index__popular .slick-list {
   overflow: visible
 }
@@ -2875,16 +2979,20 @@ header {
   overflow: visible
 }
 .page-index__reviews .item__title {
+  margin-bottom: 30px
+}
+.page-index__reviews .item__title a {
   font-weight: 600;
   font-size: 20px;
   line-height: 23px;
-  margin-bottom: 30px;
-  color: #3a3a3a
+  color: #3a3a3a;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
 }
-.page-index__reviews .item__title span {
-  -webkit-text-decoration-line: underline;
-  text-decoration-line: underline;
-  margin: 0 3px
+.page-index__reviews .item__title a:hover {
+  text-decoration: underline;
+  color: #f91942
 }
 .page-index__reviews .item__photo {
   width: 70px;
@@ -3154,6 +3262,14 @@ header {
   padding-bottom: 20px;
   border-bottom: 1px solid #f91942;
   width: 100%
+}
+.page-index__location .akkordeon a {
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.page-index__location .akkordeon a:hover {
+  color: #f91942
 }
 .page-index__location .akkordeon li {
   font-weight: 600;
@@ -4332,9 +4448,6 @@ header {
   }
 }
 @media screen and (max-width:400px) {
-  .page-index__banner .banner__calendar {
-    margin-bottom: 16px
-  }
   .page-index__questions .wrapper:not(:first-child) {
     margin-top: 40px
   }
@@ -4407,10 +4520,6 @@ header {
     padding-left: 20px;
     padding-right: 20px
   }
-  .page-index__banner .banner__calendar,
-  .page-index__banner .banner__time {
-    width: calc(100% - 20px)
-  }
   .banner__inner .wrapper {
     padding-left: 0;
     padding-right: 0
@@ -4465,10 +4574,12 @@ header {
   padding-bottom: 80px
 }
 .page-country .page-index__banner {
-  margin-bottom: 30px
+  margin-bottom: 57px
 }
 .page-country .banner__inner {
-  background: url(../img/country/banner.jpg) no-repeat
+  background: url(../img/country/banner.jpg) no-repeat;
+  padding-bottom: 0;
+  min-height: 450px
 }
 .page-country__where {
   background: #fafafa;
@@ -4682,14 +4793,18 @@ header {
   margin-right: 71px
 }
 .page-country__find .item__text h3 {
+  margin-bottom: 14px
+}
+.page-country__find .item__text h3 a {
   font-family: Roboto;
-  margin-bottom: 14px;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
-  -webkit-text-decoration-line: underline;
-  text-decoration-line: underline;
   color: #fff
+}
+.page-country__find .item__text h3 a:hover {
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline
 }
 .page-country__find .item__text .stars {
   display: -webkit-box;
@@ -5021,10 +5136,6 @@ header {
   .page-country__locals .slider__inner {
     margin-left: -148px
   }
-  .banner__filters {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap
-  }
   .page-country__find h2.d-none,
   h2 {
     font-size: 32px;
@@ -5033,23 +5144,6 @@ header {
   }
 }
 @media screen and (max-width:700px) {
-  .banner__filters .filter__button {
-    width: 100%;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin: 0 10px
-  }
-  .list__more:after,
-  .list__more:before {
-    display: none
-  }
-  .list__more button {
-    max-width: 100%
-  }
-  .list__more button:after {
-    display: none
-  }
   .page-country__locals h2 {
     font-size: 28px;
     line-height: 38px
@@ -5203,6 +5297,9 @@ header {
   100% {
     background-position: 100%
   }
+}
+.page-city .filters__list label {
+  border: 1px solid silver
 }
 .page-city .page-index__banner .banner__inner {
   background: 0 0
@@ -5697,6 +5794,9 @@ header {
 .popup__filters {
   padding: 0
 }
+.popup__filters .popup__clear {
+  display: none
+}
 .popup__filters .range__prices {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5707,14 +5807,29 @@ header {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 23px
+  margin-bottom: 23px;
+  position: relative;
+  padding-top: 20px
 }
+.popup__filters .range__prices input,
 .popup__filters .range__prices span {
   font-weight: 900;
   font-size: 18px;
   line-height: 25px;
   text-transform: uppercase;
-  color: #3a3a3a
+  color: #3a3a3a;
+  height: auto;
+  width: auto;
+  background: 0 0;
+  border: none
+}
+.popup__filters .range__prices .price-max {
+  margin-left: -50px
+}
+.popup__filters .range__prices .price-max,
+.popup__filters .range__prices .price-min {
+  position: absolute;
+  height: 35px
 }
 .popup__filters .range__prices sup {
   margin-left: 3px;
@@ -6394,8 +6509,36 @@ header {
   }
 }
 @media screen and (max-width:400px) {
+  .popup__filters .popup__clear {
+    display: block;
+    font-family: Roboto;
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #f91942
+  }
+  .popup__filters .popup__inner {
+    max-height: 60vh
+  }
+  .popup__filters .popup__content {
+    max-height: 100%
+  }
+  .popup__filters .popup__top {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse
+  }
   .popup__filters .item__block_owners .star {
     margin-left: auto
+  }
+  .popup__filters .popup__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: none;
+    margin-left: 40px
   }
   .popup__filters .item__block_owners {
     -ms-grid-columns: 1fr;
@@ -6451,7 +6594,8 @@ header {
   .popup__filters .popup__content {
     padding: 15px;
     max-height: 100vh;
-    border-radius: 0
+    border-radius: 0;
+    padding-top: 30px
   }
 }
 .page-contacts__sides {
@@ -10554,6 +10698,27 @@ header {
 .page-myBookings__orders .item__status_declined {
   background: #f22424
 }
+.page-myBookings__orders .item__status_not-paid {
+  background: #db1f35
+}
+.page-myBookings__orders .item__status_pending {
+  background: #22d5ed
+}
+.page-myBookings__orders .item__status_cancelled {
+  background: #aaa
+}
+.page-myBookings__orders .item__status_completed {
+  background: #37ac15
+}
+.page-myBookings__orders .item__status_failed {
+  background: grey
+}
+.page-myBookings__orders .item__status_expired {
+  background: #585858
+}
+.page-myBookings__orders .item__status_search {
+  background: #ff2164
+}
 .page-myBookings__orders .item__price {
   font-family: Roboto;
   font-weight: 700;
@@ -10647,12 +10812,27 @@ header {
   transition: all .3s ease
 }
 .page-myBookings__orders .item__bottom button:hover {
-  background: #d6d3d3
+  background: #fee8ec;
+  border: 1px solid #f91942
+}
+.page-myBookings__orders .item__bottom button:hover span {
+  color: #f91942
+}
+.page-myBookings__orders .item__bottom button:hover path {
+  stroke: #f91942
+}
+.page-myBookings__orders .item__bottom path {
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
 }
 .page-myBookings__orders .item__bottom span {
   margin-left: 8px;
   font-family: Roboto;
   font-weight: 500;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
   font-size: 20px;
   line-height: 23px;
   color: #3a3a3a
@@ -10660,6 +10840,10 @@ header {
 .page-myBookings__orders .item__bottom .button_cancel {
   margin-left: auto;
   margin-right: 0
+}
+.page-myBookings__orders .item__bottom .button_cancel:hover path {
+  fill: #f91942;
+  stroke: transparent
 }
 @media screen and (max-width:1024px) {
   .page-myBookings__notes .notes__item {
@@ -10982,6 +11166,12 @@ header {
 .page-myMessages__chat .char__user {
   display: none
 }
+.page-myMessages__chat .chat__back {
+  color: #8a8a8a;
+  margin-right: 10px;
+  cursor: pointer;
+  display: none
+}
 .page-myMessages__chat .chat__delete {
   margin-left: auto;
   display: -webkit-box;
@@ -10993,6 +11183,9 @@ header {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end
+}
+.page-myMessages__chat .chat__delete:hover span {
+  text-decoration: underline
 }
 .page-myMessages__chat .chat__delete img {
   display: block
@@ -11112,7 +11305,22 @@ header {
   border: none;
   cursor: pointer;
   width: 100%;
-  max-width: 68px
+  max-width: 68px;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.page-myMessages__chat .chat__bottom button img {
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.page-myMessages__chat .chat__bottom button:hover {
+  background: silver
+}
+.page-myMessages__chat .chat__bottom button:hover img {
+  -webkit-filter: brightness(2);
+  filter: brightness(2)
 }
 @media screen and (max-width:1024px) {
   .page-myMessages__users .item__name {
@@ -11168,6 +11376,9 @@ header {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between
+  }
+  .page-myMessages__chat .chat__back {
+    display: block
   }
   .page-myMessages__chat .char__user {
     display: -webkit-box;
@@ -11247,6 +11458,61 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex
+}
+.page-mySettings .messanger-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: -12px
+}
+.page-mySettings .messanger-list li {
+  margin-right: 12px;
+  margin-top: 12px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px 12px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+  border: 1px solid #cdcdcd
+}
+.page-mySettings .messanger-list li span {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3a3a3a
+}
+.page-mySettings .messanger-list li button {
+  margin-left: 12px;
+  background: 0 0;
+  border: none;
+  display: block;
+  width: 14px;
+  text-align: center
+}
+.page-mySettings .messanger-list li img {
+  display: block;
+  cursor: pointer;
+  width: 8px;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  margin: 0 auto
+}
+.page-mySettings .messanger-list li img:hover {
+  width: 14px
 }
 .page-mySettings__photo {
   max-width: 360px;
@@ -11800,6 +12066,23 @@ header {
 .select2-container--open .select2-dropdown--below {
   margin-top: 10px!important
 }
+.page-single .bill-fixed_mob {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: silver;
+  padding: 10px;
+  z-index: 130;
+  width: 100%;
+  cursor: pointer;
+  display: none
+}
+.page-single .bill-fixed_mob span {
+  font-size: 20px;
+  line-height: 27px;
+  color: #3a3a3a;
+  font-weight: 900
+}
 .page-single .list__more:after,
 .page-single .list__more:before {
   display: none
@@ -11964,7 +12247,10 @@ header {
   width: 100%
 }
 .page-single-two .page-single__photos .photo__item:not(:first-child) img {
-  margin-top: 0
+  margin-top: 0;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover
 }
 .page-single-two .page-single__photos .photo__item img {
   width: 100%
@@ -12490,7 +12776,13 @@ header {
 }
 .page-single__share {
   background: #e5e5e5;
-  margin-left: auto
+  margin-left: auto;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.page-single__share:hover {
+  background: #eee
 }
 .page-single__share span {
   margin-right: 0;
@@ -12590,14 +12882,15 @@ header {
   padding-bottom: 95px
 }
 .page-single .rht__sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 10px
+  height: 100%
 }
 .page-single__bill {
   background: #fafafa;
   border-radius: 5px;
-  padding: 24px
+  padding: 24px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px
 }
 .page-single__bill li {
   font-family: Roboto;
@@ -12907,6 +13200,9 @@ header {
 .page-single__block {
   margin-bottom: 30px
 }
+.page-single__block .blockInfoTextModal img {
+  display: inline
+}
 .page-single__block .info__list {
   max-width: 100%
 }
@@ -13053,7 +13349,7 @@ header {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-top: -10px
+    margin-bottom: 20px
   }
   .page-single-two .lft__lft .page-single__top .page-single__green,
   .page-single-two .lft__lft .page-single__top .page-single__red,
@@ -13232,6 +13528,39 @@ header {
   }
 }
 @media screen and (max-width:992px) {
+  .page-single .bill-fixed_mob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+  }
+  .page-single-more .lft__lft {
+    margin-top: 20px
+  }
+  .page-single-more .photo__item-main {
+    position: static
+  }
+  .page-single-more .lft__photos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: auto;
+    margin-top: 20px
+  }
+  .page-single-more .page-single__photos {
+    margin-left: 0
+  }
+  .page-single-more .item__tags {
+    margin-top: 0
+  }
   .page-single .page-index__reviews {
     margin-right: 0
   }
@@ -13247,10 +13576,13 @@ header {
     margin-top: 12px
   }
   .page-single__rht {
+    max-width: 100%;
     margin: 0 auto
   }
-  .page-single .item__tags {
-    margin-top: -41px
+  .page-single__rht .bill__button {
+    max-width: 350px;
+    margin: 0 auto;
+    margin-top: 30px
   }
   .blockInfoTextModal__text {
     font-size: 15px;
@@ -13363,9 +13695,7 @@ header {
   .page-single-more .page-single__photos {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    overflow-x: auto;
-    overflow-y: hidden
+    display: flex
   }
   .page-single-more .page-single__photos img {
     width: 100%;
@@ -13537,11 +13867,14 @@ header {
   .page-single-more .photo__item-main img {
     max-width: 210px
   }
-  .page-single-more .page-single__photos {
-    margin-left: 220px
-  }
   .page-single-more .lft__photos {
-    overflow: auto
+    overflow: auto;
+    padding-top: 40px
+  }
+  .page-single-more .item__tags {
+    margin-top: -70px;
+    white-space: nowrap;
+    margin-bottom: 30px
   }
   .page-single-more .lft__lft {
     margin-top: 15px
@@ -13585,6 +13918,10 @@ header {
     width: 100%;
     -o-object-fit: cover;
     object-fit: cover
+  }
+  .page-single-more .page-single__photos {
+    margin-top: 0;
+    overflow: visible
   }
 }
 @media screen and (max-width:400px) {
@@ -14575,6 +14912,10 @@ footer {
     font-size: 32px;
     line-height: 44px
   }
+  .banner__filters {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+  }
   .page-profile__email a {
     font-size: 18px
   }
@@ -14646,6 +14987,23 @@ footer {
   }
 }
 @media screen and (max-width:700px) {
+  .banner__filters .filter__button {
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 10px
+  }
+  .car__item .item__inf_mob {
+    display: block
+  }
+  .list__more:after,
+  .list__more:before {
+    display: none
+  }
+  .list__more button:after {
+    display: none
+  }
   .page-profile__switcher a {
     font-size: 18px;
     line-height: 24px
@@ -14894,6 +15252,36 @@ footer {
     font-size: 16px
   }
 }
+@media screen and (max-width:576px) {
+  .header-img {
+    margin-top: 22px;
+    margin-bottom: 32px;
+    max-width: 226px;
+    height: 124px
+  }
+  .skeleton-card {
+    padding-left: 0;
+    padding-right: 0
+  }
+  .card__center .skeleton:last-child {
+    display: none
+  }
+  .card__bottom .skeleton:first-child {
+    height: 55px;
+    width: 100%;
+    margin-right: 23px
+  }
+  .card__bottom .skeleton:last-child {
+    max-width: 220px
+  }
+  .card__bottom_mob {
+    margin-top: 25px
+  }
+  .card__bottom_mob .skeleton {
+    width: 174px;
+    height: 30px
+  }
+}
 @media screen and (max-width:400px) {
   .page-profile__switcher li {
     padding: 0 6px
@@ -14945,4 +15333,26 @@ button.btn-hover:hover,
 input.btn-hover:hover {
   background: #db1f35;
   border: 1px solid #f91942
+}
+a.btn-hover-cancel,
+button.btn-hover-cancel,
+input.btn-hover-cancel {
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  cursor: pointer
+}
+a.btn-hover-cancel:hover,
+button.btn-hover-cancel:hover,
+input.btn-hover-cancel:hover {
+  background: #e1e1e1;
+  border: 1px solid #c4c4c4
+}
+a.btn-hover.disabled {
+  background: #d1d1d1;
+  cursor: default
+}
+a.btn-hover.disabled:hover {
+  background: #d1d1d1;
+  border: 1px solid #d1d1d1
 }

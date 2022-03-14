@@ -98,11 +98,22 @@
 		.char__user{
 			display: none;
 		}
+		.chat__back{
+			color: #8A8A8A;
+			margin-right: 10px;
+			cursor: pointer;
+			display: none;
+		}
 		.chat__delete{
 			margin-left: auto;
 			display: flex;
 			align-items: center;
 			justify-content: flex-end;
+			&:hover{
+				span{
+					text-decoration: underline;
+				}
+			}
 			img{
 				display: block;
 			}
@@ -211,6 +222,16 @@
 				cursor: pointer;
 				width: 100%;
 				max-width: 68px;
+				transition: all .3s ease;
+				img{
+					transition: all .3s ease;
+				}
+				&:hover{
+					background: #C0C0C0;
+					img{
+						filter: brightness(2);
+					}
+				}
 			}
 		}
 	}
@@ -270,6 +291,9 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+	}
+	.page-myMessages__chat .chat__back{
+		display: block;
 	}
 	.page-myMessages__chat .char__user{
 		display: flex;

@@ -7,24 +7,24 @@ lightbox.option({
 // SKELETON LOADER
 
 // const grid = document.querySelector('.skeleton-grid');
-//   const cardTemplate = document.getElementById('card-template');
-//   for (let i = 0; i < 6; i++) {
-//     grid.append(cardTemplate.content.cloneNode(true));
-//   }
-//   setTimeout(() => {
-//     fetch("https://fakestoreapi.com/products/category/electronics")
-//       .then(res => res.json())
-//       .then(posts => {
-//         grid.innerHTML = ''
-//         posts.forEach(post => {
-//           const div = cardTemplate.content.cloneNode(true)
-//           div.querySelector('[data-img]').src = post.image
-//           div.querySelector('[data-title]').textContent = "INR. ₹ " + post.price
-//           div.querySelector('[data-body]').textContent = post.title
-//           grid.append(div)
-//         })
+// const cardTemplate = document.getElementById('card-template');
+// for (let i = 0; i < 6; i++) {
+//   grid.append(cardTemplate.content.cloneNode(true));
+// }
+// setTimeout(() => {
+//   fetch("https://fakestoreapi.com/products/category/electronics")
+//     .then(res => res.json())
+//     .then(posts => {
+//       grid.innerHTML = ''
+//       posts.forEach(post => {
+//         const div = cardTemplate.content.cloneNode(true)
+//         div.querySelector('[data-img]').src = post.image
+//         div.querySelector('[data-title]').textContent = "INR. ₹ " + post.price
+//         div.querySelector('[data-body]').textContent = post.title
+//         grid.append(div)
 //       })
-//   }, 1000)
+//     })
+// }, 1000)
 
 // SKELETON LOADER
 
@@ -194,6 +194,75 @@ $(document).ready(function () {
 
 
 
+	// TOTAL SCROLL
+
+	$('.bill-fixed_mob').click(function () {
+			event.preventDefault();
+			var id  = $(this).attr('href'),
+				top = $(id).offset().top;
+			$('body,html').animate({scrollTop: top}, 500);
+	})
+
+	// TOTAL SCROLL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	// COUPON BLOCK
+
+	// Oups, I don't
+	$('.bill__coupon .akkordeon').click(function () {
+		if( $(this).hasClass('akkordeon_active') )
+			$(this).find('.akkordeon__head span').text("Oups, I don't")
+		else
+			$(this).find('.akkordeon__head span').text("I have a coupon")
+
+	})
+
+	// COUPON BLOCK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	// DELETE FILTER
+
+	$('.filters__list img, .messanger-list img').click(function () {
+		$(this).closest('label, li').hide()
+	})
+
+	// DELETE FILTER
+
+
+
+
+
+
+
+
+
 
 
 	// MONEY CLOSE
@@ -251,6 +320,8 @@ $(document).ready(function () {
 		$(this).addClass('users__item_active')
 	})
 
+
+
 	// MYMESSAGES
 
 
@@ -279,11 +350,17 @@ $(document).ready(function () {
       max: 75,
       values: [ 0, 75 ],
       slide: function( event, ui ) {
-        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+        $( ".price-min" ).css('left', $('.ui-slider-handle').eq(0).css('left'))
+        $( ".price-max" ).css('left', $('.ui-slider-handle').eq(1).css('left'))
+        $( ".price-min span" ).text("€" + ui.values[ 0 ]);
+        $( ".price-max span" ).text("€" + ui.values[ 1 ]);
       }
     });
-    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+    $( ".price-min" ).css('left', $('.ui-slider-handle').eq(0).css('left'))
+    $( ".price-max" ).css('left', '95%')
+    $( ".price-min span" ).text( "$" + $( "#slider-range" ).slider( "values", 0 ) )
+    $( ".price-max span" ).text( "$" + $( "#slider-range" ).slider( "values", 1 ) )
+      // " - $" + $( "#slider-range" ).slider( "values", 1 ) );
 
 	// RANGE SLIDER UI
 
@@ -602,13 +679,13 @@ $(document).ready(function () {
 		$(this).parent().find('.akkordeon__body').slideToggle(200)
 		$(this).parent().toggleClass('akkordeon_active')
 	})
-	$(document).click(function (e) {
-	    var container = $('.akkordeon');
-	    if (container.has(e.target).length === 0){
-        container.find('.akkordeon__body').slideUp(200)
-	    	container.removeClass('akkordeon_active')
-	    }
-	});
+	// $(document).click(function (e) {
+	//     var container = $('.akkordeon');
+	//     if (container.has(e.target).length === 0){
+ //        container.find('.akkordeon__body').slideUp(200)
+	//     	container.removeClass('akkordeon_active')
+	//     }
+	// });
 
 	// AKKORDEON
 
@@ -650,6 +727,7 @@ $(document).ready(function () {
 	$('.page-index__popular .slider__inner').slick({
 		swipeToSlide: true,
 		slidesToShow: 3,
+		infinite: false,
 		responsive:[
 			{
 				breakpoint: 992,
@@ -978,7 +1056,7 @@ $(document).ready(function () {
 		$('.list__content_lots').each(function () {
 			listMoreCount = $(this).data('show-items')
 
-			console.log(listMoreCount)
+			// console.log(listMoreCount)
 
 				
 			$(this).find('.item-more-block').each(function () {
@@ -1004,6 +1082,7 @@ $(document).ready(function () {
 				})
 				if( listMoreCount >= $(this).parent().find('.item-more-block').length ){
 					$(this).hide()
+					$(this).parent().find('.list__more_end').show()
 					$(this).parent().find('.list__content_lots').removeClass('list__content_lots')
 				}
 
@@ -1033,6 +1112,13 @@ $(document).ready(function () {
 			top = $(id).offset().top;
 		$('body,html').animate({scrollTop: top}, 500);
 	});
+
+	$('.list__more_end a').click(function (e) {
+		event.preventDefault();
+		// var id  = $(this).attr('href'),
+			// top = $(id).offset().top;
+		$('body,html').animate({scrollTop: 0}, 500);
+	})
 
 	// SCROLLTO SLIDE
 
@@ -1073,6 +1159,12 @@ $(document).ready(function () {
 
 			$('.users__item').removeClass('users__item_active')
 			$(this).addClass('users__item_active')
+		})
+		$('.chat__back').click(function () {
+			$('.chat__block').hide()
+			$('.page-myMessages__users').show()
+
+			$('.users__item').removeClass('users__item_active')
 		})
 	}
 

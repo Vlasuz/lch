@@ -36,7 +36,7 @@ block content
 									.blockInfoTextModal__text.
 										Fully refunded upon return as long as there has been no damage and expense
 							img(src="img/single/car1.jpg" alt="Photo")
-						.photo__item
+						a(href="img/single/car2.jpg" data-lightbox="photoSlider1").photo__item.gallery__item
 							img(src="img/single/car2.jpg" alt="Photo")
 						.info__list
 							ul
@@ -68,7 +68,7 @@ block content
 								img(src="img/single/qGreen.svg" alt="Ico")
 								.blockInfoTextModal__text.
 									Fully refunded upon return as long as there has been no damage and expense
-						.page-single__share
+						a(href="#").page-single__share
 							img(src="img/single/iShare.svg" alt="Ico")
 							span Share
 					.page-single__blockquotes
@@ -193,42 +193,63 @@ block content
 							span Insurance
 						.block-green
 							span Returnable depositis not required
-							img(src="img/single/qRed.svg" alt="Ico")
+							span.blockInfoTextModal
+								img(src="img/single/qRed.svg" alt="Ico")
+								.blockInfoTextModal__text.
+									Fully refunded upon return as long as there has been no damage and expense
 							.count €0
 						.block-red
 							span Returnable deposit by Cash, Credit or Debit card
-							img(src="img/single/qRed.svg" alt="Ico")
+							span.blockInfoTextModal
+								img(src="img/single/qRed.svg" alt="Ico")
+								.blockInfoTextModal__text.
+									Fully refunded upon return as long as there has been no damage and expense
 							.count €300
 						.block__frees
 							.frees__item
-								input(type="checkbox" name="freesName")#chFree1
+								input(type="checkbox" checked disabled name="freesName")#chFree1
 								label(for="chFree1").label-checkbox
 									span Third Party Liability
-									img(src="img/single/qRed.svg" alt="Ico")
+									span.blockInfoTextModal
+										img(src="img/single/qRed.svg" alt="Ico")
+										.blockInfoTextModal__text.
+											Fully refunded upon return as long as there has been no damage and expense
 									.priceFree FREE
 							.frees__item
 								input(type="checkbox" name="freesName")#chFree2
 								label(for="chFree2").label-checkbox
 									span Super Collision Damage Waiver
-									img(src="img/single/qRed.svg" alt="Ico")
+									span.blockInfoTextModal
+										img(src="img/single/qRed.svg" alt="Ico")
+										.blockInfoTextModal__text.
+											Fully refunded upon return as long as there has been no damage and expense
 									.priceFree FREE
 							.frees__item
 								input(type="checkbox" name="freesName")#chFree3
 								label(for="chFree3").label-checkbox
 									span Passenger Health
-									img(src="img/single/qRed.svg" alt="Ico")
+									span.blockInfoTextModal
+										img(src="img/single/qRed.svg" alt="Ico")
+										.blockInfoTextModal__text.
+											Fully refunded upon return as long as there has been no damage and expense
 									.priceFree FREE
 							.frees__item
 								input(type="checkbox" name="freesName")#chFree4
 								label(for="chFree4").label-checkbox
 									span Theft Protect
-									img(src="img/single/qRed.svg" alt="Ico")
+									span.blockInfoTextModal
+										img(src="img/single/qRed.svg" alt="Ico")
+										.blockInfoTextModal__text.
+											Fully refunded upon return as long as there has been no damage and expense
 									.priceFree FREE
 							.frees__item
 								input(type="checkbox" name="freesName")#chFree5
 								label(for="chFree5").label-checkbox
 									span Cross Border
-									img(src="img/single/qRed.svg" alt="Ico")
+									span.blockInfoTextModal
+										img(src="img/single/qRed.svg" alt="Ico")
+										.blockInfoTextModal__text.
+											Fully refunded upon return as long as there has been no damage and expense
 									.priceFree FREE
 						.block__selects
 							.akkordeon
@@ -515,13 +536,21 @@ block content
 									span ₾805
 								.bill__now
 									span Pay now
-									img(src="img/single/qRed.svg" alt="Ico")
+									span.blockInfoTextModal
+										img(src="img/single/qRed.svg" alt="Ico")
+										.blockInfoTextModal__text.
+											Fully refunded upon return as long as there has been no damage and expense
 									span ₾0
 								.bill__pickup
 									span Pay on pickup
 									span ₾700
-								a(href="#").bill__button.btn-hover Book now
+								a(href="#").bill__button.disabled.btn-hover Book now
 
-
+		section.breadcrumbs
+			.wrapper
+				a(href="#") Car rental
+				a(href="#") Rent a car in Georgia
+				a(href="#") Tbilisi
+				span Tamuna
 
 	include includes/footer.pug
