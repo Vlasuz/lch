@@ -800,9 +800,11 @@ p.subtitle{
 		margin-left: 20px;
 		display: flex;
 		align-items: center;
+		margin-top: -12px;
 	}
 	label{
 		margin-right: 12px;
+		margin-top: 12px;
 		background: #FFFFFF;
 		border: 1px solid #E6E6E6;
 		display: flex;
@@ -1506,6 +1508,10 @@ p.subtitle{
 
 @media screen and (max-width: 1024px) {
 
+	.banner__days b,
+	.banner__days span{
+		font-size: 15px;
+	}
 	.page-profile__top{
 		display: flex;
 		align-items: center;
@@ -1628,7 +1634,7 @@ p.subtitle{
 			padding-top: 0;
 		}
 		&:last-child{
-			padding-bottom: 0;
+			// padding-bottom: 0;
 		}
 	}
 	.skeleton-card{

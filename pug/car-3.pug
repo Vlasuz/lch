@@ -1,4 +1,4 @@
-extends includes/header.pug
+extends includes/header-car.pug
 
 block content
 
@@ -8,6 +8,13 @@ block content
 			.page-single__top
 				h1.page-single__title
 					span Rent a Mercedes-Benz SLK 230 CABRIO
+				.item__tags.item__tags_mob
+					a(href="#").blockInfoTextModal or similar
+						.blockInfoTextModal__text.
+							Fully refunded upon return as long as there has been no damage and expense
+					a(href="#").blockInfoTextModal right-handed
+						.blockInfoTextModal__text.
+							Fully refunded upon return as long as there has been no damage and expense
 				.page-single__red
 					span Free cancel 24 hours
 					.blockInfoTextModal
@@ -472,6 +479,9 @@ block content
 						.list__more
 							.lines
 							button.btn-hover Show more
+						.list__less
+							.lines
+							button.btn-hover Show less
 
 				.page-single__rht
 					.rht__sticky
@@ -548,7 +558,10 @@ block content
 									span ₾805
 								.bill__now
 									span Pay now
-									img(src="img/single/qRed.svg" alt="Ico")
+									span.blockInfoTextModal.underline
+										img(src="img/single/qRed.svg" alt="Ico")
+										.blockInfoTextModal__text.
+											Fully refunded upon return as long as there has been no damage and expense
 									span ₾0
 								.bill__pickup
 									span Pay on pickup

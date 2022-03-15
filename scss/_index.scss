@@ -14,7 +14,7 @@
 }
 .page-index{
 
-
+	margin-top: -30px;
 
 	.switch{
 		display: flex;
@@ -1315,6 +1315,9 @@
 		margin-left: 0;
 		padding-right: 0;
 	}
+	.page-index__banner .banner__calendar{
+		min-width: 120px;
+	}
 	.page-index__banner .banner__calendar, .page-index__banner .banner__search{
 		padding-right: 7px;
 		margin-right: 7px;
@@ -1324,7 +1327,9 @@
 		line-height: 18px;
 	}
 	.page-index__banner .banner__button{
-		padding: 12px 73px;
+		padding: 12px;
+		max-width: 250px;
+		width: 100%;
 	}
 	.page-index__banner{
 		margin-bottom: 60px;

@@ -7,8 +7,14 @@
 .selection{
 	width: 100%;
 }
-.select2-container--open .select2-dropdown--below{
-	margin-top: 10px !important;
+.body-car{
+	.select2-container--open .select2-dropdown--below{
+		margin-top: 10px !important;
+	}
+}
+
+body{
+	overflow-x: hidden;
 }
 .page-single{
 
@@ -16,7 +22,7 @@
 		position: fixed;
 		bottom: 0;
 		left: 0;
-		background: #C0C0C0;
+		background: #ececec;
 		padding: 10px;
 		z-index: 130;
 		width: 100%;
@@ -30,12 +36,14 @@
 		}
 	}
 
+	.list__less,
 	.list__more {
 		&:before,
 		&:after{
 			display: none;
 		}
 	}
+	.list__less button,
 	.list__more button{
 		border: 1px solid #F91942;
 		border-radius: 40px;
@@ -49,6 +57,21 @@
 		&:after{
 			display: none;
 		}
+	}
+
+	.list__less{
+		display: none;
+	}
+	.list__less button{
+		height: 50px;
+		max-width: 250px;
+		width: 100%;
+		margin: 0 auto;
+		display: block;
+		font-weight: 900;
+		font-size: 18px;
+		line-height: 25px;
+		text-transform: uppercase;
 	}
 
 	&-none{
@@ -67,7 +90,7 @@
 		}
 	}
 	&-more{
-		overflow: hidden;
+		// overflow: hidden;
 		.page-single__photos{
 			margin-left: 370px;
 			margin-right: -34px;
@@ -131,7 +154,7 @@
 		.page-single__rht{
 			position: absolute;
 			right: 0;
-			top: 337px;
+			top: 354px;
 			height: 100%;
 		}
 		.page-index__reviews,
@@ -176,6 +199,7 @@
 			.page-single__top{
 				display: flex;
 				flex-wrap: wrap;
+				display: none;
 			}
 			.page-single__green, .page-single__red{
 				margin-bottom: 10px;
@@ -199,7 +223,7 @@
 		.page-single__rht{
 			position: absolute;
 			right: 0;
-			top: 337px;
+			top: 357px;
 			height: 100%;
 			padding-bottom: 430px;
 		}
@@ -213,6 +237,7 @@
 
 		.page-single__photos{
 			margin: 0 -17px;
+			margin-bottom: 20px;
 			.info__list,
 			.page-single__title{
 				display: none;
@@ -239,6 +264,7 @@
 			}
 			&:first-child{
 				max-width: 355px;
+				margin-right: 40px;
 			}
 			.page-single__title{
 				display: block;
@@ -251,6 +277,7 @@
 		.page-single__lft{
 			.page-single__top{
 				display: flex;
+				display: none;
 			}
 		}
 		.page-single__block{
@@ -296,6 +323,7 @@
 		.page-single__lft{
 			.page-single__top{
 				display: flex;
+				display: none;
 			}
 		}
 		.page-single__block{
@@ -375,6 +403,9 @@
 	.item__tags{
 		margin-top: 8px;
 		display: flex;
+		&_mob{
+			display: none;
+		}
 		a{
 			background: #E3E3E3;
 			border-radius: 3px;
@@ -446,10 +477,15 @@
 	input[type="checkbox"]{
 		display: none;
 	}
+	.akkordeon__item{
+		padding: 15px 20px;
+	}
+	.frees__item{
+		padding: 15px 20px;
+	}
 	.label-checkbox{
 		display: flex;
 		align-items: center;
-		padding: 15px 20px;
 		cursor: pointer;
 		width: 100%;
 		&:before{
@@ -511,6 +547,7 @@
 			color: #3A3A3A;
 			background: transparent;
 			width: 100%;
+			height: auto;
 			text-align: center;
 			max-width: 30px;
 			border: none;
@@ -805,7 +842,7 @@
 		border-radius: 5px;
 		padding: 24px;
 		position: sticky;
-		top: 10px;
+		top: -25px;
 		li{
 			font-family: Roboto;
 			font-size: 18px;
@@ -1222,7 +1259,7 @@
 		.item__tags{
 			margin-top: -40px;
 			margin-right: -200px;
-			white-space: nowrap;
+			// white-space: nowrap;
 		}
 		.page-single__rht{
 			top: 305px;
@@ -1366,6 +1403,34 @@
 		align-items: center;
 		justify-content: space-between;
 	}
+	.page-single__top{
+		display: block;
+	}
+	.page-single .item__tags{
+		display: none;
+		margin-right: 0;
+		&_mob{
+			display: flex;
+		}
+	}
+	.page-single .page-single__photos{
+		margin-right: 0;
+	}
+	.page-single .page-single__photos .photo__item{
+		height: 200px;
+	}
+	.page-single .page-single__photos .photo__item img{
+		margin-top: 0;
+	}
+	.page-single .page-single__photos{
+		margin-bottom: 0;
+	}
+	.page-single .lft__photos{
+		margin-top: 14px;
+	}
+	.page-single .page-single__top .page-single__title{
+		margin-bottom: 16px;
+	}
 	.page-single-more .lft__lft{
 		margin-top: 20px;
 	}
@@ -1375,8 +1440,9 @@
 	.page-single-more .lft__photos{
 		display: flex;
 		align-items: center;
-		overflow: auto;
-		margin-top: 20px;
+		overflow-x: auto;
+		overflow-y: hidden;
+		// margin-top: 20px;
 	}
 	.page-single-more .page-single__photos{
 		margin-left: 0;
@@ -1505,7 +1571,7 @@
 			margin-right: -100px;
 		}
 		.item__tags a{
-			white-space: nowrap;
+			// white-space: nowrap;
 		}
 		.page-single__rht{
 			margin-top: 0;
@@ -1676,7 +1742,7 @@
 	}
 	.page-single-more .item__tags{
 		margin-top: -70px;
-		white-space: nowrap;
+		// white-space: nowrap;
 		margin-bottom: 30px;
 	}
 	.page-single-more .lft__lft{

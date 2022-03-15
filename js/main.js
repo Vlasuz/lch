@@ -196,11 +196,12 @@ $(document).ready(function () {
 
 	// TOTAL SCROLL
 
-	$('.bill-fixed_mob').click(function () {
+	$('.bill-fixed_mob').click(function (event) {
 			event.preventDefault();
+			var hWin = $(window).height()
 			var id  = $(this).attr('href'),
 				top = $(id).offset().top;
-			$('body,html').animate({scrollTop: top}, 500);
+			$('body,html').animate({scrollTop: top - (hWin - 100)}, 500);
 	})
 
 	// TOTAL SCROLL
@@ -716,6 +717,7 @@ $(document).ready(function () {
 	$('.page-single-more .page-single__photos').slick({
 		slidesToShow: 2,
 		infinite: false,
+		arrows: false,
 		responsive:[
 			{
 				breakpoint: 992,
@@ -1083,12 +1085,27 @@ $(document).ready(function () {
 				if( listMoreCount >= $(this).parent().find('.item-more-block').length ){
 					$(this).hide()
 					$(this).parent().find('.list__more_end').show()
+					$(this).parent().find('.list__less').show()
 					$(this).parent().find('.list__content_lots').removeClass('list__content_lots')
 				}
 
 			})
 		})
 	}, 500)
+
+	$('.list__less').click(function () {
+		listMoreCount = $(this).closest('.page-index__reviews').find('.reviews__block').data('show-items')
+		$(this).closest('.page-index__reviews').find('.reviews__block').addClass('list__content_lots')
+		$(this).closest('.page-index__reviews').find('.item-more-block').each(function () {
+			if( $(this).index() < listMoreCount ){
+				$(this).show()
+			}else
+				$(this).hide()
+		})
+
+		$(this).hide()
+		$(this).closest('.page-index__reviews').find('.list__more').show()
+	})
 
 
 	// LIST BUTTON MORE

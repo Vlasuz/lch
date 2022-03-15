@@ -51,7 +51,7 @@
 		align-items: center;
 		justify-content: space-between;
 		padding-bottom: 8px;
-		margin-bottom: 44px;
+		margin-bottom: 30px;
 		.switchp__item{
 			padding-bottom: 10px;
 			margin-bottom: -10px;
@@ -136,11 +136,11 @@
 		display: block;
 		span{
 			font-weight: 900;
-			font-size: 20px;
+			font-size: 17px;
 			line-height: 27px;
 			text-transform: uppercase;
 			color: #8A8A8A;
-			margin-bottom: 16px;
+			margin-bottom: 8px;
 			display: block;
 		}
 		span.p{
@@ -267,8 +267,10 @@
 
 	&__filters{
 		padding: 0;
-		.popup__clear{
-			display: none;
+		.popup__top{
+			.popup__clear{
+				display: none;
+			}
 		}
 		.range__prices{
 			display: flex;
@@ -882,6 +884,9 @@
 	.popup__inner{
 		max-height: 80vh;
 	}
+	.popup__filters .popup__inner{
+		max-height: 60vh;
+	}
 }
 
 @media screen and (max-width: 700px) {
@@ -939,6 +944,9 @@
 
 @media screen and (max-width: 400px) {
 	.popup__filters .popup__clear{
+		display: none;
+	}
+	.popup__filters .popup__top .popup__clear{
 		display: block;
 		font-family: 'Roboto';
 		text-decoration: underline;
