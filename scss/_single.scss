@@ -8,6 +8,9 @@
 	width: 100%;
 }
 .body-car{
+	.page-index__banner .banner__select input, .page-index__banner .banner__select input::placeholder, .page-index__banner .banner__select span, .page-index__banner .select__head input, .page-index__banner .select__head input::placeholder, .page-index__banner .select__head span, .select2-container--default .select2-selection--single .select2-selection__rendered{
+		max-width: 100% !important;
+	}
 	.select2-container--open .select2-dropdown--below{
 		margin-top: 10px !important;
 	}
@@ -17,6 +20,16 @@ body{
 	overflow-x: hidden;
 }
 .page-single{
+
+	.page-index__reviews{
+		overflow: visible;
+	}
+
+	.page-single__clrs_mob,
+	.page-single__clrs,
+	.page-single__lft .page-single__top{
+		display: none !important;
+	}
 
 	.bill-fixed_mob{
 		position: fixed;
@@ -223,7 +236,7 @@ body{
 		.page-single__rht{
 			position: absolute;
 			right: 0;
-			top: 321px;
+			top: 330px;
 			height: 100%;
 			padding-bottom: 387px;
 		}
@@ -263,7 +276,8 @@ body{
 				width: 100%;
 			}
 			&:first-child{
-				max-width: 320px;
+				max-width: 330px;
+				min-width: 330px;
 				margin-right: 36px;
 			}
 			.page-single__title{
@@ -1220,7 +1234,7 @@ body{
 			height: 110%;
 		}
 		.item__tags{
-			margin-top: -36px;
+			margin-top: 0px;
 		}
 		.page-single__rht{
 			top: 252px;
@@ -1257,12 +1271,12 @@ body{
 			}	
 		}
 		.item__tags{
-			margin-top: -36px;
+			margin-top: 0px;
 			margin-right: -180px;
 			// white-space: nowrap;
 		}
 		.page-single__rht{
-			top: 275px;
+			top: 305px;
 		}
 		.page-single__photos{
 			margin-top: 45px;
@@ -1398,6 +1412,16 @@ body{
 }
 
 @media screen and (max-width: 992px) {
+	.page-single-two .photo__item:first-child{
+		min-width: 225px;
+		width: 100%;
+	}
+	.page-single__bill .blockInfoTextModal__text{
+		right: -190px;
+		&:after{
+			left: 11%;
+		}
+	}
 	.page-single .bill-fixed_mob{
 		display: flex;
 		align-items: center;
@@ -1567,7 +1591,7 @@ body{
 			}
 		}
 		.item__tags{
-			margin-top: -27px;
+			margin-top: 0;
 			margin-right: -90px;
 		}
 		.item__tags a{
@@ -1786,7 +1810,11 @@ body{
 			overflow: visible;
 		}
 	}
-
+	.page-single-two .page-single__photos .photo__item:first-child img{
+		width: 100%;
+		max-width: 100%;
+		margin: 0;
+	}
 
 
 }

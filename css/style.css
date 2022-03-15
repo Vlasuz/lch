@@ -876,7 +876,9 @@ p.subtitle span {
   font-size: 18px;
   line-height: 21px;
   color: #f91942;
-  padding: 9px 21px;
+  padding: 9px;
+  max-width: 180px;
+  width: 100%;
   background: #fff;
   border: 1px solid #f91942;
   border-radius: 20px;
@@ -5359,6 +5361,9 @@ header {
   box-shadow: 0 0 18px rgba(0,0,0,.1);
   border-radius: 10px
 }
+.page-city .page-country__list {
+  padding-top: 27px
+}
 .page-city .banner__filters .filter__button,
 .page-city .page-index__banner .banner__block {
   border: 1px solid silver
@@ -5426,9 +5431,6 @@ header {
   line-height: 21px;
   text-transform: uppercase;
   color: #f91942
-}
-.page-city__money {
-  margin-bottom: 27px
 }
 .page-city__money .money__block {
   background: #e9f8ff;
@@ -12118,11 +12120,44 @@ header {
 .selection {
   width: 100%
 }
+.body-car .page-index__banner .banner__select input::-webkit-input-placeholder,
+.body-car .page-index__banner .select__head input::-webkit-input-placeholder {
+  max-width: 100%!important
+}
+.body-car .page-index__banner .banner__select input::-moz-placeholder,
+.body-car .page-index__banner .select__head input::-moz-placeholder {
+  max-width: 100%!important
+}
+.body-car .page-index__banner .banner__select input:-ms-input-placeholder,
+.body-car .page-index__banner .select__head input:-ms-input-placeholder {
+  max-width: 100%!important
+}
+.body-car .page-index__banner .banner__select input::-ms-input-placeholder,
+.body-car .page-index__banner .select__head input::-ms-input-placeholder {
+  max-width: 100%!important
+}
+.body-car .page-index__banner .banner__select input,
+.body-car .page-index__banner .banner__select input::placeholder,
+.body-car .page-index__banner .banner__select span,
+.body-car .page-index__banner .select__head input,
+.body-car .page-index__banner .select__head input::placeholder,
+.body-car .page-index__banner .select__head span,
+.body-car .select2-container--default .select2-selection--single .select2-selection__rendered {
+  max-width: 100%!important
+}
 .body-car .select2-container--open .select2-dropdown--below {
   margin-top: 10px!important
 }
 body {
   overflow-x: hidden
+}
+.page-single .page-index__reviews {
+  overflow: visible
+}
+.page-single .page-single__clrs,
+.page-single .page-single__clrs_mob,
+.page-single .page-single__lft .page-single__top {
+  display: none!important
 }
 .page-single .bill-fixed_mob {
   position: fixed;
@@ -12302,7 +12337,7 @@ body {
 .page-single-two .page-single__rht {
   position: absolute;
   right: 0;
-  top: 321px;
+  top: 330px;
   height: 100%;
   padding-bottom: 387px
 }
@@ -12341,7 +12376,8 @@ body {
   width: 100%
 }
 .page-single-two .photo__item:first-child {
-  max-width: 320px;
+  max-width: 330px;
+  min-width: 330px;
   margin-right: 36px
 }
 .page-single-two .photo__item .page-single__title {
@@ -13405,7 +13441,7 @@ body {
     height: 110%
   }
   .page-single-more .item__tags {
-    margin-top: -36px
+    margin-top: 0
   }
   .page-single-more .page-single__rht {
     top: 252px
@@ -13452,11 +13488,11 @@ body {
     margin-top: 10px
   }
   .page-single-two .item__tags {
-    margin-top: -36px;
+    margin-top: 0;
     margin-right: -180px
   }
   .page-single-two .page-single__rht {
-    top: 275px
+    top: 305px
   }
   .page-single-two .page-single__photos {
     margin-top: 45px
@@ -13617,6 +13653,16 @@ body {
   }
 }
 @media screen and (max-width:992px) {
+  .page-single-two .photo__item:first-child {
+    min-width: 225px;
+    width: 100%
+  }
+  .page-single__bill .blockInfoTextModal__text {
+    right: -190px
+  }
+  .page-single__bill .blockInfoTextModal__text:after {
+    left: 11%
+  }
   .page-single .bill-fixed_mob {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -13797,7 +13843,7 @@ body {
     object-fit: cover
   }
   .page-single-one .item__tags {
-    margin-top: -27px;
+    margin-top: 0;
     margin-right: -90px
   }
   .page-single-one .page-single__rht {
@@ -14037,6 +14083,11 @@ body {
   .page-single-more .page-single__photos {
     margin-top: 0;
     overflow: visible
+  }
+  .page-single-two .page-single__photos .photo__item:first-child img {
+    width: 100%;
+    max-width: 100%;
+    margin: 0
   }
 }
 @media screen and (max-width:400px) {
@@ -15089,9 +15140,6 @@ footer {
   }
   .car__item {
     padding: 27px 18px
-  }
-  .car__item:first-child {
-    padding-top: 0
   }
   .skeleton-card {
     width: calc(100% / 2)

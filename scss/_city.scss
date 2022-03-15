@@ -45,6 +45,10 @@
 		border-radius: 10px;
 	}
 
+	.page-country__list{
+		padding-top: 27px;
+	}
+
 	.page-index__banner .banner__block,
 	.banner__filters .filter__button{
 		border: 1px solid #C0C0C0;
@@ -111,7 +115,7 @@
 	}
 
 	&__money{
-		margin-bottom: 27px;
+		// margin-bottom: 27px;
 		.money__block{
 			background: #E9F8FF;
 			border-radius: 5px;

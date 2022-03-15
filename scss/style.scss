@@ -641,7 +641,9 @@ p.subtitle{
 		font-size: 18px;
 		line-height: 21px;
 		color: #F91942;
-		padding: 9px 21px;
+		padding: 9px;
+		max-width: 180px;
+		width: 100%;
 		background: #FFFFFF;
 		border: 1px solid #F91942;
 		border-radius: 20px;
@@ -1631,7 +1633,7 @@ p.subtitle{
 	.car__item{
 		padding: 27px 18px;
 		&:first-child{
-			padding-top: 0;
+			// padding-top: 0;
 		}
 		&:last-child{
 			// padding-bottom: 0;
