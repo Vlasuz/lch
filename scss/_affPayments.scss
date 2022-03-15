@@ -2,11 +2,11 @@
 
 	h2{
 		font-weight: 900;
-		font-size: 20px;
-		line-height: 27px;
+		font-size: 18px;
+		line-height: 24px;
 		text-transform: uppercase;
 		color: #3A3A3A;
-		margin-bottom: 30px;
+		margin-bottom: 27px;
 		span{
 			color: #F91942;
 		}
@@ -15,51 +15,51 @@
 	canvas{
 		width: 100%;
 		max-width: 50vw;
-		height: 350px;
+		height: 315px;
 	}
 
 	&__sides{
 		display: flex;
-		margin-bottom: 60px;
+		margin-bottom: 54px;
 	}
 	&__lft{
 		width: 100%;
 	}
 	&__rht{
 		width: 100%;
-		max-width: 487px;
-		margin-left: 50px;
+		max-width: 438px;
+		margin-left: 45px;
 		.rht__block{
 			background: #FAFAFA;
 			border: 1px solid #E6E6E6;
 			border-radius: 10px;
-			padding: 30px 24px;
+			padding: 27px 22px;
 		}
 		ul{
-			margin: -16px 0;
+			margin: -14px 0;
 		}
 		li{
 			font-family: 'Roboto';
-			font-size: 20px;
-			line-height: 23px;
+			font-size: 18px;
+			line-height: 21px;
 			color: #424242;
-			margin: 16px 0;
+			margin: 14px 0;
 			span.red{
 				color: #F91942;
 			}
 		}
 		button{
 			background: #F91942;
-			border-radius: 45px;
-			height: 50px;
-			max-width: 260px;
+			border-radius: 41px;
+			height: 45px;
+			max-width: 234px;
 			width: 100%;
 			font-weight: 900;
-			font-size: 20px;
-			line-height: 27px;
+			font-size: 18px;
+			line-height: 24px;
 			text-transform: uppercase;
 			color: #FFFFFF;
-			margin-top: 30px;
+			margin-top: 27px;
 		}
 	}
 
@@ -87,12 +87,12 @@
 		overflow: hidden;
 		.table__ovf{
 			border-radius: 5px 5px 0 0;
-			padding-bottom: 20px;
+			padding-bottom: 18px;
 			overflow: hidden;
 			&::-webkit-scrollbar {
 			    background: #F3F3F3;
 				border-radius: 8px;
-				height: 15px;
+				height: 14px;
 			}
 			&::-webkit-scrollbar-thumb {
 			    background: #F91942;
@@ -103,12 +103,12 @@
 			position: absolute;
 			font-family: 'Roboto';
 			font-weight: 400;
-			font-size: 12px;
-			line-height: 14px;
+			font-size: 11px;
+			line-height: 13px;
 			color: #FFFFFF;
 			padding-bottom: 4px;
 			border-bottom: 1px solid #FFFFFF;
-			max-width: 164px;
+			max-width: 148px;
 			width: 100%;
 			background: #F91942;
 			right: 0;
@@ -122,8 +122,8 @@
 				background: #F91942;
 				height: 100%;
 				position: absolute;
-				width: 3000px;
-				left: -1500px;
+				width: 2700px;
+				left: -1350px;
 				z-index: 1;
 				top: 0;
 			}
@@ -134,8 +134,8 @@
 		thead{
 			td{
 				height: auto;
-				padding-top: 20px;
-				padding-bottom: 20px;
+				padding-top: 18px;
+				padding-bottom: 18px;
 			}
 		}
 	}
@@ -143,12 +143,12 @@
 		td{
 			font-family: 'Roboto';
 			font-weight: 400;
-			font-size: 16px;
-			line-height: 19px;
+			font-size: 14px;
+			line-height: 17px;
 			color: #3A3A3A;
-			padding-left: 24px;
-			padding-top: 16px;
-			padding-bottom: 16px;
+			padding-left: 22px;
+			padding-top: 14px;
+			padding-bottom: 14px;
 			&:last-child{
 				padding-right: 2px;
 			}
@@ -175,19 +175,19 @@
 		border-radius: 5px 5px 0px 0px;
 		white-space: nowrap;
 		td{
-			padding-left: 24px;
+			padding-left: 22px;
 		}
 		td:nth-child(1){
-			padding-right: 43px;
+			padding-right: 39px;
 		}
 		td:nth-child(2){
-			padding-right: 60px;
+			padding-right: 54px;
 		}
 		td:nth-child(3){
-			padding-right: 161px;
+			padding-right: 145px;
 		}
 		td:nth-child(4){
-			padding-right: 103px;
+			padding-right: 93px;
 		}
 	}
 
@@ -200,8 +200,8 @@
 	.sortable .head h3{
 		font-family: 'Roboto';
 		font-weight: 400;
-		font-size: 16px;
-		line-height: 19px;
+		font-size: 14px;
+		line-height: 17px;
 		color: #FFFFFF;
 		background: transparent;
 		&:after{
@@ -209,12 +209,12 @@
 			width: 10px;
 			height: 5px;
 			display: block;
-			width: 50px;
-			height: 16px;
+			width: 45px;
+			height: 14px;
 			border-radius: 5px;
 			background: #D01F40 url('../img/svg/arrTableSort.svg') no-repeat;
 			background-position: center;
-			margin-top: 12px;
+			margin-top: 11px;
 		}
 	}
 	.sortable .nosort h3{
@@ -224,7 +224,7 @@
 	}
 
 	.sortable td{
-		height: 50px;
+		height: 45px;
 	}
 	.sortable .oddrow td{
 		background: #FAFAFA;
@@ -239,23 +239,23 @@
 
 @media screen and (max-width: 1024px) {
 	.page-affPayments h2{
-		margin-bottom: 30px;
-		font-size: 18px;
-		line-height: 25px;
+		margin-bottom: 27px;
+		font-size: 16px;
+		line-height: 23px;
 	}
 	.page-affPayments__rht .rht__block{
-		padding: 20px;
+		padding: 18px;
 	}
 	.page-affPayments__rht li{
-		font-size: 16px;
-		line-height: 19px;
+		font-size: 14px;
+		line-height: 17px;
 	}
 	.page-affPayments__rht canvas{
 		width: 100%;
 		max-width: 100%;
 	}
 	.page-affPayments__rht{
-		max-width: 340px;
+		max-width: 306px;
 	}
 	.page-affPayments__sides{
 		justify-content: space-between;
@@ -270,10 +270,10 @@
 		padding-right: 0px;
 	}
 	.page-affPayments thead td:nth-child(3){
-		padding-right: 100px;
+		padding-right: 90px;
 	}
 	.page-affPayments thead td:nth-child(4){
-		padding-right: 30px;
+		padding-right: 27px;
 	}
 }
 
@@ -283,7 +283,7 @@
 	}
 	.page-affPayments__rht{
 		margin-left: 0;
-		margin-top: 30px;
+		margin-top: 27px;
 	}
 	.page-affPayments canvas{
 		max-width: 100%;
@@ -297,7 +297,7 @@
 		overflow: auto;
 	}
 	.page-affPayments .sortable{
-		min-width: 1000px;
+		min-width: 900px;
 	}
 }
 
@@ -311,7 +311,7 @@
 		align-items: center;
 	}
 	.page-affPayments__rht li b{
-		margin-right: 40px;
+		margin-right: 36px;
 	}
 	.page-affPayments__rht li span.red{
 		margin-left: auto;
@@ -321,13 +321,14 @@
 
 @media screen and (max-width: 440px) {
 	.page-affPayments__rht li b{
-		margin-right: 20px;
+		margin-right: 18px;
 	}
 	.page-affPayments__rht .rht__block{
-		margin-left: -20px;
-		margin-right: -20px;
+		margin-left: -18px;
+		margin-right: -18px;
 	}
 }
+
 
 
 

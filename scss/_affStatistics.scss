@@ -1,50 +1,50 @@
 .page-affStatistics{
 
-	margin-bottom: 80px;
+	margin-bottom: 72px;
 
 	&__chart{
 		overflow: auto;
-		padding-bottom: 30px;
+		padding-bottom: 27px;
 		&::-webkit-scrollbar {
 		    background: #F3F3F3;
 			border-radius: 8px;
-			height: 15px;
+			height: 14px;
 		}
 		&::-webkit-scrollbar-thumb {
 		    background: #F91942;
 			border-radius: 8px;
 		}
 		canvas{
-			min-height: 350px;
-			max-height: 350px;
-			min-width: 800px;
+			min-height: 315px;
+			max-height: 315px;
+			min-width: 720px;
 		}
 	}
 
 	&__selects{
 		display: flex;
 		align-items: center;
-		margin-bottom: 30px;
+		margin-bottom: 27px;
 		.select__body{
-			padding: 20px 24px;
+			padding: 18px 22px;
 			padding-right: 5px;
 			margin-top: 5px;
 			width: auto;
 			width: 100%;
 		}
 		.option{
-			// margin-bottom: 12px;
+			// margin-bottom: 11px;
 			cursor: pointer;
-			padding: 6px 24px;
-			margin-left: -24px;
+			padding: 6px 22px;
+			margin-left: -22px;
 			margin-right: -5px;
 			&:hover{
 				background: rgba(191, 191, 191, 0.2);
 			}
 			span{
 				font-family: Roboto;
-				font-size: 20px;
-				line-height: 23px;
+				font-size: 18px;
+				line-height: 21px;
 				color: #424242;
 				transition: all .3s ease;
 			}
@@ -58,7 +58,7 @@
 			}
 		}
 		.select{
-			max-width: 590px;
+			max-width: 531px;
 			width: 100%;
 			z-index: 4;
 			transition: z-index 0 .3s ease;

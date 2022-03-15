@@ -1,6 +1,6 @@
 .page-mySettings{
 
-	margin-bottom: 100px;
+	margin-bottom: 90px;
 
 	&__sides{
 		display: flex;
@@ -10,31 +10,31 @@
 		display: flex;
 		align-items: center;
 		flex-wrap: wrap;
-		margin-top: -12px;
+		margin-top: -11px;
 	}
 	.messanger-list li{
-		margin-right: 12px;
-		margin-top: 12px;
+		margin-right: 11px;
+		margin-top: 11px;
 		background: #FFFFFF;
 		border: 1px solid #E6E6E6;
 		display: flex;
 		align-items: center;
-		padding: 8px 12px;
+		padding: 8px 11px;
 		width: fit-content;
 		border-radius: 5px;
 		border: 1px solid #CDCDCD;
 		span{
 			font-family: Roboto;
-			font-size: 16px;
-			line-height: 19px;
+			font-size: 14px;
+			line-height: 17px;
 			color: #3A3A3A;
 		}
 		button{
-			margin-left: 12px;
+			margin-left: 11px;
 			background: transparent;
 			border: none;
 			display: block;
-			width: 14px;
+			width: 13px;
 			text-align: center;
 		}
 		img{
@@ -44,22 +44,22 @@
 			transition: all .3s ease;
 			margin: 0 auto;
 			&:hover{
-				width: 14px;
+				width: 13px;
 			}
 		}
 	}
 
 	&__photo{
-		max-width: 360px;
+		max-width: 324px;
 		width: 100%;
-		margin-right: 35px;
+		margin-right: 32px;
 		.photo__inner{
 			background: #FAFAFA;
 			border: 2px dashed #CDCDCD;
-			padding: 20px;
-			max-width: 360px;
+			padding: 18px;
+			max-width: 324px;
 			width: 100%;
-			height: 360px;
+			height: 324px;
 			img{
 				width: 100%;
 				height: 100%;
@@ -74,16 +74,16 @@
 				height: 100%;
 				background: #EAEAEA;
 				border-radius: 5px;
-				padding: 20px;
+				padding: 18px;
 				p{
 					font-family: 'Roboto';
 					font-weight: 400;
-					font-size: 20px;
-					line-height: 23px;
+					font-size: 18px;
+					line-height: 21px;
 					color: #3A3A3A;
 				}
 				img{
-					width: 70px;
+					width: 63px;
 					display: block;
 					height: auto;
 					margin-bottom: 10px;
@@ -94,11 +94,11 @@
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			margin-bottom: 16px;
+			margin-bottom: 14px;
 			b{
 				font-weight: 900;
-				font-size: 20px;
-				line-height: 27px;
+				font-size: 18px;
+				line-height: 24px;
 				text-transform: uppercase;
 				color: #8A8A8A;
 			}
@@ -106,8 +106,8 @@
 				display: flex;
 				align-items: center;
 				font-weight: 900;
-				font-size: 20px;
-				line-height: 27px;
+				font-size: 18px;
+				line-height: 24px;
 				text-transform: uppercase;
 				color: #F91942;
 				border: none;
@@ -123,32 +123,32 @@
 	&__info{
 		width: 100%;
 		display: grid;
-		grid-column-gap: 35px;
-		grid-row-gap: 40px;
+		grid-column-gap: 32px;
+		grid-row-gap: 36px;
 		grid-template-columns: repeat(2, 1fr);
 		.block-submit{
-			height: 50px;
+			height: 45px;
 			background: #F91942;
-			border-radius: 45px;
-			max-width: 260px;
+			border-radius: 41px;
+			max-width: 234px;
 			width: 100%;
 			font-weight: 900;
-			font-size: 20px;
-			line-height: 27px;
+			font-size: 18px;
+			line-height: 24px;
 			text-transform: uppercase;
 			color: #FFFFFF;
 			display: block;
-			margin-top: 30px;
+			margin-top: 27px;
 			margin-left: auto;
 		}
 		label{
 			display: block;
-			margin-bottom: 24px;
+			margin-bottom: 22px;
 			span{
 				font-weight: 900;
-				font-size: 20px;
-				line-height: 27px;
-				margin-bottom: 16px;
+				font-size: 18px;
+				line-height: 24px;
+				margin-bottom: 14px;
 				display: block;
 				text-transform: uppercase;
 				color: #8A8A8A;
@@ -161,34 +161,34 @@
 
 @media screen and (max-width: 1024px) {
 	.page-mySettings__photo .photo__inner{
-		max-width: 250px;
-		height: 250px;
-		padding: 14px;
+		max-width: 225px;
+		height: 225px;
+		padding: 13px;
 	}
 	.page-mySettings__photo{
-		max-width: 250px;
+		max-width: 225px;
 	}
 	.page-mySettings__photo .photo__top .clear img{
-		width: 18px;
+		width: 16px;
 	}
 	.page-mySettings__photo .photo__top .clear span,
 	.page-mySettings__photo .photo__top b{
-		font-size: 18px;
+		font-size: 16px;
 		line-height: normal;
 	}
 	.page-mySettings__photo .photo__top{
-		margin-bottom: 13px;
+		margin-bottom: 12px;
 	}
 	.page-mySettings__info label{
-		margin-bottom: 20px;
+		margin-bottom: 18px;
 	}
 	.page-mySettings__info label span{
-		font-size: 18px;
+		font-size: 16px;
 		line-height: normal;
-		margin-bottom: 14px;
+		margin-bottom: 13px;
 	}
 	.page-mySettings__info .block-submit{
-		margin-top: 20px;
+		margin-top: 18px;
 	}
 }
 
@@ -203,18 +203,18 @@
 		display: block;
 	}
 	.page-mySettings__photo .photo__inner{
-		max-width: 320px;
-		height: 320px;
+		max-width: 288px;
+		height: 288px;
 	}
 	.page-mySettings__photo{
-		max-width: 320px;
-		margin-bottom: 40px;
+		max-width: 288px;
+		margin-bottom: 36px;
 	}
 	.page-mySettings__info .block-submit{
 		margin-left: auto;
 		margin-right: auto;
-		max-width: 360px;
-		margin-top: 30px;
+		max-width: 324px;
+		margin-top: 27px;
 	}
 }
 
@@ -225,6 +225,7 @@
 		height: auto;
 	}
 }
+
 
 
 

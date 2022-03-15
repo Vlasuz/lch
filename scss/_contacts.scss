@@ -2,23 +2,23 @@
 
 	&__sides{
 		display: flex;
-		margin-bottom: 50px;
+		margin-bottom: 45px;
 	}
 	&__rht{
 		width: 100%;
 		.inputs{
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
-			grid-column-gap: 35px;
+			grid-column-gap: 32px;
 		}
 		input{
-			margin-bottom: 30px;
+			margin-bottom: 27px;
 		}
 		textarea{
-			height: 190px;
+			height: 171px;
 		}
 		.form__bottom{
-			margin-top: 24px;
+			margin-top: 22px;
 			display: flex;
 			align-items: center;
 
@@ -27,34 +27,34 @@
 			background: #F91942;
 			border: 1px solid #F91942;
 			margin-left: auto;
-			height: 50px;
-			border-radius: 25px;
+			height: 45px;
+			border-radius: 23px;
 			font-weight: 900;
-			font-size: 18px;
-			line-height: 25px;
-			padding: 0 25px;
+			font-size: 16px;
+			line-height: 23px;
+			padding: 0 23px;
 			display: block;
 			text-transform: uppercase;
 			color: #FFFFFF;
 		}
 	}
 	&__lft{
-		max-width: 370px;
+		max-width: 333px;
 		width: 100%;
-		margin-right: 35px;
+		margin-right: 32px;
 		.lft__text{
 			p{
 				font-family: Roboto;
-				font-size: 20px;
+				font-size: 18px;
 				line-height: 150%;
 				color: #424242;
-				margin-bottom: 24px;
+				margin-bottom: 22px;
 			}
 		}
 		.soc__list{
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
-			grid-gap: 20px;
+			grid-gap: 18px;
 			img{
 				transition: all .3s ease;
 			}
@@ -90,32 +90,32 @@
 			li{
 			}
 			img{
-				width: 40px;
-				height: 40px;
+				width: 36px;
+				height: 36px;
 				border-radius: 50%;
 			}
 			span{
 				font-weight: 900;
-				font-size: 18px;
-				line-height: 25px;
+				font-size: 16px;
+				line-height: 23px;
 				color: #3A3A3A;
-				margin-left: 12px;
+				margin-left: 11px;
 			}
 		}
 	}
 
 	&__place{
-		max-width: 370px;
+		max-width: 333px;
 		width: 100%;
-		margin-right: 35px;
+		margin-right: 32px;
 		.place__bottom{
 			background: #FAFAFA;
 			border-radius: 0px 0px 5px 5px;
-			padding: 20px;
+			padding: 18px;
 			li{
 				font-family: Roboto;
 				font-weight: 500;
-				font-size: 18px;
+				font-size: 16px;
 				line-height: 150%;
 				color: #424242;
 				margin-bottom: 9px;
@@ -146,24 +146,24 @@
 		}
 		.place__text{
 			position: absolute;
-			bottom: 24px;
-			left: 24px;
-			right: 24px;
+			bottom: 22px;
+			left: 22px;
+			right: 22px;
 			.sides{
 				display: flex;
 				align-items: center;
 				font-family: Roboto;
-				font-size: 18px;
-				line-height: 21px;
+				font-size: 16px;
+				line-height: 19px;
 				color: #FFFFFF;
 			}
 			.rht{
-				height: 35px;
+				height: 32px;
 				background: rgba(255, 255, 255, 0.4);
 				backdrop-filter: blur(5px);
-				border-radius: 39px;
-				margin-left: 12px;
-				max-width: 127px;
+				border-radius: 35px;
+				margin-left: 11px;
+				max-width: 114px;
 				width: 100%;
 				display: flex;
 				align-items: center;
@@ -171,8 +171,8 @@
 			}
 			.lft{
 				background: #F91942;
-				border-radius: 39px;
-				height: 35px;
+				border-radius: 35px;
+				height: 32px;
 				width: 100%;
 				display: flex;
 				align-items: center;
@@ -180,9 +180,9 @@
 			}
 			p{
 				font-family: Roboto;
-				margin-bottom: 20px;
+				margin-bottom: 18px;
 				font-weight: 500;
-				font-size: 24px;
+				font-size: 22px;
 				color: #FFFFFF;
 			}
 		}
@@ -192,9 +192,9 @@
 		background: #FFFFFF;
 		border: 1px solid #979797;
 		border-radius: 5px;
-		padding: 20px 24px;
+		padding: 18px 22px;
 		padding-left: 0;
-		max-height: 425px;
+		max-height: 383px;
 		.list__ovf{
 			height: 100%;
 			overflow: auto;
@@ -210,7 +210,7 @@
 		}
 		b{
 			font-weight: 900;
-			font-size: 18px;
+			font-size: 16px;
 			text-transform: uppercase;
 			color: #3A3A3A;
 			margin-bottom: 10px;
@@ -219,12 +219,12 @@
 		span{
 			font-family: Roboto;
 			display: block;
-			font-size: 18px;
+			font-size: 16px;
 			line-height: 150%;
 			color: #424242;
 		}
 		a{
-			padding: 13px 24px;
+			padding: 12px 22px;
 			display: block;
 			*{
 				transition: all .3s ease;
@@ -243,7 +243,7 @@
 	}
 
 	&__map{
-		margin-bottom: 80px;
+		margin-bottom: 72px;
 		iframe{
 			width: 100%;
 		}
@@ -257,48 +257,48 @@
 
 @media screen and (max-width: 1024px) {
 	.page-contacts__lft .lft__text p{
-		font-size: 16px;
-		line-height: 24px;
+		font-size: 14px;
+		line-height: 22px;
 		&:last-child{
 			margin-bottom: 0;
 		}
 	}
 	.page-contacts__map{
-		margin-bottom: 60px;
+		margin-bottom: 54px;
 	}
 	.page-inners input:not(input[type=submit]), .page-inners textarea{
-		font-size: 16px;
-		line-height: 19px;
+		font-size: 14px;
+		line-height: 17px;
 	}
 	.page-contacts__rht .inputs{
-		grid-column-gap: 20px;
+		grid-column-gap: 18px;
 	}
 	.page-contacts__rht .form__bottom{
-		margin-top: 20px;
+		margin-top: 18px;
 		img{
-			max-width: 240px;
+			max-width: 216px;
 		}
 	}
 	.page-contacts__rht textarea{
-		height: 140px;
+		height: 126px;
 	}
 	.page-contacts__sides{
-		margin-bottom: 30px;
+		margin-bottom: 27px;
 	}
 	.page-contacts__place,
 	.page-contacts__lft{
-		margin-right: 20px;
+		margin-right: 18px;
 	}
 	.page-contacts__list span,
 	.page-contacts__list b{
-		font-size: 16px;
+		font-size: 14px;
 	}
 	.page-contacts__place .place__bottom li{
-		font-size: 16px;
+		font-size: 14px;
 		line-height: normal;
 	}
 	.page-inners input{
-		margin-bottom: 20px;
+		margin-bottom: 18px;
 	}
 }
 
@@ -308,8 +308,8 @@
 	}
 	.page-contacts__map{
 		margin-bottom: 0;
-		margin-left: -20px;
-		margin-right: -20px;
+		margin-left: -18px;
+		margin-right: -18px;
 		iframe{
 			display: block;
 		}
@@ -319,11 +319,11 @@
 		.lft__block{
 			display: flex;
 			align-items: center;
-			margin-bottom: 30px;
+			margin-bottom: 27px;
 		}
 		.lft__text{
-			max-width: 350px;
-			margin-right: 28px;
+			max-width: 315px;
+			margin-right: 25px;
 			width: 100%;
 		}
 	}
@@ -333,7 +333,7 @@
 	}
 	.page-contacts__place .place__top{
 		width: 100%;
-		max-width: 350px;
+		max-width: 315px;
 	}
 	.page-contacts__place .place__photo{
 		height: 100%;
@@ -348,14 +348,14 @@
 		display: flex;
 		max-width: 100%;
 		width: 100%;
-		max-height: 180px;
-		margin-bottom: 30px;
+		max-height: 162px;
+		margin-bottom: 27px;
 	}
 	.page-contacts__list{
-		max-height: 345px;
+		max-height: 311px;
 	}
 	.page-contacts__list .list__ovf{
-		max-height: 300px;
+		max-height: 270px;
 	}
 	.page-contacts__place .place__bottom{
 		width: 100%;
@@ -371,7 +371,7 @@
 	}
 	.page-contacts__lft .lft__text{
 		max-width: 100%;
-		margin-bottom: 30px;
+		margin-bottom: 27px;
 	}
 	.page-contacts__rht .inputs{
 		display: block;
@@ -380,7 +380,7 @@
 		display: block;
 		button{
 			width: 100%;
-			margin-top: 25px;
+			margin-top: 23px;
 		}
 	}
 	.page-contacts__place{
@@ -391,6 +391,7 @@
 		max-width: 100%;
 	}
 }
+
 
 
 

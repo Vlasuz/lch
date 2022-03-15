@@ -1,7 +1,7 @@
 footer{
 	background: #FAFAFA;
-	padding-top: 70px;
-	padding-bottom: 30px;
+	padding-top: 63px;
+	padding-bottom: 27px;
 }
 
 .footer{
@@ -26,17 +26,17 @@ footer{
 		display: flex;
 		justify-content: space-between;
 		border-bottom: 2px solid #C4C4C4;
-		padding-bottom: 55px;
+		padding-bottom: 50px;
 		p{
 			font-family: Roboto;
-			font-size: 14px;
+			font-size: 13px;
 			color: #424242;
 			display: none;
 		}
 	}
 	&__bottom{
 		display: flex;
-		padding-top: 23px;
+		padding-top: 21px;
 		a{
 			display: flex;
 			align-items: center;
@@ -52,14 +52,14 @@ footer{
 				width: 4px;
 				height: 4px;
 				display: block;
-				margin: 0 12px;
+				margin: 0 11px;
 			}
 		}
 		a,
 		p{
 			font-weight: 500;
-			font-size: 18px;
-			line-height: 21px;
+			font-size: 16px;
+			line-height: 19px;
 			color: #A0A0A0;
 		}
 	}
@@ -68,7 +68,7 @@ footer{
 		display: flex;
 		align-items: center;
 		li{
-			margin-left: 16px;
+			margin-left: 14px;
 			path{
 				fill: #979797;
 				transition: all .3s ease;
@@ -118,12 +118,12 @@ footer{
 		align-items: center;
 		img{
 			margin-right: 8px;
-			width: 46px;
+			width: 41px;
 			display: block;
 		}
 		span{
-			font-size: 22px;
-			line-height: 30px;
+			font-size: 20px;
+			line-height: 27px;
 			font-weight: 300;
 			color: #3A3A3A;
 			span{
@@ -132,7 +132,7 @@ footer{
 		}
 	}
 	&__email{
-		font-size: 20px;
+		font-size: 18px;
 		color: #3A3A3A;
 		border-bottom: 1px dashed #3A3A3A;
 		transition: all .3s ease;
@@ -143,8 +143,8 @@ footer{
 	}
 	&__phone{
 		font-weight: 900;
-		font-size: 30px;
-		line-height: 41px;
+		font-size: 27px;
+		line-height: 37px;
 		text-transform: uppercase;
 		color: #3A3A3A;
 		transition: all .3s ease;
@@ -169,9 +169,9 @@ footer{
 		display: flex;
 		align-items: center;
 		li{
-			width: 40px;
-			height: 40px;
-			margin-right: 12px;
+			width: 36px;
+			height: 36px;
+			margin-right: 11px;
 			border-radius: 50%;
 			transition: all .3s ease;
 			img{
@@ -214,16 +214,16 @@ footer{
 	&__menu{
 		display: flex;
 		justify-content: space-between;
-		max-width: 400px;
+		max-width: 360px;
 		width: 100%;
 		ul{
-			margin: -26px 0;
+			margin: -23px 0;
 		}
 		a{
 			font-family: Roboto;
-			font-size: 20px;
+			font-size: 18px;
 			color: #3A3A3A;
-			margin: 20px 0;
+			margin: 18px 0;
 			display: block;
 			transition: all .3s ease;
 			&:hover{
@@ -235,37 +235,37 @@ footer{
 
 .cookies{
 	position: fixed;
-	bottom: 80px;
+	bottom: 72px;
 	left: 50%;
 	transform: translateX(-50%);
 	background: #FFFFFF;
 	border: 1px solid #F91942;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
 	border-radius: 10px;
-	padding: 38px 24px;
+	padding: 34px 22px;
 	display: flex;
 	align-items: center;
-	max-width: 1180px;
+	max-width: 1062px;
 	width: 100%;
 	z-index: 999;
 	p{
 		font-family: Roboto;
-		font-size: 16px;
+		font-size: 14px;
 		line-height: 150%;
 		color: #3A3A3A;
 	}
 	button{
 		background: #F91942;
-		border-radius: 25px;
-		margin-left: 30px;
+		border-radius: 23px;
+		margin-left: 27px;
 		font-weight: 900;
-		font-size: 18px;
-		line-height: 25px;
+		font-size: 16px;
+		line-height: 23px;
 		text-transform: uppercase;
 		color: #FFFFFF;
 		border: none;
 		cursor: pointer;
-		padding: 11px 50px;
+		padding: 10px 45px;
 	}
 }
 
@@ -277,17 +277,17 @@ footer{
 
 @media screen and (max-width: 1024px) {
 	.footer__menu{
-		max-width: 280px;
+		max-width: 252px;
 	}
 	.footer__menu ul{
-		margin: -20px 0;
+		margin: -18px 0;
 	}
 	.footer__menu a{
-		font-size: 16px;
-		margin: 20px 0;
+		font-size: 14px;
+		margin: 18px 0;
 	}
 	.footer__phone{
-		font-size: 24px;
+		font-size: 22px;
 		text-align: right;
 		line-height: normal;
 	}
@@ -295,15 +295,15 @@ footer{
 		justify-content: flex-end;
 	}
 	.footer__top{
-		padding-bottom: 60px;
+		padding-bottom: 54px;
 	}
 	.footer__socials li{
-		width: 30px;
-		height: 30px;
+		width: 27px;
+		height: 27px;
 		margin-right: 9px;
 	}
 	.footer__email{
-		font-size: 16px;
+		font-size: 14px;
 		width: fit-content;
 		margin-left: auto;
 	}
@@ -311,13 +311,13 @@ footer{
 
 @media screen and (max-width: 992px) {
 	.footer__menu{
-		max-width: 227px;	
+		max-width: 204px;	
 	}
 	.footer__side{
 		display: block;
 	}
 	.footer__bottom a{
-		padding-left: 24px;
+		padding-left: 22px;
 		position: relative;
 		&:before{
 			position: absolute;
@@ -344,15 +344,15 @@ footer{
 		width: auto;
 	}
 	.footer__menu a{
-		font-size: 14px;
+		font-size: 13px;
 	}
 	.footer__phone{
-		font-size: 14px;
-		line-height: 19px;
+		font-size: 13px;
+		line-height: 17px;
 		text-align: left;
 	}
 	.footer__email{
-		font-size: 14px;
+		font-size: 13px;
 		border-bottom: none;
 		margin-left: 0;
 		&:hover{
@@ -361,17 +361,17 @@ footer{
 		}
 	}
 	.footer__bottom a, .footer__bottom p{
-		font-size: 14px;
+		font-size: 13px;
 		line-height: normal;
 	}
 	.footer__top p{
 		display: block;
 	}
 	.footer__logo span{
-		font-size: 20px;
+		font-size: 18px;
 	}
 	.footer__top{
-		padding-bottom: 34px;
+		padding-bottom: 31px;
 	}
 }
 
@@ -383,61 +383,61 @@ footer{
 		display: none;
 		&_mob{
 			display: flex;
-			margin-top: 50px;
+			margin-top: 45px;
 		}
 	}
 	.footer__logo span{
-		font-size: 34px;
+		font-size: 31px;
 	}
 	footer{
-		padding: 50px 0;
-		padding-bottom: 30px;
+		padding: 45px 0;
+		padding-bottom: 27px;
 	}
 	.footer__lft{
-		margin-bottom: 40px;
+		margin-bottom: 36px;
 	}
 	.footer__menu a{
-		font-size: 16px;
+		font-size: 14px;
 
 	}
 	.footer__menu{
-		max-width: 286px;
-		margin-bottom: 30px;
+		max-width: 257px;
+		margin-bottom: 27px;
 	}
 	.footer__top p{
 		display: none;
 	}
 	.footer__email{
 		font-family: Roboto;
-		font-size: 16px;
-		margin-bottom: 25px;
+		font-size: 14px;
+		margin-bottom: 23px;
 		border-bottom: 1px dashed #3A3A3A;
 		&:hover{
 			border-bottom: 1px dashed #F91942;
 		}
 	}
 	.footer__phone{
-		font-size: 24px;
-		line-height: 33px;
+		font-size: 22px;
+		line-height: 30px;
 	}
 	.footer__socials{
 		justify-content: flex-start;
-		margin-top: 23px;
+		margin-top: 21px;
 	}
 	.footer__socials li{
-		width: 40px;
-		height: 40px;
-		margin-right: 12px;
+		width: 36px;
+		height: 36px;
+		margin-right: 11px;
 	}
 	.footer__contacts{
 		width: 100%;
-		margin-top: 30px;
+		margin-top: 27px;
 	}
 	.footer__bottom{
 		flex-wrap: wrap;
 	}
 	.footer__contacts li{
-		margin-right: 16px;
+		margin-right: 14px;
 		margin-left: 0;
 	}
 	.cookies{
@@ -449,7 +449,7 @@ footer{
 		transform: translateX(0);
 	}
 	.cookies p{
-		font-size: 15px;
+		font-size: 14px;
 	}
 	.cookies button{
 		margin-left: 10px;
@@ -458,7 +458,7 @@ footer{
 
 @media screen and (max-width: 400px) {
 	.footer__logo span{
-		font-size: 28px;
+		font-size: 25px;
 	}
 	.footer__menu{
 		max-width: 100%;
@@ -468,8 +468,9 @@ footer{
 		}
 	}
 	.footer__top{
-		padding-bottom: 28px;
+		padding-bottom: 25px;
 	}
 }
+
 
 
