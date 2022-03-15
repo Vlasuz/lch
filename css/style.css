@@ -4274,6 +4274,10 @@ header {
     background: 0 0;
     border: none
   }
+  .page-city .page-index__banner,
+  .page-post__comments {
+    margin-top: 20px
+  }
   .page-index__banner .banner__title {
     width: calc(100% - 18px)
   }
@@ -4304,7 +4308,7 @@ header {
   }
   .page-index__banner .banner__calendar,
   .page-index__banner .banner__time {
-    width: calc(100% / 2 - 18px);
+    width: calc(100% / 2 - 20px);
     margin: 0 10px
   }
   .page-index__banner .banner__search {
@@ -8575,7 +8579,9 @@ header {
     max-width: 100%;
     margin-top: 18px
   }
-  .page-city .page-index__banner,
+  .page-city .page-index__banner {
+    margin-top: 20px
+  }
   .page-post__comments {
     margin-top: 36px
   }

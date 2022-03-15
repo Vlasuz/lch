@@ -566,8 +566,16 @@ block content
 								.bill__pickup
 									span Pay on pickup
 									span ₾700
-								a(href="#").bill__button.btn-hover Book now
-
+								a(href="#").bill__button.btn-hover#bill-id-pay Book now
+		a(href="#bill-id-pay").bill-fixed_mob
+			span TOTAL
+			span ₾805
+		section.breadcrumbs
+			.wrapper
+				a(href="#") Car rental
+				a(href="#") Rent a car in Georgia
+				a(href="#") Tbilisi
+				span Tamuna
 
 
 	include includes/footer.pug

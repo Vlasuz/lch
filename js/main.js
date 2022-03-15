@@ -204,6 +204,26 @@ $(document).ready(function () {
 			$('body,html').animate({scrollTop: top - (hWin - 100)}, 500);
 	})
 
+	if( $(window).width() < 992 ){
+
+		$('.bill__total').hide()
+
+		$(window).scroll(function () {
+			let scrollTopBlock = $(this).scrollTop()
+			let blockTop = $('.page-single__bill').offset().top - ($('.page-single__bill').height() / 2)
+
+			if( scrollTopBlock > blockTop ){
+				$('.bill__total').show()
+				$('.bill-fixed_mob').hide()
+			}else{
+				$('.bill__total').hide()
+				$('.bill-fixed_mob').show()
+			}
+
+		})
+
+	}
+
 	// TOTAL SCROLL
 
 
