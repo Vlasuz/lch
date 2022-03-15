@@ -1,7 +1,7 @@
 .page-post{
 
 	&__banner{
-		margin-top: 80px;
+		margin-top: 72px;
 		.banner__center{
 			margin-top: 0;
 		}
@@ -14,33 +14,33 @@
 		}
 	}
 	&__reply{
-		margin-top: 60px;
+		margin-top: 54px;
 		.reply__block{
 			background: #FAFAFA;
 			border-radius: 10px;
-			padding: 24px;
+			padding: 22px;
 		}
 		textarea{
-			height: 152px;
+			height: 137px;
 			background: #FFFFFF;
 			border-radius: 10px;
 			font-family: Roboto;
-			padding: 24px;
-			font-size: 20px;
+			padding: 22px;
+			font-size: 18px;
 			line-height: 150%;
 			color: #424242;
 		}
 		button{
 			background: #F91942;
-			border-radius: 39px;
-			margin-top: 24px;
+			border-radius: 35px;
+			margin-top: 22px;
 			margin-left: auto;
 			display: block;
 			font-weight: 900;
-			font-size: 20px;
-			line-height: 27px;
-			height: 50px;
-			max-width: 272px;
+			font-size: 18px;
+			line-height: 24px;
+			height: 45px;
+			max-width: 245px;
 			width: 100%;
 			text-transform: uppercase;
 			color: #FFFFFF;
@@ -48,12 +48,12 @@
 		}
 	}
 	&__comments{
-		margin-top: 80px;
+		margin-top: 72px;
 		.comments__item{
 			background: #FAFAFA;
 			border-radius: 10px;
-			padding: 30px 24px;
-			margin-bottom: 20px;
+			padding: 27px 22px;
+			margin-bottom: 18px;
 			&:last-child{
 				margin-bottom: 0;
 			}
@@ -64,71 +64,71 @@
 			img{
 				border: 2px solid #FFFFFF;
 				border-radius: 50%;
-				width: 60px;
-				height: 60px;
+				width: 54px;
+				height: 54px;
 			}
 		}
 		.item__text{
-			margin-top: 20px;
+			margin-top: 18px;
 		}
 		.item__top{
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
 			span{
-				margin-left: 20px;
+				margin-left: 18px;
 			}
 		}
 		data,
 		p,
 		span{
 			font-family: Roboto;
-			font-size: 20px;
+			font-size: 18px;
 			line-height: 150%;
 			color: #3A3A3A;
 		}
 	}
 	&__owner{
 		border-top: 2px solid #F91942;
-		margin-top: 40px;
-		padding-top: 40px;
+		margin-top: 36px;
+		padding-top: 36px;
 		.owner__top{
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
 			span{
 				font-family: Roboto;
-				font-size: 20px;
+				font-size: 18px;
 				line-height: 150%;
 				color: #3A3A3A;
 			}
 		}
 		.owner__date{
 			span{
-				margin-left: 16px;
+				margin-left: 14px;
 			}
 		}
 		.owner__blockquotes{
-			margin-top: 16px;
+			margin-top: 14px;
 			p{
 				display: inline;
 			}
 		}
 		.owner__things{
 			background: #ECECEC;
-			border-radius: 39px;
+			border-radius: 35px;
 			font-family: Roboto;
-			font-size: 18px;
-			line-height: 21px;
+			font-size: 16px;
+			line-height: 19px;
 			color: #979797;
-			padding: 7px 15px;
+			padding: 7px 14px;
 		}
 		.owner__soc{
 			display: flex;
 			align-items: center;
 			a{
-				width: 40px;
-				height: 40px;
+				width: 36px;
+				height: 36px;
 				border-radius: 50%;
 				margin-left: 8px;
 			}
@@ -139,8 +139,8 @@
 			}
 		}
 		.owner__bottom{
-			margin-top: 40px;
-			padding-top: 30px;
+			margin-top: 36px;
+			padding-top: 27px;
 			border-top: 2px solid #DFDFDF;
 			display: flex;
 			align-items: center;
@@ -153,12 +153,12 @@
 				display: none;
 			}
 			span{
-				margin-left: 12px;
+				margin-left: 11px;
 			}
 			img{
 				border-radius: 50%;
-				width: 40px;
-				height: 40px;
+				width: 36px;
+				height: 36px;
 				border: 1px solid #F91942;
 			}
 		}
@@ -167,7 +167,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		margin-top: 30px;
+		margin-top: 27px;
 		.nav__next,
 		.nav__prev{
 			display: flex;
@@ -196,7 +196,7 @@
 		b{
 			font-family: Roboto;
 			font-weight: bold;
-			font-size: 22px;
+			font-size: 20px;
 			line-height: 125%;
 			text-transform: uppercase;
 			color: #3A3A3A;
@@ -205,7 +205,7 @@
 		small{
 			font-family: Roboto;
 			font-weight: normal;
-			font-size: 16px;
+			font-size: 14px;
 			line-height: 150%;
 			color: #3A3A3A;
 		}
@@ -224,11 +224,11 @@
 	&__blog{
 		background: #FAFAFA;
 		border-radius: 10px;
-		padding: 40px 24px;
+		padding: 36px 22px;
 		p{
 			font-family: Roboto;
 			font-weight: normal;
-			font-size: 20px;
+			font-size: 18px;
 			line-height: 150%;
 			color: #424242;
 			margin: 10px 0;
@@ -238,7 +238,7 @@
 			}
 		}
 		figure{
-			margin: 40px 0;
+			margin: 36px 0;
 			img{
 				display: block;
 				width: 100%;
@@ -250,14 +250,14 @@
 		.red-line{
 			background: #FFFFFF;
 			border-radius: 0px 0px 10px 10px;
-			padding: 30px 18px;
+			padding: 27px 16px;
 			span{
-				min-height: 42px;
+				min-height: 38px;
 				font-family: Roboto;
 				font-style: italic;
 				font-weight: 500;
-				padding-left: 15px;
-				font-size: 20px;
+				padding-left: 14px;
+				font-size: 18px;
 				line-height: 150%;
 				color: #424242;
 				border-left: 1px solid #F91942;
@@ -268,13 +268,13 @@
 		ol{
 			list-style-type: none;
 			counter-reset: olList;
-			margin: 16px 0;
+			margin: 14px 0;
 			li{
 				counter-increment: olList;
 				font-family: Roboto;
 				font-style: normal;
 				font-weight: normal;
-				font-size: 20px;
+				font-size: 18px;
 				line-height: 150%;
 				margin: 8px 0;
 				color: #424242;
@@ -282,16 +282,16 @@
 				&:before{
 					content: counter(olList)'.';
 					display: block;
-					margin: 0 12px;
+					margin: 0 11px;
 				}
 			}
 		}
 		ul{
-			margin-bottom: 30px;
+			margin-bottom: 27px;
 			li{
 				font-family: Roboto;
 				font-weight: normal;
-				font-size: 20px;
+				font-size: 18px;
 				line-height: 150%;
 				margin: 8px 0;
 				color: #424242;
@@ -303,23 +303,23 @@
 						height: 4px;
 						border-radius: 50%;
 						display: block;
-						margin: 0 12px;
-						margin-top: 12px;
+						margin: 0 11px;
+						margin-top: 11px;
 						background: #3A3A3A;
 					}
 			}
 		}
 		h3{
 			font-family: Roboto;
-			margin-bottom: 24px;
+			margin-bottom: 22px;
 			font-weight: 500;
-			font-size: 24px;
+			font-size: 22px;
 			line-height: 150%;
 			color: #424242;
 		}
 		.photo-text{
 			display: flex;
-			margin: 40px 0;
+			margin: 36px 0;
 			margin-top: 0;
 			.text{
 				width: 100%;
@@ -332,17 +332,17 @@
 			}
 			figure{
 				margin: 0;
-				margin-left: 24px;
-				max-width: 417px;
+				margin-left: 22px;
+				max-width: 375px;
 				width: 100%;
 			}
 			figcaption{
 				background: #FFFFFF;
-				padding: 20px 16px;
+				padding: 18px 14px;
 				font-family: Roboto;
 				font-style: italic;
 				font-weight: 500;
-				font-size: 20px;
+				font-size: 18px;
 				line-height: 150%;
 				color: #424242;
 				border-radius: 0px 0px 10px 10px;
@@ -362,81 +362,81 @@
 	.page-post__blog .red-line span,
 	.page-post__blog .photo-text figcaption,
 	.page-post__blog p{
-		font-size: 16px;
-		line-height: 24px;
+		font-size: 14px;
+		line-height: 22px;
 	}
 	.page-post__comments .item__top span{
-		margin-left: 12px;
+		margin-left: 11px;
 	}
 	.page-post__owner{
-		padding-top: 30px;
+		padding-top: 27px;
 	}
 	.page-post__owner .owner__bottom{
-		margin-top: 30px;
+		margin-top: 27px;
 	}
 	.page-post__blog .red-line,
 	.page-post__blog .photo-text figcaption{
-		padding: 10px 12px;
+		padding: 9px 11px;
 	}
 	.page-post__blog figure{
-		margin: 30px 0;
+		margin: 27px 0;
 	}
 	.page-post__blog .photo-text figure{
-		max-width: 295px;
-		margin-left: 20px;
+		max-width: 266px;
+		margin-left: 18px;
 	}
 	.page-post__blog .photo-text{
-		margin-bottom: 20px;
+		margin-bottom: 18px;
 	}
 	.page-post__blog h3{
-		font-size: 20px;
-		line-height: 30px;
-		margin-bottom: 20px;
+		font-size: 18px;
+		line-height: 27px;
+		margin-bottom: 18px;
 	}
 	.page-post__nav b{
-		font-size: 20px;
-		line-height: 25px;
+		font-size: 18px;
+		line-height: 23px;
 	}
 	.page-post__nav small{
-		font-size: 14px;
-		line-height: 21px;
+		font-size: 13px;
+		line-height: 19px;
 	}
 	.page-post__reply{
-		margin-top: 40px;
+		margin-top: 36px;
 	}
 	.page-post__reply textarea{
-		padding: 24px 20px;
-		font-size: 16px;
-		line-height: 24px;
+		padding: 22px 18px;
+		font-size: 14px;
+		line-height: 22px;
 	}
 	.page-post__comments,
 	.page-city .page-index__banner{
-		margin-top: 60px;
+		margin-top: 54px;
 	}
 }
 
 @media screen and (max-width: 992px) {
 	.page-post__blog h3{
-		font-size: 18px;
+		font-size: 16px;
 		margin-bottom: 10px;
 	}
 	.page-post__comments .comments__item{
-		padding: 15px;
+		padding: 14px;
 	}
 }
 
 @media screen and (max-width: 576px) {
 	.page-post__reply textarea{
-		padding: 15px;
-		font-size: 14px;
+		padding: 14px;
+		font-size: 13px;
 	}
 	.page-post__reply button{
 		width: 100%;
 		max-width: 100%;
-		margin-top: 20px;
+		margin-top: 18px;
 	}
 	.page-city .page-index__banner, .page-post__comments{
-		margin-top: 40px;
+		margin-top: 36px;
 	}
 	.page-post__blog .photo-text{
 		display: block;
@@ -444,27 +444,27 @@
 	.page-post__blog .photo-text figure{
 		margin: 0;
 		max-width: 100%;
-		margin-top: 30px;
+		margin-top: 27px;
 	}
 	.page-post__owner .owner__bottom{
 		display: block;
 	}
 	.page-post__owner .owner__things{
 		width: fit-content;
-		margin-bottom: 30px;
+		margin-bottom: 27px;
 	}
 	.page-post__nav .nav__next{
 		flex-direction: column-reverse;
 		text-align: right;
 		svg{
 			margin-left: auto;
-			margin-bottom: 15px;
+			margin-bottom: 14px;
 		}
 	}
 	.page-post__nav .nav__prev{
 		display: block;
 		svg{
-			margin-bottom: 15px;
+			margin-bottom: 14px;
 		}
 	}
 }
@@ -472,11 +472,11 @@
 @media screen and (max-width: 400px) {
 	.page-post__blog,
 	.page-post__img{
-		margin-left: -20px;
-		margin-right: -20px;
+		margin-left: -18px;
+		margin-right: -18px;
 	}
 	.page-post__blog{
-		padding: 20px;
+		padding: 18px;
 	}
 	.page-post__blog .owner__date{
 		display: none;
@@ -485,47 +485,48 @@
 		display: flex;
 	}
 	.page-post__owner .owner__things{
-		margin-bottom: 20px;
+		margin-bottom: 18px;
 	}
 	.dell{
 		display: none;
 	}
 	.page-post__nav .nav__next{
 		small{
-			margin-right: -23px;
+			margin-right: -21px;
 		}
 		svg{
-			margin-left: -22px;
+			margin-left: -20px;
 		}
 	}
 	.page-post__nav .nav__prev{
 		small{
-			margin-left: -23px;
+			margin-left: -21px;
 		}
 		svg{
-			margin-right: -22px;
+			margin-right: -20px;
 		}
 	}
 	.page-post__nav .nav__next, .page-post__nav .nav__prev{
 		display: flex;
 		flex-direction: row;
 		svg{
-			width: 100px;
+			width: 90px;
 		}
 	}
 
 	.page-post__reply .reply__block{
-		padding: 20px;
-		margin-left: -20px;
-		margin-right: -20px;
+		padding: 18px;
+		margin-left: -18px;
+		margin-right: -18px;
 	}
 	.page-post__banner{
 		.banner__top{
-			padding-left: 20px;
-			padding-right: 20px;
+			padding-left: 18px;
+			padding-right: 18px;
 		}
 	}
 }
+
 
 
 

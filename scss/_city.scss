@@ -1,9 +1,9 @@
 
 .header-img {
 	width: 100%;
-	margin-top: 40px;
-	margin-bottom: 17px;
-	height: 190px;
+	margin-top: 36px;
+	margin-bottom: 15px;
+	height: 171px;
 }
 
 
@@ -41,7 +41,7 @@
 	}
 	.page-index__banner .banner__center{
 		background: #FAFAFA;
-		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+		box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.1);
 		border-radius: 10px;
 	}
 
@@ -53,25 +53,25 @@
 		border-right: 1px solid #C0C0C0;
 	}
 	.page-index__banner .banner__inner{
-		padding-top: 20px;
+		padding-top: 18px;
 		min-height: 0;
 		padding-bottom: 0px;
 	}
 	.page-index__banner{
-		margin-bottom: 30px;
+		margin-bottom: 27px;
 	}
 	.page-index__reviews{
 		padding-top: 0;
 	}
 
 	.section-from{
-		margin-top: 150px;
+		margin-top: 135px;
 		.sides{
 			display: flex;
 			align-items: center;
 		}
 		.rht{
-			margin-left: 35px;
+			margin-left: 32px;
 		}
 		.lft{
 			width: 100%;
@@ -83,14 +83,14 @@
 		}
 		.tr{
 			display: grid;
-			grid-template-columns: 320px 220px auto;
+			grid-template-columns: 288px 198px auto;
 		}
 		.tbody{
 			.td{
 				font-family: Roboto;
-				padding: 18px 24px;
-				font-size: 20px;
-				line-height: 23px;
+				padding: 16px 22px;
+				font-size: 18px;
+				line-height: 21px;
 				color: #424242;
 			}
 		}
@@ -99,11 +99,11 @@
 			border-bottom: 1px solid #F91942;
 			border-radius: 5px 5px 0 0;
 			.td{
-				padding: 20px 24px;
+				padding: 18px 22px;
 				font-family: Roboto;
 				font-weight: bold;
-				font-size: 20px;
-				line-height: 23px;
+				font-size: 18px;
+				line-height: 21px;
 				text-transform: uppercase;
 				color: #F91942;
 			}
@@ -111,23 +111,23 @@
 	}
 
 	&__money{
-		margin-bottom: 30px;
+		margin-bottom: 27px;
 		.money__block{
 			background: #E9F8FF;
 			border-radius: 5px;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			height: 80px;
-			padding-left: 30px;
-			padding-right: 30px;
+			height: 72px;
+			padding-left: 27px;
+			padding-right: 27px;
 		}
 		.money__close{
 			cursor: pointer;
 		}
 		p{
 			font-family: Roboto;
-			font-size: 18px;
+			font-size: 16px;
 			line-height: 150%;
 			color: #0082BE;
 			a{
@@ -144,7 +144,7 @@
 		display: none;
 	}
 	.page-city .section-from .tr{
-		grid-template-columns: 350px auto auto;
+		grid-template-columns: 315px auto auto;
 	}
 }
 
@@ -158,52 +158,52 @@
 	.page-city__money .money__block{
 		align-items: flex-start;
 		height: auto;
-		padding: 30px;
+		padding: 27px;
 	}
 	.page-city__money p a,
 	.page-city__money p{
-		font-size: 16px;
-		line-height: 24px;
+		font-size: 14px;
+		line-height: 22px;
 	}
 	.page-city .section-from{
-		margin-top: 60px;
+		margin-top: 54px;
 	}
 }
 
 @media screen and (max-width: 992px) {
 	.page-city__money .money__block{
-		padding: 20px;
+		padding: 18px;
 	}
 	.page-city .section-from .tr{
-		grid-template-columns: 280px auto auto;
+		grid-template-columns: 252px auto auto;
 	}
 }
 
 @media screen and (max-width: 700px) {
 	.page-city__money .money__block{
-		padding: 20px;
+		padding: 18px;
 	}
 	.page-city .section-from .tr{
-		grid-template-columns: 200px auto auto;
+		grid-template-columns: 180px auto auto;
 	}
 	.page-city .section-from .thead .td{
-		font-size: 18px;
-		line-height: 21px;
-		padding: 23px 20px;
+		font-size: 16px;
+		line-height: 19px;
+		padding: 21px 18px;
 	}
 	.page-city .section-from .tbody{
 		padding: 5px 0;
 	}
 	.page-city .section-from .tbody .td{
-		font-size: 16px;
-		line-height: 19px;
-		padding: 16px 20px;
+		font-size: 14px;
+		line-height: 17px;
+		padding: 14px 18px;
 	}
 }
 
 @media screen and (max-width: 576px) {
 	.page-city .section-from .tr{
-		grid-template-columns: 160px auto auto;
+		grid-template-columns: 144px auto auto;
 	}
 	.page-city .page-index__banner .banner__calendar, .page-city .page-index__banner .banner__search, .page-city .page-index__banner .banner__time{
 		border: 1px solid #C0C0C0;
@@ -212,19 +212,20 @@
 
 @media screen and (max-width: 400px) {
 	.page-city .section-from .thead .td{
-		font-size: 14px;
-		line-height: 16px;
-		padding: 20px 15px;
+		font-size: 13px;
+		line-height: 14px;
+		padding: 18px 14px;
 	}
 	.page-city .section-from .tbody{
 		padding: 5px 0;
 	}
 	.page-city .section-from .tbody .td{
-		font-size: 14px;
-		line-height: 16px;
-		padding: 20px 15px;
+		font-size: 13px;
+		line-height: 14px;
+		padding: 18px 14px;
 	}
 }
+
 
 
 
