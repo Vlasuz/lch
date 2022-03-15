@@ -3272,9 +3272,6 @@ header {
   -o-transition: all .3s ease;
   transition: all .3s ease
 }
-.page-index__location .akkordeon a:hover {
-  /*color: #f91942*/
-}
 .page-index__location .akkordeon li {
   font-weight: 600;
   font-size: 18px;
